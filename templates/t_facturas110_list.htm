@@ -1,0 +1,646 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_master}
+<div class="rnr-c rnr-ch rnr-c-master">
+
+{BEGIN mastertable_block}
+<div  class="style1 rnr-bl rnr-b-masterinfo {$brickclass_masterinfo}">{$showmasterfile}
+<a class="runner-link" {$backtomasterlink_attrs}>
+	<b>Volver a {$backtomasterlink_caption}</b>
+</a></div>
+{END mastertable_block}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_master}
+
+
+
+{BEGIN container_toplinks}
+<div class="rnr-c rnr-ch rnr-c-toplinks">
+<div class="rnr-hfiller"></div>
+{BEGIN security_block}
+<div  class="style1 rnr-br rnr-b-loggedas {$brickclass_loggedas}"><div id="login_block{$id}">
+	{BEGIN loggedas_message} 
+	<span>Conectado como&nbsp;<b>{$username}</b>&nbsp;</span> 
+	{END loggedas_message}
+	{BEGIN guestloginbutton}
+	<span>
+		<a href="#" class="rnr-button" {$guestloginlink_attrs}>Conectar</a>
+	</span>
+	{END guestloginbutton}
+	{BEGIN logoutbutton}
+	<a href="#" class="rnr-button" {$logoutlink_attrs}>Desconectarse</a>
+	{END logoutbutton}
+
+</div></div>
+{END security_block}
+
+
+
+</div>
+{END container_toplinks}
+
+
+
+{BEGIN container_hmenu}
+<div class="rnr-c rnr-ch rnr-c-hmenu">
+
+{BEGIN searchform_block}
+<div  class="style1 rnr-bl rnr-b-search {$brickclass_search}">	<span>
+		{BEGIN searchform_text}
+		<input type="text" {$searchfor_attrs} size="25">
+		{END searchform_text}
+		{BEGIN searchform_search}
+			<a href="#" class="rnr-button img" data-icon="search" {$searchbutton_attrs}></a>
+		{END searchform_search}
+		{BEGIN searchform_showall}	
+		<a href="#" class="rnr-button" {$showAllCont_attrs} {$showallbutton_attrs}>Mostrar todo</a>
+		{END searchform_showall}
+	</span>
+</div>
+{END searchform_block}
+
+
+{BEGIN searchformbuttons_block}
+<div  class="style1 rnr-bl rnr-b-search_buttons {$brickclass_search_buttons}">{BEGIN searchPanelTopButtons}
+<span>
+	<a href="#" class="rnr-button img" id="showSrchWin{$id}" data-icon="panelfloat" {$showHideSearchWin_attrs}></a>
+	<a href="#" class="rnr-button img" id="showOptPanel{$id}" data-icon="paneldown" {$showHideSearchPanel_attrs}></a>
+</span>
+{END searchPanelTopButtons}
+</div>
+{END searchformbuttons_block}
+
+
+{BEGIN searchsaving_block}
+<div  class="style1 rnr-bl rnr-b-search_saving_buttons {$brickclass_search_saving_buttons}"></div>
+{END searchsaving_block}
+
+<div class="rnr-hfiller"></div>
+
+<div  class="style1 rnr-br rnr-b-printpanel {$brickclass_printpanel}"></div>
+
+
+
+</div>
+{END container_hmenu}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+
+{BEGIN container_left}
+<div class="rnr-c rnr-cv rnr-c-left">
+
+{BEGIN menu_block}
+{$menu main}
+{END menu_block}
+
+
+{BEGIN searchPanel}
+<div  class="rnr-brickcontents style1 rnr-b-searchpanel {$brickclass_searchpanel}"><div class="searchPanelContainer">
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Criterio:&nbsp;
+		<input type="radio" name="srchType{$id}" class="rnr-radio-button" {$all_checkbox}>&nbsp;{BEGIN all_checkbox_label}<span>todos</span>{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType{$id}" class="rnr-radio-button" {$any_checkbox}>&nbsp;{BEGIN any_checkbox_label}<span>alguno</span>{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="rnr-buttons-group">
+			<a href="#" id="showHideControlChooseMenu{$id}" class="rnr-button" {$showHideCtrls_attrs}>Añadir campo</a>
+		</span>
+		
+		<a href="#" id="showHideSearchType{$id}" class="rnr-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+	</div>
+	
+
+	<table class="controlsBlock {$controls_block_class}">
+				{BEGIN searchCtrlBlock}
+		<tr class="srchPanelRow" {$filterRow_attrs}>
+			<td class="srchPanelCell">{$delCtrlButt}</td>	
+			<td class="srchPanelCell">{$fLabel}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">
+				<div class="rnr-searchtype">{$searchtype}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol1}</div>
+			</td>	
+		</tr>
+		{END searchCtrlBlock}
+	</table>	
+
+
+	
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<a href="#" class="rnr-button" id="searchButton{$id}" {$searchbutton_attrs}>Buscar</a>
+	</div>
+</div>
+
+</div></div>{END searchPanel}
+
+
+
+</div>
+{END container_left}
+
+
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_recordcontrols}
+<div class="rnr-c rnr-ch rnr-c-recordcontrols">
+
+{BEGIN newrecord_controls_block}
+<div  class="style1 rnr-bl rnr-b-recordcontrols_new {$brickclass_recordcontrols_new}">		{BEGIN add_link}
+		<a href="t_facturas110_add.php" class="rnr-button" {$addlink_attrs}>Añadir nuevo</a>
+	{END add_link}
+
+		{BEGIN inlineadd_link}
+		<a href="#" class="rnr-button" {$inlineaddlink_attrs}>Añadir nuevo</a>
+	{END inlineadd_link}
+
+
+</div>
+{END newrecord_controls_block}
+
+
+{BEGIN record_controls_block}
+<div  class="style1 rnr-bl rnr-b-recordcontrol {$brickclass_recordcontrol}">{BEGIN widhtSelected}
+<span class="rnr-buttons-group">
+<a class="rnr-button {$withSelectedClass}" href="#" id="selectButtonsToggler{$id}">Con los seleccionados...</a>
+<ul class="rnr-list" id="selectButtonsGroup{$id}">
+
+		{BEGIN editselected_link}
+<li>
+		<a href="#" class="rnr-button link" {$editselectedlink_attrs} {$editselectedlink_span}>Editar</a>
+</li>
+	{END editselected_link}
+
+		{BEGIN deleteselected_link}
+<li>
+		<a href="#" class="rnr-button link" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>Borrar</a>
+</li>
+	{END deleteselected_link}
+
+	
+</ul>
+</span>
+{END widhtSelected}
+		{BEGIN saveall_link}
+		<a href="#" class="rnr-button" {$savealllink_attrs} {$savealllink_span}>Guardar todo</a>
+	{END saveall_link}
+	{BEGIN cancelall_link}
+		<a href="#" class="rnr-button" {$cancelalllink_attrs} {$cancelalllink_span}>Cancelar</a>
+	{END cancelall_link}
+</div>
+{END record_controls_block}
+
+
+{BEGIN more_list}
+<div  class="style1 rnr-bl rnr-b-toplinks {$brickclass_toplinks}"><span class="rnr-buttons-group">
+{BEGIN moreButtons}
+<a class="rnr-button" id="extraButtonsToggler{$id}" href="#">Más...</a>
+<ul class="rnr-list rnr-buttons-group" id="extraButtonsGroup{$id}">
+
+{BEGIN asearch_link}
+<li>
+	<a href="t_facturas110_search.php" class="rnr-button link" {$advsearchlink_attrs}>Búsqueda avanzada</a>
+</li>
+{END asearch_link}
+
+
+</ul>
+{END moreButtons}
+</span></div>
+{END more_list}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_recordcontrols}
+
+
+
+{BEGIN container_message}
+<div class="rnr-c rnr-ch rnr-c-message">
+
+{BEGIN message_block}
+<div  class="style1 rnr-bc rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>
+{END message_block}
+
+
+</div>
+{END container_message}
+
+
+
+{BEGIN container_pagination}
+<div class="rnr-c rnr-ch rnr-multialign rnr-c-pagination">
+
+{BEGIN pagination_block}
+<div  class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">{$pagination}</div>
+{END pagination_block}
+
+<div class="rnr-leftbricks">
+{BEGIN details_block}
+<div  class="style1 rnr-bl rnr-b-details_found {$brickclass_details_found}">	<span {$details_attrs}>
+			Detalles encontrados: <b><span class="rnr-details_found_count">{$records_found}</span></b>
+	</span>
+</div>
+{END details_block}
+
+</div><div class="rnr-rightbricks">
+{BEGIN pages_block}
+<div  class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}">	<span {$pages_attrs}>
+		Página <b>{$page}</b> / <b>{$maxpages}</b>
+	</span>
+
+</div>
+{END pages_block}
+
+
+{BEGIN recordspp_block}
+<div  class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}">	<span id="recordspp_block{$id}" name="recordspp_block{$id}">
+			Resultados por página:&nbsp;{$recsPerPage}
+	</span>	
+</div>
+{END recordspp_block}
+
+</div>
+</div>
+{END container_pagination}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+						<table class="rnr-c rnr-cont rnr-c-grid rnr-b-grid rnr-gridtable  hoverable " cellpadding="0" >
+						<thead>
+															{BEGIN grid_header}
+								<tr class="rnr-toprow style1 {$gridHeader_class}" >
+									{BEGIN record_header}
+									{BEGIN listIcons_column}
+									<th iEditCont="all">&nbsp;</th>
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}
+									<th class="rnr-bc">
+										<input type="checkbox" {$checkboxheader_attrs}>
+									</th>
+									{END checkbox_column}
+
+																																			{BEGIN id_func_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$id_func_class}">
+									{BEGIN id_func_fieldheader}
+																				<span {$id_func_orderlinkattrs}>
+											{$label t_facturas110 id_func}
+										</span>
+									{END id_func_fieldheader}
+									</th>
+									{END id_func_fieldheadercolumn}
+
+																	{BEGIN gestion_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$gestion_class}">
+									{BEGIN gestion_fieldheader}
+																				<span {$gestion_orderlinkattrs}>
+											{$label t_facturas110 gestion}
+										</span>
+									{END gestion_fieldheader}
+									</th>
+									{END gestion_fieldheadercolumn}
+
+																	{BEGIN periodo_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$periodo_class}">
+									{BEGIN periodo_fieldheader}
+																				<span {$periodo_orderlinkattrs}>
+											{$label t_facturas110 periodo}
+										</span>
+									{END periodo_fieldheader}
+									</th>
+									{END periodo_fieldheadercolumn}
+
+																	{BEGIN mes_num_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$mes_num_class}">
+									{BEGIN mes_num_fieldheader}
+																				<span {$mes_num_orderlinkattrs}>
+											{$label t_facturas110 mes_num}
+										</span>
+									{END mes_num_fieldheader}
+									</th>
+									{END mes_num_fieldheadercolumn}
+
+																	{BEGIN monto_total_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$monto_total_class}">
+									{BEGIN monto_total_fieldheader}
+																				<span {$monto_total_orderlinkattrs}>
+											{$label t_facturas110 monto_total}
+										</span>
+									{END monto_total_fieldheader}
+									</th>
+									{END monto_total_fieldheadercolumn}
+
+																	{BEGIN monto_13_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$monto_13_class}">
+									{BEGIN monto_13_fieldheader}
+																				<span {$monto_13_orderlinkattrs}>
+											{$label t_facturas110 monto_13}
+										</span>
+									{END monto_13_fieldheader}
+									</th>
+									{END monto_13_fieldheadercolumn}
+
+																	{BEGIN lugar_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$lugar_class}">
+									{BEGIN lugar_fieldheader}
+																				<span {$lugar_orderlinkattrs}>
+											{$label t_facturas110 lugar}
+										</span>
+									{END lugar_fieldheader}
+									</th>
+									{END lugar_fieldheadercolumn}
+
+																	{BEGIN fecha_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$fecha_class}">
+									{BEGIN fecha_fieldheader}
+																				<span {$fecha_orderlinkattrs}>
+											{$label t_facturas110 fecha}
+										</span>
+									{END fecha_fieldheader}
+									</th>
+									{END fecha_fieldheadercolumn}
+
+																	{BEGIN archivo_digital_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$archivo_digital_class}">
+									{BEGIN archivo_digital_fieldheader}
+																				<span {$archivo_digital_orderlinkattrs}>
+											{$label t_facturas110 archivo_digital}
+										</span>
+									{END archivo_digital_fieldheader}
+									</th>
+									{END archivo_digital_fieldheadercolumn}
+
+
+									
+									<th class="rnr-edge">&nbsp;</th>
+									{BEGIN endrecordheader_block}
+									<th class="rnr-cs">&nbsp;</th>
+									
+									{END endrecordheader_block}
+									
+									{END record_header}
+									
+								</tr>
+								{END grid_header}
+
+						</thead>
+						<tbody>	
+															{BEGIN grid_row}
+								<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+									{BEGIN grid_record}
+									{BEGIN listIcons_column}
+									<td class="rnr-cc rnr-bc rnr-icons" iEditCont="all" {$rowstyle} {$recordattrs}>
+																		{BEGIN edit_column}
+									{BEGIN edit_link}
+																			<a class="rnr-button-img" {$editlink_attrs} data-icon="edit" title="Editar"></a>
+									{END edit_link}
+									{END edit_column}
+
+																		{BEGIN inlineedit_column}
+									{BEGIN inlineedit_link}
+																			<a class="rnr-button-img" {$inlineeditlink_attrs} data-icon="inlineedit" title="Editar"></a>
+									{END inlineedit_link}
+									{END inlineedit_column}
+
+									
+																		</td>	
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}
+									<td class="rnr-bc" iEditCont="checkBox" {$rowstyle} {$recordattrs}>
+									{BEGIN checkbox}
+									<input type="checkbox" {$checkbox_attrs}>
+									{END checkbox}
+									</td>
+									{END checkbox_column}
+
+									
+										{BEGIN id_func_fieldcolumn}
+	<td class="{$id_func_class}" {$id_func_style} {$recordattrs}>
+		{$id_func_value}
+	</td>
+{END id_func_fieldcolumn}
+
+	{BEGIN gestion_fieldcolumn}
+	<td class="{$gestion_class}" {$gestion_style} {$recordattrs}>
+		{$gestion_value}
+	</td>
+{END gestion_fieldcolumn}
+
+	{BEGIN periodo_fieldcolumn}
+	<td class="{$periodo_class}" {$periodo_style} {$recordattrs}>
+		{$periodo_value}
+	</td>
+{END periodo_fieldcolumn}
+
+	{BEGIN mes_num_fieldcolumn}
+	<td class="{$mes_num_class}" {$mes_num_style} {$recordattrs}>
+		{$mes_num_value}
+	</td>
+{END mes_num_fieldcolumn}
+
+	{BEGIN monto_total_fieldcolumn}
+	<td class="{$monto_total_class}" {$monto_total_style} {$recordattrs}>
+		{$monto_total_value}
+	</td>
+{END monto_total_fieldcolumn}
+
+	{BEGIN monto_13_fieldcolumn}
+	<td class="{$monto_13_class}" {$monto_13_style} {$recordattrs}>
+		{$monto_13_value}
+	</td>
+{END monto_13_fieldcolumn}
+
+	{BEGIN lugar_fieldcolumn}
+	<td class="{$lugar_class}" {$lugar_style} {$recordattrs}>
+		{$lugar_value}
+	</td>
+{END lugar_fieldcolumn}
+
+	{BEGIN fecha_fieldcolumn}
+	<td class="{$fecha_class}" {$fecha_style} {$recordattrs}>
+		{$fecha_value}
+	</td>
+{END fecha_fieldcolumn}
+
+	{BEGIN archivo_digital_fieldcolumn}
+	<td class="{$archivo_digital_class}" {$archivo_digital_style} {$recordattrs}>
+		{$archivo_digital_value}
+	</td>
+{END archivo_digital_fieldcolumn}
+
+
+									<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+									{BEGIN endrecord_block}
+									<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+									{END endrecord_block}
+																	
+									{END grid_record}
+
+								</tr>
+								{END grid_row}
+																							{BEGIN totals_row}
+								<tr class="rnr-bottomrow style1 {$gridFooter_class}">
+									{BEGIN totals_record}
+									{BEGIN listIcons_column}
+									<td class="rnr-cc"></td>
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}
+									<td class="rnr-cc"></td>
+									{END checkbox_column}
+
+									
+										{BEGIN id_func_fieldfootercolumn}
+<td class="{$id_func_class}">
+</td>
+{END id_func_fieldfootercolumn}
+	{BEGIN gestion_fieldfootercolumn}
+<td class="{$gestion_class}">
+</td>
+{END gestion_fieldfootercolumn}
+	{BEGIN periodo_fieldfootercolumn}
+<td class="{$periodo_class}">
+</td>
+{END periodo_fieldfootercolumn}
+	{BEGIN mes_num_fieldfootercolumn}
+<td class="{$mes_num_class}">
+</td>
+{END mes_num_fieldfootercolumn}
+	{BEGIN monto_total_fieldfootercolumn}
+<td class="{$monto_total_class}">
+	{BEGIN monto_total_showtotal}
+			Total:
+	{$monto_total_total}
+	{END monto_total_showtotal}
+</td>
+{END monto_total_fieldfootercolumn}
+	{BEGIN monto_13_fieldfootercolumn}
+<td class="{$monto_13_class}">
+</td>
+{END monto_13_fieldfootercolumn}
+	{BEGIN lugar_fieldfootercolumn}
+<td class="{$lugar_class}">
+</td>
+{END lugar_fieldfootercolumn}
+	{BEGIN fecha_fieldfootercolumn}
+<td class="{$fecha_class}">
+</td>
+{END fecha_fieldfootercolumn}
+	{BEGIN archivo_digital_fieldfootercolumn}
+<td class="{$archivo_digital_class}">
+</td>
+{END archivo_digital_fieldfootercolumn}
+
+									<td class="rnr-edge">&nbsp;</td>
+									{BEGIN endrecordtotals_block}
+									<td class="rnr-cs"></td>
+									{END endrecordtotals_block}
+									{END totals_record}
+								</tr>
+								{END totals_row}
+
+						</tbody>
+					</table>
+					
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+
+{BEGIN container_pagination_bottom}
+<div class="rnr-c rnr-ch rnr-multialign rnr-c-pagination_bottom">
+
+{BEGIN pagination_block}
+<div  class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">{$pagination}</div>
+{END pagination_block}
+
+<div class="rnr-leftbricks">
+{BEGIN details_block}
+<div  class="style1 rnr-bl rnr-b-details_found {$brickclass_details_found}">	<span {$details_attrs}>
+			Detalles encontrados: <b><span class="rnr-details_found_count">{$records_found}</span></b>
+	</span>
+</div>
+{END details_block}
+
+</div><div class="rnr-rightbricks">
+{BEGIN pages_block}
+<div  class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}">	<span {$pages_attrs}>
+		Página <b>{$page}</b> / <b>{$maxpages}</b>
+	</span>
+
+</div>
+{END pages_block}
+
+
+{BEGIN recordspp_block}
+<div  class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}">	<span id="recordspp_block{$id}" name="recordspp_block{$id}">
+			Resultados por página:&nbsp;{$recsPerPage}
+	</span>	
+</div>
+{END recordspp_block}
+
+</div>
+</div>
+{END container_pagination_bottom}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,176 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN addheader}
+<div  class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><span>	<h1>{$pagetitlelabel t_ingreso add}</h1>
+</span></div>{END addheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-addfields2 {$brickclass_addfields2}"><table class="fieldGrid fieldGrid2 edit">
+
+<tr>
+<td>
+	{BEGIN id_func_fieldblock}
+<div data-fieldname="id_func" class="rnr-field style1 {$fielddispclass_id_func}">
+  <span class="rnr-label">{BEGIN id_func_label}{$label t_ingreso id_func}{END id_func_label}</span>
+  <span class="rnr-control style3">{$id_func_editcontrol}</span>
+</div>
+{END id_func_fieldblock}
+	{BEGIN haber_basico_fieldblock}
+<div data-fieldname="haber_basico" class="rnr-field style1 {$fielddispclass_haber_basico}">
+  <span class="rnr-label">{BEGIN haber_basico_label}{$label t_ingreso haber_basico}{END haber_basico_label}</span>
+  <span class="rnr-control style3">{$haber_basico_editcontrol}</span>
+</div>
+{END haber_basico_fieldblock}
+	{BEGIN dias_trab_fieldblock}
+<div data-fieldname="dias_trab" class="rnr-field style1 {$fielddispclass_dias_trab}">
+  <span class="rnr-label">{BEGIN dias_trab_label}{$label t_ingreso dias_trab}{END dias_trab_label}</span>
+  <span class="rnr-control style3">{$dias_trab_editcontrol}</span>
+</div>
+{END dias_trab_fieldblock}
+	{BEGIN haber_percibido_fieldblock}
+<div data-fieldname="haber_percibido" class="rnr-field style1 {$fielddispclass_haber_percibido}">
+  <span class="rnr-label">{BEGIN haber_percibido_label}{$label t_ingreso haber_percibido}{END haber_percibido_label}</span>
+  <span class="rnr-control style3">{$haber_percibido_editcontrol}</span>
+</div>
+{END haber_percibido_fieldblock}
+	{BEGIN reint_fieldblock}
+<div data-fieldname="reint" class="rnr-field style1 {$fielddispclass_reint}">
+  <span class="rnr-label">{BEGIN reint_label}{$label t_ingreso reint}{END reint_label}</span>
+  <span class="rnr-control style3">{$reint_editcontrol}</span>
+</div>
+{END reint_fieldblock}
+	{BEGIN bono_ant_fieldblock}
+<div data-fieldname="bono_ant" class="rnr-field style1 {$fielddispclass_bono_ant}">
+  <span class="rnr-label">{BEGIN bono_ant_label}{$label t_ingreso bono_ant}{END bono_ant_label}</span>
+  <span class="rnr-control style3">{$bono_ant_editcontrol}</span>
+</div>
+{END bono_ant_fieldblock}
+</td>
+<td>
+	{BEGIN total_ganado_fieldblock}
+<div data-fieldname="total_ganado" class="rnr-field style1 {$fielddispclass_total_ganado}">
+  <span class="rnr-label">{BEGIN total_ganado_label}{$label t_ingreso total_ganado}{END total_ganado_label}</span>
+  <span class="rnr-control style3">{$total_ganado_editcontrol}</span>
+</div>
+{END total_ganado_fieldblock}
+	{BEGIN devoluciones_fieldblock}
+<div data-fieldname="devoluciones" class="rnr-field style1 {$fielddispclass_devoluciones}">
+  <span class="rnr-label">{BEGIN devoluciones_label}{$label t_ingreso devoluciones}{END devoluciones_label}</span>
+  <span class="rnr-control style3">{$devoluciones_editcontrol}</span>
+</div>
+{END devoluciones_fieldblock}
+	{BEGIN asig_familiar_fieldblock}
+<div data-fieldname="asig_familiar" class="rnr-field style1 {$fielddispclass_asig_familiar}">
+  <span class="rnr-label">{BEGIN asig_familiar_label}{$label t_ingreso asig_familiar}{END asig_familiar_label}</span>
+  <span class="rnr-control style3">{$asig_familiar_editcontrol}</span>
+</div>
+{END asig_familiar_fieldblock}
+	{BEGIN mes_fieldblock}
+<div data-fieldname="mes" class="rnr-field style1 {$fielddispclass_mes}">
+  <span class="rnr-label">{BEGIN mes_label}{$label t_ingreso mes}{END mes_label}</span>
+  <span class="rnr-control style3">{$mes_editcontrol}</span>
+</div>
+{END mes_fieldblock}
+	{BEGIN gestion_fieldblock}
+<div data-fieldname="gestion" class="rnr-field style1 {$fielddispclass_gestion}">
+  <span class="rnr-label">{BEGIN gestion_label}{$label t_ingreso gestion}{END gestion_label}</span>
+  <span class="rnr-control style3">{$gestion_editcontrol}</span>
+</div>
+{END gestion_fieldblock}
+</td>
+</tr>
+</table></div>
+
+
+{BEGIN addbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}"><div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" id="saveButton{$id}" {$savebutton_attrs}>Guardar</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" id="resetButton{$id}">Reiniciar</a>
+	{END reset_button}
+	{BEGIN cancel_button}
+	<a href="#" class="rnr-button" id="cancelButton{$id}">Cancelar</a>
+	{END cancel_button}
+	{BEGIN back_button}
+	<a href="#" class="rnr-button" id="backButton{$id}">Volver a la lista</a>
+	{END back_button}
+	{BEGIN backToMenu_button}
+	<a href="#" class="rnr-button" id="backToMenuButton{$id}">Regresar al menú</a>
+	{END backToMenu_button}
+</div>
+</div>{END addbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

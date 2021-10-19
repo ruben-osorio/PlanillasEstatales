@@ -1,0 +1,170 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-rprint" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+{BEGIN pdflink_block}
+<a href="#" class="pdflink rnr-button button" {$pdflink_attrs}>Vista PDF</a>
+{END pdflink_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+
+<style>
+	td.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary {background-color:#ffffbb;}
+	td.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary {background-color:#ffe0b0;}
+
+</style>
+
+
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}"><span>	<h1>{$pagetitlelabel ASIGNACIONES_FAMILIARES rprint}</h1>
+</span></div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Página <span class="rp-pageno">{$pageno}</span> / <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_grid}
+
+
+
+<style>
+	td.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary {background-color:#ffffbb;}
+	td.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary {background-color:#ffe0b0;}
+
+</style>
+
+<div id="grid_block{$id}" class="rnr-report-gridblock">
+		<div class="rnr-cw-grid rnr-s-grid asbuttons {$pageStyleName}">
+		{BEGIN grid_block}
+<TABLE class="rnr-c rnr-b-report report" CELLPADDING=0>
+<thead>
+<tr class="rnr-toprow table-header style1">
+
+<th>{$label ASIGNACIONES_FAMILIARES id_asig}</th>
+<th>{$label ASIGNACIONES_FAMILIARES name}</th>
+<th>{$label ASIGNACIONES_FAMILIARES l_name1}</th>
+<th>{$label ASIGNACIONES_FAMILIARES l_name2}</th>
+<th>{$label ASIGNACIONES_FAMILIARES ci}</th>
+<th>{$label ASIGNACIONES_FAMILIARES expe}</th>
+<th>{$label ASIGNACIONES_FAMILIARES fecha_nac}</th>
+<th>{$label ASIGNACIONES_FAMILIARES fecha_pres}</th>
+<th>{$label ASIGNACIONES_FAMILIARES pre_num_paq}</th>
+<th>{$label ASIGNACIONES_FAMILIARES paq_monto}</th>
+<th>{$label ASIGNACIONES_FAMILIARES sub_natalidad}</th>
+<th>{$label ASIGNACIONES_FAMILIARES lac_num_paq}</th>
+<th>{$label ASIGNACIONES_FAMILIARES lac_monto}</th>
+<th>{$label ASIGNACIONES_FAMILIARES sepelio}</th>
+<th>{$label ASIGNACIONES_FAMILIARES sub_total_pago_sedem}</th>
+<th class="rnr-edge"></th>
+</tr>
+</thead>
+<tbody>
+{BEGIN grid_row}
+<!-------------------------------------  data ----------------------------------------->
+{BEGIN row_data}
+<tr class="rnr-row style1" {$rowattrs}>
+
+	<!-------------------------------------  begin detail links for row ----------------------------------------->
+		<!-------------------------------------  end detail links for row ----------------------------------------->
+
+	<td {$recordattrs}>{$id_asig_value}</td>
+	<td {$recordattrs}>{$name_value}</td>
+	<td {$recordattrs}>{$l_name1_value}</td>
+	<td {$recordattrs}>{$l_name2_value}</td>
+	<td {$recordattrs}>{$ci_value}</td>
+	<td {$recordattrs}>{$expe_value}</td>
+	<td {$recordattrs}>{$fecha_nac_value}</td>
+	<td {$recordattrs}>{$fecha_pres_value}</td>
+	<td {$recordattrs}>{$pre_num_paq_value}</td>
+	<td {$recordattrs}>{$paq_monto_value}</td>
+	<td {$recordattrs}>{$sub_natalidad_value}</td>
+	<td {$recordattrs}>{$lac_num_paq_value}</td>
+	<td {$recordattrs}>{$lac_monto_value}</td>
+	<td {$recordattrs}>{$sepelio_value}</td>
+	<td {$recordattrs}>{$sub_total_pago_sedem_value}</td>
+	<td class="rnr-edge" {$recordattrs}></td>
+</tr>
+{END row_data}
+{END grid_row}
+</tbody>
+</table>
+{END grid_block}
+	</div>		
+</div>
+
+
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

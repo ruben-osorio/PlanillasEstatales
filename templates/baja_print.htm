@@ -1,0 +1,212 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel baja print}</h1>
+</div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Página <span class="rp-pageno">{$pageno}</span> / <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN id_baja_fieldheadercolumn}
+<th class="runner-cc {$id_baja_class}" {$id_baja_style}>
+	{BEGIN id_baja_fieldheader}
+	<b>{$label baja id_baja}</b>
+	{END id_baja_fieldheader}
+</th>
+{END id_baja_fieldheadercolumn}
+	{BEGIN id_func_fieldheadercolumn}
+<th class="runner-cc {$id_func_class}" {$id_func_style}>
+	{BEGIN id_func_fieldheader}
+	<b>{$label baja id_func}</b>
+	{END id_func_fieldheader}
+</th>
+{END id_func_fieldheadercolumn}
+	{BEGIN id_per_fieldheadercolumn}
+<th class="runner-cc {$id_per_class}" {$id_per_style}>
+	{BEGIN id_per_fieldheader}
+	<b>{$label baja id_per}</b>
+	{END id_per_fieldheader}
+</th>
+{END id_per_fieldheadercolumn}
+	{BEGIN date_pres_fieldheadercolumn}
+<th class="runner-cc {$date_pres_class}" {$date_pres_style}>
+	{BEGIN date_pres_fieldheader}
+	<b>{$label baja date_pres}</b>
+	{END date_pres_fieldheader}
+</th>
+{END date_pres_fieldheadercolumn}
+	{BEGIN date_efect_fieldheadercolumn}
+<th class="runner-cc {$date_efect_class}" {$date_efect_style}>
+	{BEGIN date_efect_fieldheader}
+	<b>{$label baja date_efect}</b>
+	{END date_efect_fieldheader}
+</th>
+{END date_efect_fieldheadercolumn}
+	{BEGIN reasone_fieldheadercolumn}
+<th class="runner-cc {$reasone_class}" {$reasone_style}>
+	{BEGIN reasone_fieldheader}
+	<b>{$label baja reasone}</b>
+	{END reasone_fieldheader}
+</th>
+{END reasone_fieldheadercolumn}
+	{BEGIN comment_fieldheadercolumn}
+<th class="runner-cc {$comment_class}" {$comment_style}>
+	{BEGIN comment_fieldheader}
+	<b>{$label baja comment}</b>
+	{END comment_fieldheader}
+</th>
+{END comment_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN id_baja_fieldcolumn}
+<td  class="runner-cc {$id_baja_class}" {$id_baja_style} {$recordattrs}>
+	{$id_baja_value}
+</td>
+{END id_baja_fieldcolumn}
+	{BEGIN id_func_fieldcolumn}
+<td  class="runner-cc {$id_func_class}" {$id_func_style} {$recordattrs}>
+	{$id_func_value}
+</td>
+{END id_func_fieldcolumn}
+	{BEGIN id_per_fieldcolumn}
+<td  class="runner-cc {$id_per_class}" {$id_per_style} {$recordattrs}>
+	{$id_per_value}
+</td>
+{END id_per_fieldcolumn}
+	{BEGIN date_pres_fieldcolumn}
+<td  class="runner-cc {$date_pres_class}" {$date_pres_style} {$recordattrs}>
+	{$date_pres_value}
+</td>
+{END date_pres_fieldcolumn}
+	{BEGIN date_efect_fieldcolumn}
+<td  class="runner-cc {$date_efect_class}" {$date_efect_style} {$recordattrs}>
+	{$date_efect_value}
+</td>
+{END date_efect_fieldcolumn}
+	{BEGIN reasone_fieldcolumn}
+<td  class="runner-cc {$reasone_class}" {$reasone_style} {$recordattrs}>
+	{$reasone_value}
+</td>
+{END reasone_fieldcolumn}
+	{BEGIN comment_fieldcolumn}
+<td  class="runner-cc {$comment_class}" {$comment_style} {$recordattrs}>
+	{$comment_value}
+</td>
+{END comment_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+	{END grid_row}
+
+
+	
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

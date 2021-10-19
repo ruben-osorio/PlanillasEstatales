@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD> 
+
+<META http-equiv="X-UA-Compatible" content="IE=Edge"> <TITLE>{$pagetitle}</TITLE> 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<LINK href="styles/default.css" rel="stylesheet" type="text/css"> {BEGIN rtlCSS}<LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">{END rtlCSS} {BEGIN styleCSSFiles}<LINK href="{$stylepath}" rel="stylesheet" type="text/css">{END styleCSSFiles} {BEGIN pageCSSFiles}<LINK href="{$pagestylepath}" rel="stylesheet" type="text/css">{END pageCSSFiles} 
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001"></HEAD> 
+<BODY class="{$stylename} function-list" {$bodyattrs}>{BEGIN body}
+
+{$header} 
+<DIV class="rnr-page">
+<DIV class="rnr-top {$blockclass_top}">
+{BEGIN container_toplinks}
+<DIV class="rnr-c rnr-ch rnr-c-toplinks">
+<DIV class="rnr-hfiller"></DIV>
+{BEGIN security_block}<DIV class="style1 rnr-br rnr-b-loggedas {$brickclass_loggedas}">
+<DIV id="login_block{$id}">{BEGIN loggedas_message}<SPAN>Conectado 
+ como&nbsp;<B> 
+{$username}</B>&nbsp;</SPAN> {END loggedas_message}{BEGIN guestloginbutton}<SPAN><A class="rnr-button" href="#" {$guestloginlink_attrs}>Conectar</A> 
+</SPAN> {END guestloginbutton}{BEGIN logoutbutton}<A class="rnr-button" href="#" {$logoutlink_attrs}>Desconectarse</A> {END logoutbutton}</DIV></DIV>{END security_block}</DIV>{END container_toplinks}
+{BEGIN container_hmenu}
+<DIV class="rnr-c rnr-ch rnr-c-hmenu">
+{BEGIN searchform_block}<DIV class="style1 rnr-bl rnr-b-search {$brickclass_search}"><SPAN>{BEGIN searchform_text}<INPUT type="text" size="25" {$searchfor_attrs}>{END searchform_text} 
+{BEGIN searchform_search}<A class="rnr-button img" href="#" data-icon="search" {$searchbutton_attrs}></A>	{END searchform_search}{BEGIN searchform_showall}<A class="rnr-button" href="#" {$showAllCont_attrs} {$showallbutton_attrs}>Mostrar todo</A> {END searchform_showall}</SPAN> </DIV>
+{END searchform_block}{BEGIN searchformbuttons_block}<DIV class="style1 rnr-bl rnr-b-search_buttons {$brickclass_search_buttons}">{BEGIN searchPanelTopButtons}<SPAN><A class="rnr-button img" id="showSrchWin{$id}" href="#" data-icon="panelfloat" {$showHideSearchWin_attrs}></A> <A class="rnr-button img" id="showOptPanel{$id}" href="#" data-icon="paneldown" {$showHideSearchPanel_attrs}></A> </SPAN> {END searchPanelTopButtons}</DIV>
+{END searchformbuttons_block}{BEGIN searchsaving_block}<DIV class="style1 rnr-bl rnr-b-search_saving_buttons {$brickclass_search_saving_buttons}"></DIV>
+{END searchsaving_block}<DIV class="rnr-hfiller"></DIV>
+<DIV class="style1 rnr-br rnr-b-printpanel {$brickclass_printpanel}"></DIV></DIV>{END container_hmenu}</DIV>
+<DIV class="rnr-middle">
+<DIV class="rnr-left {$blockclass_left}">
+{BEGIN container_left}
+<DIV class="rnr-c rnr-cv rnr-c-left">{BEGIN menu_block}
+{$menu main}{END menu_block}</DIV>{END container_left}</DIV>
+<DIV class="rnr-center {$blockclass_center}"> 
+{BEGIN container_recordcontrols}
+<DIV class="rnr-c rnr-ch rnr-c-recordcontrols">
+{BEGIN newrecord_controls_block}<DIV class="style1 rnr-bl rnr-b-recordcontrols_new {$brickclass_recordcontrols_new}">{BEGIN add_link}<A class="rnr-button" href="t_mes_activo_add.php" {$addlink_attrs}>Añadir nuevo</A> {END add_link}{BEGIN inlineadd_link}<A class="rnr-button" href="#" {$inlineaddlink_attrs}>Añadir 
+ nuevo</A> {END inlineadd_link}</DIV>
+{END newrecord_controls_block}{BEGIN record_controls_block}<DIV class="style1 rnr-bl rnr-b-recordcontrol {$brickclass_recordcontrol}">{BEGIN widhtSelected}<SPAN class="rnr-buttons-group"><A class="rnr-button {$withSelectedClass}" id="selectButtonsToggler{$id}" href="#">Con los seleccionados...</A> 
+
+<UL class="rnr-list" id="selectButtonsGroup{$id}">
+  {BEGIN editselected_link}<LI><A class="rnr-button link" href="#" {$editselectedlink_attrs} {$editselectedlink_span}>Editar</A></LI>{END editselected_link}</UL></SPAN> 
+{END widhtSelected}{BEGIN saveall_link}<A class="rnr-button" href="#" {$savealllink_attrs} {$savealllink_span}>Guardar todo</A> {END saveall_link}{BEGIN cancelall_link}<A class="rnr-button" href="#" {$cancelalllink_attrs} {$cancelalllink_span}>Cancelar</A> 
+{END cancelall_link}</DIV>
+{END record_controls_block}{BEGIN more_list}<DIV class="style1 rnr-bl rnr-b-toplinks {$brickclass_toplinks}"><SPAN class="rnr-buttons-group">{BEGIN moreButtons}<A class="rnr-button" id="extraButtonsToggler{$id}" href="#">Más...</A> 
+<UL class="rnr-list rnr-buttons-group" id="extraButtonsGroup{$id}">
+  {BEGIN asearch_link}<LI><A class="rnr-button link" href="t_mes_activo_search.php" {$advsearchlink_attrs}>Búsqueda 
+   avanzada</A></LI>{END asearch_link}</UL>{END moreButtons}</SPAN></DIV>
+{END more_list}<DIV class="rnr-hfiller"></DIV></DIV>{END container_recordcontrols}
+{BEGIN container_message}
+<DIV class="rnr-c rnr-ch rnr-c-message">
+{BEGIN message_block}<DIV class="style1 rnr-bc rnr-b-message {$brickclass_message}">
+<DIV class="rnr-message">
+{$message}</DIV></DIV>{END message_block}</DIV>{END container_message}
+{BEGIN container_pagination}
+<DIV class="rnr-c rnr-ch rnr-multialign rnr-c-pagination">
+{BEGIN pagination_block}<DIV class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">
+{$pagination}</DIV>
+{END pagination_block}<DIV class="rnr-leftbricks">
+{BEGIN details_block}<DIV class="style1 rnr-bl rnr-b-details_found {$brickclass_details_found}"><SPAN {$details_attrs}>	Detalles 
+ encontrados: <B><SPAN class="rnr-details_found_count">
+{$records_found}</SPAN></B> </SPAN> </DIV>{END details_block}</DIV>
+<DIV class="rnr-rightbricks">
+{BEGIN pages_block}<DIV class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}"><SPAN {$pages_attrs}>	Página <B>
+{$page}</B> / <B>
+{$maxpages}</B> </SPAN> </DIV>
+{END pages_block}{BEGIN recordspp_block}<DIV class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}"><SPAN id="recordspp_block{$id}" name="recordspp_block{$id}">	Resultados 
+ por página:&nbsp; 
+{$recsPerPage} </SPAN>	</DIV>{END recordspp_block}</DIV></DIV>{END container_pagination}
+{BEGIN container_grid}
+{BEGIN grid_block}<TABLE class="rnr-c rnr-cont rnr-c-grid rnr-b-grid rnr-gridtable hoverable" cellpadding="0">
+  <THEAD>{BEGIN grid_header}
+  <TR class="rnr-toprow style1 {$gridHeader_class}">{BEGIN record_header}
+    {BEGIN listIcons_column}<TH ieditcont="all">&nbsp;</TH>
+    {END listIcons_column}{BEGIN checkbox_column}<TH class="rnr-bc"><INPUT type="checkbox" {$checkboxheader_attrs}> </TH>
+    {END checkbox_column}{BEGIN ufv_mes_anterior_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$ufv_mes_anterior_class}" style="width: 15%; white-space: normal;">
+      <P align="center">
+      {$label t_mes_activo ufv_mes_anterior} 
+      <P></P></TH>
+    {END ufv_mes_anterior_fieldheadercolumn}{BEGIN ufv_mes_actual_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$ufv_mes_actual_class}" style="width: 15%; white-space: normal;">
+      <P align="center">
+      {$label t_mes_activo ufv_mes_actual} 
+      <P></P></TH>
+    {END ufv_mes_actual_fieldheadercolumn}{BEGIN mes_numerico_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$mes_numerico_class}" style="white-space: nowrap;">{BEGIN mes_numerico_fieldheader}<SPAN {$mes_numerico_orderlinkattrs}>
+      {$label t_mes_activo mes_numerico} </SPAN> {END mes_numerico_fieldheader}</TH>
+    {END mes_numerico_fieldheadercolumn}{BEGIN gestion_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$gestion_class}">{BEGIN gestion_fieldheader}<SPAN {$gestion_orderlinkattrs}>
+      {$label t_mes_activo gestion} </SPAN> {END gestion_fieldheader}</TH>
+    {END gestion_fieldheadercolumn}{BEGIN mes_activo_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$mes_activo_class}">{BEGIN mes_activo_fieldheader}<SPAN {$mes_activo_orderlinkattrs}>
+      {$label t_mes_activo mes_activo} </SPAN> {END mes_activo_fieldheader}</TH>
+    {END mes_activo_fieldheadercolumn}<TH class="rnr-edge">&nbsp;</TH>
+    {BEGIN endrecordheader_block}<TH class="rnr-cs">&nbsp;</TH>{END endrecordheader_block}{END record_header}</TR>{END grid_header}</THEAD>
+  <TBODY>
+  {BEGIN grid_row}<TR class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>{BEGIN grid_record}
+    {BEGIN listIcons_column}<TD class="rnr-cc rnr-bc rnr-icons" ieditcont="all" {$rowstyle} {$recordattrs}>{BEGIN edit_column}{BEGIN edit_link}<A title="Editar" class="rnr-button-img" data-icon="edit" {$editlink_attrs}></A> {END edit_link}{END edit_column}{BEGIN inlineedit_column}{BEGIN inlineedit_link}<A title="Editar" class="rnr-button-img" data-icon="inlineedit" {$inlineeditlink_attrs}></A> {END inlineedit_link}{END inlineedit_column}</TD>
+    {END listIcons_column}{BEGIN checkbox_column}<TD class="rnr-bc" ieditcont="checkBox" {$rowstyle} {$recordattrs}>{BEGIN checkbox}<INPUT type="checkbox" {$checkbox_attrs}>{END checkbox} 
+    </TD>
+    {END checkbox_column}{BEGIN ufv_mes_anterior_fieldcolumn}<TD class="{$ufv_mes_anterior_class}" {$ufv_mes_anterior_style} {$recordattrs}>
+      <DIV align="center">
+      {$ufv_mes_anterior_value}</DIV></TD>
+    {END ufv_mes_anterior_fieldcolumn}{BEGIN ufv_mes_actual_fieldcolumn}<TD class="{$ufv_mes_actual_class}" {$ufv_mes_actual_style} {$recordattrs}>
+      <DIV align="center">
+      {$ufv_mes_actual_value}</DIV></TD>
+    {END ufv_mes_actual_fieldcolumn}{BEGIN mes_numerico_fieldcolumn}<TD class="{$mes_numerico_class}" {$mes_numerico_style} {$recordattrs}>
+      <DIV align="center">
+      {$mes_numerico_value}</DIV></TD>
+    {END mes_numerico_fieldcolumn}{BEGIN gestion_fieldcolumn}<TD class="{$gestion_class}" {$gestion_style} {$recordattrs}>
+      {$gestion_value} </TD>
+    {END gestion_fieldcolumn}{BEGIN mes_activo_fieldcolumn}<TD class="{$mes_activo_class}" {$mes_activo_style} {$recordattrs}>
+      {$mes_activo_value} </TD>
+    {END mes_activo_fieldcolumn}<TD class="rnr-edge" {$recordattrs}>&nbsp;</TD>
+    {BEGIN endrecord_block}<TD class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</TD>{END endrecord_block}{END grid_record}</TR>{END grid_row}</TBODY></TABLE>{END grid_block}{END container_grid}
+{BEGIN container_pagination_bottom}
+<DIV class="rnr-c rnr-ch rnr-multialign rnr-c-pagination_bottom">
+{BEGIN pagination_block}<DIV class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">
+{$pagination}</DIV>
+{END pagination_block}<DIV class="rnr-leftbricks">
+{BEGIN details_block}<DIV class="style1 rnr-bl rnr-b-details_found {$brickclass_details_found}"><SPAN {$details_attrs}>	Detalles 
+ encontrados: <B><SPAN class="rnr-details_found_count">
+{$records_found}</SPAN></B> </SPAN> </DIV>{END details_block}</DIV>
+<DIV class="rnr-rightbricks">
+{BEGIN pages_block}<DIV class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}"><SPAN {$pages_attrs}>	Página <B>
+{$page}</B> / <B>
+{$maxpages}</B> </SPAN> </DIV>
+{END pages_block}{BEGIN recordspp_block}<DIV class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}"><SPAN id="recordspp_block{$id}" name="recordspp_block{$id}">	Resultados 
+ por página:&nbsp; 
+{$recsPerPage} 
+</SPAN>	</DIV>{END recordspp_block}</DIV></DIV>{END container_pagination_bottom}</DIV> 
+<DIV class="rnr-right {$blockclass_right}"></DIV></DIV>
+<DIV class="rnr-bottom {$blockclass_bottom}"><!--%%bottom%%--> </DIV></DIV>
+{$footer}{END body} </BODY></HTML>

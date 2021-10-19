@@ -1,0 +1,395 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel ASIGNACIONES_FAMILIARES search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criterio:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> Todas las condiciones</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Ninguna condición</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NO</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_id_asig}">
+	{BEGIN id_asig_fieldblock}		
+	<td>
+		{$label ASIGNACIONES_FAMILIARES id_asig}
+	</td>
+	<td>
+		<input type="checkbox" {$id_asig_notbox}>
+	</td>
+	<td>
+		{$searchtype_id_asig}
+	</td>
+	<td>
+		{$id_asig_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$id_asig_editcontrol1}&nbsp;
+	</td>
+{END id_asig_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_fecha_nac}">
+	{BEGIN fecha_nac_fieldblock}		
+	<td>
+		{$label ASIGNACIONES_FAMILIARES fecha_nac}
+	</td>
+	<td>
+		<input type="checkbox" {$fecha_nac_notbox}>
+	</td>
+	<td>
+		{$searchtype_fecha_nac}
+	</td>
+	<td>
+		{$fecha_nac_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$fecha_nac_editcontrol1}&nbsp;
+	</td>
+{END fecha_nac_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_fecha_pres}">
+	{BEGIN fecha_pres_fieldblock}		
+	<td>
+		{$label ASIGNACIONES_FAMILIARES fecha_pres}
+	</td>
+	<td>
+		<input type="checkbox" {$fecha_pres_notbox}>
+	</td>
+	<td>
+		{$searchtype_fecha_pres}
+	</td>
+	<td>
+		{$fecha_pres_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$fecha_pres_editcontrol1}&nbsp;
+	</td>
+{END fecha_pres_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_pre_num_paq}">
+	{BEGIN pre_num_paq_fieldblock}		
+	<td>
+		{$label ASIGNACIONES_FAMILIARES pre_num_paq}
+	</td>
+	<td>
+		<input type="checkbox" {$pre_num_paq_notbox}>
+	</td>
+	<td>
+		{$searchtype_pre_num_paq}
+	</td>
+	<td>
+		{$pre_num_paq_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$pre_num_paq_editcontrol1}&nbsp;
+	</td>
+{END pre_num_paq_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_paq_monto}">
+	{BEGIN paq_monto_fieldblock}		
+	<td>
+		{$label ASIGNACIONES_FAMILIARES paq_monto}
+	</td>
+	<td>
+		<input type="checkbox" {$paq_monto_notbox}>
+	</td>
+	<td>
+		{$searchtype_paq_monto}
+	</td>
+	<td>
+		{$paq_monto_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$paq_monto_editcontrol1}&nbsp;
+	</td>
+{END paq_monto_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_sub_natalidad}">
+	{BEGIN sub_natalidad_fieldblock}		
+	<td>
+		{$label ASIGNACIONES_FAMILIARES sub_natalidad}
+	</td>
+	<td>
+		<input type="checkbox" {$sub_natalidad_notbox}>
+	</td>
+	<td>
+		{$searchtype_sub_natalidad}
+	</td>
+	<td>
+		{$sub_natalidad_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$sub_natalidad_editcontrol1}&nbsp;
+	</td>
+{END sub_natalidad_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_lac_num_paq}">
+	{BEGIN lac_num_paq_fieldblock}		
+	<td>
+		{$label ASIGNACIONES_FAMILIARES lac_num_paq}
+	</td>
+	<td>
+		<input type="checkbox" {$lac_num_paq_notbox}>
+	</td>
+	<td>
+		{$searchtype_lac_num_paq}
+	</td>
+	<td>
+		{$lac_num_paq_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$lac_num_paq_editcontrol1}&nbsp;
+	</td>
+{END lac_num_paq_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_lac_monto}">
+	{BEGIN lac_monto_fieldblock}		
+	<td>
+		{$label ASIGNACIONES_FAMILIARES lac_monto}
+	</td>
+	<td>
+		<input type="checkbox" {$lac_monto_notbox}>
+	</td>
+	<td>
+		{$searchtype_lac_monto}
+	</td>
+	<td>
+		{$lac_monto_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$lac_monto_editcontrol1}&nbsp;
+	</td>
+{END lac_monto_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_sepelio}">
+	{BEGIN sepelio_fieldblock}		
+	<td>
+		{$label ASIGNACIONES_FAMILIARES sepelio}
+	</td>
+	<td>
+		<input type="checkbox" {$sepelio_notbox}>
+	</td>
+	<td>
+		{$searchtype_sepelio}
+	</td>
+	<td>
+		{$sepelio_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$sepelio_editcontrol1}&nbsp;
+	</td>
+{END sepelio_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_sub_total_pago_sedem}">
+	{BEGIN sub_total_pago_sedem_fieldblock}		
+	<td>
+		{$label ASIGNACIONES_FAMILIARES sub_total_pago_sedem}
+	</td>
+	<td>
+		<input type="checkbox" {$sub_total_pago_sedem_notbox}>
+	</td>
+	<td>
+		{$searchtype_sub_total_pago_sedem}
+	</td>
+	<td>
+		{$sub_total_pago_sedem_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$sub_total_pago_sedem_editcontrol1}&nbsp;
+	</td>
+{END sub_total_pago_sedem_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_fecha_registro}">
+	{BEGIN fecha_registro_fieldblock}		
+	<td>
+		{$label ASIGNACIONES_FAMILIARES fecha_registro}
+	</td>
+	<td>
+		<input type="checkbox" {$fecha_registro_notbox}>
+	</td>
+	<td>
+		{$searchtype_fecha_registro}
+	</td>
+	<td>
+		{$fecha_registro_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$fecha_registro_editcontrol1}&nbsp;
+	</td>
+{END fecha_registro_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_name}">
+	{BEGIN name_fieldblock}		
+	<td>
+		{$label ASIGNACIONES_FAMILIARES name}
+	</td>
+	<td>
+		<input type="checkbox" {$name_notbox}>
+	</td>
+	<td>
+		{$searchtype_name}
+	</td>
+	<td>
+		{$name_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$name_editcontrol1}&nbsp;
+	</td>
+{END name_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_l_name1}">
+	{BEGIN l_name1_fieldblock}		
+	<td>
+		{$label ASIGNACIONES_FAMILIARES l_name1}
+	</td>
+	<td>
+		<input type="checkbox" {$l_name1_notbox}>
+	</td>
+	<td>
+		{$searchtype_l_name1}
+	</td>
+	<td>
+		{$l_name1_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$l_name1_editcontrol1}&nbsp;
+	</td>
+{END l_name1_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_l_name2}">
+	{BEGIN l_name2_fieldblock}		
+	<td>
+		{$label ASIGNACIONES_FAMILIARES l_name2}
+	</td>
+	<td>
+		<input type="checkbox" {$l_name2_notbox}>
+	</td>
+	<td>
+		{$searchtype_l_name2}
+	</td>
+	<td>
+		{$l_name2_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$l_name2_editcontrol1}&nbsp;
+	</td>
+{END l_name2_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_ci}">
+	{BEGIN ci_fieldblock}		
+	<td>
+		{$label ASIGNACIONES_FAMILIARES ci}
+	</td>
+	<td>
+		<input type="checkbox" {$ci_notbox}>
+	</td>
+	<td>
+		{$searchtype_ci}
+	</td>
+	<td>
+		{$ci_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$ci_editcontrol1}&nbsp;
+	</td>
+{END ci_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_expe}">
+	{BEGIN expe_fieldblock}		
+	<td>
+		{$label ASIGNACIONES_FAMILIARES expe}
+	</td>
+	<td>
+		<input type="checkbox" {$expe_notbox}>
+	</td>
+	<td>
+		{$searchtype_expe}
+	</td>
+	<td>
+		{$expe_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$expe_editcontrol1}&nbsp;
+	</td>
+{END expe_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Buscar</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reiniciar</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Volver a la lista</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,93 @@
+<div {$pageattrs}>
+
+{BEGIN container_dcount}
+<div class="rnr-c rnr-cv rnr-c-dcount">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-detailspreviewheader {$brickclass_detailspreviewheader}">	<h1>{$pagetitlelabel t_tributaria detailspreview}</h1>
+</div>
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-detailspreviewdetailsfount {$brickclass_detailspreviewdetailsfount}">Detalles encontrados: <strong>{$row_count}.</strong>
+</div>
+
+
+{BEGIN display_first}
+<div  class="rnr-brickcontents style1 rnr-b-detailspreviewdispfirst {$brickclass_detailspreviewdispfirst}">Mostrando primero: <strong>{$display_count}</strong>.
+</div>{END display_first}
+
+
+</div>
+{END container_dcount}
+
+
+
+{BEGIN container_detailspreviewgrid}
+
+
+{BEGIN details_data}
+<table class="rnr-c rnr-cont rnr-c--detailspreviewgrid rnr-b-detailspreviewgrid rnr-gridtable">
+{BEGIN details_row_header}
+	<thead>
+		<tr class="rnr-toprow style1 {$gridHeader_class}" >
+			<th class="{$id_func_trib_class}">{$label t_tributaria id_func_trib}</th>
+			<th class="{$gestion_class}">{$label t_tributaria gestion}</th>
+			<th class="{$periodo_class}">{$label t_tributaria periodo}</th>
+			<th class="{$nit_class}">{$label t_tributaria nit}</th>
+			<th class="{$novedades_class}">{$label t_tributaria novedades}</th>
+			<th class="{$liquido_pagable_class}">{$label t_tributaria liquido_pagable}</th>
+			<th class="{$dos_salarios_min_class}">{$label t_tributaria dos_salarios_min}</th>
+			<th class="{$base_imponible_class}">{$label t_tributaria base_imponible}</th>
+			<th class="{$impuesto_rc_iva_class}">{$label t_tributaria impuesto_rc_iva}</th>
+			<th class="{$dos_salarios_13_class}">{$label t_tributaria dos_salarios_13}</th>
+			<th class="{$impuesto_neto_rc_iva_class}">{$label t_tributaria impuesto_neto_rc_iva}</th>
+			<th class="{$f_110_facturas_class}">{$label t_tributaria f_110_facturas}</th>
+			<th class="{$saldo_favor_fisco_class}">{$label t_tributaria saldo_favor_fisco}</th>
+			<th class="{$saldo_favor_dependiente_class}">{$label t_tributaria saldo_favor_dependiente}</th>
+			<th class="{$saldo_favor_dependiente_per_anterior_class}">{$label t_tributaria saldo_favor_dependiente_per_anterior}</th>
+			<th class="{$mantenimiento_periodo_anterior_class}">{$label t_tributaria mantenimiento_periodo_anterior}</th>
+			<th class="{$saldo_periodo_anterior_actualizado_class}">{$label t_tributaria saldo_periodo_anterior_actualizado}</th>
+			<th class="{$saldo_utilizado_class}">{$label t_tributaria saldo_utilizado}</th>
+			<th class="{$impuesto_rc_iva_retenido_class}">{$label t_tributaria impuesto_rc_iva_retenido}</th>
+			<th class="{$saldo_favor_dep_mes_siguiente_class}">{$label t_tributaria saldo_favor_dep_mes_siguiente}</th>
+			<th class="rnr-edge">&nbsp;</th>
+		</tr>
+	</thead>
+{END details_row_header}
+	<tbody>
+{BEGIN details_row}
+		<tr class="rnr-row style1">
+			<td class="{$id_func_trib_class}">{$id_func_trib_value}</td>
+			<td class="{$gestion_class}">{$gestion_value}</td>
+			<td class="{$periodo_class}">{$periodo_value}</td>
+			<td class="{$nit_class}">{$nit_value}</td>
+			<td class="{$novedades_class}">{$novedades_value}</td>
+			<td class="{$liquido_pagable_class}">{$liquido_pagable_value}</td>
+			<td class="{$dos_salarios_min_class}">{$dos_salarios_min_value}</td>
+			<td class="{$base_imponible_class}">{$base_imponible_value}</td>
+			<td class="{$impuesto_rc_iva_class}">{$impuesto_rc_iva_value}</td>
+			<td class="{$dos_salarios_13_class}">{$dos_salarios_13_value}</td>
+			<td class="{$impuesto_neto_rc_iva_class}">{$impuesto_neto_rc_iva_value}</td>
+			<td class="{$f_110_facturas_class}">{$f_110_facturas_value}</td>
+			<td class="{$saldo_favor_fisco_class}">{$saldo_favor_fisco_value}</td>
+			<td class="{$saldo_favor_dependiente_class}">{$saldo_favor_dependiente_value}</td>
+			<td class="{$saldo_favor_dependiente_per_anterior_class}">{$saldo_favor_dependiente_per_anterior_value}</td>
+			<td class="{$mantenimiento_periodo_anterior_class}">{$mantenimiento_periodo_anterior_value}</td>
+			<td class="{$saldo_periodo_anterior_actualizado_class}">{$saldo_periodo_anterior_actualizado_value}</td>
+			<td class="{$saldo_utilizado_class}">{$saldo_utilizado_value}</td>
+			<td class="{$impuesto_rc_iva_retenido_class}">{$impuesto_rc_iva_retenido_value}</td>
+			<td class="{$saldo_favor_dep_mes_siguiente_class}">{$saldo_favor_dep_mes_siguiente_value}</td>
+			<td class="rnr-edge">&nbsp;</td>
+		</tr>
+{END details_row}	
+	</tbody>
+</table>
+
+{END details_data}
+
+
+
+{END container_detailspreviewgrid}
+
+</div>

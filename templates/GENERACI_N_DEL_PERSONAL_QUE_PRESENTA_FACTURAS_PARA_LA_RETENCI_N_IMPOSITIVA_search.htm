@@ -1,0 +1,414 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel GENERACI_N_DEL_PERSONAL_QUE_PRESENTA_FACTURAS_PARA_LA_RETENCI_N_IMPOSITIVA search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criterio:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> Todas las condiciones</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Ninguna condición</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NO</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_id_func}">
+	{BEGIN id_func_fieldblock}		
+	<td>
+		{$label GENERACI_N_DEL_PERSONAL_QUE_PRESENTA_FACTURAS_PARA_LA_RETENCI_N_IMPOSITIVA id_func}
+	</td>
+	<td>
+		<input type="checkbox" {$id_func_notbox}>
+	</td>
+	<td>
+		{$searchtype_id_func}
+	</td>
+	<td>
+		{$id_func_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$id_func_editcontrol1}&nbsp;
+	</td>
+{END id_func_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_name}">
+	{BEGIN name_fieldblock}		
+	<td>
+		{$label GENERACI_N_DEL_PERSONAL_QUE_PRESENTA_FACTURAS_PARA_LA_RETENCI_N_IMPOSITIVA name}
+	</td>
+	<td>
+		<input type="checkbox" {$name_notbox}>
+	</td>
+	<td>
+		{$searchtype_name}
+	</td>
+	<td>
+		{$name_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$name_editcontrol1}&nbsp;
+	</td>
+{END name_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_l_name1}">
+	{BEGIN l_name1_fieldblock}		
+	<td>
+		{$label GENERACI_N_DEL_PERSONAL_QUE_PRESENTA_FACTURAS_PARA_LA_RETENCI_N_IMPOSITIVA l_name1}
+	</td>
+	<td>
+		<input type="checkbox" {$l_name1_notbox}>
+	</td>
+	<td>
+		{$searchtype_l_name1}
+	</td>
+	<td>
+		{$l_name1_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$l_name1_editcontrol1}&nbsp;
+	</td>
+{END l_name1_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_l_name2}">
+	{BEGIN l_name2_fieldblock}		
+	<td>
+		{$label GENERACI_N_DEL_PERSONAL_QUE_PRESENTA_FACTURAS_PARA_LA_RETENCI_N_IMPOSITIVA l_name2}
+	</td>
+	<td>
+		<input type="checkbox" {$l_name2_notbox}>
+	</td>
+	<td>
+		{$searchtype_l_name2}
+	</td>
+	<td>
+		{$l_name2_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$l_name2_editcontrol1}&nbsp;
+	</td>
+{END l_name2_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_ci}">
+	{BEGIN ci_fieldblock}		
+	<td>
+		{$label GENERACI_N_DEL_PERSONAL_QUE_PRESENTA_FACTURAS_PARA_LA_RETENCI_N_IMPOSITIVA ci}
+	</td>
+	<td>
+		<input type="checkbox" {$ci_notbox}>
+	</td>
+	<td>
+		{$searchtype_ci}
+	</td>
+	<td>
+		{$ci_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$ci_editcontrol1}&nbsp;
+	</td>
+{END ci_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_expe}">
+	{BEGIN expe_fieldblock}		
+	<td>
+		{$label GENERACI_N_DEL_PERSONAL_QUE_PRESENTA_FACTURAS_PARA_LA_RETENCI_N_IMPOSITIVA expe}
+	</td>
+	<td>
+		<input type="checkbox" {$expe_notbox}>
+	</td>
+	<td>
+		{$searchtype_expe}
+	</td>
+	<td>
+		{$expe_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$expe_editcontrol1}&nbsp;
+	</td>
+{END expe_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_unit}">
+	{BEGIN unit_fieldblock}		
+	<td>
+		{$label GENERACI_N_DEL_PERSONAL_QUE_PRESENTA_FACTURAS_PARA_LA_RETENCI_N_IMPOSITIVA unit}
+	</td>
+	<td>
+		<input type="checkbox" {$unit_notbox}>
+	</td>
+	<td>
+		{$searchtype_unit}
+	</td>
+	<td>
+		{$unit_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$unit_editcontrol1}&nbsp;
+	</td>
+{END unit_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_dir_g}">
+	{BEGIN dir_g_fieldblock}		
+	<td>
+		{$label GENERACI_N_DEL_PERSONAL_QUE_PRESENTA_FACTURAS_PARA_LA_RETENCI_N_IMPOSITIVA dir_g}
+	</td>
+	<td>
+		<input type="checkbox" {$dir_g_notbox}>
+	</td>
+	<td>
+		{$searchtype_dir_g}
+	</td>
+	<td>
+		{$dir_g_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$dir_g_editcontrol1}&nbsp;
+	</td>
+{END dir_g_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_charge}">
+	{BEGIN charge_fieldblock}		
+	<td>
+		{$label GENERACI_N_DEL_PERSONAL_QUE_PRESENTA_FACTURAS_PARA_LA_RETENCI_N_IMPOSITIVA charge}
+	</td>
+	<td>
+		<input type="checkbox" {$charge_notbox}>
+	</td>
+	<td>
+		{$searchtype_charge}
+	</td>
+	<td>
+		{$charge_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$charge_editcontrol1}&nbsp;
+	</td>
+{END charge_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_nit}">
+	{BEGIN nit_fieldblock}		
+	<td>
+		{$label GENERACI_N_DEL_PERSONAL_QUE_PRESENTA_FACTURAS_PARA_LA_RETENCI_N_IMPOSITIVA nit}
+	</td>
+	<td>
+		<input type="checkbox" {$nit_notbox}>
+	</td>
+	<td>
+		{$searchtype_nit}
+	</td>
+	<td>
+		{$nit_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$nit_editcontrol1}&nbsp;
+	</td>
+{END nit_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_gestion}">
+	{BEGIN gestion_fieldblock}		
+	<td>
+		{$label GENERACI_N_DEL_PERSONAL_QUE_PRESENTA_FACTURAS_PARA_LA_RETENCI_N_IMPOSITIVA gestion}
+	</td>
+	<td>
+		<input type="checkbox" {$gestion_notbox}>
+	</td>
+	<td>
+		{$searchtype_gestion}
+	</td>
+	<td>
+		{$gestion_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$gestion_editcontrol1}&nbsp;
+	</td>
+{END gestion_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_periodo}">
+	{BEGIN periodo_fieldblock}		
+	<td>
+		{$label GENERACI_N_DEL_PERSONAL_QUE_PRESENTA_FACTURAS_PARA_LA_RETENCI_N_IMPOSITIVA periodo}
+	</td>
+	<td>
+		<input type="checkbox" {$periodo_notbox}>
+	</td>
+	<td>
+		{$searchtype_periodo}
+	</td>
+	<td>
+		{$periodo_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$periodo_editcontrol1}&nbsp;
+	</td>
+{END periodo_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_mes_num}">
+	{BEGIN mes_num_fieldblock}		
+	<td>
+		{$label GENERACI_N_DEL_PERSONAL_QUE_PRESENTA_FACTURAS_PARA_LA_RETENCI_N_IMPOSITIVA mes_num}
+	</td>
+	<td>
+		<input type="checkbox" {$mes_num_notbox}>
+	</td>
+	<td>
+		{$searchtype_mes_num}
+	</td>
+	<td>
+		{$mes_num_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$mes_num_editcontrol1}&nbsp;
+	</td>
+{END mes_num_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_monto_total}">
+	{BEGIN monto_total_fieldblock}		
+	<td>
+		{$label GENERACI_N_DEL_PERSONAL_QUE_PRESENTA_FACTURAS_PARA_LA_RETENCI_N_IMPOSITIVA monto_total}
+	</td>
+	<td>
+		<input type="checkbox" {$monto_total_notbox}>
+	</td>
+	<td>
+		{$searchtype_monto_total}
+	</td>
+	<td>
+		{$monto_total_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$monto_total_editcontrol1}&nbsp;
+	</td>
+{END monto_total_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_monto_13}">
+	{BEGIN monto_13_fieldblock}		
+	<td>
+		{$label GENERACI_N_DEL_PERSONAL_QUE_PRESENTA_FACTURAS_PARA_LA_RETENCI_N_IMPOSITIVA monto_13}
+	</td>
+	<td>
+		<input type="checkbox" {$monto_13_notbox}>
+	</td>
+	<td>
+		{$searchtype_monto_13}
+	</td>
+	<td>
+		{$monto_13_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$monto_13_editcontrol1}&nbsp;
+	</td>
+{END monto_13_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_lugar}">
+	{BEGIN lugar_fieldblock}		
+	<td>
+		{$label GENERACI_N_DEL_PERSONAL_QUE_PRESENTA_FACTURAS_PARA_LA_RETENCI_N_IMPOSITIVA lugar}
+	</td>
+	<td>
+		<input type="checkbox" {$lugar_notbox}>
+	</td>
+	<td>
+		{$searchtype_lugar}
+	</td>
+	<td>
+		{$lugar_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$lugar_editcontrol1}&nbsp;
+	</td>
+{END lugar_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_fecha}">
+	{BEGIN fecha_fieldblock}		
+	<td>
+		{$label GENERACI_N_DEL_PERSONAL_QUE_PRESENTA_FACTURAS_PARA_LA_RETENCI_N_IMPOSITIVA fecha}
+	</td>
+	<td>
+		<input type="checkbox" {$fecha_notbox}>
+	</td>
+	<td>
+		{$searchtype_fecha}
+	</td>
+	<td>
+		{$fecha_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$fecha_editcontrol1}&nbsp;
+	</td>
+{END fecha_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Buscar</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reiniciar</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Volver a la lista</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

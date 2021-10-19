@@ -1,0 +1,284 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+{BEGIN container_master}
+<div class="rnr-c rnr-ch rnr-c-master">
+
+{BEGIN mastertable_block}
+<div  class="style1 rnr-bl rnr-b-masterinfoprint {$brickclass_masterinfoprint}">{$showmasterfile}
+</div>
+{END mastertable_block}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_master}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel t_asignaciones print}</h1>
+</div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Página <span class="rp-pageno">{$pageno}</span> / <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN id_asig_fieldheadercolumn}
+<th class="runner-cc {$id_asig_class}" {$id_asig_style}>
+	{BEGIN id_asig_fieldheader}
+	<b>{$label t_asignaciones id_asig}</b>
+	{END id_asig_fieldheader}
+</th>
+{END id_asig_fieldheadercolumn}
+	{BEGIN fecha_nac_fieldheadercolumn}
+<th class="runner-cc {$fecha_nac_class}" {$fecha_nac_style}>
+	{BEGIN fecha_nac_fieldheader}
+	<b>{$label t_asignaciones fecha_nac}</b>
+	{END fecha_nac_fieldheader}
+</th>
+{END fecha_nac_fieldheadercolumn}
+	{BEGIN fecha_pres_fieldheadercolumn}
+<th class="runner-cc {$fecha_pres_class}" {$fecha_pres_style}>
+	{BEGIN fecha_pres_fieldheader}
+	<b>{$label t_asignaciones fecha_pres}</b>
+	{END fecha_pres_fieldheader}
+</th>
+{END fecha_pres_fieldheadercolumn}
+	{BEGIN pre_num_paq_fieldheadercolumn}
+<th class="runner-cc {$pre_num_paq_class}" {$pre_num_paq_style}>
+	{BEGIN pre_num_paq_fieldheader}
+	<b>{$label t_asignaciones pre_num_paq}</b>
+	{END pre_num_paq_fieldheader}
+</th>
+{END pre_num_paq_fieldheadercolumn}
+	{BEGIN paq_monto_fieldheadercolumn}
+<th class="runner-cc {$paq_monto_class}" {$paq_monto_style}>
+	{BEGIN paq_monto_fieldheader}
+	<b>{$label t_asignaciones paq_monto}</b>
+	{END paq_monto_fieldheader}
+</th>
+{END paq_monto_fieldheadercolumn}
+	{BEGIN sub_natalidad_fieldheadercolumn}
+<th class="runner-cc {$sub_natalidad_class}" {$sub_natalidad_style}>
+	{BEGIN sub_natalidad_fieldheader}
+	<b>{$label t_asignaciones sub_natalidad}</b>
+	{END sub_natalidad_fieldheader}
+</th>
+{END sub_natalidad_fieldheadercolumn}
+	{BEGIN lac_num_paq_fieldheadercolumn}
+<th class="runner-cc {$lac_num_paq_class}" {$lac_num_paq_style}>
+	{BEGIN lac_num_paq_fieldheader}
+	<b>{$label t_asignaciones lac_num_paq}</b>
+	{END lac_num_paq_fieldheader}
+</th>
+{END lac_num_paq_fieldheadercolumn}
+	{BEGIN lac_monto_fieldheadercolumn}
+<th class="runner-cc {$lac_monto_class}" {$lac_monto_style}>
+	{BEGIN lac_monto_fieldheader}
+	<b>{$label t_asignaciones lac_monto}</b>
+	{END lac_monto_fieldheader}
+</th>
+{END lac_monto_fieldheadercolumn}
+	{BEGIN sepelio_fieldheadercolumn}
+<th class="runner-cc {$sepelio_class}" {$sepelio_style}>
+	{BEGIN sepelio_fieldheader}
+	<b>{$label t_asignaciones sepelio}</b>
+	{END sepelio_fieldheader}
+</th>
+{END sepelio_fieldheadercolumn}
+	{BEGIN sub_total_pago_sedem_fieldheadercolumn}
+<th class="runner-cc {$sub_total_pago_sedem_class}" {$sub_total_pago_sedem_style}>
+	{BEGIN sub_total_pago_sedem_fieldheader}
+	<b>{$label t_asignaciones sub_total_pago_sedem}</b>
+	{END sub_total_pago_sedem_fieldheader}
+</th>
+{END sub_total_pago_sedem_fieldheadercolumn}
+	{BEGIN fecha_registro_fieldheadercolumn}
+<th class="runner-cc {$fecha_registro_class}" {$fecha_registro_style}>
+	{BEGIN fecha_registro_fieldheader}
+	<b>{$label t_asignaciones fecha_registro}</b>
+	{END fecha_registro_fieldheader}
+</th>
+{END fecha_registro_fieldheadercolumn}
+	{BEGIN id_adm_fieldheadercolumn}
+<th class="runner-cc {$id_adm_class}" {$id_adm_style}>
+	{BEGIN id_adm_fieldheader}
+	<b>{$label t_asignaciones id_adm}</b>
+	{END id_adm_fieldheader}
+</th>
+{END id_adm_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN id_asig_fieldcolumn}
+<td  class="runner-cc {$id_asig_class}" {$id_asig_style} {$recordattrs}>
+	{$id_asig_value}
+</td>
+{END id_asig_fieldcolumn}
+	{BEGIN fecha_nac_fieldcolumn}
+<td  class="runner-cc {$fecha_nac_class}" {$fecha_nac_style} {$recordattrs}>
+	{$fecha_nac_value}
+</td>
+{END fecha_nac_fieldcolumn}
+	{BEGIN fecha_pres_fieldcolumn}
+<td  class="runner-cc {$fecha_pres_class}" {$fecha_pres_style} {$recordattrs}>
+	{$fecha_pres_value}
+</td>
+{END fecha_pres_fieldcolumn}
+	{BEGIN pre_num_paq_fieldcolumn}
+<td  class="runner-cc {$pre_num_paq_class}" {$pre_num_paq_style} {$recordattrs}>
+	{$pre_num_paq_value}
+</td>
+{END pre_num_paq_fieldcolumn}
+	{BEGIN paq_monto_fieldcolumn}
+<td  class="runner-cc {$paq_monto_class}" {$paq_monto_style} {$recordattrs}>
+	{$paq_monto_value}
+</td>
+{END paq_monto_fieldcolumn}
+	{BEGIN sub_natalidad_fieldcolumn}
+<td  class="runner-cc {$sub_natalidad_class}" {$sub_natalidad_style} {$recordattrs}>
+	{$sub_natalidad_value}
+</td>
+{END sub_natalidad_fieldcolumn}
+	{BEGIN lac_num_paq_fieldcolumn}
+<td  class="runner-cc {$lac_num_paq_class}" {$lac_num_paq_style} {$recordattrs}>
+	{$lac_num_paq_value}
+</td>
+{END lac_num_paq_fieldcolumn}
+	{BEGIN lac_monto_fieldcolumn}
+<td  class="runner-cc {$lac_monto_class}" {$lac_monto_style} {$recordattrs}>
+	{$lac_monto_value}
+</td>
+{END lac_monto_fieldcolumn}
+	{BEGIN sepelio_fieldcolumn}
+<td  class="runner-cc {$sepelio_class}" {$sepelio_style} {$recordattrs}>
+	{$sepelio_value}
+</td>
+{END sepelio_fieldcolumn}
+	{BEGIN sub_total_pago_sedem_fieldcolumn}
+<td  class="runner-cc {$sub_total_pago_sedem_class}" {$sub_total_pago_sedem_style} {$recordattrs}>
+	{$sub_total_pago_sedem_value}
+</td>
+{END sub_total_pago_sedem_fieldcolumn}
+	{BEGIN fecha_registro_fieldcolumn}
+<td  class="runner-cc {$fecha_registro_class}" {$fecha_registro_style} {$recordattrs}>
+	{$fecha_registro_value}
+</td>
+{END fecha_registro_fieldcolumn}
+	{BEGIN id_adm_fieldcolumn}
+<td  class="runner-cc {$id_adm_class}" {$id_adm_style} {$recordattrs}>
+	{$id_adm_value}
+</td>
+{END id_adm_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+	{END grid_row}
+
+
+	
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

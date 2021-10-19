@@ -1,0 +1,198 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_view} rnr-wrapper rnr-cbw-view">
+
+{BEGIN container_view}
+<div class="rnr-c rnr-cv rnr-c-view">
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN viewheader}
+<div  class="rnr-brickcontents style2 rnr-b-viewheader {$brickclass_viewheader}"><span>	<h1>{$pagetitlelabel identificacion_puesto view}</h1>
+</span></div>{END viewheader}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-viewfields2 {$brickclass_viewfields2}"><table class="fieldGrid fieldGrid2">
+
+<tr>
+<td>
+	{BEGIN id_fieldblock}
+<div data-fieldname="id" class="rnr-field style1 {$fielddispclass_id}">
+  <span class="rnr-label">{$label identificacion_puesto id}:</span>
+  <span class="rnr-control style3">{$id_value}</span>
+</div>
+{END id_fieldblock}
+	{BEGIN id_per_fieldblock}
+<div data-fieldname="id_per" class="rnr-field style1 {$fielddispclass_id_per}">
+  <span class="rnr-label">{$label identificacion_puesto id_per}:</span>
+  <span class="rnr-control style3">{$id_per_value}</span>
+</div>
+{END id_per_fieldblock}
+	{BEGIN denominacion_fieldblock}
+<div data-fieldname="denominacion" class="rnr-field style1 {$fielddispclass_denominacion}">
+  <span class="rnr-label">{$label identificacion_puesto denominacion}:</span>
+  <span class="rnr-control style3">{$denominacion_value}</span>
+</div>
+{END denominacion_fieldblock}
+	{BEGIN nombre_funcional_fieldblock}
+<div data-fieldname="nombre_funcional" class="rnr-field style1 {$fielddispclass_nombre_funcional}">
+  <span class="rnr-label">{$label identificacion_puesto nombre_funcional}:</span>
+  <span class="rnr-control style3">{$nombre_funcional_value}</span>
+</div>
+{END nombre_funcional_fieldblock}
+	{BEGIN unidad_organizacional_fieldblock}
+<div data-fieldname="unidad_organizacional" class="rnr-field style1 {$fielddispclass_unidad_organizacional}">
+  <span class="rnr-label">{$label identificacion_puesto unidad_organizacional}:</span>
+  <span class="rnr-control style3">{$unidad_organizacional_value}</span>
+</div>
+{END unidad_organizacional_fieldblock}
+	{BEGIN supervisa_a_fieldblock}
+<div data-fieldname="supervisa_a" class="rnr-field style1 {$fielddispclass_supervisa_a}">
+  <span class="rnr-label">{$label identificacion_puesto supervisa_a}:</span>
+  <span class="rnr-control style3">{$supervisa_a_value}</span>
+</div>
+{END supervisa_a_fieldblock}
+	{BEGIN codigo_fieldblock}
+<div data-fieldname="codigo" class="rnr-field style1 {$fielddispclass_codigo}">
+  <span class="rnr-label">{$label identificacion_puesto codigo}:</span>
+  <span class="rnr-control style3">{$codigo_value}</span>
+</div>
+{END codigo_fieldblock}
+</td>
+<td>
+	{BEGIN categoria_fieldblock}
+<div data-fieldname="categoria" class="rnr-field style1 {$fielddispclass_categoria}">
+  <span class="rnr-label">{$label identificacion_puesto categoria}:</span>
+  <span class="rnr-control style3">{$categoria_value}</span>
+</div>
+{END categoria_fieldblock}
+	{BEGIN nivel_fieldblock}
+<div data-fieldname="nivel" class="rnr-field style1 {$fielddispclass_nivel}">
+  <span class="rnr-label">{$label identificacion_puesto nivel}:</span>
+  <span class="rnr-control style3">{$nivel_value}</span>
+</div>
+{END nivel_fieldblock}
+	{BEGIN jefe_inmediato_superior_fieldblock}
+<div data-fieldname="jefe_inmediato_superior" class="rnr-field style1 {$fielddispclass_jefe_inmediato_superior}">
+  <span class="rnr-label">{$label identificacion_puesto jefe_inmediato_superior}:</span>
+  <span class="rnr-control style3">{$jefe_inmediato_superior_value}</span>
+</div>
+{END jefe_inmediato_superior_fieldblock}
+	{BEGIN jefe_supeior_jerarquico_fieldblock}
+<div data-fieldname="jefe_supeior_jerarquico" class="rnr-field style1 {$fielddispclass_jefe_supeior_jerarquico}">
+  <span class="rnr-label">{$label identificacion_puesto jefe_supeior_jerarquico}:</span>
+  <span class="rnr-control style3">{$jefe_supeior_jerarquico_value}</span>
+</div>
+{END jefe_supeior_jerarquico_fieldblock}
+	{BEGIN updated_at_fieldblock}
+<div data-fieldname="updated_at" class="rnr-field style1 {$fielddispclass_updated_at}">
+  <span class="rnr-label">{$label identificacion_puesto updated_at}:</span>
+  <span class="rnr-control style3">{$updated_at_value}</span>
+</div>
+{END updated_at_fieldblock}
+	{BEGIN created_at_fieldblock}
+<div data-fieldname="created_at" class="rnr-field style1 {$fielddispclass_created_at}">
+  <span class="rnr-label">{$label identificacion_puesto created_at}:</span>
+  <span class="rnr-control style3">{$created_at_value}</span>
+</div>
+{END created_at_fieldblock}
+</td>
+</tr>
+</table></div>
+
+
+{BEGIN viewbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-viewbuttons {$brickclass_viewbuttons}"><div class="rnr-buttons-right">
+{BEGIN prev_button}
+<a href="#" class="rnr-button {$prevbutton_class}" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+{END prev_button}
+{BEGIN next_button}
+<a href="#" class="rnr-button {$nextbutton_class}" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+{END next_button}
+</div>
+<div class="rnr-buttons-left">
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Volver a la lista</a>
+{END back_button}
+{BEGIN close_button}
+<a href="#" class="rnr-button" {$closebutton_attrs}>Cerrar ventana</a>
+{END close_button}
+{BEGIN edit_page_button}
+<a href="#" class="rnr-button" {$edit_page_button_attrs}>Editar</a>
+{END edit_page_button}
+</div>
+</div>{END viewbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_view}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

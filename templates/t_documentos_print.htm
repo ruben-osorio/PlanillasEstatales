@@ -1,0 +1,200 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+{BEGIN container_master}
+<div class="rnr-c rnr-ch rnr-c-master">
+
+{BEGIN mastertable_block}
+<div  class="style1 rnr-bl rnr-b-masterinfoprint {$brickclass_masterinfoprint}">{$showmasterfile}
+</div>
+{END mastertable_block}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_master}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel t_documentos print}</h1>
+</div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Página <span class="rp-pageno">{$pageno}</span> / <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN id_fieldheadercolumn}
+<th class="runner-cc {$id_class}" {$id_style}>
+	{BEGIN id_fieldheader}
+	<b>{$label t_documentos id}</b>
+	{END id_fieldheader}
+</th>
+{END id_fieldheadercolumn}
+	{BEGIN id_func_fieldheadercolumn}
+<th class="runner-cc {$id_func_class}" {$id_func_style}>
+	{BEGIN id_func_fieldheader}
+	<b>{$label t_documentos id_func}</b>
+	{END id_func_fieldheader}
+</th>
+{END id_func_fieldheadercolumn}
+	{BEGIN tipo_documento_fieldheadercolumn}
+<th class="runner-cc {$tipo_documento_class}" {$tipo_documento_style}>
+	{BEGIN tipo_documento_fieldheader}
+	<b>{$label t_documentos tipo_documento}</b>
+	{END tipo_documento_fieldheader}
+</th>
+{END tipo_documento_fieldheadercolumn}
+	{BEGIN documento_fieldheadercolumn}
+<th class="runner-cc {$documento_class}" {$documento_style}>
+	{BEGIN documento_fieldheader}
+	<b>{$label t_documentos documento}</b>
+	{END documento_fieldheader}
+</th>
+{END documento_fieldheadercolumn}
+	{BEGIN fecha_registro_fieldheadercolumn}
+<th class="runner-cc {$fecha_registro_class}" {$fecha_registro_style}>
+	{BEGIN fecha_registro_fieldheader}
+	<b>{$label t_documentos fecha_registro}</b>
+	{END fecha_registro_fieldheader}
+</th>
+{END fecha_registro_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN id_fieldcolumn}
+<td  class="runner-cc {$id_class}" {$id_style} {$recordattrs}>
+	{$id_value}
+</td>
+{END id_fieldcolumn}
+	{BEGIN id_func_fieldcolumn}
+<td  class="runner-cc {$id_func_class}" {$id_func_style} {$recordattrs}>
+	{$id_func_value}
+</td>
+{END id_func_fieldcolumn}
+	{BEGIN tipo_documento_fieldcolumn}
+<td  class="runner-cc {$tipo_documento_class}" {$tipo_documento_style} {$recordattrs}>
+	{$tipo_documento_value}
+</td>
+{END tipo_documento_fieldcolumn}
+	{BEGIN documento_fieldcolumn}
+<td  class="runner-cc {$documento_class}" {$documento_style} {$recordattrs}>
+	{$documento_value}
+</td>
+{END documento_fieldcolumn}
+	{BEGIN fecha_registro_fieldcolumn}
+<td  class="runner-cc {$fecha_registro_class}" {$fecha_registro_style} {$recordattrs}>
+	{$fecha_registro_value}
+</td>
+{END fecha_registro_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+	{END grid_row}
+
+
+	
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

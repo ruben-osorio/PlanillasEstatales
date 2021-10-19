@@ -1,0 +1,158 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN addheader}
+<div  class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><span>	<h1>{$pagetitlelabel t_facturas110 add}</h1>
+</span></div>{END addheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-addfields2 {$brickclass_addfields2}"><table class="fieldGrid fieldGrid2 edit">
+
+<tr>
+<td>
+	{BEGIN gestion_fieldblock}
+<div data-fieldname="gestion" class="rnr-field style1 {$fielddispclass_gestion}">
+  <span class="rnr-label">{BEGIN gestion_label}{$label t_facturas110 gestion}{END gestion_label}</span>
+  <span class="rnr-control style3">{$gestion_editcontrol}</span>
+</div>
+{END gestion_fieldblock}
+	{BEGIN periodo_fieldblock}
+<div data-fieldname="periodo" class="rnr-field style1 {$fielddispclass_periodo}">
+  <span class="rnr-label">{BEGIN periodo_label}{$label t_facturas110 periodo}{END periodo_label}</span>
+  <span class="rnr-control style3">{$periodo_editcontrol}</span>
+</div>
+{END periodo_fieldblock}
+	{BEGIN mes_num_fieldblock}
+<div data-fieldname="mes_num" class="rnr-field style1 {$fielddispclass_mes_num}">
+  <span class="rnr-label">{BEGIN mes_num_label}{$label t_facturas110 mes_num}{END mes_num_label}</span>
+  <span class="rnr-control style3">{$mes_num_editcontrol}</span>
+</div>
+{END mes_num_fieldblock}
+	{BEGIN monto_total_fieldblock}
+<div data-fieldname="monto_total" class="rnr-field style1 {$fielddispclass_monto_total}">
+  <span class="rnr-label">{BEGIN monto_total_label}{$label t_facturas110 monto_total}{END monto_total_label}</span>
+  <span class="rnr-control style3">{$monto_total_editcontrol}</span>
+</div>
+{END monto_total_fieldblock}
+</td>
+<td>
+	{BEGIN monto_13_fieldblock}
+<div data-fieldname="monto_13" class="rnr-field style1 {$fielddispclass_monto_13}">
+  <span class="rnr-label">{BEGIN monto_13_label}{$label t_facturas110 monto_13}{END monto_13_label}</span>
+  <span class="rnr-control style3">{$monto_13_editcontrol}</span>
+</div>
+{END monto_13_fieldblock}
+	{BEGIN lugar_fieldblock}
+<div data-fieldname="lugar" class="rnr-field style1 {$fielddispclass_lugar}">
+  <span class="rnr-label">{BEGIN lugar_label}{$label t_facturas110 lugar}{END lugar_label}</span>
+  <span class="rnr-control style3">{$lugar_editcontrol}</span>
+</div>
+{END lugar_fieldblock}
+	{BEGIN fecha_fieldblock}
+<div data-fieldname="fecha" class="rnr-field style1 {$fielddispclass_fecha}">
+  <span class="rnr-label">{BEGIN fecha_label}{$label t_facturas110 fecha}{END fecha_label}</span>
+  <span class="rnr-control style3">{$fecha_editcontrol}</span>
+</div>
+{END fecha_fieldblock}
+	{BEGIN archivo_digital_fieldblock}
+<div data-fieldname="archivo_digital" class="rnr-field style1 {$fielddispclass_archivo_digital}">
+  <span class="rnr-label">{BEGIN archivo_digital_label}{$label t_facturas110 archivo_digital}{END archivo_digital_label}</span>
+  <span class="rnr-control style3">{$archivo_digital_editcontrol}</span>
+</div>
+{END archivo_digital_fieldblock}
+</td>
+</tr>
+</table></div>
+
+
+{BEGIN addbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}"><div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" id="saveButton{$id}" {$savebutton_attrs}>Guardar</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" id="resetButton{$id}">Reiniciar</a>
+	{END reset_button}
+	{BEGIN cancel_button}
+	<a href="#" class="rnr-button" id="cancelButton{$id}">Cancelar</a>
+	{END cancel_button}
+	{BEGIN back_button}
+	<a href="#" class="rnr-button" id="backButton{$id}">Volver a la lista</a>
+	{END back_button}
+	{BEGIN backToMenu_button}
+	<a href="#" class="rnr-button" id="backToMenuButton{$id}">Regresar al menú</a>
+	{END backToMenu_button}
+</div>
+</div>{END addbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

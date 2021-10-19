@@ -1,0 +1,272 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel char_per print}</h1>
+</div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Página <span class="rp-pageno">{$pageno}</span> / <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN id_char_per_fieldheadercolumn}
+<th class="runner-cc {$id_char_per_class}" {$id_char_per_style}>
+	{BEGIN id_char_per_fieldheader}
+	<b>{$label char_per id_char_per}</b>
+	{END id_char_per_fieldheader}
+</th>
+{END id_char_per_fieldheadercolumn}
+	{BEGIN id_per_fieldheadercolumn}
+<th class="runner-cc {$id_per_class}" {$id_per_style}>
+	{BEGIN id_per_fieldheader}
+	<b>{$label char_per id_per}</b>
+	{END id_per_fieldheader}
+</th>
+{END id_per_fieldheadercolumn}
+	{BEGIN dir_g_fieldheadercolumn}
+<th class="runner-cc {$dir_g_class}" {$dir_g_style}>
+	{BEGIN dir_g_fieldheader}
+	<b>{$label char_per dir_g}</b>
+	{END dir_g_fieldheader}
+</th>
+{END dir_g_fieldheadercolumn}
+	{BEGIN unit_fieldheadercolumn}
+<th class="runner-cc {$unit_class}" {$unit_style}>
+	{BEGIN unit_fieldheader}
+	<b>{$label char_per unit}</b>
+	{END unit_fieldheader}
+</th>
+{END unit_fieldheadercolumn}
+	{BEGIN area_fieldheadercolumn}
+<th class="runner-cc {$area_class}" {$area_style}>
+	{BEGIN area_fieldheader}
+	<b>{$label char_per area}</b>
+	{END area_fieldheader}
+</th>
+{END area_fieldheadercolumn}
+	{BEGIN boss_is_fieldheadercolumn}
+<th class="runner-cc {$boss_is_class}" {$boss_is_style}>
+	{BEGIN boss_is_fieldheader}
+	<b>{$label char_per boss_is}</b>
+	{END boss_is_fieldheader}
+</th>
+{END boss_is_fieldheadercolumn}
+	{BEGIN boss_ij_fieldheadercolumn}
+<th class="runner-cc {$boss_ij_class}" {$boss_ij_style}>
+	{BEGIN boss_ij_fieldheader}
+	<b>{$label char_per boss_ij}</b>
+	{END boss_ij_fieldheader}
+</th>
+{END boss_ij_fieldheadercolumn}
+	{BEGIN charge_fieldheadercolumn}
+<th class="runner-cc {$charge_class}" {$charge_style}>
+	{BEGIN charge_fieldheader}
+	<b>{$label char_per charge}</b>
+	{END charge_fieldheader}
+</th>
+{END charge_fieldheadercolumn}
+	{BEGIN date_des_fieldheadercolumn}
+<th class="runner-cc {$date_des_class}" {$date_des_style}>
+	{BEGIN date_des_fieldheader}
+	<b>{$label char_per date_des}</b>
+	{END date_des_fieldheader}
+</th>
+{END date_des_fieldheadercolumn}
+	{BEGIN date_end_fieldheadercolumn}
+<th class="runner-cc {$date_end_class}" {$date_end_style}>
+	{BEGIN date_end_fieldheader}
+	<b>{$label char_per date_end}</b>
+	{END date_end_fieldheader}
+</th>
+{END date_end_fieldheadercolumn}
+	{BEGIN num_memo_fieldheadercolumn}
+<th class="runner-cc {$num_memo_class}" {$num_memo_style}>
+	{BEGIN num_memo_fieldheader}
+	<b>{$label char_per num_memo}</b>
+	{END num_memo_fieldheader}
+</th>
+{END num_memo_fieldheadercolumn}
+	{BEGIN date_des_ini_fieldheadercolumn}
+<th class="runner-cc {$date_des_ini_class}" {$date_des_ini_style}>
+	{BEGIN date_des_ini_fieldheader}
+	<b>{$label char_per date_des_ini}</b>
+	{END date_des_ini_fieldheader}
+</th>
+{END date_des_ini_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN id_char_per_fieldcolumn}
+<td  class="runner-cc {$id_char_per_class}" {$id_char_per_style} {$recordattrs}>
+	{$id_char_per_value}
+</td>
+{END id_char_per_fieldcolumn}
+	{BEGIN id_per_fieldcolumn}
+<td  class="runner-cc {$id_per_class}" {$id_per_style} {$recordattrs}>
+	{$id_per_value}
+</td>
+{END id_per_fieldcolumn}
+	{BEGIN dir_g_fieldcolumn}
+<td  class="runner-cc {$dir_g_class}" {$dir_g_style} {$recordattrs}>
+	{$dir_g_value}
+</td>
+{END dir_g_fieldcolumn}
+	{BEGIN unit_fieldcolumn}
+<td  class="runner-cc {$unit_class}" {$unit_style} {$recordattrs}>
+	{$unit_value}
+</td>
+{END unit_fieldcolumn}
+	{BEGIN area_fieldcolumn}
+<td  class="runner-cc {$area_class}" {$area_style} {$recordattrs}>
+	{$area_value}
+</td>
+{END area_fieldcolumn}
+	{BEGIN boss_is_fieldcolumn}
+<td  class="runner-cc {$boss_is_class}" {$boss_is_style} {$recordattrs}>
+	{$boss_is_value}
+</td>
+{END boss_is_fieldcolumn}
+	{BEGIN boss_ij_fieldcolumn}
+<td  class="runner-cc {$boss_ij_class}" {$boss_ij_style} {$recordattrs}>
+	{$boss_ij_value}
+</td>
+{END boss_ij_fieldcolumn}
+	{BEGIN charge_fieldcolumn}
+<td  class="runner-cc {$charge_class}" {$charge_style} {$recordattrs}>
+	{$charge_value}
+</td>
+{END charge_fieldcolumn}
+	{BEGIN date_des_fieldcolumn}
+<td  class="runner-cc {$date_des_class}" {$date_des_style} {$recordattrs}>
+	{$date_des_value}
+</td>
+{END date_des_fieldcolumn}
+	{BEGIN date_end_fieldcolumn}
+<td  class="runner-cc {$date_end_class}" {$date_end_style} {$recordattrs}>
+	{$date_end_value}
+</td>
+{END date_end_fieldcolumn}
+	{BEGIN num_memo_fieldcolumn}
+<td  class="runner-cc {$num_memo_class}" {$num_memo_style} {$recordattrs}>
+	{$num_memo_value}
+</td>
+{END num_memo_fieldcolumn}
+	{BEGIN date_des_ini_fieldcolumn}
+<td  class="runner-cc {$date_des_ini_class}" {$date_des_ini_style} {$recordattrs}>
+	{$date_des_ini_value}
+</td>
+{END date_des_ini_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+	{END grid_row}
+
+
+	
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

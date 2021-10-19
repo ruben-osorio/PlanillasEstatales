@@ -1,0 +1,471 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel t_tributaria search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criterio:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> Todas las condiciones</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Ninguna condición</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NO</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_id_func_trib}">
+	{BEGIN id_func_trib_fieldblock}		
+	<td>
+		{$label t_tributaria id_func_trib}
+	</td>
+	<td>
+		<input type="checkbox" {$id_func_trib_notbox}>
+	</td>
+	<td>
+		{$searchtype_id_func_trib}
+	</td>
+	<td>
+		{$id_func_trib_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$id_func_trib_editcontrol1}&nbsp;
+	</td>
+{END id_func_trib_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_gestion}">
+	{BEGIN gestion_fieldblock}		
+	<td>
+		{$label t_tributaria gestion}
+	</td>
+	<td>
+		<input type="checkbox" {$gestion_notbox}>
+	</td>
+	<td>
+		{$searchtype_gestion}
+	</td>
+	<td>
+		{$gestion_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$gestion_editcontrol1}&nbsp;
+	</td>
+{END gestion_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_periodo}">
+	{BEGIN periodo_fieldblock}		
+	<td>
+		{$label t_tributaria periodo}
+	</td>
+	<td>
+		<input type="checkbox" {$periodo_notbox}>
+	</td>
+	<td>
+		{$searchtype_periodo}
+	</td>
+	<td>
+		{$periodo_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$periodo_editcontrol1}&nbsp;
+	</td>
+{END periodo_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_nit}">
+	{BEGIN nit_fieldblock}		
+	<td>
+		{$label t_tributaria nit}
+	</td>
+	<td>
+		<input type="checkbox" {$nit_notbox}>
+	</td>
+	<td>
+		{$searchtype_nit}
+	</td>
+	<td>
+		{$nit_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$nit_editcontrol1}&nbsp;
+	</td>
+{END nit_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_novedades}">
+	{BEGIN novedades_fieldblock}		
+	<td>
+		{$label t_tributaria novedades}
+	</td>
+	<td>
+		<input type="checkbox" {$novedades_notbox}>
+	</td>
+	<td>
+		{$searchtype_novedades}
+	</td>
+	<td>
+		{$novedades_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$novedades_editcontrol1}&nbsp;
+	</td>
+{END novedades_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_liquido_pagable}">
+	{BEGIN liquido_pagable_fieldblock}		
+	<td>
+		{$label t_tributaria liquido_pagable}
+	</td>
+	<td>
+		<input type="checkbox" {$liquido_pagable_notbox}>
+	</td>
+	<td>
+		{$searchtype_liquido_pagable}
+	</td>
+	<td>
+		{$liquido_pagable_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$liquido_pagable_editcontrol1}&nbsp;
+	</td>
+{END liquido_pagable_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_dos_salarios_min}">
+	{BEGIN dos_salarios_min_fieldblock}		
+	<td>
+		{$label t_tributaria dos_salarios_min}
+	</td>
+	<td>
+		<input type="checkbox" {$dos_salarios_min_notbox}>
+	</td>
+	<td>
+		{$searchtype_dos_salarios_min}
+	</td>
+	<td>
+		{$dos_salarios_min_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$dos_salarios_min_editcontrol1}&nbsp;
+	</td>
+{END dos_salarios_min_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_base_imponible}">
+	{BEGIN base_imponible_fieldblock}		
+	<td>
+		{$label t_tributaria base_imponible}
+	</td>
+	<td>
+		<input type="checkbox" {$base_imponible_notbox}>
+	</td>
+	<td>
+		{$searchtype_base_imponible}
+	</td>
+	<td>
+		{$base_imponible_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$base_imponible_editcontrol1}&nbsp;
+	</td>
+{END base_imponible_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_impuesto_rc_iva}">
+	{BEGIN impuesto_rc_iva_fieldblock}		
+	<td>
+		{$label t_tributaria impuesto_rc_iva}
+	</td>
+	<td>
+		<input type="checkbox" {$impuesto_rc_iva_notbox}>
+	</td>
+	<td>
+		{$searchtype_impuesto_rc_iva}
+	</td>
+	<td>
+		{$impuesto_rc_iva_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$impuesto_rc_iva_editcontrol1}&nbsp;
+	</td>
+{END impuesto_rc_iva_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_dos_salarios_13}">
+	{BEGIN dos_salarios_13_fieldblock}		
+	<td>
+		{$label t_tributaria dos_salarios_13}
+	</td>
+	<td>
+		<input type="checkbox" {$dos_salarios_13_notbox}>
+	</td>
+	<td>
+		{$searchtype_dos_salarios_13}
+	</td>
+	<td>
+		{$dos_salarios_13_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$dos_salarios_13_editcontrol1}&nbsp;
+	</td>
+{END dos_salarios_13_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_impuesto_neto_rc_iva}">
+	{BEGIN impuesto_neto_rc_iva_fieldblock}		
+	<td>
+		{$label t_tributaria impuesto_neto_rc_iva}
+	</td>
+	<td>
+		<input type="checkbox" {$impuesto_neto_rc_iva_notbox}>
+	</td>
+	<td>
+		{$searchtype_impuesto_neto_rc_iva}
+	</td>
+	<td>
+		{$impuesto_neto_rc_iva_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$impuesto_neto_rc_iva_editcontrol1}&nbsp;
+	</td>
+{END impuesto_neto_rc_iva_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_f_110_facturas}">
+	{BEGIN f_110_facturas_fieldblock}		
+	<td>
+		{$label t_tributaria f_110_facturas}
+	</td>
+	<td>
+		<input type="checkbox" {$f_110_facturas_notbox}>
+	</td>
+	<td>
+		{$searchtype_f_110_facturas}
+	</td>
+	<td>
+		{$f_110_facturas_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$f_110_facturas_editcontrol1}&nbsp;
+	</td>
+{END f_110_facturas_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_saldo_favor_fisco}">
+	{BEGIN saldo_favor_fisco_fieldblock}		
+	<td>
+		{$label t_tributaria saldo_favor_fisco}
+	</td>
+	<td>
+		<input type="checkbox" {$saldo_favor_fisco_notbox}>
+	</td>
+	<td>
+		{$searchtype_saldo_favor_fisco}
+	</td>
+	<td>
+		{$saldo_favor_fisco_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$saldo_favor_fisco_editcontrol1}&nbsp;
+	</td>
+{END saldo_favor_fisco_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_saldo_favor_dependiente}">
+	{BEGIN saldo_favor_dependiente_fieldblock}		
+	<td>
+		{$label t_tributaria saldo_favor_dependiente}
+	</td>
+	<td>
+		<input type="checkbox" {$saldo_favor_dependiente_notbox}>
+	</td>
+	<td>
+		{$searchtype_saldo_favor_dependiente}
+	</td>
+	<td>
+		{$saldo_favor_dependiente_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$saldo_favor_dependiente_editcontrol1}&nbsp;
+	</td>
+{END saldo_favor_dependiente_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_saldo_favor_dependiente_per_anterior}">
+	{BEGIN saldo_favor_dependiente_per_anterior_fieldblock}		
+	<td>
+		{$label t_tributaria saldo_favor_dependiente_per_anterior}
+	</td>
+	<td>
+		<input type="checkbox" {$saldo_favor_dependiente_per_anterior_notbox}>
+	</td>
+	<td>
+		{$searchtype_saldo_favor_dependiente_per_anterior}
+	</td>
+	<td>
+		{$saldo_favor_dependiente_per_anterior_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$saldo_favor_dependiente_per_anterior_editcontrol1}&nbsp;
+	</td>
+{END saldo_favor_dependiente_per_anterior_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_mantenimiento_periodo_anterior}">
+	{BEGIN mantenimiento_periodo_anterior_fieldblock}		
+	<td>
+		{$label t_tributaria mantenimiento_periodo_anterior}
+	</td>
+	<td>
+		<input type="checkbox" {$mantenimiento_periodo_anterior_notbox}>
+	</td>
+	<td>
+		{$searchtype_mantenimiento_periodo_anterior}
+	</td>
+	<td>
+		{$mantenimiento_periodo_anterior_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$mantenimiento_periodo_anterior_editcontrol1}&nbsp;
+	</td>
+{END mantenimiento_periodo_anterior_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_saldo_periodo_anterior_actualizado}">
+	{BEGIN saldo_periodo_anterior_actualizado_fieldblock}		
+	<td>
+		{$label t_tributaria saldo_periodo_anterior_actualizado}
+	</td>
+	<td>
+		<input type="checkbox" {$saldo_periodo_anterior_actualizado_notbox}>
+	</td>
+	<td>
+		{$searchtype_saldo_periodo_anterior_actualizado}
+	</td>
+	<td>
+		{$saldo_periodo_anterior_actualizado_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$saldo_periodo_anterior_actualizado_editcontrol1}&nbsp;
+	</td>
+{END saldo_periodo_anterior_actualizado_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_saldo_utilizado}">
+	{BEGIN saldo_utilizado_fieldblock}		
+	<td>
+		{$label t_tributaria saldo_utilizado}
+	</td>
+	<td>
+		<input type="checkbox" {$saldo_utilizado_notbox}>
+	</td>
+	<td>
+		{$searchtype_saldo_utilizado}
+	</td>
+	<td>
+		{$saldo_utilizado_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$saldo_utilizado_editcontrol1}&nbsp;
+	</td>
+{END saldo_utilizado_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_impuesto_rc_iva_retenido}">
+	{BEGIN impuesto_rc_iva_retenido_fieldblock}		
+	<td>
+		{$label t_tributaria impuesto_rc_iva_retenido}
+	</td>
+	<td>
+		<input type="checkbox" {$impuesto_rc_iva_retenido_notbox}>
+	</td>
+	<td>
+		{$searchtype_impuesto_rc_iva_retenido}
+	</td>
+	<td>
+		{$impuesto_rc_iva_retenido_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$impuesto_rc_iva_retenido_editcontrol1}&nbsp;
+	</td>
+{END impuesto_rc_iva_retenido_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_saldo_favor_dep_mes_siguiente}">
+	{BEGIN saldo_favor_dep_mes_siguiente_fieldblock}		
+	<td>
+		{$label t_tributaria saldo_favor_dep_mes_siguiente}
+	</td>
+	<td>
+		<input type="checkbox" {$saldo_favor_dep_mes_siguiente_notbox}>
+	</td>
+	<td>
+		{$searchtype_saldo_favor_dep_mes_siguiente}
+	</td>
+	<td>
+		{$saldo_favor_dep_mes_siguiente_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$saldo_favor_dep_mes_siguiente_editcontrol1}&nbsp;
+	</td>
+{END saldo_favor_dep_mes_siguiente_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Buscar</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reiniciar</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Volver a la lista</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

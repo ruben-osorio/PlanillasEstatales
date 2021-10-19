@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD> 
+<META http-equiv="X-UA-Compatible" content="IE=Edge"> <TITLE>{$pagetitle} </TITLE> 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<LINK href="styles/default.css" rel="stylesheet" type="text/css"> {BEGIN rtlCSS}<LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">{END rtlCSS} {BEGIN styleCSSFiles}<LINK href="{$stylepath}" rel="stylesheet" type="text/css">{END styleCSSFiles} {BEGIN pageCSSFiles}<LINK href="{$pagestylepath}" rel="stylesheet" type="text/css">{END pageCSSFiles} 
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001"> 
+<STYLE type="text/css">
+      body { height:100%; background: transparent url("backgrounds/sc.jpg") no-repeat center center fixed; background-size:cover; }
+    </STYLE>
+ </HEAD> 
+<BODY class="{$stylename} function-login" {$bodyattrs}>{BEGIN body}
+
+<P><BR></P>
+<P><BR></P>
+<P align="center"><BR></P>
+<P align="center"><BR></P>
+{$header} 
+<DIV class="rnr-page">
+<DIV class="rnr-top {$blockclass_top}">
+{BEGIN container_fields} 
+<DIV class="rnr-c rnr-cv rnr-c-fields" style="min-height: 265px; min-width: 655px;">
+{BEGIN loginheader}<DIV class="rnr-brickcontents style2 rnr-b-loginheader {$brickclass_loginheader}"><SPAN>
+<H1><BR></H1></SPAN> </DIV>
+{END loginheader}{BEGIN message_block}<DIV class="rnr-brickcontents style3 rnr-b-message {$brickclass_message}">
+<DIV class="rnr-message">
+{$message} </DIV></DIV>
+{END message_block}<DIV class="rnr-brickcontents style1 rnr-b-loginfields {$brickclass_loginfields}">
+<TABLE class="fieldGrid" style="width: 641px; height: 209px;">
+  <TBODY>
+  <TR style="height: 42px;">
+    <TD class="runner-cc" style="width: 190px;" rowspan="4" colspan="1"><IMG width="300" height="360" style="width: 159px; height: 194px;" src="images/escudo-de-El-AltoBG.png" border="0"> </TD>
+    <TD style="width: 582px;" rowspan="1" colspan="2">
+      <P align="center"><FONT face="Monotype Corsiva" size="6">Gobernación de Santa Cruz</FONT> </P></TD></TR>
+  <TR>
+    <TD style="width: 138px;" rowspan="1" colspan="1">{BEGIN username_label} Nombre de 
+      usuario: {END username_label}</TD>
+    <TD class="rnr-control" style="width: 435px;" rowspan="1" colspan="1"><INPUT name="username" type="text" {$username_attrs}> 
+    </TD></TR>
+  <TR>
+    <TD style="width: 138px;" rowspan="1" colspan="1">{BEGIN password_label} 
+      Contraseña: {END password_label}</TD>
+    <TD class="rnr-control" style="width: 435px;" rowspan="1" colspan="1"><INPUT name="password" type="password" {$password_attrs}> 
+    </TD></TR>
+  <TR>
+    <TD style="width: 138px;" rowspan="1" colspan="1">{BEGIN remember_password_label} Recordar 
+      contraseña: {END remember_password_label}</TD>
+    <TD style="width: 435px;" rowspan="1" colspan="1"><INPUT type="checkbox" {$rememberbox_attrs}> </TD></TR></TBODY></TABLE> 
+</DIV><STRONG></STRONG> 
+{BEGIN loginbuttons}<DIV class="rnr-brickcontents style2 rnr-b-loginbuttons {$brickclass_loginbuttons}"><A class="rnr-button main" href="#" {$loginlink_attrs}><STRONG>Ingresar</STRONG> </A> 
+{BEGIN continue_button}<A class="rnr-button" href="#" {$continuebutton_attrs}><STRONG>Continuar</STRONG> </A> {END continue_button}</DIV>{END loginbuttons}</DIV> 
+{END container_fields} </DIV>
+<DIV class="rnr-middle">
+<DIV class="rnr-left {$blockclass_left}"></DIV>
+<DIV class="rnr-center {$blockclass_center}"></DIV>
+<DIV class="rnr-right {$blockclass_right}"></DIV></DIV>
+<DIV class="rnr-bottom {$blockclass_bottom}"><!--%%bottom%%--> </DIV></DIV>
+{$footer}{END body} </BODY></HTML>

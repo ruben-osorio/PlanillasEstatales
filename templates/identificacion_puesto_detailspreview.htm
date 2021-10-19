@@ -1,0 +1,79 @@
+<div {$pageattrs}>
+
+{BEGIN container_dcount}
+<div class="rnr-c rnr-cv rnr-c-dcount">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-detailspreviewheader {$brickclass_detailspreviewheader}">	<h1>{$pagetitlelabel identificacion_puesto detailspreview}</h1>
+</div>
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-detailspreviewdetailsfount {$brickclass_detailspreviewdetailsfount}">Detalles encontrados: <strong>{$row_count}.</strong>
+</div>
+
+
+{BEGIN display_first}
+<div  class="rnr-brickcontents style1 rnr-b-detailspreviewdispfirst {$brickclass_detailspreviewdispfirst}">Mostrando primero: <strong>{$display_count}</strong>.
+</div>{END display_first}
+
+
+</div>
+{END container_dcount}
+
+
+
+{BEGIN container_detailspreviewgrid}
+
+
+{BEGIN details_data}
+<table class="rnr-c rnr-cont rnr-c--detailspreviewgrid rnr-b-detailspreviewgrid rnr-gridtable">
+{BEGIN details_row_header}
+	<thead>
+		<tr class="rnr-toprow style1 {$gridHeader_class}" >
+			<th class="{$id_class}">{$label identificacion_puesto id}</th>
+			<th class="{$id_per_class}">{$label identificacion_puesto id_per}</th>
+			<th class="{$denominacion_class}">{$label identificacion_puesto denominacion}</th>
+			<th class="{$nombre_funcional_class}">{$label identificacion_puesto nombre_funcional}</th>
+			<th class="{$unidad_organizacional_class}">{$label identificacion_puesto unidad_organizacional}</th>
+			<th class="{$supervisa_a_class}">{$label identificacion_puesto supervisa_a}</th>
+			<th class="{$codigo_class}">{$label identificacion_puesto codigo}</th>
+			<th class="{$categoria_class}">{$label identificacion_puesto categoria}</th>
+			<th class="{$nivel_class}">{$label identificacion_puesto nivel}</th>
+			<th class="{$jefe_inmediato_superior_class}">{$label identificacion_puesto jefe_inmediato_superior}</th>
+			<th class="{$jefe_supeior_jerarquico_class}">{$label identificacion_puesto jefe_supeior_jerarquico}</th>
+			<th class="{$updated_at_class}">{$label identificacion_puesto updated_at}</th>
+			<th class="{$created_at_class}">{$label identificacion_puesto created_at}</th>
+			<th class="rnr-edge">&nbsp;</th>
+		</tr>
+	</thead>
+{END details_row_header}
+	<tbody>
+{BEGIN details_row}
+		<tr class="rnr-row style1">
+			<td class="{$id_class}">{$id_value}</td>
+			<td class="{$id_per_class}">{$id_per_value}</td>
+			<td class="{$denominacion_class}">{$denominacion_value}</td>
+			<td class="{$nombre_funcional_class}">{$nombre_funcional_value}</td>
+			<td class="{$unidad_organizacional_class}">{$unidad_organizacional_value}</td>
+			<td class="{$supervisa_a_class}">{$supervisa_a_value}</td>
+			<td class="{$codigo_class}">{$codigo_value}</td>
+			<td class="{$categoria_class}">{$categoria_value}</td>
+			<td class="{$nivel_class}">{$nivel_value}</td>
+			<td class="{$jefe_inmediato_superior_class}">{$jefe_inmediato_superior_value}</td>
+			<td class="{$jefe_supeior_jerarquico_class}">{$jefe_supeior_jerarquico_value}</td>
+			<td class="{$updated_at_class}">{$updated_at_value}</td>
+			<td class="{$created_at_class}">{$created_at_value}</td>
+			<td class="rnr-edge">&nbsp;</td>
+		</tr>
+{END details_row}	
+	</tbody>
+</table>
+
+{END details_data}
+
+
+
+{END container_detailspreviewgrid}
+
+</div>

@@ -1,0 +1,1369 @@
+.ExtravaganzaCoral1.rnr-s-empty > .rnr-c
+{
+background:none;
+
+}
+.ExtravaganzaCoral1.rnr-s-empty > .rnr-c .rnr-leftbricks
+{
+margin-left: 10px;
+}
+.ExtravaganzaCoral1.rnr-s-empty > .rnr-c .rnr-rightbricks
+{
+margin-right: 10px;
+}
+.ExtravaganzaCoral1.rnr-s-empty > :not(.runner-c) > *.style1,
+.ExtravaganzaCoral1.rnr-s-empty > * > :not(.rnr-b-wrapper) .style1
+{
+color: #525252;
+font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1.rnr-s-empty > :not(.runner-c) > *.style1:not(.rnr-hfiller),
+.ExtravaganzaCoral1.rnr-s-empty > * > :not(.rnr-b-wrapper) .style1,
+.ExtravaganzaCoral1.rnr-s-empty > :not(.runner-c) > *.style1 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.ExtravaganzaCoral1.rnr-s-empty > .rnr-ch:before
+{
+content: "";display:table-cell;padding:0 0 0 10px; background:transparent;
+}
+.ExtravaganzaCoral1.rnr-s-empty > .rnr-ch:after
+{
+content: "";display:table-cell;padding:0 0 0 10px; background:transparent;
+}
+.ExtravaganzaCoral1.rnr-s-empty > :not(.runner-c) > *.style2,
+.ExtravaganzaCoral1.rnr-s-empty > * > :not(.rnr-b-wrapper) .style2
+{
+color: #333333;
+font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1.rnr-s-empty > :not(.runner-c) > *.style2:not(.rnr-hfiller),
+.ExtravaganzaCoral1.rnr-s-empty > * > :not(.rnr-b-wrapper) .style2,
+.ExtravaganzaCoral1.rnr-s-empty > :not(.runner-c) > *.style2 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.ExtravaganzaCoral1.rnr-s-empty > :not(.runner-c) > *.style3,
+.ExtravaganzaCoral1.rnr-s-empty > * > :not(.rnr-b-wrapper) .style3
+{
+color: #333333;
+font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1.rnr-s-empty > :not(.runner-c) > *.style3:not(.rnr-hfiller),
+.ExtravaganzaCoral1.rnr-s-empty > * > :not(.rnr-b-wrapper) .style3,
+.ExtravaganzaCoral1.rnr-s-empty > :not(.runner-c) > *.style3 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.ExtravaganzaCoral1.rnr-s-menu > .rnr-c
+{
+border: solid #C0C0C0 1px;border-top-left-radius: 6px;border-top-right-radius: 6px;border-bottom-left-radius: 6px;border-bottom-right-radius: 6px;
+}
+.ExtravaganzaCoral1.rnr-s-menu > .rnr-ch > .rnr-b-hmenu:first-child
+{
+border-top-left-radius: 5px; padding-left: 3px;
+border-bottom-left-radius: 5px; padding-left: 3px;
+
+}
+.ExtravaganzaCoral1.rnr-s-menu > .rnr-ch> .rnr-b-hmenu:last-child
+{
+border-top-right-radius: 5px; padding-right: 3px;
+border-bottom-right-radius: 5px; padding-right: 3px;
+
+}
+.ExtravaganzaCoral1.rnr-s-menu > :not(.runner-c) > *.style1,
+.ExtravaganzaCoral1.rnr-s-menu > * > :not(.rnr-b-wrapper) .style1
+{
+background-image: none; background-color: #696969;color: #FFFFFF;
+font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1.rnr-s-menu > .rnr-c.rnr-ch
+{
+background-image: none; background-color: #696969;
+}
+.ExtravaganzaCoral1.rnr-s-menu > :not(.runner-c) > *.style2,
+.ExtravaganzaCoral1.rnr-s-menu > * > :not(.rnr-b-wrapper) .style2
+{
+background-image: none; background-color: #343434;color: #FFFFFF;
+font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1.rnr-s-menu > :not(.runner-c) > *.style3,
+.ExtravaganzaCoral1.rnr-s-menu > * > :not(.rnr-b-wrapper) .style3
+{
+background-image: none; background-color: #444444;color: #DCDCDC;
+font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1.rnr-s-menu > .rnr-c .rnr-leftbricks
+{
+margin-left: 6px;
+}
+.ExtravaganzaCoral1.rnr-s-menu > .rnr-c .rnr-rightbricks
+{
+margin-right: 6px;
+}
+.ExtravaganzaCoral1.rnr-s-menu > :not(.runner-c) > *.style1:not(.rnr-hfiller),
+.ExtravaganzaCoral1.rnr-s-menu > * > :not(.rnr-b-wrapper) .style1,
+.ExtravaganzaCoral1.rnr-s-menu > :not(.runner-c) > *.style1 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.ExtravaganzaCoral1.rnr-s-menu > .rnr-ch:before
+{
+content: "";display:table-cell;padding:0 0 0 6px; background:transparent;
+}
+.ExtravaganzaCoral1.rnr-s-menu > .rnr-ch:after
+{
+content: "";display:table-cell;padding:0 0 0 6px; background:transparent;
+}
+.ExtravaganzaCoral1.rnr-s-menu > :not(.runner-c) > *.style2:not(.rnr-hfiller),
+.ExtravaganzaCoral1.rnr-s-menu > * > :not(.rnr-b-wrapper) .style2,
+.ExtravaganzaCoral1.rnr-s-menu > :not(.runner-c) > *.style2 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.ExtravaganzaCoral1.rnr-s-menu > :not(.runner-c) > *.style3:not(.rnr-hfiller),
+.ExtravaganzaCoral1.rnr-s-menu > * > :not(.rnr-b-wrapper) .style3,
+.ExtravaganzaCoral1.rnr-s-menu > :not(.runner-c) > *.style3 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.ExtravaganzaCoral1.rnr-s-hmenu > .rnr-c
+{
+background:none;
+
+}
+.ExtravaganzaCoral1.rnr-s-hmenu > .rnr-c .rnr-leftbricks
+{
+margin-left: 10px;
+}
+.ExtravaganzaCoral1.rnr-s-hmenu > .rnr-c .rnr-rightbricks
+{
+margin-right: 10px;
+}
+.ExtravaganzaCoral1.rnr-s-hmenu > :not(.runner-c) > *.style1,
+.ExtravaganzaCoral1.rnr-s-hmenu > * > :not(.rnr-b-wrapper) .style1
+{
+color: #FFFF00;
+font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1.rnr-s-hmenu > :not(.runner-c) > *.style1:not(.rnr-hfiller),
+.ExtravaganzaCoral1.rnr-s-hmenu > * > :not(.rnr-b-wrapper) .style1,
+.ExtravaganzaCoral1.rnr-s-hmenu > :not(.runner-c) > *.style1 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.ExtravaganzaCoral1.rnr-s-hmenu > .rnr-ch:before
+{
+content: "";display:table-cell;padding:0 0 0 10px; background:transparent;
+}
+.ExtravaganzaCoral1.rnr-s-hmenu > .rnr-ch:after
+{
+content: "";display:table-cell;padding:0 0 0 10px; background:transparent;
+}
+.ExtravaganzaCoral1.rnr-s-hmenu > :not(.runner-c) > *.style2,
+.ExtravaganzaCoral1.rnr-s-hmenu > * > :not(.rnr-b-wrapper) .style2
+{
+color: #FFFF00;
+font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1.rnr-s-hmenu > :not(.runner-c) > *.style2:not(.rnr-hfiller),
+.ExtravaganzaCoral1.rnr-s-hmenu > * > :not(.rnr-b-wrapper) .style2,
+.ExtravaganzaCoral1.rnr-s-hmenu > :not(.runner-c) > *.style2 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.ExtravaganzaCoral1.rnr-s-hmenu > :not(.runner-c) > *.style3,
+.ExtravaganzaCoral1.rnr-s-hmenu > * > :not(.rnr-b-wrapper) .style3
+{
+color: #FFFF00;
+font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1.rnr-s-hmenu > :not(.runner-c) > *.style3:not(.rnr-hfiller),
+.ExtravaganzaCoral1.rnr-s-hmenu > * > :not(.rnr-b-wrapper) .style3,
+.ExtravaganzaCoral1.rnr-s-hmenu > :not(.runner-c) > *.style3 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.ExtravaganzaCoral1.rnr-s-undermenu > .rnr-c
+{
+border: solid #6699CC 2px;border-top-left-radius: 5px;border-top-right-radius: 5px;border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;
+}
+.ExtravaganzaCoral1.rnr-s-undermenu > .rnr-ch > .rnr-b-hmenu:first-child
+{
+border-top-left-radius: 3px; padding-left: 2px;
+border-bottom-left-radius: 3px; padding-left: 2px;
+
+}
+.ExtravaganzaCoral1.rnr-s-undermenu > .rnr-ch> .rnr-b-hmenu:last-child
+{
+border-top-right-radius: 3px; padding-right: 2px;
+border-bottom-right-radius: 3px; padding-right: 2px;
+
+}
+.ExtravaganzaCoral1.rnr-s-undermenu > :not(.runner-c) > *.style1,
+.ExtravaganzaCoral1.rnr-s-undermenu > * > :not(.rnr-b-wrapper) .style1
+{
+background-image: none; background-color: #d5b195;color: #FFFFFF;
+font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1.rnr-s-undermenu > .rnr-c.rnr-ch
+{
+background-image: none; background-color: #d5b195;
+}
+.ExtravaganzaCoral1.rnr-s-undermenu > :not(.runner-c) > *.style2,
+.ExtravaganzaCoral1.rnr-s-undermenu > * > :not(.rnr-b-wrapper) .style2
+{
+background-image: none; background-color: #FFFF00;color: #FFFF00;
+font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1.rnr-s-undermenu > :not(.runner-c) > *.style3,
+.ExtravaganzaCoral1.rnr-s-undermenu > * > :not(.rnr-b-wrapper) .style3
+{
+background-image: none; background-color: #FFFF00;color: #FFFF00;
+font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1.rnr-s-undermenu > .rnr-c .rnr-leftbricks
+{
+margin-left: 5px;
+}
+.ExtravaganzaCoral1.rnr-s-undermenu > .rnr-c .rnr-rightbricks
+{
+margin-right: 5px;
+}
+.ExtravaganzaCoral1.rnr-s-undermenu > :not(.runner-c) > *.style1:not(.rnr-hfiller),
+.ExtravaganzaCoral1.rnr-s-undermenu > * > :not(.rnr-b-wrapper) .style1,
+.ExtravaganzaCoral1.rnr-s-undermenu > :not(.runner-c) > *.style1 > .fieldGrid > * > * > td
+{
+padding: 7px 4px;
+}
+.ExtravaganzaCoral1.rnr-s-undermenu > .rnr-ch:before
+{
+content: "";display:table-cell;padding:0 0 0 5px; background:transparent;
+}
+.ExtravaganzaCoral1.rnr-s-undermenu > .rnr-ch:after
+{
+content: "";display:table-cell;padding:0 0 0 5px; background:transparent;
+}
+.ExtravaganzaCoral1.rnr-s-undermenu > :not(.runner-c) > *.style2:not(.rnr-hfiller),
+.ExtravaganzaCoral1.rnr-s-undermenu > * > :not(.rnr-b-wrapper) .style2,
+.ExtravaganzaCoral1.rnr-s-undermenu > :not(.runner-c) > *.style2 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.ExtravaganzaCoral1.rnr-s-undermenu > :not(.runner-c) > *.style3:not(.rnr-hfiller),
+.ExtravaganzaCoral1.rnr-s-undermenu > * > :not(.rnr-b-wrapper) .style3,
+.ExtravaganzaCoral1.rnr-s-undermenu > :not(.runner-c) > *.style3 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.ExtravaganzaCoral1.rnr-s-fields > .rnr-c
+{
+border: solid #DCDCDC 2px;border-top-left-radius: 6px;border-top-right-radius: 6px;border-bottom-left-radius: 6px;border-bottom-right-radius: 6px;
+}
+.ExtravaganzaCoral1.rnr-s-fields > .rnr-ch > .rnr-b-hmenu:first-child
+{
+border-top-left-radius: 4px; padding-left: 3px;
+border-bottom-left-radius: 4px; padding-left: 3px;
+
+}
+.ExtravaganzaCoral1.rnr-s-fields > .rnr-ch> .rnr-b-hmenu:last-child
+{
+border-top-right-radius: 4px; padding-right: 3px;
+border-bottom-right-radius: 4px; padding-right: 3px;
+
+}
+.ExtravaganzaCoral1.rnr-s-fields > :not(.runner-c) > *.style1,
+.ExtravaganzaCoral1.rnr-s-fields > * > :not(.rnr-b-wrapper) .style1
+{
+background-color: #FFFFFF;
+background: linear-gradient(0.000000turn, #FFFFFF, #FFFFFF);
+;
+color: #000000;
+font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1.rnr-s-fields > .rnr-c.rnr-ch
+{
+background-color: #FFFFFF;
+background: linear-gradient(0.000000turn, #FFFFFF, #FFFFFF);
+;
+
+}
+.ExtravaganzaCoral1.rnr-s-fields > :not(.runner-c) > *.style2,
+.ExtravaganzaCoral1.rnr-s-fields > * > :not(.rnr-b-wrapper) .style2
+{
+background-image: none; background-color: #454F5E;color: #FFFFFF;
+font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1.rnr-s-fields > :not(.runner-c) > *.style3,
+.ExtravaganzaCoral1.rnr-s-fields > * > :not(.rnr-b-wrapper) .style3
+{
+background-color: #FFFFFF;
+background: linear-gradient(0.000000turn, #FFFFFF, #FFFFFF);
+;
+color: #FFFFFF;
+font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1.rnr-s-fields > .rnr-c .rnr-leftbricks
+{
+margin-left: 6px;
+}
+.ExtravaganzaCoral1.rnr-s-fields > .rnr-c .rnr-rightbricks
+{
+margin-right: 6px;
+}
+.ExtravaganzaCoral1.rnr-s-fields > :not(.runner-c) > *.style1:not(.rnr-hfiller),
+.ExtravaganzaCoral1.rnr-s-fields > * > :not(.rnr-b-wrapper) .style1,
+.ExtravaganzaCoral1.rnr-s-fields > :not(.runner-c) > *.style1 > .fieldGrid > * > * > td
+{
+padding: 6px 4px;
+}
+.ExtravaganzaCoral1.rnr-s-fields > .rnr-ch:before
+{
+content: "";display:table-cell;padding:0 0 0 6px; background:transparent;
+}
+.ExtravaganzaCoral1.rnr-s-fields > .rnr-ch:after
+{
+content: "";display:table-cell;padding:0 0 0 6px; background:transparent;
+}
+.ExtravaganzaCoral1.rnr-s-fields > :not(.runner-c) > *.style2:not(.rnr-hfiller),
+.ExtravaganzaCoral1.rnr-s-fields > * > :not(.rnr-b-wrapper) .style2,
+.ExtravaganzaCoral1.rnr-s-fields > :not(.runner-c) > *.style2 > .fieldGrid > * > * > td
+{
+padding: 8px 4px;
+}
+.ExtravaganzaCoral1.rnr-s-fields > :not(.runner-c) > *.style3:not(.rnr-hfiller),
+.ExtravaganzaCoral1.rnr-s-fields > * > :not(.rnr-b-wrapper) .style3,
+.ExtravaganzaCoral1.rnr-s-fields > :not(.runner-c) > *.style3 > .fieldGrid > * > * > td
+{
+padding: 7px 4px;
+}
+.ExtravaganzaCoral1.rnr-s-form > .rnr-c
+{
+border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;
+}
+.ExtravaganzaCoral1.rnr-s-form > .rnr-ch > .rnr-b-hmenu:first-child
+{
+border-top-left-radius: 10px; padding-left: 5px;
+border-bottom-left-radius: 10px; padding-left: 5px;
+
+}
+.ExtravaganzaCoral1.rnr-s-form > .rnr-ch> .rnr-b-hmenu:last-child
+{
+border-top-right-radius: 10px; padding-right: 5px;
+border-bottom-right-radius: 10px; padding-right: 5px;
+
+}
+.ExtravaganzaCoral1.rnr-s-form > :not(.runner-c) > *.style1,
+.ExtravaganzaCoral1.rnr-s-form > * > :not(.rnr-b-wrapper) .style1
+{
+background-image: none; background-color: #00CCCC;color: #000080;
+font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1.rnr-s-form > .rnr-c.rnr-ch
+{
+background-image: none; background-color: #00CCCC;
+}
+.ExtravaganzaCoral1.rnr-s-form > :not(.runner-c) > *.style2,
+.ExtravaganzaCoral1.rnr-s-form > * > :not(.rnr-b-wrapper) .style2
+{
+background-image: none; background-color: #004080;color: #FFFFFF;
+font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1.rnr-s-form > :not(.runner-c) > *.style3,
+.ExtravaganzaCoral1.rnr-s-form > * > :not(.rnr-b-wrapper) .style3
+{
+background-image: none; background-color: #6699CC;color: #003366;
+font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1.rnr-s-form > .rnr-c .rnr-leftbricks
+{
+margin-left: 10px;
+}
+.ExtravaganzaCoral1.rnr-s-form > .rnr-c .rnr-rightbricks
+{
+margin-right: 10px;
+}
+.ExtravaganzaCoral1.rnr-s-form > :not(.runner-c) > *.style1:not(.rnr-hfiller),
+.ExtravaganzaCoral1.rnr-s-form > * > :not(.rnr-b-wrapper) .style1,
+.ExtravaganzaCoral1.rnr-s-form > :not(.runner-c) > *.style1 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.ExtravaganzaCoral1.rnr-s-form > .rnr-ch:before
+{
+content: "";display:table-cell;padding:0 0 0 10px; background:transparent;
+}
+.ExtravaganzaCoral1.rnr-s-form > .rnr-ch:after
+{
+content: "";display:table-cell;padding:0 0 0 10px; background:transparent;
+}
+.ExtravaganzaCoral1.rnr-s-form > :not(.runner-c) > *.style2:not(.rnr-hfiller),
+.ExtravaganzaCoral1.rnr-s-form > * > :not(.rnr-b-wrapper) .style2,
+.ExtravaganzaCoral1.rnr-s-form > :not(.runner-c) > *.style2 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.ExtravaganzaCoral1.rnr-s-form > :not(.runner-c) > *.style3:not(.rnr-hfiller),
+.ExtravaganzaCoral1.rnr-s-form > * > :not(.rnr-b-wrapper) .style3,
+.ExtravaganzaCoral1.rnr-s-form > :not(.runner-c) > *.style3 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.ExtravaganzaCoral1.rnr-s-1 > .rnr-c
+{
+border: solid #FFFFFF 1px;border-top-left-radius: 5px;border-top-right-radius: 5px;border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;
+}
+.ExtravaganzaCoral1.rnr-s-1 > .rnr-ch > .rnr-b-hmenu:first-child
+{
+border-top-left-radius: 4px; padding-left: 2px;
+border-bottom-left-radius: 4px; padding-left: 2px;
+
+}
+.ExtravaganzaCoral1.rnr-s-1 > .rnr-ch> .rnr-b-hmenu:last-child
+{
+border-top-right-radius: 4px; padding-right: 2px;
+border-bottom-right-radius: 4px; padding-right: 2px;
+
+}
+.ExtravaganzaCoral1.rnr-s-1 > :not(.runner-c) > *.style1,
+.ExtravaganzaCoral1.rnr-s-1 > * > :not(.rnr-b-wrapper) .style1
+{
+background-image: none; background-color: #F9F9F9;color: #FFFFFF;
+font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1.rnr-s-1 > .rnr-c.rnr-ch
+{
+background-image: none; background-color: #F9F9F9;
+}
+.ExtravaganzaCoral1.rnr-s-1 > :not(.runner-c) > *.style2,
+.ExtravaganzaCoral1.rnr-s-1 > * > :not(.rnr-b-wrapper) .style2
+{
+background-image: none; background-color: #F0F0F0;color: #4D4D4D;
+font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1.rnr-s-1 > :not(.runner-c) > *.style3,
+.ExtravaganzaCoral1.rnr-s-1 > * > :not(.rnr-b-wrapper) .style3
+{
+background-image: none; background-color: #6699CC;color: #D1EEEE;
+font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1.rnr-s-1 > .rnr-c .rnr-leftbricks
+{
+margin-left: 5px;
+}
+.ExtravaganzaCoral1.rnr-s-1 > .rnr-c .rnr-rightbricks
+{
+margin-right: 5px;
+}
+.ExtravaganzaCoral1.rnr-s-1 > :not(.runner-c) > *.style1:not(.rnr-hfiller),
+.ExtravaganzaCoral1.rnr-s-1 > * > :not(.rnr-b-wrapper) .style1,
+.ExtravaganzaCoral1.rnr-s-1 > :not(.runner-c) > *.style1 > .fieldGrid > * > * > td
+{
+padding: 7px 4px;
+}
+.ExtravaganzaCoral1.rnr-s-1 > .rnr-ch:before
+{
+content: "";display:table-cell;padding:0 0 0 5px; background:transparent;
+}
+.ExtravaganzaCoral1.rnr-s-1 > .rnr-ch:after
+{
+content: "";display:table-cell;padding:0 0 0 5px; background:transparent;
+}
+.ExtravaganzaCoral1.rnr-s-1 > :not(.runner-c) > *.style2:not(.rnr-hfiller),
+.ExtravaganzaCoral1.rnr-s-1 > * > :not(.rnr-b-wrapper) .style2,
+.ExtravaganzaCoral1.rnr-s-1 > :not(.runner-c) > *.style2 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.ExtravaganzaCoral1.rnr-s-1 > :not(.runner-c) > *.style3:not(.rnr-hfiller),
+.ExtravaganzaCoral1.rnr-s-1 > * > :not(.rnr-b-wrapper) .style3,
+.ExtravaganzaCoral1.rnr-s-1 > :not(.runner-c) > *.style3 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.ExtravaganzaCoral1.rnr-s-2 > .rnr-c
+{
+border: solid #DCDCDC 2px;border-top-left-radius: 5px;border-top-right-radius: 5px;border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;
+}
+.ExtravaganzaCoral1.rnr-s-2 > .rnr-ch > .rnr-b-hmenu:first-child
+{
+border-top-left-radius: 3px; padding-left: 2px;
+border-bottom-left-radius: 3px; padding-left: 2px;
+
+}
+.ExtravaganzaCoral1.rnr-s-2 > .rnr-ch> .rnr-b-hmenu:last-child
+{
+border-top-right-radius: 3px; padding-right: 2px;
+border-bottom-right-radius: 3px; padding-right: 2px;
+
+}
+.ExtravaganzaCoral1.rnr-s-2 > :not(.runner-c) > *.style1,
+.ExtravaganzaCoral1.rnr-s-2 > * > :not(.rnr-b-wrapper) .style1
+{
+background-image: none; background-color: #F9F9F9;color: #333333;
+font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1.rnr-s-2 > .rnr-c.rnr-ch
+{
+background-image: none; background-color: #F9F9F9;
+}
+.ExtravaganzaCoral1.rnr-s-2 > :not(.runner-c) > *.style2,
+.ExtravaganzaCoral1.rnr-s-2 > * > :not(.rnr-b-wrapper) .style2
+{
+background-image: none; background-color: #3366FF;color: #FFFFFF;
+font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1.rnr-s-2 > :not(.runner-c) > *.style3,
+.ExtravaganzaCoral1.rnr-s-2 > * > :not(.rnr-b-wrapper) .style3
+{
+background-image: none; background-color: #6699CC;color: #FFFF00;
+font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1.rnr-s-2 > .rnr-c .rnr-leftbricks
+{
+margin-left: 5px;
+}
+.ExtravaganzaCoral1.rnr-s-2 > .rnr-c .rnr-rightbricks
+{
+margin-right: 5px;
+}
+.ExtravaganzaCoral1.rnr-s-2 > :not(.runner-c) > *.style1:not(.rnr-hfiller),
+.ExtravaganzaCoral1.rnr-s-2 > * > :not(.rnr-b-wrapper) .style1,
+.ExtravaganzaCoral1.rnr-s-2 > :not(.runner-c) > *.style1 > .fieldGrid > * > * > td
+{
+padding: 6px 4px;
+}
+.ExtravaganzaCoral1.rnr-s-2 > .rnr-ch:before
+{
+content: "";display:table-cell;padding:0 0 0 5px; background:transparent;
+}
+.ExtravaganzaCoral1.rnr-s-2 > .rnr-ch:after
+{
+content: "";display:table-cell;padding:0 0 0 5px; background:transparent;
+}
+.ExtravaganzaCoral1.rnr-s-2 > :not(.runner-c) > *.style2:not(.rnr-hfiller),
+.ExtravaganzaCoral1.rnr-s-2 > * > :not(.rnr-b-wrapper) .style2,
+.ExtravaganzaCoral1.rnr-s-2 > :not(.runner-c) > *.style2 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.ExtravaganzaCoral1.rnr-s-2 > :not(.runner-c) > *.style3:not(.rnr-hfiller),
+.ExtravaganzaCoral1.rnr-s-2 > * > :not(.rnr-b-wrapper) .style3,
+.ExtravaganzaCoral1.rnr-s-2 > :not(.runner-c) > *.style3 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.ExtravaganzaCoral1.rnr-s-3 > .rnr-c
+{
+border-top-left-radius: 6px;border-top-right-radius: 6px;border-bottom-left-radius: 6px;border-bottom-right-radius: 6px;
+}
+.ExtravaganzaCoral1.rnr-s-3 > .rnr-ch > .rnr-b-hmenu:first-child
+{
+border-top-left-radius: 6px; padding-left: 3px;
+border-bottom-left-radius: 6px; padding-left: 3px;
+
+}
+.ExtravaganzaCoral1.rnr-s-3 > .rnr-ch> .rnr-b-hmenu:last-child
+{
+border-top-right-radius: 6px; padding-right: 3px;
+border-bottom-right-radius: 6px; padding-right: 3px;
+
+}
+.ExtravaganzaCoral1.rnr-s-3 > :not(.runner-c) > *.style1,
+.ExtravaganzaCoral1.rnr-s-3 > * > :not(.rnr-b-wrapper) .style1
+{
+background-image: none; background-color: #343434;color: #FFFFFF;
+font-family: Arial, sans-serif; font-size: 13px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1.rnr-s-3 > .rnr-c.rnr-ch
+{
+background-image: none; background-color: #343434;
+}
+.ExtravaganzaCoral1.rnr-s-3 > :not(.runner-c) > *.style2,
+.ExtravaganzaCoral1.rnr-s-3 > * > :not(.rnr-b-wrapper) .style2
+{
+background-image: none; background-color: #2E5C8B;color: #FFFFFF;
+font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1.rnr-s-3 > :not(.runner-c) > *.style3,
+.ExtravaganzaCoral1.rnr-s-3 > * > :not(.rnr-b-wrapper) .style3
+{
+background-image: none; background-color: #004080;color: #FFFFFF;
+font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1.rnr-s-3 > .rnr-c .rnr-leftbricks
+{
+margin-left: 6px;
+}
+.ExtravaganzaCoral1.rnr-s-3 > .rnr-c .rnr-rightbricks
+{
+margin-right: 6px;
+}
+.ExtravaganzaCoral1.rnr-s-3 > :not(.runner-c) > *.style1:not(.rnr-hfiller),
+.ExtravaganzaCoral1.rnr-s-3 > * > :not(.rnr-b-wrapper) .style1,
+.ExtravaganzaCoral1.rnr-s-3 > :not(.runner-c) > *.style1 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.ExtravaganzaCoral1.rnr-s-3 > .rnr-ch:before
+{
+content: "";display:table-cell;padding:0 0 0 6px; background:transparent;
+}
+.ExtravaganzaCoral1.rnr-s-3 > .rnr-ch:after
+{
+content: "";display:table-cell;padding:0 0 0 6px; background:transparent;
+}
+.ExtravaganzaCoral1.rnr-s-3 > :not(.runner-c) > *.style2:not(.rnr-hfiller),
+.ExtravaganzaCoral1.rnr-s-3 > * > :not(.rnr-b-wrapper) .style2,
+.ExtravaganzaCoral1.rnr-s-3 > :not(.runner-c) > *.style2 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.ExtravaganzaCoral1.rnr-s-3 > :not(.runner-c) > *.style3:not(.rnr-hfiller),
+.ExtravaganzaCoral1.rnr-s-3 > * > :not(.rnr-b-wrapper) .style3,
+.ExtravaganzaCoral1.rnr-s-3 > :not(.runner-c) > *.style3 > .fieldGrid > * > * > td
+{
+padding: 5px 4px;
+}
+.ExtravaganzaCoral1.rnr-s-grid > table:not(.runner-c):not(.vertical) > * > .rnr-toprow:first-child > th:not(.rnr-cs),
+.ExtravaganzaCoral1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > * > .rnr-toprow:first-child > th:not(.rnr-cs),
+.ExtravaganzaCoral1.rnr-s-grid > table:not(.runner-c):not(.vertical) > * > .rnr-toprow:first-child > td:not(.rnr-cs),
+.ExtravaganzaCoral1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > * > .rnr-toprow:first-child > td:not(.rnr-cs)
+{
+border-top: solid #EFEFEF 1px;
+
+}
+.ExtravaganzaCoral1.rnr-s-grid > table:not(.runner-c):not(.vertical) > tbody > tr:last-child > td:not(.rnr-cs),
+.ExtravaganzaCoral1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > tbody > tr:last-child > td:not(.rnr-cs)
+{
+border-bottom: solid #EFEFEF 1px;
+
+}
+.ExtravaganzaCoral1.rnr-s-grid > table:not(.runner-c):not(.vertical) > * > * > td:first-child,
+.ExtravaganzaCoral1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > * > * > td:first-child,
+.ExtravaganzaCoral1.rnr-s-grid > table:not(.runner-c):not(.vertical) > * > * > th:first-child,
+.ExtravaganzaCoral1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > * > * > th:first-child,
+.ExtravaganzaCoral1.rnr-s-grid > table:not(.runner-c):not(.vertical) > * > * > *.rnr-cs + td,
+.ExtravaganzaCoral1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > * > * > *.rnr-cs + td,
+.ExtravaganzaCoral1.rnr-s-grid > table:not(.runner-c):not(.vertical) > * > * > *.rnr-cs + th,
+.ExtravaganzaCoral1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > * > * > *.rnr-cs + th
+{
+border-left: solid #EFEFEF 1px;
+
+}
+.ExtravaganzaCoral1.rnr-s-grid > table:not(.runner-c):not(.vertical) > * > * > *.rnr-edge,
+.ExtravaganzaCoral1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > * > * > *.rnr-edge
+{
+border-right: solid #EFEFEF 1px;
+
+}
+.ExtravaganzaCoral1.rnr-s-grid > table:not(.runner-c):not(.vertical) > * > .rnr-toprow:first-child > td:first-child,
+.ExtravaganzaCoral1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > * > .rnr-toprow:first-child > td:first-child,
+.ExtravaganzaCoral1.rnr-s-grid > table:not(.runner-c):not(.vertical) > * > .rnr-toprow:first-child > th:first-child,
+.ExtravaganzaCoral1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > * > .rnr-toprow:first-child > th:first-child,
+.ExtravaganzaCoral1.rnr-s-grid > table:not(.runner-c):not(.vertical) > * > .rnr-toprow:first-child > *.rnr-cs + td,
+.ExtravaganzaCoral1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > * > .rnr-toprow:first-child > *.rnr-cs + td,
+.ExtravaganzaCoral1.rnr-s-grid > table:not(.runner-c):not(.vertical) > * > .rnr-toprow:first-child > *.rnr-cs + th,
+.ExtravaganzaCoral1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > * > .rnr-toprow:first-child > *.rnr-cs + th
+{
+border-top-left-radius: 5px;
+}
+.ExtravaganzaCoral1.rnr-s-grid > table:not(.runner-c):not(.vertical) > tbody > tr:last-child > td:first-child,
+.ExtravaganzaCoral1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > tbody > tr:last-child > td:first-child,
+.ExtravaganzaCoral1.rnr-s-grid > table:not(.runner-c):not(.vertical) > tbody > tr:last-child > th:first-child,
+.ExtravaganzaCoral1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > tbody > tr:last-child > th:first-child,
+.ExtravaganzaCoral1.rnr-s-grid > table:not(.runner-c):not(.vertical) > tbody > tr:last-child > *.rnr-cs + td,
+.ExtravaganzaCoral1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > tbody > tr:last-child > *.rnr-cs + td,
+.ExtravaganzaCoral1.rnr-s-grid > table:not(.runner-c):not(.vertical) > tbody > tr:last-child > *.rnr-cs + th,
+.ExtravaganzaCoral1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > tbody > tr:last-child > *.rnr-cs + th
+{
+border-bottom-left-radius: 5px;
+}
+.ExtravaganzaCoral1.rnr-s-grid > table:not(.runner-c):not(.vertical) > * > .rnr-toprow:first-child > .rnr-edge,
+.ExtravaganzaCoral1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > * > .rnr-toprow:first-child > .rnr-edge
+{
+border-top-right-radius: 5px;
+}
+.ExtravaganzaCoral1.rnr-s-grid > table:not(.runner-c):not(.vertical) > tbody > tr:last-child > .rnr-edge,
+.ExtravaganzaCoral1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > tbody > tr:last-child > .rnr-edge
+{
+border-bottom-right-radius: 5px;
+}
+.ExtravaganzaCoral1.rnr-s-grid > table:not(.runner-c):not(.vertical) > tbody > * > .rnr-edge,
+.ExtravaganzaCoral1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > tbody > * > .rnr-edge
+{
+min-width: 5px;
+
+}
+.ExtravaganzaCoral1.rnr-s-grid > table:not(.runner-c):not(.vertical) > * > .rnr-toprow > th:not(.rnr-cs),
+.ExtravaganzaCoral1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > * > .rnr-toprow > th:not(.rnr-cs),
+.ExtravaganzaCoral1.rnr-s-grid > table:not(.runner-c):not(.vertical) > * > .rnr-toprow > td:not(.rnr-cs),
+.ExtravaganzaCoral1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > * > .rnr-toprow > td:not(.rnr-cs)
+{
+background-color: #E2E2E2; background-image: none;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;color: #525252;padding: 6px 4px;
+}
+.ExtravaganzaCoral1.rnr-s-grid > table:not(.runner-c):not(.vertical) > * > .rnr-bottomrow > td:not(.rnr-cs),
+.ExtravaganzaCoral1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > * > .rnr-bottomrow > td:not(.rnr-cs)
+{
+background-color: #DCE2E6; background-image: none;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;color: #333333;padding: 5px 4px;
+}
+.ExtravaganzaCoral1.rnr-s-grid > table:not(.runner-c):not(.vertical) > * > .rnr-row > td:not(.rnr-cs),
+.ExtravaganzaCoral1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > * > .rnr-row > td:not(.rnr-cs)
+{
+background-color: #F7F7F7; background-image: none;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;color: #333333;color: #333333;padding: 6px 4px;
+}
+.ExtravaganzaCoral1.rnr-s-grid > table:not(.runner-c):not(.vertical) > * > .rnr-row:nth-last-child(2n+1) > td:not(.rnr-cs),
+.ExtravaganzaCoral1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > * > .rnr-row:nth-last-child(2n+1) > td:not(.rnr-cs)
+{
+background-color: #FFFFFF; background-image: none;color: #333333;
+}
+.ExtravaganzaCoral1.rnr-s-grid > table:not(.runner-c):not(.vertical).hoverable > * > .rnr-row:hover > td:not(.rnr-cs),
+.ExtravaganzaCoral1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord.hoverable > * > .rnr-row:hover > td:not(.rnr-cs),
+.ExtravaganzaCoral1.rnr-s-grid > table:not(.runner-c):not(.vertical) > * > .rnr-row > td.rnr-selected,
+.ExtravaganzaCoral1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > * > .rnr-row > td.rnr-selected
+{
+background-color: #F0F0F0; background-image: none;color: #333333;
+}
+.ExtravaganzaCoral1.rnr-s-grid > table:not(.runner-c):not(.vertical).hoverable > * > .rnr-row:hover:nth-last-child(2n+1) > td:not(.rnr-cs),
+.ExtravaganzaCoral1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord.hoverable > * > .rnr-row:hover:nth-last-child(2n+1) > td:not(.rnr-cs),
+.ExtravaganzaCoral1.rnr-s-grid > table:not(.runner-c):not(.vertical) > * > .rnr-row:nth-last-child(2n+1) > td.rnr-selected,
+.ExtravaganzaCoral1.rnr-s-grid > table.vertical > * > tr > td > table.rnr-vrecord > * > .rnr-row:nth-last-child(2n+1) > td.rnr-selected
+{
+background-color: #F0F0F0; background-image: none;color: #333333;
+}
+.ExtravaganzaCoral1 .rnr-search-highlight
+{
+color: #FF0000; background-color: transparent;
+}
+.ExtravaganzaCoral1 .rnr-b-vmenu.simple.main > *,
+.ExtravaganzaCoral1 .rnr-b-vmenu.tree.main > *:not(.subitem)
+{
+background-color: #374A59;
+background: linear-gradient(0.000000turn, #73808A, #374A59);
+;
+color:#BFC2C7;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1 .rnr-b-vmenu.simple.main > * > hr,
+.ExtravaganzaCoral1 .rnr-b-vmenu.tree.main > *:not(.subitem) > hr
+{
+border-color:#BFC2C7;
+}
+.ExtravaganzaCoral1 .rnr-b-vmenu.simple.main > *:hover:not(.expanded):not(.menuSeparator),
+.ExtravaganzaCoral1 .rnr-b-vmenu.tree.main > *:not(.subitem):not(.manage):hover:not(.menuSeparator)
+{
+background-color: #283943;
+background: linear-gradient(0.000000turn, #68747B, #283943);
+;
+color:#FFFFFF;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1 .rnr-b-vmenu.simple.main > *.current.current.current,
+.ExtravaganzaCoral1 .rnr-b-vmenu.tree.main > *:not(.subitem).current.current.current
+{
+background-color: #283943;
+background: linear-gradient(0.000000turn, #68747B, #283943);
+;
+color:#FFFFFF;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1 .rnr-b-vmenu.simple.main > *:hover:hover:hover.expanded
+{
+background-color: #283943;
+background: linear-gradient(0.000000turn, #68747B, #283943);
+;
+color:#FFFFFF;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1 .rnr-b-vmenu.simple.main > * > ul li,
+.ExtravaganzaCoral1 .rnr-b-vmenu.tree.main > *.subitem
+{
+background-color: #FFFFFF;
+background: linear-gradient(0.000000turn, #FFFFFF, #FFFFFF);
+;
+color:#000000;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1 .rnr-b-vmenu.simple.main > * > ul li > hr,
+.ExtravaganzaCoral1 .rnr-b-vmenu.tree.main > *.subitem > hr
+{
+border-color:#000000;
+}
+.ExtravaganzaCoral1 .rnr-b-vmenu.simple.main > * > ul li:hover:not(.expanded):not(.menuSeparator),
+.ExtravaganzaCoral1 .rnr-b-vmenu.tree.main > *.subitem:hover:not(.menuSeparator)
+{
+background-color: #F7F7F7;
+background: linear-gradient(0.000000turn, #F9F9F9, #F7F7F7);
+;
+color:#797979;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1 .rnr-b-vmenu.simple.main > * > ul li.current.current.current,
+.ExtravaganzaCoral1 .rnr-b-vmenu.tree.main > *.subitem.current.current.current
+{
+background-color: #FAE0DD;
+background: linear-gradient(0.000000turn, #FBE9E7, #FAE0DD);
+;
+color:#D02B18;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1 .rnr-b-vmenu.simple.main > * > ul li:hover:hover:hover.expanded
+{
+background-color: #F7F7F7;
+background: linear-gradient(0.000000turn, #F9F9F9, #F7F7F7);
+;
+color:#797979;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1 .rnr-b-vmenu.tree.main > *:not(.subitem) > div
+{
+padding: 4px 3px; margin:1px 1px;
+}
+.ExtravaganzaCoral1 .rnr-b-vmenu.simple.main > * > :not(ul) > *
+{
+padding: 4px 3px; margin:1px 1px;
+}
+.ExtravaganzaCoral1 .rnr-b-vmenu.tree.main > *.subitem > div
+{
+padding: 4px 3px; margin:1px 1px;
+}
+.ExtravaganzaCoral1 .rnr-b-vmenu.simple.main > * > ul li > :not(ul) > *
+{
+padding: 4px 3px; margin:1px 1px;
+}
+.ExtravaganzaCoral1 .rnr-b-vmenu.simple.main >  * ul
+{
+box-shadow:5px 5px 3px rgba(0,0,0,0.2);
+}
+.ExtravaganzaCoral1 .rnr-b-vmenu.simple.second > *,
+.ExtravaganzaCoral1 .rnr-b-vmenu.tree.second > *:not(.subitem)
+{
+background-color: #374A59;
+background: linear-gradient(0.000000turn, #73808A, #374A59);
+;
+color:#BFC2C7;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1 .rnr-b-vmenu.simple.second > * > hr,
+.ExtravaganzaCoral1 .rnr-b-vmenu.tree.second > *:not(.subitem) > hr
+{
+border-color:#BFC2C7;
+}
+.ExtravaganzaCoral1 .rnr-b-vmenu.simple.second > *:hover:not(.expanded):not(.menuSeparator),
+.ExtravaganzaCoral1 .rnr-b-vmenu.tree.second > *:not(.subitem):not(.manage):hover:not(.menuSeparator)
+{
+background-color: #283943;
+background: linear-gradient(0.000000turn, #68747B, #283943);
+;
+color:#FFFFFF;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1 .rnr-b-vmenu.simple.second > *.current.current.current,
+.ExtravaganzaCoral1 .rnr-b-vmenu.tree.second > *:not(.subitem).current.current.current
+{
+background-color: #283943;
+background: linear-gradient(0.000000turn, #68747B, #283943);
+;
+color:#FFFFFF;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1 .rnr-b-vmenu.simple.second > *:hover:hover:hover.expanded
+{
+background-color: #283943;
+background: linear-gradient(0.000000turn, #68747B, #283943);
+;
+color:#FFFFFF;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1 .rnr-b-vmenu.simple.second > * > ul li,
+.ExtravaganzaCoral1 .rnr-b-vmenu.tree.second > *.subitem
+{
+background-color: #FFFFFF;
+background: linear-gradient(0.000000turn, #FFFFFF, #FFFFFF);
+;
+color:#000000;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1 .rnr-b-vmenu.simple.second > * > ul li > hr,
+.ExtravaganzaCoral1 .rnr-b-vmenu.tree.second > *.subitem > hr
+{
+border-color:#000000;
+}
+.ExtravaganzaCoral1 .rnr-b-vmenu.simple.second > * > ul li:hover:not(.expanded):not(.menuSeparator),
+.ExtravaganzaCoral1 .rnr-b-vmenu.tree.second > *.subitem:hover:not(.menuSeparator)
+{
+background-color: #F7F7F7;
+background: linear-gradient(0.000000turn, #F9F9F9, #F7F7F7);
+;
+color:#797979;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1 .rnr-b-vmenu.simple.second > * > ul li.current.current.current,
+.ExtravaganzaCoral1 .rnr-b-vmenu.tree.second > *.subitem.current.current.current
+{
+background-color: #FAE0DD;
+background: linear-gradient(0.000000turn, #FBE9E7, #FAE0DD);
+;
+color:#D02B18;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1 .rnr-b-vmenu.simple.second > * > ul li:hover:hover:hover.expanded
+{
+background-color: #F7F7F7;
+background: linear-gradient(0.000000turn, #F9F9F9, #F7F7F7);
+;
+color:#797979;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1 .rnr-b-vmenu.tree.second > *:not(.subitem) > div
+{
+padding: 4px 3px; margin:1px 1px;
+}
+.ExtravaganzaCoral1 .rnr-b-vmenu.simple.second > * > :not(ul) > *
+{
+padding: 4px 3px; margin:1px 1px;
+}
+.ExtravaganzaCoral1 .rnr-b-vmenu.tree.second > *.subitem > div
+{
+padding: 4px 3px; margin:1px 1px;
+}
+.ExtravaganzaCoral1 .rnr-b-vmenu.simple.second > * > ul li > :not(ul) > *
+{
+padding: 4px 3px; margin:1px 1px;
+}
+.ExtravaganzaCoral1 .rnr-b-vmenu.simple.second >  * ul
+{
+box-shadow:5px 5px 3px rgba(0,0,0,0.2);
+}
+.ExtravaganzaCoral1 .rnr-b-hmenu.main > div:not(.rnr-hseparator)
+{
+background-color: #374A59;
+background: linear-gradient(0.000000turn, #73808A, #374A59);
+;
+color:#BFC2C7;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;padding: 5px 6px;border-top-left-radius: 6px;border-top-right-radius: 6px;border: solid #494949 2px;
+}
+.ExtravaganzaCoral1 .rnr-b-hmenu.main > div:not(.rnr-hseparator) > hr
+{
+border-color:#BFC2C7;
+}
+.ExtravaganzaCoral1 .rnr-b-hmenu.main:hover:not(.expanded) > div:not(.rnr-hseparator)
+{
+background-color: #283943;
+background: linear-gradient(0.000000turn, #68747B, #283943);
+;
+color:#FFFFFF;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1 .rnr-b-hmenu.main.current.current > div:not(.rnr-hseparator)
+{
+background-color: #283943;
+background: linear-gradient(0.000000turn, #68747B, #283943);
+;
+color:#FFFFFF;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1 .rnr-b-hmenu.main:hover.expanded > div:not(.rnr-hseparator)
+{
+background-color: #283943;
+background: linear-gradient(0.000000turn, #68747B, #283943);
+;
+color:#FFFFFF;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1 .rnr-b-hmenu.main > ul li
+{
+background-color: #FFFFFF;
+background: linear-gradient(0.000000turn, #FFFFFF, #FFFFFF);
+;
+color:#000000;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: italic; text-decoration: none;
+}
+.ExtravaganzaCoral1 .rnr-b-hmenu.main > ul li > hr
+{
+border-color:#000000;
+}
+.ExtravaganzaCoral1 .rnr-b-hmenu.main > ul li:hover:not(.expanded):not(.menuSeparator)
+{
+background-color: #F7F7F7;
+background: linear-gradient(0.000000turn, #F9F9F9, #F7F7F7);
+;
+color:#797979;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: italic; text-decoration: none;
+}
+.ExtravaganzaCoral1 .rnr-b-hmenu.main > ul li.current.current
+{
+background-color: #FAE0DD;
+background: linear-gradient(0.000000turn, #FBE8E6, #FAE0DD);
+;
+color:#D02B18;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: italic; text-decoration: none;
+}
+.ExtravaganzaCoral1 .rnr-b-hmenu.main > ul li:hover.expanded
+{
+background-color: #F7F7F7;
+background: linear-gradient(0.000000turn, #F9F9F9, #F7F7F7);
+;
+color:#797979;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: italic; text-decoration: none;
+}
+.ExtravaganzaCoral1 .rnr-b-hmenu.main > ul li > div > div
+{
+padding: 4px 3px; margin:1px 1px;
+}
+.ExtravaganzaCoral1 .rnr-b-hmenu.main ul
+{
+box-shadow:5px 5px 3px rgba(0,0,0,0.2);
+}
+.ExtravaganzaCoral1 .rnr-b-hmenu.main.rnr-b-hmenu.rnr-b-hmenu
+{
+padding-bottom: 0; padding-left:0; padding-right:0; vertical-align: bottom;
+}
+.ExtravaganzaCoral1 .rnr-b-hmenu.second > div:not(.rnr-hseparator)
+{
+background-color: #374A59;
+background: linear-gradient(0.000000turn, #73808A, #374A59);
+;
+color:#BFC2C7;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;padding: 5px 6px;border-top-left-radius: 6px;border-top-right-radius: 6px;border: solid #494949 2px;
+}
+.ExtravaganzaCoral1 .rnr-b-hmenu.second > div:not(.rnr-hseparator) > hr
+{
+border-color:#BFC2C7;
+}
+.ExtravaganzaCoral1 .rnr-b-hmenu.second:hover:not(.expanded) > div:not(.rnr-hseparator)
+{
+background-color: #283943;
+background: linear-gradient(0.000000turn, #68747B, #283943);
+;
+color:#FFFFFF;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1 .rnr-b-hmenu.second.current.current > div:not(.rnr-hseparator)
+{
+background-color: #283943;
+background: linear-gradient(0.000000turn, #68747B, #283943);
+;
+color:#FFFFFF;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1 .rnr-b-hmenu.second:hover.expanded > div:not(.rnr-hseparator)
+{
+background-color: #283943;
+background: linear-gradient(0.000000turn, #68747B, #283943);
+;
+color:#FFFFFF;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1 .rnr-b-hmenu.second > ul li
+{
+background-color: #FFFFFF;
+background: linear-gradient(0.000000turn, #FFFFFF, #FFFFFF);
+;
+color:#000000;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: italic; text-decoration: none;
+}
+.ExtravaganzaCoral1 .rnr-b-hmenu.second > ul li > hr
+{
+border-color:#000000;
+}
+.ExtravaganzaCoral1 .rnr-b-hmenu.second > ul li:hover:not(.expanded):not(.menuSeparator)
+{
+background-color: #F7F7F7;
+background: linear-gradient(0.000000turn, #F9F9F9, #F7F7F7);
+;
+color:#797979;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: italic; text-decoration: none;
+}
+.ExtravaganzaCoral1 .rnr-b-hmenu.second > ul li.current.current
+{
+background-color: #FAE0DD;
+background: linear-gradient(0.000000turn, #FBE8E6, #FAE0DD);
+;
+color:#D02B18;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: italic; text-decoration: none;
+}
+.ExtravaganzaCoral1 .rnr-b-hmenu.second > ul li:hover.expanded
+{
+background-color: #F7F7F7;
+background: linear-gradient(0.000000turn, #F9F9F9, #F7F7F7);
+;
+color:#797979;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: italic; text-decoration: none;
+}
+.ExtravaganzaCoral1 .rnr-b-hmenu.second > ul li > div > div
+{
+padding: 4px 3px; margin:1px 1px;
+}
+.ExtravaganzaCoral1 .rnr-b-hmenu.second ul
+{
+box-shadow:5px 5px 3px rgba(0,0,0,0.2);
+}
+.ExtravaganzaCoral1 .rnr-b-hmenu.second.rnr-b-hmenu.rnr-b-hmenu
+{
+padding-bottom: 0; padding-left:0; padding-right:0; vertical-align: bottom;
+}
+body.ExtravaganzaCoral1
+{
+
+background-color:#F7F7F7;
+}
+.ExtravaganzaCoral1 .rnr-list
+{
+color: #C78787;background-color: #FFFFFF;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;border: solid #DEDEDE 1px;box-shadow:5px 5px 3px rgba(0,0,0,0.2);
+}
+.ExtravaganzaCoral1 .rnr-tab.selected
+{
+background-color:#16589C;
+border-top-left-radius:4px;
+border-top-right-radius:4px;
+
+}
+.ExtravaganzaCoral1 .rnr-tab
+{
+background-color:#E9E9E9;
+border-top-left-radius:4px;
+border-top-right-radius:4px;
+border: solid #808080 1px; border-bottom-width:0;
+}
+.ExtravaganzaCoral1 .rnr-tab.selected > a
+{
+color: #FFFFFF;
+
+}
+.ExtravaganzaCoral1 .rnr-tab > a
+{
+color: #000000;
+font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1 .yui-navset .yui-content
+{
+border: solid #16589C 1px;border-top-width: 5px;
+}
+.ExtravaganzaCoral1 .rnr-stepnav > a.active,
+.ExtravaganzaCoral1 .rnr-stepnav > a:hover:not(.active)
+{
+background-color: #D35544;
+background: linear-gradient(0.000000turn, #E9AAA1, #D35544);
+;
+color: #FFFFFF;
+
+}
+.ExtravaganzaCoral1 .rnr-stepnav > a.active:after,
+.ExtravaganzaCoral1 .rnr-stepnav > a:hover:not(.active):after
+{
+background-color: #D35544;
+background: linear-gradient(0.875000turn, #E9AAA1, #D35544);
+;
+
+}
+.ExtravaganzaCoral1 .rnr-stepnav > a:not(.active),
+.ExtravaganzaCoral1 .rnr-stepnav > a:not(.active):after
+{
+background-image: none; background-color: #FFFFFF;
+
+}
+.ExtravaganzaCoral1 .rnr-stepnav > a:before
+{
+background-image: none; background: #FFFFFF;
+
+}
+.ExtravaganzaCoral1 .rnr-stepnav > a:not(.active)
+{
+color: #DDDDDD;
+
+}
+.ExtravaganzaCoral1 .rnr-stepnav > a:before 
+{
+color: #C35142;
+
+}
+.ExtravaganzaCoral1 .rnr-stepnav > a,
+ .rnr-pagewrapper .ExtravaganzaCoral1 .rnr-stepnav > a,
+ .rnr-pagewrapper .rnr-pagewrapper .ExtravaganzaCoral1 .rnr-stepnav > a
+{
+font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1  .rnr-message
+{
+background-color: #EBEDEF;border: solid #C0C0C0 2px;color: #16589C;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1  .rnr-error.rnr-error
+{
+color: #A80000;font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1 .yui3-panel-content.yui3-panel-content
+{
+border: solid #DCDCDC 1px;border-radius: 5px;
+}
+.ExtravaganzaCoral1  .yui3-panel .yui3-widget-hd.yui3-widget-hd.yui3-widget-hd
+{
+background-color: #DDDDDD; background-image: none;font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none;color: #4D4D4D;
+}
+.ExtravaganzaCoral1  .yui3-widget-ft
+{
+background-color: #DDDDDD; background-image: none;font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none;color: #4D4D4D;
+}
+.ExtravaganzaCoral1 .rnr-dbbordered
+{
+border: solid #DCDCDC 1px;border-radius: 5px;
+}
+.ExtravaganzaCoral1  .rnr-dbelemheader
+{
+background-color: #DDDDDD; background-image: none;font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none;color: #4D4D4D;
+}
+.ExtravaganzaCoral1  .rnr-dbelemfooter
+{
+background-color: #D8D8D8; background-image: none;font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none;color: #000000;
+}
+.ExtravaganzaCoral1  .rnr-dbselectedrow.rnr-dbselectedrow.rnr-dbselectedrow.rnr-dbselectedrow.rnr-dbselectedrow.rnr-dbselectedrow.rnr-dbselectedrow
+{
+background-color: #FFFF00; background-image: none;color: #000000;
+}
+.ExtravaganzaCoral1 .rnr-dashboard
+{
+background-color: #FFFFFF;
+}
+.ExtravaganzaCoral1 .rnr-button.rnr-button,
+.ExtravaganzaCoral1.asbuttons > * > *:not(.rnr-wrapper) .rnr-button.rnr-button,
+.ExtravaganzaCoral1 .button.button.button.rnr-button.rnr-button,
+ .rnr-pagewrapper .ExtravaganzaCoral1 .rnr-button.rnr-button,
+ .rnr-pagewrapper .ExtravaganzaCoral1.asbuttons > * > *:not(.rnr-wrapper) .rnr-button.rnr-button,
+ .rnr-pagewrapper .ExtravaganzaCoral1 .button.button.button.rnr-button.rnr-button,
+ .rnr-pagewrapper .rnr-pagewrapper .ExtravaganzaCoral1 .rnr-button.rnr-button,
+ .rnr-pagewrapper .rnr-pagewrapper .ExtravaganzaCoral1.asbuttons > * > *:not(.rnr-wrapper) .rnr-button.rnr-button,
+ .rnr-pagewrapper .rnr-pagewrapper .ExtravaganzaCoral1 .button.button.button.rnr-button.rnr-button
+{
+border: solid 2px;border-radius: 4px;padding: 3px 9px 4px;background-color: #D35544;
+background: linear-gradient(0.000000turn, #E9AAA1, #D35544);
+;
+border-color: #D35544;color: #FFFFFF;
+font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1 .rnr-button.rnr-button.img,
+.ExtravaganzaCoral1.asbuttons > * > *:not(.rnr-wrapper) .rnr-button.rnr-button.img,
+.ExtravaganzaCoral1 .button.button.button.rnr-button.rnr-button.img,
+ .rnr-pagewrapper .ExtravaganzaCoral1 .rnr-button.rnr-button.img,
+ .rnr-pagewrapper .ExtravaganzaCoral1.asbuttons > * > *:not(.rnr-wrapper) .rnr-button.rnr-button.img,
+ .rnr-pagewrapper .ExtravaganzaCoral1 .button.button.button.rnr-button.rnr-button.img,
+ .rnr-pagewrapper .rnr-pagewrapper .ExtravaganzaCoral1 .rnr-button.rnr-button.img,
+ .rnr-pagewrapper .rnr-pagewrapper .ExtravaganzaCoral1.asbuttons > * > *:not(.rnr-wrapper) .rnr-button.rnr-button.img,
+ .rnr-pagewrapper .rnr-pagewrapper .ExtravaganzaCoral1 .button.button.button.rnr-button.rnr-button.img
+{
+padding: 3px;
+
+}
+.ExtravaganzaCoral1 .rnr-button:hover,
+.ExtravaganzaCoral1.asbuttons > * > *:not(.rnr-wrapper) .rnr-button:hover,
+.ExtravaganzaCoral1 .button.button.button.rnr-button:hover,
+ .rnr-pagewrapper .ExtravaganzaCoral1 .rnr-button:hover,
+ .rnr-pagewrapper .ExtravaganzaCoral1.asbuttons > * > *:not(.rnr-wrapper) .rnr-button:hover,
+ .rnr-pagewrapper .ExtravaganzaCoral1 .button.button.button.rnr-button:hover,
+ .rnr-pagewrapper .rnr-pagewrapper .ExtravaganzaCoral1 .rnr-button:hover,
+ .rnr-pagewrapper .rnr-pagewrapper .ExtravaganzaCoral1.asbuttons > * > *:not(.rnr-wrapper) .rnr-button:hover,
+ .rnr-pagewrapper .rnr-pagewrapper .ExtravaganzaCoral1 .button.button.button.rnr-button:hover
+{
+background-color: #FFFFFF;
+background: linear-gradient(0.000000turn, #FFFFFF, #FFFFFF);
+;
+border-color: #D35544;color: #C35142;
+
+}
+.ExtravaganzaCoral1 .rnr-button:active,
+.ExtravaganzaCoral1.asbuttons > * > *:not(.rnr-wrapper) .rnr-button:active,
+.ExtravaganzaCoral1 .button.button.button.rnr-button:active,
+ .rnr-pagewrapper .ExtravaganzaCoral1 .rnr-button:active,
+ .rnr-pagewrapper .ExtravaganzaCoral1.asbuttons > * > *:not(.rnr-wrapper) .rnr-button:active,
+ .rnr-pagewrapper .ExtravaganzaCoral1 .button.button.button.rnr-button:active,
+ .rnr-pagewrapper .rnr-pagewrapper .ExtravaganzaCoral1 .rnr-button:active,
+ .rnr-pagewrapper .rnr-pagewrapper .ExtravaganzaCoral1.asbuttons > * > *:not(.rnr-wrapper) .rnr-button:active,
+ .rnr-pagewrapper .rnr-pagewrapper .ExtravaganzaCoral1 .button.button.button.rnr-button:active
+{
+background-color: #FFFFFF;
+background: linear-gradient(0.000000turn, #FFFFFF, #FFFFFF);
+;
+border-color: #D35544;color: #C35142;
+
+}
+.ExtravaganzaCoral1 .rnr-button.disabled,
+.ExtravaganzaCoral1.asbuttons > * > *:not(.rnr-wrapper) .rnr-button.disabled,
+.ExtravaganzaCoral1 .button.button.button.rnr-button.disabled,
+ .rnr-pagewrapper .ExtravaganzaCoral1 .rnr-button.disabled,
+ .rnr-pagewrapper .ExtravaganzaCoral1.asbuttons > * > *:not(.rnr-wrapper) .rnr-button.disabled,
+ .rnr-pagewrapper .ExtravaganzaCoral1 .button.button.button.rnr-button.disabled,
+ .rnr-pagewrapper .rnr-pagewrapper .ExtravaganzaCoral1 .rnr-button.disabled,
+ .rnr-pagewrapper .rnr-pagewrapper .ExtravaganzaCoral1.asbuttons > * > *:not(.rnr-wrapper) .rnr-button.disabled,
+ .rnr-pagewrapper .rnr-pagewrapper .ExtravaganzaCoral1 .button.button.button.rnr-button.disabled
+{
+background-color: #FFFFFF;
+background: linear-gradient(0.000000turn, #FFFFFF, #FFFFFF);
+;
+border-color: #696969;color: #DDDDDD;
+
+}
+.ExtravaganzaCoral1.aslinks > * > *:not(.rnr-wrapper) .rnr-button.rnr-button,
+.ExtravaganzaCoral1 .link.link.link.rnr-button.rnr-button,
+ .rnr-pagewrapper .ExtravaganzaCoral1.aslinks > * > *:not(.rnr-wrapper) .rnr-button.rnr-button,
+ .rnr-pagewrapper .ExtravaganzaCoral1 .link.link.link.rnr-button.rnr-button,
+ .rnr-pagewrapper .rnr-pagewrapper .ExtravaganzaCoral1.aslinks > * > *:not(.rnr-wrapper) .rnr-button.rnr-button,
+ .rnr-pagewrapper .rnr-pagewrapper .ExtravaganzaCoral1 .link.link.link.rnr-button.rnr-button
+{
+background: none; border: none; ;
+border: none;border-radius: 0px;padding: 4px 8px 4px;color: #404040;
+font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1.aslinks > * > *:not(.rnr-wrapper) .rnr-button.rnr-button.img,
+.ExtravaganzaCoral1 .link.link.link.rnr-button.rnr-button.img,
+ .rnr-pagewrapper .ExtravaganzaCoral1.aslinks > * > *:not(.rnr-wrapper) .rnr-button.rnr-button.img,
+ .rnr-pagewrapper .ExtravaganzaCoral1 .link.link.link.rnr-button.rnr-button.img,
+ .rnr-pagewrapper .rnr-pagewrapper .ExtravaganzaCoral1.aslinks > * > *:not(.rnr-wrapper) .rnr-button.rnr-button.img,
+ .rnr-pagewrapper .rnr-pagewrapper .ExtravaganzaCoral1 .link.link.link.rnr-button.rnr-button.img
+{
+padding: 4px;
+
+}
+.ExtravaganzaCoral1.aslinks > * > *:not(.rnr-wrapper) .rnr-button:hover,
+.ExtravaganzaCoral1 .link.link.link.rnr-button:hover,
+ .rnr-pagewrapper .ExtravaganzaCoral1.aslinks > * > *:not(.rnr-wrapper) .rnr-button:hover,
+ .rnr-pagewrapper .ExtravaganzaCoral1 .link.link.link.rnr-button:hover,
+ .rnr-pagewrapper .rnr-pagewrapper .ExtravaganzaCoral1.aslinks > * > *:not(.rnr-wrapper) .rnr-button:hover,
+ .rnr-pagewrapper .rnr-pagewrapper .ExtravaganzaCoral1 .link.link.link.rnr-button:hover
+{
+color: #d5b195;
+
+}
+.ExtravaganzaCoral1.aslinks > * > *:not(.rnr-wrapper) .rnr-button:active,
+.ExtravaganzaCoral1 .link.link.link.rnr-button:active,
+ .rnr-pagewrapper .ExtravaganzaCoral1.aslinks > * > *:not(.rnr-wrapper) .rnr-button:active,
+ .rnr-pagewrapper .ExtravaganzaCoral1 .link.link.link.rnr-button:active,
+ .rnr-pagewrapper .rnr-pagewrapper .ExtravaganzaCoral1.aslinks > * > *:not(.rnr-wrapper) .rnr-button:active,
+ .rnr-pagewrapper .rnr-pagewrapper .ExtravaganzaCoral1 .link.link.link.rnr-button:active
+{
+color: #004080;
+
+}
+.ExtravaganzaCoral1.aslinks > * > *:not(.rnr-wrapper) .rnr-button.disabled,
+.ExtravaganzaCoral1 .link.link.link.rnr-button.disabled,
+ .rnr-pagewrapper .ExtravaganzaCoral1.aslinks > * > *:not(.rnr-wrapper) .rnr-button.disabled,
+ .rnr-pagewrapper .ExtravaganzaCoral1 .link.link.link.rnr-button.disabled,
+ .rnr-pagewrapper .rnr-pagewrapper .ExtravaganzaCoral1.aslinks > * > *:not(.rnr-wrapper) .rnr-button.disabled,
+ .rnr-pagewrapper .rnr-pagewrapper .ExtravaganzaCoral1 .link.link.link.rnr-button.disabled
+{
+color: #004080;
+
+}
+.ExtravaganzaCoral1 .main.main.main.rnr-button.rnr-button,
+ .rnr-pagewrapper .ExtravaganzaCoral1 .main.main.main.rnr-button.rnr-button,
+ .rnr-pagewrapper .rnr-pagewrapper .ExtravaganzaCoral1 .main.main.main.rnr-button.rnr-button
+{
+border: solid 2px;border-radius: 4px;padding: 3px 9px 4px;background-color: #454F5E;
+background: linear-gradient(0.000000turn, #A2A7AE, #454F5E);
+;
+border-color: #424242;color: #FFFFFF;
+font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; font-style: normal; text-decoration: none;
+}
+.ExtravaganzaCoral1 .main.main.main.rnr-button.rnr-button.img,
+ .rnr-pagewrapper .ExtravaganzaCoral1 .main.main.main.rnr-button.rnr-button.img,
+ .rnr-pagewrapper .rnr-pagewrapper .ExtravaganzaCoral1 .main.main.main.rnr-button.rnr-button.img
+{
+padding: 3px;
+
+}
+.ExtravaganzaCoral1 .main.main.main.rnr-button:hover,
+ .rnr-pagewrapper .ExtravaganzaCoral1 .main.main.main.rnr-button:hover,
+ .rnr-pagewrapper .rnr-pagewrapper .ExtravaganzaCoral1 .main.main.main.rnr-button:hover
+{
+background-color: #FFFFFF;
+background: linear-gradient(0.000000turn, #FFFFFF, #FFFFFF);
+;
+border-color: #424242;color: #424242;
+
+}
+.ExtravaganzaCoral1 .main.main.main.rnr-button:active,
+ .rnr-pagewrapper .ExtravaganzaCoral1 .main.main.main.rnr-button:active,
+ .rnr-pagewrapper .rnr-pagewrapper .ExtravaganzaCoral1 .main.main.main.rnr-button:active
+{
+background-color: #FFFFFF;
+background: linear-gradient(0.000000turn, #FFFFFF, #FFFFFF);
+;
+border-color: #424242;color: #424242;
+
+}
+.ExtravaganzaCoral1 .main.main.main.rnr-button.disabled,
+ .rnr-pagewrapper .ExtravaganzaCoral1 .main.main.main.rnr-button.disabled,
+ .rnr-pagewrapper .rnr-pagewrapper .ExtravaganzaCoral1 .main.main.main.rnr-button.disabled
+{
+background-color: #C0C0C0;
+background: linear-gradient(0.000000turn, #DFDFDF, #C0C0C0);
+;
+border-color: #696969;color: #A9A9A9;
+
+}

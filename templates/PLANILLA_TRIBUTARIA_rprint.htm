@@ -1,0 +1,190 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-rprint" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+{BEGIN pdflink_block}
+<a href="#" class="pdflink rnr-button button" {$pdflink_attrs}>Vista PDF</a>
+{END pdflink_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+
+<style>
+	td.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary {background-color:#ffffbb;}
+	td.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary {background-color:#ffe0b0;}
+
+</style>
+
+
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}"><span>	<h1>{$pagetitlelabel PLANILLA_TRIBUTARIA rprint}</h1>
+</span></div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Página <span class="rp-pageno">{$pageno}</span> / <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_grid}
+
+
+
+<style>
+	td.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary {background-color:#ffffbb;}
+	td.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary {background-color:#ffe0b0;}
+
+</style>
+
+<div id="grid_block{$id}" class="rnr-report-gridblock">
+		<div class="rnr-cw-grid rnr-s-grid asbuttons {$pageStyleName}">
+		{BEGIN grid_block}
+<TABLE class="rnr-c rnr-b-report report" CELLPADDING=0>
+<thead>
+<tr class="rnr-toprow table-header style1">
+
+<th>{$label PLANILLA_TRIBUTARIA id_func_trib}</th>
+<th>{$label PLANILLA_TRIBUTARIA gestion}</th>
+<th>{$label PLANILLA_TRIBUTARIA periodo}</th>
+<th>{$label PLANILLA_TRIBUTARIA nit}</th>
+<th>{$label PLANILLA_TRIBUTARIA name}</th>
+<th>{$label PLANILLA_TRIBUTARIA l_name1}</th>
+<th>{$label PLANILLA_TRIBUTARIA l_name2}</th>
+<th>{$label PLANILLA_TRIBUTARIA ci}</th>
+<th>{$label PLANILLA_TRIBUTARIA expe}</th>
+<th>{$label PLANILLA_TRIBUTARIA novedades}</th>
+<th>{$label PLANILLA_TRIBUTARIA liquido_pagable}</th>
+<th>{$label PLANILLA_TRIBUTARIA dos_salarios_min}</th>
+<th>{$label PLANILLA_TRIBUTARIA base_imponible}</th>
+<th>{$label PLANILLA_TRIBUTARIA impuesto_rc_iva}</th>
+<th>{$label PLANILLA_TRIBUTARIA dos_salarios_13}</th>
+<th>{$label PLANILLA_TRIBUTARIA impuesto_neto_rc_iva}</th>
+<th>{$label PLANILLA_TRIBUTARIA f_110_facturas}</th>
+<th>{$label PLANILLA_TRIBUTARIA saldo_favor_fisco}</th>
+<th>{$label PLANILLA_TRIBUTARIA saldo_favor_dependiente}</th>
+<th>{$label PLANILLA_TRIBUTARIA saldo_favor_dependiente_per_anterior}</th>
+<th>{$label PLANILLA_TRIBUTARIA mantenimiento_periodo_anterior}</th>
+<th>{$label PLANILLA_TRIBUTARIA saldo_periodo_anterior_actualizado}</th>
+<th>{$label PLANILLA_TRIBUTARIA saldo_utilizado}</th>
+<th>{$label PLANILLA_TRIBUTARIA impuesto_rc_iva_retenido}</th>
+<th>{$label PLANILLA_TRIBUTARIA saldo_favor_dep_mes_siguiente}</th>
+<th class="rnr-edge"></th>
+</tr>
+</thead>
+<tbody>
+{BEGIN grid_row}
+<!-------------------------------------  data ----------------------------------------->
+{BEGIN row_data}
+<tr class="rnr-row style1" {$rowattrs}>
+
+	<!-------------------------------------  begin detail links for row ----------------------------------------->
+		<!-------------------------------------  end detail links for row ----------------------------------------->
+
+	<td {$recordattrs}>{$id_func_trib_value}</td>
+	<td {$recordattrs}>{$gestion_value}</td>
+	<td {$recordattrs}>{$periodo_value}</td>
+	<td {$recordattrs}>{$nit_value}</td>
+	<td {$recordattrs}>{$name_value}</td>
+	<td {$recordattrs}>{$l_name1_value}</td>
+	<td {$recordattrs}>{$l_name2_value}</td>
+	<td {$recordattrs}>{$ci_value}</td>
+	<td {$recordattrs}>{$expe_value}</td>
+	<td {$recordattrs}>{$novedades_value}</td>
+	<td {$recordattrs}>{$liquido_pagable_value}</td>
+	<td {$recordattrs}>{$dos_salarios_min_value}</td>
+	<td {$recordattrs}>{$base_imponible_value}</td>
+	<td {$recordattrs}>{$impuesto_rc_iva_value}</td>
+	<td {$recordattrs}>{$dos_salarios_13_value}</td>
+	<td {$recordattrs}>{$impuesto_neto_rc_iva_value}</td>
+	<td {$recordattrs}>{$f_110_facturas_value}</td>
+	<td {$recordattrs}>{$saldo_favor_fisco_value}</td>
+	<td {$recordattrs}>{$saldo_favor_dependiente_value}</td>
+	<td {$recordattrs}>{$saldo_favor_dependiente_per_anterior_value}</td>
+	<td {$recordattrs}>{$mantenimiento_periodo_anterior_value}</td>
+	<td {$recordattrs}>{$saldo_periodo_anterior_actualizado_value}</td>
+	<td {$recordattrs}>{$saldo_utilizado_value}</td>
+	<td {$recordattrs}>{$impuesto_rc_iva_retenido_value}</td>
+	<td {$recordattrs}>{$saldo_favor_dep_mes_siguiente_value}</td>
+	<td class="rnr-edge" {$recordattrs}></td>
+</tr>
+{END row_data}
+{END grid_row}
+</tbody>
+</table>
+{END grid_block}
+	</div>		
+</div>
+
+
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

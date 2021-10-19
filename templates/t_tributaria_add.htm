@@ -1,0 +1,230 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN addheader}
+<div  class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><span>	<h1>{$pagetitlelabel t_tributaria add}</h1>
+</span></div>{END addheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-addfields2 {$brickclass_addfields2}"><table class="fieldGrid fieldGrid2 edit">
+
+<tr>
+<td>
+	{BEGIN id_func_trib_fieldblock}
+<div data-fieldname="id_func_trib" class="rnr-field style1 {$fielddispclass_id_func_trib}">
+  <span class="rnr-label">{BEGIN id_func_trib_label}{$label t_tributaria id_func_trib}{END id_func_trib_label}</span>
+  <span class="rnr-control style3">{$id_func_trib_editcontrol}</span>
+</div>
+{END id_func_trib_fieldblock}
+	{BEGIN gestion_fieldblock}
+<div data-fieldname="gestion" class="rnr-field style1 {$fielddispclass_gestion}">
+  <span class="rnr-label">{BEGIN gestion_label}{$label t_tributaria gestion}{END gestion_label}</span>
+  <span class="rnr-control style3">{$gestion_editcontrol}</span>
+</div>
+{END gestion_fieldblock}
+	{BEGIN periodo_fieldblock}
+<div data-fieldname="periodo" class="rnr-field style1 {$fielddispclass_periodo}">
+  <span class="rnr-label">{BEGIN periodo_label}{$label t_tributaria periodo}{END periodo_label}</span>
+  <span class="rnr-control style3">{$periodo_editcontrol}</span>
+</div>
+{END periodo_fieldblock}
+	{BEGIN nit_fieldblock}
+<div data-fieldname="nit" class="rnr-field style1 {$fielddispclass_nit}">
+  <span class="rnr-label">{BEGIN nit_label}{$label t_tributaria nit}{END nit_label}</span>
+  <span class="rnr-control style3">{$nit_editcontrol}</span>
+</div>
+{END nit_fieldblock}
+	{BEGIN novedades_fieldblock}
+<div data-fieldname="novedades" class="rnr-field style1 {$fielddispclass_novedades}">
+  <span class="rnr-label">{BEGIN novedades_label}{$label t_tributaria novedades}{END novedades_label}</span>
+  <span class="rnr-control style3">{$novedades_editcontrol}</span>
+</div>
+{END novedades_fieldblock}
+	{BEGIN liquido_pagable_fieldblock}
+<div data-fieldname="liquido_pagable" class="rnr-field style1 {$fielddispclass_liquido_pagable}">
+  <span class="rnr-label">{BEGIN liquido_pagable_label}{$label t_tributaria liquido_pagable}{END liquido_pagable_label}</span>
+  <span class="rnr-control style3">{$liquido_pagable_editcontrol}</span>
+</div>
+{END liquido_pagable_fieldblock}
+	{BEGIN dos_salarios_min_fieldblock}
+<div data-fieldname="dos_salarios_min" class="rnr-field style1 {$fielddispclass_dos_salarios_min}">
+  <span class="rnr-label">{BEGIN dos_salarios_min_label}{$label t_tributaria dos_salarios_min}{END dos_salarios_min_label}</span>
+  <span class="rnr-control style3">{$dos_salarios_min_editcontrol}</span>
+</div>
+{END dos_salarios_min_fieldblock}
+	{BEGIN base_imponible_fieldblock}
+<div data-fieldname="base_imponible" class="rnr-field style1 {$fielddispclass_base_imponible}">
+  <span class="rnr-label">{BEGIN base_imponible_label}{$label t_tributaria base_imponible}{END base_imponible_label}</span>
+  <span class="rnr-control style3">{$base_imponible_editcontrol}</span>
+</div>
+{END base_imponible_fieldblock}
+	{BEGIN impuesto_rc_iva_fieldblock}
+<div data-fieldname="impuesto_rc_iva" class="rnr-field style1 {$fielddispclass_impuesto_rc_iva}">
+  <span class="rnr-label">{BEGIN impuesto_rc_iva_label}{$label t_tributaria impuesto_rc_iva}{END impuesto_rc_iva_label}</span>
+  <span class="rnr-control style3">{$impuesto_rc_iva_editcontrol}</span>
+</div>
+{END impuesto_rc_iva_fieldblock}
+	{BEGIN dos_salarios_13_fieldblock}
+<div data-fieldname="dos_salarios_13" class="rnr-field style1 {$fielddispclass_dos_salarios_13}">
+  <span class="rnr-label">{BEGIN dos_salarios_13_label}{$label t_tributaria dos_salarios_13}{END dos_salarios_13_label}</span>
+  <span class="rnr-control style3">{$dos_salarios_13_editcontrol}</span>
+</div>
+{END dos_salarios_13_fieldblock}
+</td>
+<td>
+	{BEGIN impuesto_neto_rc_iva_fieldblock}
+<div data-fieldname="impuesto_neto_rc_iva" class="rnr-field style1 {$fielddispclass_impuesto_neto_rc_iva}">
+  <span class="rnr-label">{BEGIN impuesto_neto_rc_iva_label}{$label t_tributaria impuesto_neto_rc_iva}{END impuesto_neto_rc_iva_label}</span>
+  <span class="rnr-control style3">{$impuesto_neto_rc_iva_editcontrol}</span>
+</div>
+{END impuesto_neto_rc_iva_fieldblock}
+	{BEGIN f_110_facturas_fieldblock}
+<div data-fieldname="f_110_facturas" class="rnr-field style1 {$fielddispclass_f_110_facturas}">
+  <span class="rnr-label">{BEGIN f_110_facturas_label}{$label t_tributaria f_110_facturas}{END f_110_facturas_label}</span>
+  <span class="rnr-control style3">{$f_110_facturas_editcontrol}</span>
+</div>
+{END f_110_facturas_fieldblock}
+	{BEGIN saldo_favor_fisco_fieldblock}
+<div data-fieldname="saldo_favor_fisco" class="rnr-field style1 {$fielddispclass_saldo_favor_fisco}">
+  <span class="rnr-label">{BEGIN saldo_favor_fisco_label}{$label t_tributaria saldo_favor_fisco}{END saldo_favor_fisco_label}</span>
+  <span class="rnr-control style3">{$saldo_favor_fisco_editcontrol}</span>
+</div>
+{END saldo_favor_fisco_fieldblock}
+	{BEGIN saldo_favor_dependiente_fieldblock}
+<div data-fieldname="saldo_favor_dependiente" class="rnr-field style1 {$fielddispclass_saldo_favor_dependiente}">
+  <span class="rnr-label">{BEGIN saldo_favor_dependiente_label}{$label t_tributaria saldo_favor_dependiente}{END saldo_favor_dependiente_label}</span>
+  <span class="rnr-control style3">{$saldo_favor_dependiente_editcontrol}</span>
+</div>
+{END saldo_favor_dependiente_fieldblock}
+	{BEGIN saldo_favor_dependiente_per_anterior_fieldblock}
+<div data-fieldname="saldo_favor_dependiente_per_anterior" class="rnr-field style1 {$fielddispclass_saldo_favor_dependiente_per_anterior}">
+  <span class="rnr-label">{BEGIN saldo_favor_dependiente_per_anterior_label}{$label t_tributaria saldo_favor_dependiente_per_anterior}{END saldo_favor_dependiente_per_anterior_label}</span>
+  <span class="rnr-control style3">{$saldo_favor_dependiente_per_anterior_editcontrol}</span>
+</div>
+{END saldo_favor_dependiente_per_anterior_fieldblock}
+	{BEGIN mantenimiento_periodo_anterior_fieldblock}
+<div data-fieldname="mantenimiento_periodo_anterior" class="rnr-field style1 {$fielddispclass_mantenimiento_periodo_anterior}">
+  <span class="rnr-label">{BEGIN mantenimiento_periodo_anterior_label}{$label t_tributaria mantenimiento_periodo_anterior}{END mantenimiento_periodo_anterior_label}</span>
+  <span class="rnr-control style3">{$mantenimiento_periodo_anterior_editcontrol}</span>
+</div>
+{END mantenimiento_periodo_anterior_fieldblock}
+	{BEGIN saldo_periodo_anterior_actualizado_fieldblock}
+<div data-fieldname="saldo_periodo_anterior_actualizado" class="rnr-field style1 {$fielddispclass_saldo_periodo_anterior_actualizado}">
+  <span class="rnr-label">{BEGIN saldo_periodo_anterior_actualizado_label}{$label t_tributaria saldo_periodo_anterior_actualizado}{END saldo_periodo_anterior_actualizado_label}</span>
+  <span class="rnr-control style3">{$saldo_periodo_anterior_actualizado_editcontrol}</span>
+</div>
+{END saldo_periodo_anterior_actualizado_fieldblock}
+	{BEGIN saldo_utilizado_fieldblock}
+<div data-fieldname="saldo_utilizado" class="rnr-field style1 {$fielddispclass_saldo_utilizado}">
+  <span class="rnr-label">{BEGIN saldo_utilizado_label}{$label t_tributaria saldo_utilizado}{END saldo_utilizado_label}</span>
+  <span class="rnr-control style3">{$saldo_utilizado_editcontrol}</span>
+</div>
+{END saldo_utilizado_fieldblock}
+	{BEGIN impuesto_rc_iva_retenido_fieldblock}
+<div data-fieldname="impuesto_rc_iva_retenido" class="rnr-field style1 {$fielddispclass_impuesto_rc_iva_retenido}">
+  <span class="rnr-label">{BEGIN impuesto_rc_iva_retenido_label}{$label t_tributaria impuesto_rc_iva_retenido}{END impuesto_rc_iva_retenido_label}</span>
+  <span class="rnr-control style3">{$impuesto_rc_iva_retenido_editcontrol}</span>
+</div>
+{END impuesto_rc_iva_retenido_fieldblock}
+	{BEGIN saldo_favor_dep_mes_siguiente_fieldblock}
+<div data-fieldname="saldo_favor_dep_mes_siguiente" class="rnr-field style1 {$fielddispclass_saldo_favor_dep_mes_siguiente}">
+  <span class="rnr-label">{BEGIN saldo_favor_dep_mes_siguiente_label}{$label t_tributaria saldo_favor_dep_mes_siguiente}{END saldo_favor_dep_mes_siguiente_label}</span>
+  <span class="rnr-control style3">{$saldo_favor_dep_mes_siguiente_editcontrol}</span>
+</div>
+{END saldo_favor_dep_mes_siguiente_fieldblock}
+</td>
+</tr>
+</table></div>
+
+
+{BEGIN addbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}"><div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" id="saveButton{$id}" {$savebutton_attrs}>Guardar</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" id="resetButton{$id}">Reiniciar</a>
+	{END reset_button}
+	{BEGIN cancel_button}
+	<a href="#" class="rnr-button" id="cancelButton{$id}">Cancelar</a>
+	{END cancel_button}
+	{BEGIN back_button}
+	<a href="#" class="rnr-button" id="backButton{$id}">Volver a la lista</a>
+	{END back_button}
+	{BEGIN backToMenu_button}
+	<a href="#" class="rnr-button" id="backToMenuButton{$id}">Regresar al menú</a>
+	{END backToMenu_button}
+</div>
+</div>{END addbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

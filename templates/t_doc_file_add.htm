@@ -1,0 +1,158 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN addheader}
+<div  class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><span>	<h1>{$pagetitlelabel t_doc_file add}</h1>
+</span></div>{END addheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-addfields2 {$brickclass_addfields2}"><table class="fieldGrid fieldGrid2 edit">
+
+<tr>
+<td>
+	{BEGIN cert_nac_fieldblock}
+<div data-fieldname="cert_nac" class="rnr-field style1 {$fielddispclass_cert_nac}">
+  <span class="rnr-label">{BEGIN cert_nac_label}{$label t_doc_file cert_nac}{END cert_nac_label}</span>
+  <span class="rnr-control style3">{$cert_nac_editcontrol}</span>
+</div>
+{END cert_nac_fieldblock}
+	{BEGIN cert_nac_img_fieldblock}
+<div data-fieldname="cert_nac_img" class="rnr-field style1 {$fielddispclass_cert_nac_img}">
+  <span class="rnr-label">{BEGIN cert_nac_img_label}{$label t_doc_file cert_nac_img}{END cert_nac_img_label}</span>
+  <span class="rnr-control style3">{$cert_nac_img_editcontrol}</span>
+</div>
+{END cert_nac_img_fieldblock}
+	{BEGIN ci_fieldblock}
+<div data-fieldname="ci" class="rnr-field style1 {$fielddispclass_ci}">
+  <span class="rnr-label">{BEGIN ci_label}{$label t_doc_file ci}{END ci_label}</span>
+  <span class="rnr-control style3">{$ci_editcontrol}</span>
+</div>
+{END ci_fieldblock}
+	{BEGIN ci_img_fieldblock}
+<div data-fieldname="ci_img" class="rnr-field style1 {$fielddispclass_ci_img}">
+  <span class="rnr-label">{BEGIN ci_img_label}{$label t_doc_file ci_img}{END ci_img_label}</span>
+  <span class="rnr-control style3">{$ci_img_editcontrol}</span>
+</div>
+{END ci_img_fieldblock}
+</td>
+<td>
+	{BEGIN libreta_mil_fieldblock}
+<div data-fieldname="libreta_mil" class="rnr-field style1 {$fielddispclass_libreta_mil}">
+  <span class="rnr-label">{BEGIN libreta_mil_label}{$label t_doc_file libreta_mil}{END libreta_mil_label}</span>
+  <span class="rnr-control style3">{$libreta_mil_editcontrol}</span>
+</div>
+{END libreta_mil_fieldblock}
+	{BEGIN libreta_mil_img_fieldblock}
+<div data-fieldname="libreta_mil_img" class="rnr-field style1 {$fielddispclass_libreta_mil_img}">
+  <span class="rnr-label">{BEGIN libreta_mil_img_label}{$label t_doc_file libreta_mil_img}{END libreta_mil_img_label}</span>
+  <span class="rnr-control style3">{$libreta_mil_img_editcontrol}</span>
+</div>
+{END libreta_mil_img_fieldblock}
+	{BEGIN segip_fieldblock}
+<div data-fieldname="segip" class="rnr-field style1 {$fielddispclass_segip}">
+  <span class="rnr-label">{BEGIN segip_label}{$label t_doc_file segip}{END segip_label}</span>
+  <span class="rnr-control style3">{$segip_editcontrol}</span>
+</div>
+{END segip_fieldblock}
+	{BEGIN segip_img_fieldblock}
+<div data-fieldname="segip_img" class="rnr-field style1 {$fielddispclass_segip_img}">
+  <span class="rnr-label">{BEGIN segip_img_label}{$label t_doc_file segip_img}{END segip_img_label}</span>
+  <span class="rnr-control style3">{$segip_img_editcontrol}</span>
+</div>
+{END segip_img_fieldblock}
+</td>
+</tr>
+</table></div>
+
+
+{BEGIN addbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}"><div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" id="saveButton{$id}" {$savebutton_attrs}>Guardar</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" id="resetButton{$id}">Reiniciar</a>
+	{END reset_button}
+	{BEGIN cancel_button}
+	<a href="#" class="rnr-button" id="cancelButton{$id}">Cancelar</a>
+	{END cancel_button}
+	{BEGIN back_button}
+	<a href="#" class="rnr-button" id="backButton{$id}">Volver a la lista</a>
+	{END back_button}
+	{BEGIN backToMenu_button}
+	<a href="#" class="rnr-button" id="backToMenuButton{$id}">Regresar al menú</a>
+	{END backToMenu_button}
+</div>
+</div>{END addbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

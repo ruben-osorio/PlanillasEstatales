@@ -1,0 +1,140 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN addheader}
+<div  class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><span>	<h1>{$pagetitlelabel t_memo_acta add}</h1>
+</span></div>{END addheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-addfields2 {$brickclass_addfields2}"><table class="fieldGrid fieldGrid2 edit">
+
+<tr>
+<td>
+	{BEGIN id_func_fieldblock}
+<div data-fieldname="id_func" class="rnr-field style1 {$fielddispclass_id_func}">
+  <span class="rnr-label">{BEGIN id_func_label}{$label t_memo_acta id_func}{END id_func_label}</span>
+  <span class="rnr-control style3">{$id_func_editcontrol}</span>
+</div>
+{END id_func_fieldblock}
+	{BEGIN tipo_documento_fieldblock}
+<div data-fieldname="tipo_documento" class="rnr-field style1 {$fielddispclass_tipo_documento}">
+  <span class="rnr-label">{BEGIN tipo_documento_label}{$label t_memo_acta tipo_documento}{END tipo_documento_label}</span>
+  <span class="rnr-control style3">{$tipo_documento_editcontrol}</span>
+</div>
+{END tipo_documento_fieldblock}
+	{BEGIN documento_dig_fieldblock}
+<div data-fieldname="documento_dig" class="rnr-field style1 {$fielddispclass_documento_dig}">
+  <span class="rnr-label">{BEGIN documento_dig_label}{$label t_memo_acta documento_dig}{END documento_dig_label}</span>
+  <span class="rnr-control style3">{$documento_dig_editcontrol}</span>
+</div>
+{END documento_dig_fieldblock}
+</td>
+<td>
+	{BEGIN fecha_registro_fieldblock}
+<div data-fieldname="fecha_registro" class="rnr-field style1 {$fielddispclass_fecha_registro}">
+  <span class="rnr-label">{BEGIN fecha_registro_label}{$label t_memo_acta fecha_registro}{END fecha_registro_label}</span>
+  <span class="rnr-control style3">{$fecha_registro_editcontrol}</span>
+</div>
+{END fecha_registro_fieldblock}
+	{BEGIN detalle_fieldblock}
+<div data-fieldname="detalle" class="rnr-field style1 {$fielddispclass_detalle}">
+  <span class="rnr-label">{BEGIN detalle_label}{$label t_memo_acta detalle}{END detalle_label}</span>
+  <span class="rnr-control style3">{$detalle_editcontrol}</span>
+</div>
+{END detalle_fieldblock}
+</td>
+</tr>
+</table></div>
+
+
+{BEGIN addbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}"><div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" id="saveButton{$id}" {$savebutton_attrs}>Guardar</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" id="resetButton{$id}">Reiniciar</a>
+	{END reset_button}
+	{BEGIN cancel_button}
+	<a href="#" class="rnr-button" id="cancelButton{$id}">Cancelar</a>
+	{END cancel_button}
+	{BEGIN back_button}
+	<a href="#" class="rnr-button" id="backButton{$id}">Volver a la lista</a>
+	{END back_button}
+	{BEGIN backToMenu_button}
+	<a href="#" class="rnr-button" id="backToMenuButton{$id}">Regresar al menú</a>
+	{END backToMenu_button}
+</div>
+</div>{END addbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

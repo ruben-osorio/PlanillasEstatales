@@ -1,0 +1,433 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel AFP_PREVISION search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criterio:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> Todas las condiciones</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Ninguna condición</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NO</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_id_func}">
+	{BEGIN id_func_fieldblock}		
+	<td>
+		{$label AFP_PREVISION id_func}
+	</td>
+	<td>
+		<input type="checkbox" {$id_func_notbox}>
+	</td>
+	<td>
+		{$searchtype_id_func}
+	</td>
+	<td>
+		{$id_func_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$id_func_editcontrol1}&nbsp;
+	</td>
+{END id_func_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_paterno}">
+	{BEGIN paterno_fieldblock}		
+	<td>
+		{$label AFP_PREVISION paterno}
+	</td>
+	<td>
+		<input type="checkbox" {$paterno_notbox}>
+	</td>
+	<td>
+		{$searchtype_paterno}
+	</td>
+	<td>
+		{$paterno_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$paterno_editcontrol1}&nbsp;
+	</td>
+{END paterno_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_materno}">
+	{BEGIN materno_fieldblock}		
+	<td>
+		{$label AFP_PREVISION materno}
+	</td>
+	<td>
+		<input type="checkbox" {$materno_notbox}>
+	</td>
+	<td>
+		{$searchtype_materno}
+	</td>
+	<td>
+		{$materno_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$materno_editcontrol1}&nbsp;
+	</td>
+{END materno_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_nombres}">
+	{BEGIN nombres_fieldblock}		
+	<td>
+		{$label AFP_PREVISION nombres}
+	</td>
+	<td>
+		<input type="checkbox" {$nombres_notbox}>
+	</td>
+	<td>
+		{$searchtype_nombres}
+	</td>
+	<td>
+		{$nombres_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$nombres_editcontrol1}&nbsp;
+	</td>
+{END nombres_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_ci}">
+	{BEGIN ci_fieldblock}		
+	<td>
+		{$label AFP_PREVISION ci}
+	</td>
+	<td>
+		<input type="checkbox" {$ci_notbox}>
+	</td>
+	<td>
+		{$searchtype_ci}
+	</td>
+	<td>
+		{$ci_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$ci_editcontrol1}&nbsp;
+	</td>
+{END ci_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_exp}">
+	{BEGIN exp_fieldblock}		
+	<td>
+		{$label AFP_PREVISION exp}
+	</td>
+	<td>
+		<input type="checkbox" {$exp_notbox}>
+	</td>
+	<td>
+		{$searchtype_exp}
+	</td>
+	<td>
+		{$exp_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$exp_editcontrol1}&nbsp;
+	</td>
+{END exp_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_total_ganado}">
+	{BEGIN total_ganado_fieldblock}		
+	<td>
+		{$label AFP_PREVISION total_ganado}
+	</td>
+	<td>
+		<input type="checkbox" {$total_ganado_notbox}>
+	</td>
+	<td>
+		{$searchtype_total_ganado}
+	</td>
+	<td>
+		{$total_ganado_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$total_ganado_editcontrol1}&nbsp;
+	</td>
+{END total_ganado_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_afp_10}">
+	{BEGIN afp_10_fieldblock}		
+	<td>
+		{$label AFP_PREVISION afp_10}
+	</td>
+	<td>
+		<input type="checkbox" {$afp_10_notbox}>
+	</td>
+	<td>
+		{$searchtype_afp_10}
+	</td>
+	<td>
+		{$afp_10_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$afp_10_editcontrol1}&nbsp;
+	</td>
+{END afp_10_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_afp_riesgo_1_71}">
+	{BEGIN afp_riesgo_1_71_fieldblock}		
+	<td>
+		{$label AFP_PREVISION afp_riesgo_1_71}
+	</td>
+	<td>
+		<input type="checkbox" {$afp_riesgo_1_71_notbox}>
+	</td>
+	<td>
+		{$searchtype_afp_riesgo_1_71}
+	</td>
+	<td>
+		{$afp_riesgo_1_71_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$afp_riesgo_1_71_editcontrol1}&nbsp;
+	</td>
+{END afp_riesgo_1_71_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_afp_05}">
+	{BEGIN afp_05_fieldblock}		
+	<td>
+		{$label AFP_PREVISION afp_05}
+	</td>
+	<td>
+		<input type="checkbox" {$afp_05_notbox}>
+	</td>
+	<td>
+		{$searchtype_afp_05}
+	</td>
+	<td>
+		{$afp_05_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$afp_05_editcontrol1}&nbsp;
+	</td>
+{END afp_05_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_afp_ap_sol_0_5}">
+	{BEGIN afp_ap_sol_0_5_fieldblock}		
+	<td>
+		{$label AFP_PREVISION afp_ap_sol_0_5}
+	</td>
+	<td>
+		<input type="checkbox" {$afp_ap_sol_0_5_notbox}>
+	</td>
+	<td>
+		{$searchtype_afp_ap_sol_0_5}
+	</td>
+	<td>
+		{$afp_ap_sol_0_5_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$afp_ap_sol_0_5_editcontrol1}&nbsp;
+	</td>
+{END afp_ap_sol_0_5_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_ans_1}">
+	{BEGIN ans_1_fieldblock}		
+	<td>
+		{$label AFP_PREVISION ans_1}
+	</td>
+	<td>
+		<input type="checkbox" {$ans_1_notbox}>
+	</td>
+	<td>
+		{$searchtype_ans_1}
+	</td>
+	<td>
+		{$ans_1_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$ans_1_editcontrol1}&nbsp;
+	</td>
+{END ans_1_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_seguro_pat_10}">
+	{BEGIN seguro_pat_10_fieldblock}		
+	<td>
+		{$label AFP_PREVISION seguro_pat_10}
+	</td>
+	<td>
+		<input type="checkbox" {$seguro_pat_10_notbox}>
+	</td>
+	<td>
+		{$searchtype_seguro_pat_10}
+	</td>
+	<td>
+		{$seguro_pat_10_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$seguro_pat_10_editcontrol1}&nbsp;
+	</td>
+{END seguro_pat_10_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_riesgo_pat_171}">
+	{BEGIN riesgo_pat_171_fieldblock}		
+	<td>
+		{$label AFP_PREVISION riesgo_pat_171}
+	</td>
+	<td>
+		<input type="checkbox" {$riesgo_pat_171_notbox}>
+	</td>
+	<td>
+		{$searchtype_riesgo_pat_171}
+	</td>
+	<td>
+		{$riesgo_pat_171_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$riesgo_pat_171_editcontrol1}&nbsp;
+	</td>
+{END riesgo_pat_171_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_pro_vivienda_pat_2}">
+	{BEGIN pro_vivienda_pat_2_fieldblock}		
+	<td>
+		{$label AFP_PREVISION pro_vivienda_pat_2}
+	</td>
+	<td>
+		<input type="checkbox" {$pro_vivienda_pat_2_notbox}>
+	</td>
+	<td>
+		{$searchtype_pro_vivienda_pat_2}
+	</td>
+	<td>
+		{$pro_vivienda_pat_2_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$pro_vivienda_pat_2_editcontrol1}&nbsp;
+	</td>
+{END pro_vivienda_pat_2_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_ap_pat_sol_3}">
+	{BEGIN ap_pat_sol_3_fieldblock}		
+	<td>
+		{$label AFP_PREVISION ap_pat_sol_3}
+	</td>
+	<td>
+		<input type="checkbox" {$ap_pat_sol_3_notbox}>
+	</td>
+	<td>
+		{$searchtype_ap_pat_sol_3}
+	</td>
+	<td>
+		{$ap_pat_sol_3_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$ap_pat_sol_3_editcontrol1}&nbsp;
+	</td>
+{END ap_pat_sol_3_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_sub_total}">
+	{BEGIN sub_total_fieldblock}		
+	<td>
+		{$label AFP_PREVISION sub_total}
+	</td>
+	<td>
+		<input type="checkbox" {$sub_total_notbox}>
+	</td>
+	<td>
+		{$searchtype_sub_total}
+	</td>
+	<td>
+		{$sub_total_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$sub_total_editcontrol1}&nbsp;
+	</td>
+{END sub_total_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_afp}">
+	{BEGIN afp_fieldblock}		
+	<td>
+		{$label AFP_PREVISION afp}
+	</td>
+	<td>
+		<input type="checkbox" {$afp_notbox}>
+	</td>
+	<td>
+		{$searchtype_afp}
+	</td>
+	<td>
+		{$afp_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$afp_editcontrol1}&nbsp;
+	</td>
+{END afp_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Buscar</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reiniciar</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Volver a la lista</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,11 @@
+.rnr-b-grid *[class*="rnr-field-"]{
+text-align: center;
+}
+.saveEditing {
+color:green;
+}
+
+.revertEditing {
+color: red;
+}
+ 

@@ -1,0 +1,145 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN editheader}
+<div  class="rnr-brickcontents style2 rnr-b-editheader {$brickclass_editheader}"><span>	<h1>{$pagetitlelabel t_facturas110 edit}</h1>
+</span></div>{END editheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-editfields2 {$brickclass_editfields2}"><table class="fieldGrid fieldGrid2 edit">
+
+<tr>
+<td>
+	{BEGIN monto_total_fieldblock}
+<div data-fieldname="monto_total" class="rnr-field style1 {$fielddispclass_monto_total}">
+  <span class="rnr-label">{BEGIN monto_total_label}{$label t_facturas110 monto_total}{END monto_total_label}</span>
+  <span class="rnr-control style3">{$monto_total_editcontrol}</span>
+</div>
+{END monto_total_fieldblock}
+	{BEGIN monto_13_fieldblock}
+<div data-fieldname="monto_13" class="rnr-field style1 {$fielddispclass_monto_13}">
+  <span class="rnr-label">{BEGIN monto_13_label}{$label t_facturas110 monto_13}{END monto_13_label}</span>
+  <span class="rnr-control style3">{$monto_13_editcontrol}</span>
+</div>
+{END monto_13_fieldblock}
+	{BEGIN lugar_fieldblock}
+<div data-fieldname="lugar" class="rnr-field style1 {$fielddispclass_lugar}">
+  <span class="rnr-label">{BEGIN lugar_label}{$label t_facturas110 lugar}{END lugar_label}</span>
+  <span class="rnr-control style3">{$lugar_editcontrol}</span>
+</div>
+{END lugar_fieldblock}
+</td>
+<td>
+	{BEGIN fecha_fieldblock}
+<div data-fieldname="fecha" class="rnr-field style1 {$fielddispclass_fecha}">
+  <span class="rnr-label">{BEGIN fecha_label}{$label t_facturas110 fecha}{END fecha_label}</span>
+  <span class="rnr-control style3">{$fecha_editcontrol}</span>
+</div>
+{END fecha_fieldblock}
+	{BEGIN archivo_digital_fieldblock}
+<div data-fieldname="archivo_digital" class="rnr-field style1 {$fielddispclass_archivo_digital}">
+  <span class="rnr-label">{BEGIN archivo_digital_label}{$label t_facturas110 archivo_digital}{END archivo_digital_label}</span>
+  <span class="rnr-control style3">{$archivo_digital_editcontrol}</span>
+</div>
+{END archivo_digital_fieldblock}
+</td>
+</tr>
+</table></div>
+
+
+{BEGIN editbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-editbuttons {$brickclass_editbuttons}"><div class="rnr-buttons-right">
+	{BEGIN prev_button}
+	<a href="#" class="rnr-button {$prevbutton_class}" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+	{END prev_button}
+	{BEGIN next_button}
+	<a href="#" class="rnr-button  {$nextbutton_class}" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+	{END next_button}
+</div>
+<div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" {$savebutton_attrs}>Guardar</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" {$resetbutton_attrs}>Reiniciar</a>
+	{END reset_button}
+	{BEGIN back_button}
+		<a href="#" class="rnr-button" {$backbutton_attrs}>Volver a la lista</a>
+	{END back_button}
+	{BEGIN close_button}
+	<a href="#" class="rnr-button" {$closebutton_attrs}>Cerrar ventana</a>
+	{END close_button}
+	</div>
+</div>{END editbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

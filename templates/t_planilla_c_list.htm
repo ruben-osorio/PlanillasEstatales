@@ -1,0 +1,1585 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+
+
+{BEGIN container_toplinks}
+<div class="rnr-c rnr-ch rnr-c-toplinks">
+<div class="rnr-hfiller"></div>
+{BEGIN security_block}
+<div  class="style1 rnr-br rnr-b-loggedas {$brickclass_loggedas}"><div id="login_block{$id}">
+	{BEGIN loggedas_message} 
+	<span>Conectado como&nbsp;<b>{$username}</b>&nbsp;</span> 
+	{END loggedas_message}
+	{BEGIN guestloginbutton}
+	<span>
+		<a href="#" class="rnr-button" {$guestloginlink_attrs}>Conectar</a>
+	</span>
+	{END guestloginbutton}
+	{BEGIN logoutbutton}
+	<a href="#" class="rnr-button" {$logoutlink_attrs}>Desconectarse</a>
+	{END logoutbutton}
+
+</div></div>
+{END security_block}
+
+
+
+</div>
+{END container_toplinks}
+
+
+
+{BEGIN container_hmenu}
+<div class="rnr-c rnr-ch rnr-c-hmenu">
+
+{BEGIN searchform_block}
+<div  class="style1 rnr-bl rnr-b-search {$brickclass_search}">	<span>
+		{BEGIN searchform_text}
+		<input type="text" {$searchfor_attrs} size="25">
+		{END searchform_text}
+		{BEGIN searchform_search}
+			<a href="#" class="rnr-button img" data-icon="search" {$searchbutton_attrs}></a>
+		{END searchform_search}
+		{BEGIN searchform_showall}	
+		<a href="#" class="rnr-button" {$showAllCont_attrs} {$showallbutton_attrs}>Mostrar todo</a>
+		{END searchform_showall}
+	</span>
+</div>
+{END searchform_block}
+
+
+{BEGIN searchformbuttons_block}
+<div  class="style1 rnr-bl rnr-b-search_buttons {$brickclass_search_buttons}">{BEGIN searchPanelTopButtons}
+<span>
+	<a href="#" class="rnr-button img" id="showSrchWin{$id}" data-icon="panelfloat" {$showHideSearchWin_attrs}></a>
+	<a href="#" class="rnr-button img" id="showOptPanel{$id}" data-icon="paneldown" {$showHideSearchPanel_attrs}></a>
+</span>
+{END searchPanelTopButtons}
+</div>
+{END searchformbuttons_block}
+
+
+{BEGIN searchsaving_block}
+<div  class="style1 rnr-bl rnr-b-search_saving_buttons {$brickclass_search_saving_buttons}"></div>
+{END searchsaving_block}
+
+<div class="rnr-hfiller"></div>
+
+<div  class="style1 rnr-br rnr-b-printpanel {$brickclass_printpanel}">{BEGIN print_friendly}
+<div class="rnr-printpanelblock" id="printpanelblock{$id}">
+<div class="rnr-printtab">
+<a data-icon="printdown" class="rnr-printicon" id="print_friendly_togger{$id}" title="Página para imprimir"></a>
+</div>
+<div class="rnr-printpanel" >
+<table class="rnr-printscope" id="print_friendly_scope{$id}">
+	<tr>
+		<td class="rnr-printScopeCell">Alcance:</td>
+		{BEGIN print_friendly_all}
+		<td class="rnr-printScopeCell"><input type="radio" id="printAll{$id}" data-href="t_planilla_c_print.php?all=1&amp;{$crosstable_attrs}" name="printScope">&nbsp;<label for="printAll{$id}">Imprimir todas las páginas</label></td>
+		{END print_friendly_all}
+
+	</tr>
+	<tr>
+		<td></td>
+		<td class="rnr-printScopeCell"><input type="radio" id="printPage{$id}" data-href="t_planilla_c_print.php?{$crosstable_attrs}" name="printScope" checked>&nbsp;<label for="printPage{$id}">Imprimir esta página</label></td>
+	</tr>
+		<tr>
+		<td></td>
+		<td class="rnr-printScopeCell"><input type="radio" id="printSelection{$id}" name="printScope" disabled="disabled">&nbsp;<label for="printSelection{$id}" style="color: gray;">Imprimir lo Seleccionado</label></td>
+	</tr>
+</table>
+
+
+<div class="rnr-printdetails">
+<label for="printPerPage{$id}">
+	Resultados por página:
+</label>&nbsp;<input type=number id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">&nbsp;
+</div>
+
+<div class="rnr-printbutton">
+<a href=# class="rnr-button button" id="print_friendly_button{$id}" >Imprimir</a>
+</div>
+</div>
+</div>
+{END print_friendly}
+</div>
+
+
+
+</div>
+{END container_hmenu}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+
+{BEGIN container_left}
+<div class="rnr-c rnr-cv rnr-c-left">
+
+{BEGIN menu_block}
+{$menu main}
+{END menu_block}
+
+
+{BEGIN searchPanel}
+<div  class="rnr-brickcontents style1 rnr-b-searchpanel {$brickclass_searchpanel}"><div class="searchPanelContainer">
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Criterio:&nbsp;
+		<input type="radio" name="srchType{$id}" class="rnr-radio-button" {$all_checkbox}>&nbsp;{BEGIN all_checkbox_label}<span>todos</span>{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType{$id}" class="rnr-radio-button" {$any_checkbox}>&nbsp;{BEGIN any_checkbox_label}<span>alguno</span>{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="rnr-buttons-group">
+			<a href="#" id="showHideControlChooseMenu{$id}" class="rnr-button" {$showHideCtrls_attrs}>Añadir campo</a>
+		</span>
+		
+		<a href="#" id="showHideSearchType{$id}" class="rnr-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+	</div>
+	
+
+	<table class="controlsBlock {$controls_block_class}">
+				{BEGIN searchCtrlBlock}
+		<tr class="srchPanelRow" {$filterRow_attrs}>
+			<td class="srchPanelCell">{$delCtrlButt}</td>	
+			<td class="srchPanelCell">{$fLabel}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">
+				<div class="rnr-searchtype">{$searchtype}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol1}</div>
+			</td>	
+		</tr>
+		{END searchCtrlBlock}
+	</table>	
+
+
+	
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<a href="#" class="rnr-button" id="searchButton{$id}" {$searchbutton_attrs}>Buscar</a>
+	</div>
+</div>
+
+</div></div>{END searchPanel}
+
+
+
+</div>
+{END container_left}
+
+
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_recordcontrols}
+<div class="rnr-c rnr-ch rnr-c-recordcontrols">
+
+
+{BEGIN record_controls_block}
+<div  class="style1 rnr-bl rnr-b-recordcontrol {$brickclass_recordcontrol}">{BEGIN widhtSelected}
+<span class="rnr-buttons-group">
+<a class="rnr-button {$withSelectedClass}" href="#" id="selectButtonsToggler{$id}">Con los seleccionados...</a>
+<ul class="rnr-list" id="selectButtonsGroup{$id}">
+
+	
+	
+		{BEGIN exportselected_link}
+<li>
+		<a href="#" class="rnr-button link" {$exportselectedlink_attrs} {$exportselectedlink_span}>Exportar</a>
+</li>
+	{END exportselected_link}
+
+</ul>
+</span>
+{END widhtSelected}
+	</div>
+{END record_controls_block}
+
+
+{BEGIN more_list}
+<div  class="style1 rnr-bl rnr-b-toplinks {$brickclass_toplinks}"><span class="rnr-buttons-group">
+{BEGIN moreButtons}
+<a class="rnr-button" id="extraButtonsToggler{$id}" href="#">Más...</a>
+<ul class="rnr-list rnr-buttons-group" id="extraButtonsGroup{$id}">
+
+{BEGIN asearch_link}
+<li>
+	<a href="t_planilla_c_search.php" class="rnr-button link" {$advsearchlink_attrs}>Búsqueda avanzada</a>
+</li>
+{END asearch_link}
+
+{BEGIN export_link}
+<li>
+	<a target="_blank" href="t_planilla_c_export.php" class="rnr-button link" {$exportlink_attrs}>Exportar resultados</a>
+</li>
+{END export_link}
+
+</ul>
+{END moreButtons}
+</span></div>
+{END more_list}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_recordcontrols}
+
+
+
+{BEGIN container_message}
+<div class="rnr-c rnr-ch rnr-c-message">
+
+{BEGIN message_block}
+<div  class="style1 rnr-bc rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>
+{END message_block}
+
+
+</div>
+{END container_message}
+
+
+
+{BEGIN container_pagination}
+<div class="rnr-c rnr-ch rnr-multialign rnr-c-pagination">
+
+{BEGIN pagination_block}
+<div  class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">{$pagination}</div>
+{END pagination_block}
+
+<div class="rnr-leftbricks">
+{BEGIN details_block}
+<div  class="style1 rnr-bl rnr-b-details_found {$brickclass_details_found}">	<span {$details_attrs}>
+			Detalles encontrados: <b><span class="rnr-details_found_count">{$records_found}</span></b>
+	</span>
+</div>
+{END details_block}
+
+</div><div class="rnr-rightbricks">
+{BEGIN pages_block}
+<div  class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}">	<span {$pages_attrs}>
+		Página <b>{$page}</b> / <b>{$maxpages}</b>
+	</span>
+
+</div>
+{END pages_block}
+
+
+{BEGIN recordspp_block}
+<div  class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}">	<span id="recordspp_block{$id}" name="recordspp_block{$id}">
+			Resultados por página:&nbsp;{$recsPerPage}
+	</span>	
+</div>
+{END recordspp_block}
+
+</div>
+</div>
+{END container_pagination}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+						<table class="rnr-c rnr-cont rnr-c-grid rnr-b-grid rnr-gridtable  hoverable " cellpadding="0" >
+						<thead>
+															{BEGIN grid_header}
+								<tr class="rnr-toprow style1 {$gridHeader_class}" >
+									{BEGIN record_header}
+									{BEGIN listIcons_column}
+									<th iEditCont="all">&nbsp;</th>
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}
+									<th class="rnr-bc">
+										<input type="checkbox" {$checkboxheader_attrs}>
+									</th>
+									{END checkbox_column}
+
+																																			{BEGIN id_func_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$id_func_class}">
+									{BEGIN id_func_fieldheader}
+																				<span {$id_func_orderlinkattrs}>
+											{$label t_planilla_c id_func}
+										</span>
+									{END id_func_fieldheader}
+									</th>
+									{END id_func_fieldheadercolumn}
+
+																	{BEGIN fecha_nac_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$fecha_nac_class}">
+									{BEGIN fecha_nac_fieldheader}
+																				<span {$fecha_nac_orderlinkattrs}>
+											{$label t_planilla_c fecha_nac}
+										</span>
+									{END fecha_nac_fieldheader}
+									</th>
+									{END fecha_nac_fieldheadercolumn}
+
+																	{BEGIN sexo_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$sexo_class}">
+									{BEGIN sexo_fieldheader}
+																				<span {$sexo_orderlinkattrs}>
+											{$label t_planilla_c sexo}
+										</span>
+									{END sexo_fieldheader}
+									</th>
+									{END sexo_fieldheadercolumn}
+
+																	{BEGIN item_contrato_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$item_contrato_class}">
+									{BEGIN item_contrato_fieldheader}
+																				<span {$item_contrato_orderlinkattrs}>
+											{$label t_planilla_c item_contrato}
+										</span>
+									{END item_contrato_fieldheader}
+									</th>
+									{END item_contrato_fieldheadercolumn}
+
+																	{BEGIN unidad_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$unidad_class}">
+									{BEGIN unidad_fieldheader}
+																				<span {$unidad_orderlinkattrs}>
+											{$label t_planilla_c unidad}
+										</span>
+									{END unidad_fieldheader}
+									</th>
+									{END unidad_fieldheadercolumn}
+
+																	{BEGIN cargo_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$cargo_class}">
+									{BEGIN cargo_fieldheader}
+																				<span {$cargo_orderlinkattrs}>
+											{$label t_planilla_c cargo}
+										</span>
+									{END cargo_fieldheader}
+									</th>
+									{END cargo_fieldheadercolumn}
+
+																	{BEGIN paterno_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$paterno_class}">
+									{BEGIN paterno_fieldheader}
+																				<span {$paterno_orderlinkattrs}>
+											{$label t_planilla_c paterno}
+										</span>
+									{END paterno_fieldheader}
+									</th>
+									{END paterno_fieldheadercolumn}
+
+																	{BEGIN materno_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$materno_class}">
+									{BEGIN materno_fieldheader}
+																				<span {$materno_orderlinkattrs}>
+											{$label t_planilla_c materno}
+										</span>
+									{END materno_fieldheader}
+									</th>
+									{END materno_fieldheadercolumn}
+
+																	{BEGIN nombres_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$nombres_class}">
+									{BEGIN nombres_fieldheader}
+																				<span {$nombres_orderlinkattrs}>
+											{$label t_planilla_c nombres}
+										</span>
+									{END nombres_fieldheader}
+									</th>
+									{END nombres_fieldheadercolumn}
+
+																	{BEGIN ci_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$ci_class}">
+									{BEGIN ci_fieldheader}
+																				<span {$ci_orderlinkattrs}>
+											{$label t_planilla_c ci}
+										</span>
+									{END ci_fieldheader}
+									</th>
+									{END ci_fieldheadercolumn}
+
+																	{BEGIN exp_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$exp_class}">
+									{BEGIN exp_fieldheader}
+																				<span {$exp_orderlinkattrs}>
+											{$label t_planilla_c exp}
+										</span>
+									{END exp_fieldheader}
+									</th>
+									{END exp_fieldheadercolumn}
+
+																	{BEGIN nit_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$nit_class}">
+									{BEGIN nit_fieldheader}
+																				<span {$nit_orderlinkattrs}>
+											{$label t_planilla_c nit}
+										</span>
+									{END nit_fieldheader}
+									</th>
+									{END nit_fieldheadercolumn}
+
+																	{BEGIN fec_ingreso_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$fec_ingreso_class}">
+									{BEGIN fec_ingreso_fieldheader}
+																				<span {$fec_ingreso_orderlinkattrs}>
+											{$label t_planilla_c fec_ingreso}
+										</span>
+									{END fec_ingreso_fieldheader}
+									</th>
+									{END fec_ingreso_fieldheadercolumn}
+
+																	{BEGIN baja_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$baja_class}">
+									{BEGIN baja_fieldheader}
+																				<span {$baja_orderlinkattrs}>
+											{$label t_planilla_c baja}
+										</span>
+									{END baja_fieldheader}
+									</th>
+									{END baja_fieldheadercolumn}
+
+																	{BEGIN reasig_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$reasig_class}">
+									{BEGIN reasig_fieldheader}
+																				<span {$reasig_orderlinkattrs}>
+											{$label t_planilla_c reasig}
+										</span>
+									{END reasig_fieldheader}
+									</th>
+									{END reasig_fieldheadercolumn}
+
+																	{BEGIN haber_basico_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$haber_basico_class}">
+									{BEGIN haber_basico_fieldheader}
+																				<span {$haber_basico_orderlinkattrs}>
+											{$label t_planilla_c haber_basico}
+										</span>
+									{END haber_basico_fieldheader}
+									</th>
+									{END haber_basico_fieldheadercolumn}
+
+																	{BEGIN dias_trab_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$dias_trab_class}">
+									{BEGIN dias_trab_fieldheader}
+																				<span {$dias_trab_orderlinkattrs}>
+											{$label t_planilla_c dias_trab}
+										</span>
+									{END dias_trab_fieldheader}
+									</th>
+									{END dias_trab_fieldheadercolumn}
+
+																	{BEGIN haber_percibido_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$haber_percibido_class}">
+									{BEGIN haber_percibido_fieldheader}
+																				<span {$haber_percibido_orderlinkattrs}>
+											{$label t_planilla_c haber_percibido}
+										</span>
+									{END haber_percibido_fieldheader}
+									</th>
+									{END haber_percibido_fieldheadercolumn}
+
+																	{BEGIN reint_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$reint_class}">
+									{BEGIN reint_fieldheader}
+																				<span {$reint_orderlinkattrs}>
+											{$label t_planilla_c reint}
+										</span>
+									{END reint_fieldheader}
+									</th>
+									{END reint_fieldheadercolumn}
+
+																	{BEGIN bono_ant_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$bono_ant_class}">
+									{BEGIN bono_ant_fieldheader}
+																				<span {$bono_ant_orderlinkattrs}>
+											{$label t_planilla_c bono_ant}
+										</span>
+									{END bono_ant_fieldheader}
+									</th>
+									{END bono_ant_fieldheadercolumn}
+
+																	{BEGIN total_ganado_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$total_ganado_class}">
+									{BEGIN total_ganado_fieldheader}
+																				<span {$total_ganado_orderlinkattrs}>
+											{$label t_planilla_c total_ganado}
+										</span>
+									{END total_ganado_fieldheader}
+									</th>
+									{END total_ganado_fieldheadercolumn}
+
+																	{BEGIN devoluciones_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$devoluciones_class}">
+									{BEGIN devoluciones_fieldheader}
+																				<span {$devoluciones_orderlinkattrs}>
+											{$label t_planilla_c devoluciones}
+										</span>
+									{END devoluciones_fieldheader}
+									</th>
+									{END devoluciones_fieldheadercolumn}
+
+																	{BEGIN asig_familiar_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$asig_familiar_class}">
+									{BEGIN asig_familiar_fieldheader}
+																				<span {$asig_familiar_orderlinkattrs}>
+											{$label t_planilla_c asig_familiar}
+										</span>
+									{END asig_familiar_fieldheader}
+									</th>
+									{END asig_familiar_fieldheadercolumn}
+
+																	{BEGIN futuro_afp_10_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$futuro_afp_10_class}">
+									{BEGIN futuro_afp_10_fieldheader}
+																				<span {$futuro_afp_10_orderlinkattrs}>
+											{$label t_planilla_c futuro_afp_10}
+										</span>
+									{END futuro_afp_10_fieldheader}
+									</th>
+									{END futuro_afp_10_fieldheadercolumn}
+
+																	{BEGIN futuro_afp_riesgo_1_71_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$futuro_afp_riesgo_1_71_class}">
+									{BEGIN futuro_afp_riesgo_1_71_fieldheader}
+																				<span {$futuro_afp_riesgo_1_71_orderlinkattrs}>
+											{$label t_planilla_c futuro_afp_riesgo_1_71}
+										</span>
+									{END futuro_afp_riesgo_1_71_fieldheader}
+									</th>
+									{END futuro_afp_riesgo_1_71_fieldheadercolumn}
+
+																	{BEGIN futuro_afp_05_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$futuro_afp_05_class}">
+									{BEGIN futuro_afp_05_fieldheader}
+																				<span {$futuro_afp_05_orderlinkattrs}>
+											{$label t_planilla_c futuro_afp_05}
+										</span>
+									{END futuro_afp_05_fieldheader}
+									</th>
+									{END futuro_afp_05_fieldheadercolumn}
+
+																	{BEGIN futuro_afp_ap_sol_0_5_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$futuro_afp_ap_sol_0_5_class}">
+									{BEGIN futuro_afp_ap_sol_0_5_fieldheader}
+																				<span {$futuro_afp_ap_sol_0_5_orderlinkattrs}>
+											{$label t_planilla_c futuro_afp_ap_sol_0_5}
+										</span>
+									{END futuro_afp_ap_sol_0_5_fieldheader}
+									</th>
+									{END futuro_afp_ap_sol_0_5_fieldheadercolumn}
+
+																	{BEGIN futuro_ans_1_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$futuro_ans_1_class}">
+									{BEGIN futuro_ans_1_fieldheader}
+																				<span {$futuro_ans_1_orderlinkattrs}>
+											{$label t_planilla_c futuro_ans_1}
+										</span>
+									{END futuro_ans_1_fieldheader}
+									</th>
+									{END futuro_ans_1_fieldheadercolumn}
+
+																	{BEGIN prev_afp_10_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$prev_afp_10_class}">
+									{BEGIN prev_afp_10_fieldheader}
+																				<span {$prev_afp_10_orderlinkattrs}>
+											{$label t_planilla_c prev_afp_10}
+										</span>
+									{END prev_afp_10_fieldheader}
+									</th>
+									{END prev_afp_10_fieldheadercolumn}
+
+																	{BEGIN prev_afp_riesgo_1_71_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$prev_afp_riesgo_1_71_class}">
+									{BEGIN prev_afp_riesgo_1_71_fieldheader}
+																				<span {$prev_afp_riesgo_1_71_orderlinkattrs}>
+											{$label t_planilla_c prev_afp_riesgo_1_71}
+										</span>
+									{END prev_afp_riesgo_1_71_fieldheader}
+									</th>
+									{END prev_afp_riesgo_1_71_fieldheadercolumn}
+
+																	{BEGIN prev_afp_05_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$prev_afp_05_class}">
+									{BEGIN prev_afp_05_fieldheader}
+																				<span {$prev_afp_05_orderlinkattrs}>
+											{$label t_planilla_c prev_afp_05}
+										</span>
+									{END prev_afp_05_fieldheader}
+									</th>
+									{END prev_afp_05_fieldheadercolumn}
+
+																	{BEGIN prev_afp_ap_sol_0_5_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$prev_afp_ap_sol_0_5_class}">
+									{BEGIN prev_afp_ap_sol_0_5_fieldheader}
+																				<span {$prev_afp_ap_sol_0_5_orderlinkattrs}>
+											{$label t_planilla_c prev_afp_ap_sol_0_5}
+										</span>
+									{END prev_afp_ap_sol_0_5_fieldheader}
+									</th>
+									{END prev_afp_ap_sol_0_5_fieldheadercolumn}
+
+																	{BEGIN prev_ans_1_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$prev_ans_1_class}">
+									{BEGIN prev_ans_1_fieldheader}
+																				<span {$prev_ans_1_orderlinkattrs}>
+											{$label t_planilla_c prev_ans_1}
+										</span>
+									{END prev_ans_1_fieldheader}
+									</th>
+									{END prev_ans_1_fieldheadercolumn}
+
+																	{BEGIN rc_iva_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$rc_iva_class}">
+									{BEGIN rc_iva_fieldheader}
+																				<span {$rc_iva_orderlinkattrs}>
+											{$label t_planilla_c rc_iva}
+										</span>
+									{END rc_iva_fieldheader}
+									</th>
+									{END rc_iva_fieldheadercolumn}
+
+																	{BEGIN retenciones_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$retenciones_class}">
+									{BEGIN retenciones_fieldheader}
+																				<span {$retenciones_orderlinkattrs}>
+											{$label t_planilla_c retenciones}
+										</span>
+									{END retenciones_fieldheader}
+									</th>
+									{END retenciones_fieldheadercolumn}
+
+																	{BEGIN multa_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$multa_class}">
+									{BEGIN multa_fieldheader}
+																				<span {$multa_orderlinkattrs}>
+											{$label t_planilla_c multa}
+										</span>
+									{END multa_fieldheader}
+									</th>
+									{END multa_fieldheadercolumn}
+
+																	{BEGIN total_desc_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$total_desc_class}">
+									{BEGIN total_desc_fieldheader}
+																				<span {$total_desc_orderlinkattrs}>
+											{$label t_planilla_c total_desc}
+										</span>
+									{END total_desc_fieldheader}
+									</th>
+									{END total_desc_fieldheadercolumn}
+
+																	{BEGIN pre_natal_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$pre_natal_class}">
+									{BEGIN pre_natal_fieldheader}
+																				<span {$pre_natal_orderlinkattrs}>
+											{$label t_planilla_c pre_natal}
+										</span>
+									{END pre_natal_fieldheader}
+									</th>
+									{END pre_natal_fieldheadercolumn}
+
+																	{BEGIN natalidad_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$natalidad_class}">
+									{BEGIN natalidad_fieldheader}
+																				<span {$natalidad_orderlinkattrs}>
+											{$label t_planilla_c natalidad}
+										</span>
+									{END natalidad_fieldheader}
+									</th>
+									{END natalidad_fieldheadercolumn}
+
+																	{BEGIN lactancia_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$lactancia_class}">
+									{BEGIN lactancia_fieldheader}
+																				<span {$lactancia_orderlinkattrs}>
+											{$label t_planilla_c lactancia}
+										</span>
+									{END lactancia_fieldheader}
+									</th>
+									{END lactancia_fieldheadercolumn}
+
+																	{BEGIN sepelio_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$sepelio_class}">
+									{BEGIN sepelio_fieldheader}
+																				<span {$sepelio_orderlinkattrs}>
+											{$label t_planilla_c sepelio}
+										</span>
+									{END sepelio_fieldheader}
+									</th>
+									{END sepelio_fieldheadercolumn}
+
+																	{BEGIN mes_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$mes_class}">
+									{BEGIN mes_fieldheader}
+																				<span {$mes_orderlinkattrs}>
+											{$label t_planilla_c mes}
+										</span>
+									{END mes_fieldheader}
+									</th>
+									{END mes_fieldheadercolumn}
+
+																	{BEGIN gestion_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$gestion_class}">
+									{BEGIN gestion_fieldheader}
+																				<span {$gestion_orderlinkattrs}>
+											{$label t_planilla_c gestion}
+										</span>
+									{END gestion_fieldheader}
+									</th>
+									{END gestion_fieldheadercolumn}
+
+																	{BEGIN liquido_pagable_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$liquido_pagable_class}">
+									{BEGIN liquido_pagable_fieldheader}
+																				<span {$liquido_pagable_orderlinkattrs}>
+											{$label t_planilla_c liquido_pagable}
+										</span>
+									{END liquido_pagable_fieldheader}
+									</th>
+									{END liquido_pagable_fieldheadercolumn}
+
+																	{BEGIN cod_afp_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$cod_afp_class}">
+									{BEGIN cod_afp_fieldheader}
+																				<span {$cod_afp_orderlinkattrs}>
+											{$label t_planilla_c cod_afp}
+										</span>
+									{END cod_afp_fieldheader}
+									</th>
+									{END cod_afp_fieldheadercolumn}
+
+																	{BEGIN cta_banco_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$cta_banco_class}">
+									{BEGIN cta_banco_fieldheader}
+																				<span {$cta_banco_orderlinkattrs}>
+											{$label t_planilla_c cta_banco}
+										</span>
+									{END cta_banco_fieldheader}
+									</th>
+									{END cta_banco_fieldheadercolumn}
+
+																	{BEGIN tipo_funcionario_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$tipo_funcionario_class}">
+									{BEGIN tipo_funcionario_fieldheader}
+																				<span {$tipo_funcionario_orderlinkattrs}>
+											{$label t_planilla_c tipo_funcionario}
+										</span>
+									{END tipo_funcionario_fieldheader}
+									</th>
+									{END tipo_funcionario_fieldheadercolumn}
+
+																	{BEGIN ap_pat_sol_3_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$ap_pat_sol_3_class}">
+									{BEGIN ap_pat_sol_3_fieldheader}
+																				<span {$ap_pat_sol_3_orderlinkattrs}>
+											{$label t_planilla_c ap_pat_sol_3}
+										</span>
+									{END ap_pat_sol_3_fieldheader}
+									</th>
+									{END ap_pat_sol_3_fieldheadercolumn}
+
+																	{BEGIN seguro_pat_10_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$seguro_pat_10_class}">
+									{BEGIN seguro_pat_10_fieldheader}
+																				<span {$seguro_pat_10_orderlinkattrs}>
+											{$label t_planilla_c seguro_pat_10}
+										</span>
+									{END seguro_pat_10_fieldheader}
+									</th>
+									{END seguro_pat_10_fieldheadercolumn}
+
+																	{BEGIN riesgo_pat_171_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$riesgo_pat_171_class}">
+									{BEGIN riesgo_pat_171_fieldheader}
+																				<span {$riesgo_pat_171_orderlinkattrs}>
+											{$label t_planilla_c riesgo_pat_171}
+										</span>
+									{END riesgo_pat_171_fieldheader}
+									</th>
+									{END riesgo_pat_171_fieldheadercolumn}
+
+																	{BEGIN pro_vivienda_pat_2_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$pro_vivienda_pat_2_class}">
+									{BEGIN pro_vivienda_pat_2_fieldheader}
+																				<span {$pro_vivienda_pat_2_orderlinkattrs}>
+											{$label t_planilla_c pro_vivienda_pat_2}
+										</span>
+									{END pro_vivienda_pat_2_fieldheader}
+									</th>
+									{END pro_vivienda_pat_2_fieldheadercolumn}
+
+
+									
+									<th class="rnr-edge">&nbsp;</th>
+									{BEGIN endrecordheader_block}
+									<th class="rnr-cs">&nbsp;</th>
+									
+									{END endrecordheader_block}
+									
+									{END record_header}
+									
+								</tr>
+								{END grid_header}
+
+						</thead>
+						<tbody>	
+															{BEGIN grid_row}
+								<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+									{BEGIN grid_record}
+									{BEGIN listIcons_column}
+									<td class="rnr-cc rnr-bc rnr-icons" iEditCont="all" {$rowstyle} {$recordattrs}>
+									
+									
+									
+																		{BEGIN view_column}
+									{BEGIN view_link}
+																			<a class="rnr-button-img" {$viewlink_attrs} data-icon="view" title="Ver"></a>
+									{END view_link}
+									{END view_column}
+									</td>	
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}
+									<td class="rnr-bc" iEditCont="checkBox" {$rowstyle} {$recordattrs}>
+									{BEGIN checkbox}
+									<input type="checkbox" {$checkbox_attrs}>
+									{END checkbox}
+									</td>
+									{END checkbox_column}
+
+									
+										{BEGIN id_func_fieldcolumn}
+	<td class="{$id_func_class}" {$id_func_style} {$recordattrs}>
+		{$id_func_value}
+	</td>
+{END id_func_fieldcolumn}
+
+	{BEGIN fecha_nac_fieldcolumn}
+	<td class="{$fecha_nac_class}" {$fecha_nac_style} {$recordattrs}>
+		{$fecha_nac_value}
+	</td>
+{END fecha_nac_fieldcolumn}
+
+	{BEGIN sexo_fieldcolumn}
+	<td class="{$sexo_class}" {$sexo_style} {$recordattrs}>
+		{$sexo_value}
+	</td>
+{END sexo_fieldcolumn}
+
+	{BEGIN item_contrato_fieldcolumn}
+	<td class="{$item_contrato_class}" {$item_contrato_style} {$recordattrs}>
+		{$item_contrato_value}
+	</td>
+{END item_contrato_fieldcolumn}
+
+	{BEGIN unidad_fieldcolumn}
+	<td class="{$unidad_class}" {$unidad_style} {$recordattrs}>
+		{$unidad_value}
+	</td>
+{END unidad_fieldcolumn}
+
+	{BEGIN cargo_fieldcolumn}
+	<td class="{$cargo_class}" {$cargo_style} {$recordattrs}>
+		{$cargo_value}
+	</td>
+{END cargo_fieldcolumn}
+
+	{BEGIN paterno_fieldcolumn}
+	<td class="{$paterno_class}" {$paterno_style} {$recordattrs}>
+		{$paterno_value}
+	</td>
+{END paterno_fieldcolumn}
+
+	{BEGIN materno_fieldcolumn}
+	<td class="{$materno_class}" {$materno_style} {$recordattrs}>
+		{$materno_value}
+	</td>
+{END materno_fieldcolumn}
+
+	{BEGIN nombres_fieldcolumn}
+	<td class="{$nombres_class}" {$nombres_style} {$recordattrs}>
+		{$nombres_value}
+	</td>
+{END nombres_fieldcolumn}
+
+	{BEGIN ci_fieldcolumn}
+	<td class="{$ci_class}" {$ci_style} {$recordattrs}>
+		{$ci_value}
+	</td>
+{END ci_fieldcolumn}
+
+	{BEGIN exp_fieldcolumn}
+	<td class="{$exp_class}" {$exp_style} {$recordattrs}>
+		{$exp_value}
+	</td>
+{END exp_fieldcolumn}
+
+	{BEGIN nit_fieldcolumn}
+	<td class="{$nit_class}" {$nit_style} {$recordattrs}>
+		{$nit_value}
+	</td>
+{END nit_fieldcolumn}
+
+	{BEGIN fec_ingreso_fieldcolumn}
+	<td class="{$fec_ingreso_class}" {$fec_ingreso_style} {$recordattrs}>
+		{$fec_ingreso_value}
+	</td>
+{END fec_ingreso_fieldcolumn}
+
+	{BEGIN baja_fieldcolumn}
+	<td class="{$baja_class}" {$baja_style} {$recordattrs}>
+		{$baja_value}
+	</td>
+{END baja_fieldcolumn}
+
+	{BEGIN reasig_fieldcolumn}
+	<td class="{$reasig_class}" {$reasig_style} {$recordattrs}>
+		{$reasig_value}
+	</td>
+{END reasig_fieldcolumn}
+
+	{BEGIN haber_basico_fieldcolumn}
+	<td class="{$haber_basico_class}" {$haber_basico_style} {$recordattrs}>
+		{$haber_basico_value}
+	</td>
+{END haber_basico_fieldcolumn}
+
+	{BEGIN dias_trab_fieldcolumn}
+	<td class="{$dias_trab_class}" {$dias_trab_style} {$recordattrs}>
+		{$dias_trab_value}
+	</td>
+{END dias_trab_fieldcolumn}
+
+	{BEGIN haber_percibido_fieldcolumn}
+	<td class="{$haber_percibido_class}" {$haber_percibido_style} {$recordattrs}>
+		{$haber_percibido_value}
+	</td>
+{END haber_percibido_fieldcolumn}
+
+	{BEGIN reint_fieldcolumn}
+	<td class="{$reint_class}" {$reint_style} {$recordattrs}>
+		{$reint_value}
+	</td>
+{END reint_fieldcolumn}
+
+	{BEGIN bono_ant_fieldcolumn}
+	<td class="{$bono_ant_class}" {$bono_ant_style} {$recordattrs}>
+		{$bono_ant_value}
+	</td>
+{END bono_ant_fieldcolumn}
+
+	{BEGIN total_ganado_fieldcolumn}
+	<td class="{$total_ganado_class}" {$total_ganado_style} {$recordattrs}>
+		{$total_ganado_value}
+	</td>
+{END total_ganado_fieldcolumn}
+
+	{BEGIN devoluciones_fieldcolumn}
+	<td class="{$devoluciones_class}" {$devoluciones_style} {$recordattrs}>
+		{$devoluciones_value}
+	</td>
+{END devoluciones_fieldcolumn}
+
+	{BEGIN asig_familiar_fieldcolumn}
+	<td class="{$asig_familiar_class}" {$asig_familiar_style} {$recordattrs}>
+		{$asig_familiar_value}
+	</td>
+{END asig_familiar_fieldcolumn}
+
+	{BEGIN futuro_afp_10_fieldcolumn}
+	<td class="{$futuro_afp_10_class}" {$futuro_afp_10_style} {$recordattrs}>
+		{$futuro_afp_10_value}
+	</td>
+{END futuro_afp_10_fieldcolumn}
+
+	{BEGIN futuro_afp_riesgo_1_71_fieldcolumn}
+	<td class="{$futuro_afp_riesgo_1_71_class}" {$futuro_afp_riesgo_1_71_style} {$recordattrs}>
+		{$futuro_afp_riesgo_1_71_value}
+	</td>
+{END futuro_afp_riesgo_1_71_fieldcolumn}
+
+	{BEGIN futuro_afp_05_fieldcolumn}
+	<td class="{$futuro_afp_05_class}" {$futuro_afp_05_style} {$recordattrs}>
+		{$futuro_afp_05_value}
+	</td>
+{END futuro_afp_05_fieldcolumn}
+
+	{BEGIN futuro_afp_ap_sol_0_5_fieldcolumn}
+	<td class="{$futuro_afp_ap_sol_0_5_class}" {$futuro_afp_ap_sol_0_5_style} {$recordattrs}>
+		{$futuro_afp_ap_sol_0_5_value}
+	</td>
+{END futuro_afp_ap_sol_0_5_fieldcolumn}
+
+	{BEGIN futuro_ans_1_fieldcolumn}
+	<td class="{$futuro_ans_1_class}" {$futuro_ans_1_style} {$recordattrs}>
+		{$futuro_ans_1_value}
+	</td>
+{END futuro_ans_1_fieldcolumn}
+
+	{BEGIN prev_afp_10_fieldcolumn}
+	<td class="{$prev_afp_10_class}" {$prev_afp_10_style} {$recordattrs}>
+		{$prev_afp_10_value}
+	</td>
+{END prev_afp_10_fieldcolumn}
+
+	{BEGIN prev_afp_riesgo_1_71_fieldcolumn}
+	<td class="{$prev_afp_riesgo_1_71_class}" {$prev_afp_riesgo_1_71_style} {$recordattrs}>
+		{$prev_afp_riesgo_1_71_value}
+	</td>
+{END prev_afp_riesgo_1_71_fieldcolumn}
+
+	{BEGIN prev_afp_05_fieldcolumn}
+	<td class="{$prev_afp_05_class}" {$prev_afp_05_style} {$recordattrs}>
+		{$prev_afp_05_value}
+	</td>
+{END prev_afp_05_fieldcolumn}
+
+	{BEGIN prev_afp_ap_sol_0_5_fieldcolumn}
+	<td class="{$prev_afp_ap_sol_0_5_class}" {$prev_afp_ap_sol_0_5_style} {$recordattrs}>
+		{$prev_afp_ap_sol_0_5_value}
+	</td>
+{END prev_afp_ap_sol_0_5_fieldcolumn}
+
+	{BEGIN prev_ans_1_fieldcolumn}
+	<td class="{$prev_ans_1_class}" {$prev_ans_1_style} {$recordattrs}>
+		{$prev_ans_1_value}
+	</td>
+{END prev_ans_1_fieldcolumn}
+
+	{BEGIN rc_iva_fieldcolumn}
+	<td class="{$rc_iva_class}" {$rc_iva_style} {$recordattrs}>
+		{$rc_iva_value}
+	</td>
+{END rc_iva_fieldcolumn}
+
+	{BEGIN retenciones_fieldcolumn}
+	<td class="{$retenciones_class}" {$retenciones_style} {$recordattrs}>
+		{$retenciones_value}
+	</td>
+{END retenciones_fieldcolumn}
+
+	{BEGIN multa_fieldcolumn}
+	<td class="{$multa_class}" {$multa_style} {$recordattrs}>
+		{$multa_value}
+	</td>
+{END multa_fieldcolumn}
+
+	{BEGIN total_desc_fieldcolumn}
+	<td class="{$total_desc_class}" {$total_desc_style} {$recordattrs}>
+		{$total_desc_value}
+	</td>
+{END total_desc_fieldcolumn}
+
+	{BEGIN pre_natal_fieldcolumn}
+	<td class="{$pre_natal_class}" {$pre_natal_style} {$recordattrs}>
+		{$pre_natal_value}
+	</td>
+{END pre_natal_fieldcolumn}
+
+	{BEGIN natalidad_fieldcolumn}
+	<td class="{$natalidad_class}" {$natalidad_style} {$recordattrs}>
+		{$natalidad_value}
+	</td>
+{END natalidad_fieldcolumn}
+
+	{BEGIN lactancia_fieldcolumn}
+	<td class="{$lactancia_class}" {$lactancia_style} {$recordattrs}>
+		{$lactancia_value}
+	</td>
+{END lactancia_fieldcolumn}
+
+	{BEGIN sepelio_fieldcolumn}
+	<td class="{$sepelio_class}" {$sepelio_style} {$recordattrs}>
+		{$sepelio_value}
+	</td>
+{END sepelio_fieldcolumn}
+
+	{BEGIN mes_fieldcolumn}
+	<td class="{$mes_class}" {$mes_style} {$recordattrs}>
+		{$mes_value}
+	</td>
+{END mes_fieldcolumn}
+
+	{BEGIN gestion_fieldcolumn}
+	<td class="{$gestion_class}" {$gestion_style} {$recordattrs}>
+		{$gestion_value}
+	</td>
+{END gestion_fieldcolumn}
+
+	{BEGIN liquido_pagable_fieldcolumn}
+	<td class="{$liquido_pagable_class}" {$liquido_pagable_style} {$recordattrs}>
+		{$liquido_pagable_value}
+	</td>
+{END liquido_pagable_fieldcolumn}
+
+	{BEGIN cod_afp_fieldcolumn}
+	<td class="{$cod_afp_class}" {$cod_afp_style} {$recordattrs}>
+		{$cod_afp_value}
+	</td>
+{END cod_afp_fieldcolumn}
+
+	{BEGIN cta_banco_fieldcolumn}
+	<td class="{$cta_banco_class}" {$cta_banco_style} {$recordattrs}>
+		{$cta_banco_value}
+	</td>
+{END cta_banco_fieldcolumn}
+
+	{BEGIN tipo_funcionario_fieldcolumn}
+	<td class="{$tipo_funcionario_class}" {$tipo_funcionario_style} {$recordattrs}>
+		{$tipo_funcionario_value}
+	</td>
+{END tipo_funcionario_fieldcolumn}
+
+	{BEGIN ap_pat_sol_3_fieldcolumn}
+	<td class="{$ap_pat_sol_3_class}" {$ap_pat_sol_3_style} {$recordattrs}>
+		{$ap_pat_sol_3_value}
+	</td>
+{END ap_pat_sol_3_fieldcolumn}
+
+	{BEGIN seguro_pat_10_fieldcolumn}
+	<td class="{$seguro_pat_10_class}" {$seguro_pat_10_style} {$recordattrs}>
+		{$seguro_pat_10_value}
+	</td>
+{END seguro_pat_10_fieldcolumn}
+
+	{BEGIN riesgo_pat_171_fieldcolumn}
+	<td class="{$riesgo_pat_171_class}" {$riesgo_pat_171_style} {$recordattrs}>
+		{$riesgo_pat_171_value}
+	</td>
+{END riesgo_pat_171_fieldcolumn}
+
+	{BEGIN pro_vivienda_pat_2_fieldcolumn}
+	<td class="{$pro_vivienda_pat_2_class}" {$pro_vivienda_pat_2_style} {$recordattrs}>
+		{$pro_vivienda_pat_2_value}
+	</td>
+{END pro_vivienda_pat_2_fieldcolumn}
+
+
+									<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+									{BEGIN endrecord_block}
+									<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+									{END endrecord_block}
+																	
+									{END grid_record}
+
+								</tr>
+								{END grid_row}
+																							{BEGIN totals_row}
+								<tr class="rnr-bottomrow style1 {$gridFooter_class}">
+									{BEGIN totals_record}
+									{BEGIN listIcons_column}
+									<td class="rnr-cc"></td>
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}
+									<td class="rnr-cc"></td>
+									{END checkbox_column}
+
+									
+										{BEGIN id_func_fieldfootercolumn}
+<td class="{$id_func_class}">
+</td>
+{END id_func_fieldfootercolumn}
+	{BEGIN fecha_nac_fieldfootercolumn}
+<td class="{$fecha_nac_class}">
+</td>
+{END fecha_nac_fieldfootercolumn}
+	{BEGIN sexo_fieldfootercolumn}
+<td class="{$sexo_class}">
+</td>
+{END sexo_fieldfootercolumn}
+	{BEGIN item_contrato_fieldfootercolumn}
+<td class="{$item_contrato_class}">
+</td>
+{END item_contrato_fieldfootercolumn}
+	{BEGIN unidad_fieldfootercolumn}
+<td class="{$unidad_class}">
+</td>
+{END unidad_fieldfootercolumn}
+	{BEGIN cargo_fieldfootercolumn}
+<td class="{$cargo_class}">
+</td>
+{END cargo_fieldfootercolumn}
+	{BEGIN paterno_fieldfootercolumn}
+<td class="{$paterno_class}">
+</td>
+{END paterno_fieldfootercolumn}
+	{BEGIN materno_fieldfootercolumn}
+<td class="{$materno_class}">
+</td>
+{END materno_fieldfootercolumn}
+	{BEGIN nombres_fieldfootercolumn}
+<td class="{$nombres_class}">
+</td>
+{END nombres_fieldfootercolumn}
+	{BEGIN ci_fieldfootercolumn}
+<td class="{$ci_class}">
+</td>
+{END ci_fieldfootercolumn}
+	{BEGIN exp_fieldfootercolumn}
+<td class="{$exp_class}">
+</td>
+{END exp_fieldfootercolumn}
+	{BEGIN nit_fieldfootercolumn}
+<td class="{$nit_class}">
+</td>
+{END nit_fieldfootercolumn}
+	{BEGIN fec_ingreso_fieldfootercolumn}
+<td class="{$fec_ingreso_class}">
+</td>
+{END fec_ingreso_fieldfootercolumn}
+	{BEGIN baja_fieldfootercolumn}
+<td class="{$baja_class}">
+</td>
+{END baja_fieldfootercolumn}
+	{BEGIN reasig_fieldfootercolumn}
+<td class="{$reasig_class}">
+</td>
+{END reasig_fieldfootercolumn}
+	{BEGIN haber_basico_fieldfootercolumn}
+<td class="{$haber_basico_class}">
+	{BEGIN haber_basico_showtotal}
+			Total:
+	{$haber_basico_total}
+	{END haber_basico_showtotal}
+</td>
+{END haber_basico_fieldfootercolumn}
+	{BEGIN dias_trab_fieldfootercolumn}
+<td class="{$dias_trab_class}">
+</td>
+{END dias_trab_fieldfootercolumn}
+	{BEGIN haber_percibido_fieldfootercolumn}
+<td class="{$haber_percibido_class}">
+	{BEGIN haber_percibido_showtotal}
+			Total:
+	{$haber_percibido_total}
+	{END haber_percibido_showtotal}
+</td>
+{END haber_percibido_fieldfootercolumn}
+	{BEGIN reint_fieldfootercolumn}
+<td class="{$reint_class}">
+	{BEGIN reint_showtotal}
+			Total:
+	{$reint_total}
+	{END reint_showtotal}
+</td>
+{END reint_fieldfootercolumn}
+	{BEGIN bono_ant_fieldfootercolumn}
+<td class="{$bono_ant_class}">
+	{BEGIN bono_ant_showtotal}
+			Total:
+	{$bono_ant_total}
+	{END bono_ant_showtotal}
+</td>
+{END bono_ant_fieldfootercolumn}
+	{BEGIN total_ganado_fieldfootercolumn}
+<td class="{$total_ganado_class}">
+	{BEGIN total_ganado_showtotal}
+			Total:
+	{$total_ganado_total}
+	{END total_ganado_showtotal}
+</td>
+{END total_ganado_fieldfootercolumn}
+	{BEGIN devoluciones_fieldfootercolumn}
+<td class="{$devoluciones_class}">
+	{BEGIN devoluciones_showtotal}
+			Total:
+	{$devoluciones_total}
+	{END devoluciones_showtotal}
+</td>
+{END devoluciones_fieldfootercolumn}
+	{BEGIN asig_familiar_fieldfootercolumn}
+<td class="{$asig_familiar_class}">
+	{BEGIN asig_familiar_showtotal}
+			Total:
+	{$asig_familiar_total}
+	{END asig_familiar_showtotal}
+</td>
+{END asig_familiar_fieldfootercolumn}
+	{BEGIN futuro_afp_10_fieldfootercolumn}
+<td class="{$futuro_afp_10_class}">
+	{BEGIN futuro_afp_10_showtotal}
+			Total:
+	{$futuro_afp_10_total}
+	{END futuro_afp_10_showtotal}
+</td>
+{END futuro_afp_10_fieldfootercolumn}
+	{BEGIN futuro_afp_riesgo_1_71_fieldfootercolumn}
+<td class="{$futuro_afp_riesgo_1_71_class}">
+	{BEGIN futuro_afp_riesgo_1_71_showtotal}
+			Total:
+	{$futuro_afp_riesgo_1_71_total}
+	{END futuro_afp_riesgo_1_71_showtotal}
+</td>
+{END futuro_afp_riesgo_1_71_fieldfootercolumn}
+	{BEGIN futuro_afp_05_fieldfootercolumn}
+<td class="{$futuro_afp_05_class}">
+	{BEGIN futuro_afp_05_showtotal}
+			Total:
+	{$futuro_afp_05_total}
+	{END futuro_afp_05_showtotal}
+</td>
+{END futuro_afp_05_fieldfootercolumn}
+	{BEGIN futuro_afp_ap_sol_0_5_fieldfootercolumn}
+<td class="{$futuro_afp_ap_sol_0_5_class}">
+	{BEGIN futuro_afp_ap_sol_0_5_showtotal}
+			Total:
+	{$futuro_afp_ap_sol_0_5_total}
+	{END futuro_afp_ap_sol_0_5_showtotal}
+</td>
+{END futuro_afp_ap_sol_0_5_fieldfootercolumn}
+	{BEGIN futuro_ans_1_fieldfootercolumn}
+<td class="{$futuro_ans_1_class}">
+	{BEGIN futuro_ans_1_showtotal}
+			Total:
+	{$futuro_ans_1_total}
+	{END futuro_ans_1_showtotal}
+</td>
+{END futuro_ans_1_fieldfootercolumn}
+	{BEGIN prev_afp_10_fieldfootercolumn}
+<td class="{$prev_afp_10_class}">
+	{BEGIN prev_afp_10_showtotal}
+			Total:
+	{$prev_afp_10_total}
+	{END prev_afp_10_showtotal}
+</td>
+{END prev_afp_10_fieldfootercolumn}
+	{BEGIN prev_afp_riesgo_1_71_fieldfootercolumn}
+<td class="{$prev_afp_riesgo_1_71_class}">
+	{BEGIN prev_afp_riesgo_1_71_showtotal}
+			Total:
+	{$prev_afp_riesgo_1_71_total}
+	{END prev_afp_riesgo_1_71_showtotal}
+</td>
+{END prev_afp_riesgo_1_71_fieldfootercolumn}
+	{BEGIN prev_afp_05_fieldfootercolumn}
+<td class="{$prev_afp_05_class}">
+	{BEGIN prev_afp_05_showtotal}
+			Total:
+	{$prev_afp_05_total}
+	{END prev_afp_05_showtotal}
+</td>
+{END prev_afp_05_fieldfootercolumn}
+	{BEGIN prev_afp_ap_sol_0_5_fieldfootercolumn}
+<td class="{$prev_afp_ap_sol_0_5_class}">
+	{BEGIN prev_afp_ap_sol_0_5_showtotal}
+			Total:
+	{$prev_afp_ap_sol_0_5_total}
+	{END prev_afp_ap_sol_0_5_showtotal}
+</td>
+{END prev_afp_ap_sol_0_5_fieldfootercolumn}
+	{BEGIN prev_ans_1_fieldfootercolumn}
+<td class="{$prev_ans_1_class}">
+	{BEGIN prev_ans_1_showtotal}
+			Total:
+	{$prev_ans_1_total}
+	{END prev_ans_1_showtotal}
+</td>
+{END prev_ans_1_fieldfootercolumn}
+	{BEGIN rc_iva_fieldfootercolumn}
+<td class="{$rc_iva_class}">
+	{BEGIN rc_iva_showtotal}
+			Total:
+	{$rc_iva_total}
+	{END rc_iva_showtotal}
+</td>
+{END rc_iva_fieldfootercolumn}
+	{BEGIN retenciones_fieldfootercolumn}
+<td class="{$retenciones_class}">
+	{BEGIN retenciones_showtotal}
+			Total:
+	{$retenciones_total}
+	{END retenciones_showtotal}
+</td>
+{END retenciones_fieldfootercolumn}
+	{BEGIN multa_fieldfootercolumn}
+<td class="{$multa_class}">
+	{BEGIN multa_showtotal}
+			Total:
+	{$multa_total}
+	{END multa_showtotal}
+</td>
+{END multa_fieldfootercolumn}
+	{BEGIN total_desc_fieldfootercolumn}
+<td class="{$total_desc_class}">
+	{BEGIN total_desc_showtotal}
+			Total:
+	{$total_desc_total}
+	{END total_desc_showtotal}
+</td>
+{END total_desc_fieldfootercolumn}
+	{BEGIN pre_natal_fieldfootercolumn}
+<td class="{$pre_natal_class}">
+	{BEGIN pre_natal_showtotal}
+			Total:
+	{$pre_natal_total}
+	{END pre_natal_showtotal}
+</td>
+{END pre_natal_fieldfootercolumn}
+	{BEGIN natalidad_fieldfootercolumn}
+<td class="{$natalidad_class}">
+	{BEGIN natalidad_showtotal}
+			Total:
+	{$natalidad_total}
+	{END natalidad_showtotal}
+</td>
+{END natalidad_fieldfootercolumn}
+	{BEGIN lactancia_fieldfootercolumn}
+<td class="{$lactancia_class}">
+	{BEGIN lactancia_showtotal}
+			Total:
+	{$lactancia_total}
+	{END lactancia_showtotal}
+</td>
+{END lactancia_fieldfootercolumn}
+	{BEGIN sepelio_fieldfootercolumn}
+<td class="{$sepelio_class}">
+	{BEGIN sepelio_showtotal}
+			Total:
+	{$sepelio_total}
+	{END sepelio_showtotal}
+</td>
+{END sepelio_fieldfootercolumn}
+	{BEGIN mes_fieldfootercolumn}
+<td class="{$mes_class}">
+</td>
+{END mes_fieldfootercolumn}
+	{BEGIN gestion_fieldfootercolumn}
+<td class="{$gestion_class}">
+</td>
+{END gestion_fieldfootercolumn}
+	{BEGIN liquido_pagable_fieldfootercolumn}
+<td class="{$liquido_pagable_class}">
+	{BEGIN liquido_pagable_showtotal}
+			Total:
+	{$liquido_pagable_total}
+	{END liquido_pagable_showtotal}
+</td>
+{END liquido_pagable_fieldfootercolumn}
+	{BEGIN cod_afp_fieldfootercolumn}
+<td class="{$cod_afp_class}">
+</td>
+{END cod_afp_fieldfootercolumn}
+	{BEGIN cta_banco_fieldfootercolumn}
+<td class="{$cta_banco_class}">
+</td>
+{END cta_banco_fieldfootercolumn}
+	{BEGIN tipo_funcionario_fieldfootercolumn}
+<td class="{$tipo_funcionario_class}">
+</td>
+{END tipo_funcionario_fieldfootercolumn}
+	{BEGIN ap_pat_sol_3_fieldfootercolumn}
+<td class="{$ap_pat_sol_3_class}">
+</td>
+{END ap_pat_sol_3_fieldfootercolumn}
+	{BEGIN seguro_pat_10_fieldfootercolumn}
+<td class="{$seguro_pat_10_class}">
+</td>
+{END seguro_pat_10_fieldfootercolumn}
+	{BEGIN riesgo_pat_171_fieldfootercolumn}
+<td class="{$riesgo_pat_171_class}">
+</td>
+{END riesgo_pat_171_fieldfootercolumn}
+	{BEGIN pro_vivienda_pat_2_fieldfootercolumn}
+<td class="{$pro_vivienda_pat_2_class}">
+</td>
+{END pro_vivienda_pat_2_fieldfootercolumn}
+
+									<td class="rnr-edge">&nbsp;</td>
+									{BEGIN endrecordtotals_block}
+									<td class="rnr-cs"></td>
+									{END endrecordtotals_block}
+									{END totals_record}
+								</tr>
+								{END totals_row}
+
+						</tbody>
+					</table>
+					
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+
+{BEGIN container_pagination_bottom}
+<div class="rnr-c rnr-ch rnr-multialign rnr-c-pagination_bottom">
+
+{BEGIN pagination_block}
+<div  class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">{$pagination}</div>
+{END pagination_block}
+
+<div class="rnr-leftbricks">
+{BEGIN details_block}
+<div  class="style1 rnr-bl rnr-b-details_found {$brickclass_details_found}">	<span {$details_attrs}>
+			Detalles encontrados: <b><span class="rnr-details_found_count">{$records_found}</span></b>
+	</span>
+</div>
+{END details_block}
+
+</div><div class="rnr-rightbricks">
+{BEGIN pages_block}
+<div  class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}">	<span {$pages_attrs}>
+		Página <b>{$page}</b> / <b>{$maxpages}</b>
+	</span>
+
+</div>
+{END pages_block}
+
+
+{BEGIN recordspp_block}
+<div  class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}">	<span id="recordspp_block{$id}" name="recordspp_block{$id}">
+			Resultados por página:&nbsp;{$recsPerPage}
+	</span>	
+</div>
+{END recordspp_block}
+
+</div>
+</div>
+{END container_pagination_bottom}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

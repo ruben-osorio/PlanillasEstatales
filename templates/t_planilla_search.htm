@@ -1,0 +1,813 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel t_planilla search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criterio:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> Todas las condiciones</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Ninguna condición</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NO</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_id_func}">
+	{BEGIN id_func_fieldblock}		
+	<td>
+		{$label t_planilla id_func}
+	</td>
+	<td>
+		<input type="checkbox" {$id_func_notbox}>
+	</td>
+	<td>
+		{$searchtype_id_func}
+	</td>
+	<td>
+		{$id_func_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$id_func_editcontrol1}&nbsp;
+	</td>
+{END id_func_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_fecha_nac}">
+	{BEGIN fecha_nac_fieldblock}		
+	<td>
+		{$label t_planilla fecha_nac}
+	</td>
+	<td>
+		<input type="checkbox" {$fecha_nac_notbox}>
+	</td>
+	<td>
+		{$searchtype_fecha_nac}
+	</td>
+	<td>
+		{$fecha_nac_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$fecha_nac_editcontrol1}&nbsp;
+	</td>
+{END fecha_nac_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_sexo}">
+	{BEGIN sexo_fieldblock}		
+	<td>
+		{$label t_planilla sexo}
+	</td>
+	<td>
+		<input type="checkbox" {$sexo_notbox}>
+	</td>
+	<td>
+		{$searchtype_sexo}
+	</td>
+	<td>
+		{$sexo_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$sexo_editcontrol1}&nbsp;
+	</td>
+{END sexo_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_item_contrato}">
+	{BEGIN item_contrato_fieldblock}		
+	<td>
+		{$label t_planilla item_contrato}
+	</td>
+	<td>
+		<input type="checkbox" {$item_contrato_notbox}>
+	</td>
+	<td>
+		{$searchtype_item_contrato}
+	</td>
+	<td>
+		{$item_contrato_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$item_contrato_editcontrol1}&nbsp;
+	</td>
+{END item_contrato_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_unidad}">
+	{BEGIN unidad_fieldblock}		
+	<td>
+		{$label t_planilla unidad}
+	</td>
+	<td>
+		<input type="checkbox" {$unidad_notbox}>
+	</td>
+	<td>
+		{$searchtype_unidad}
+	</td>
+	<td>
+		{$unidad_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$unidad_editcontrol1}&nbsp;
+	</td>
+{END unidad_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_cargo}">
+	{BEGIN cargo_fieldblock}		
+	<td>
+		{$label t_planilla cargo}
+	</td>
+	<td>
+		<input type="checkbox" {$cargo_notbox}>
+	</td>
+	<td>
+		{$searchtype_cargo}
+	</td>
+	<td>
+		{$cargo_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$cargo_editcontrol1}&nbsp;
+	</td>
+{END cargo_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_paterno}">
+	{BEGIN paterno_fieldblock}		
+	<td>
+		{$label t_planilla paterno}
+	</td>
+	<td>
+		<input type="checkbox" {$paterno_notbox}>
+	</td>
+	<td>
+		{$searchtype_paterno}
+	</td>
+	<td>
+		{$paterno_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$paterno_editcontrol1}&nbsp;
+	</td>
+{END paterno_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_materno}">
+	{BEGIN materno_fieldblock}		
+	<td>
+		{$label t_planilla materno}
+	</td>
+	<td>
+		<input type="checkbox" {$materno_notbox}>
+	</td>
+	<td>
+		{$searchtype_materno}
+	</td>
+	<td>
+		{$materno_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$materno_editcontrol1}&nbsp;
+	</td>
+{END materno_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_nombres}">
+	{BEGIN nombres_fieldblock}		
+	<td>
+		{$label t_planilla nombres}
+	</td>
+	<td>
+		<input type="checkbox" {$nombres_notbox}>
+	</td>
+	<td>
+		{$searchtype_nombres}
+	</td>
+	<td>
+		{$nombres_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$nombres_editcontrol1}&nbsp;
+	</td>
+{END nombres_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_ci}">
+	{BEGIN ci_fieldblock}		
+	<td>
+		{$label t_planilla ci}
+	</td>
+	<td>
+		<input type="checkbox" {$ci_notbox}>
+	</td>
+	<td>
+		{$searchtype_ci}
+	</td>
+	<td>
+		{$ci_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$ci_editcontrol1}&nbsp;
+	</td>
+{END ci_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_exp}">
+	{BEGIN exp_fieldblock}		
+	<td>
+		{$label t_planilla exp}
+	</td>
+	<td>
+		<input type="checkbox" {$exp_notbox}>
+	</td>
+	<td>
+		{$searchtype_exp}
+	</td>
+	<td>
+		{$exp_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$exp_editcontrol1}&nbsp;
+	</td>
+{END exp_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_nit}">
+	{BEGIN nit_fieldblock}		
+	<td>
+		{$label t_planilla nit}
+	</td>
+	<td>
+		<input type="checkbox" {$nit_notbox}>
+	</td>
+	<td>
+		{$searchtype_nit}
+	</td>
+	<td>
+		{$nit_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$nit_editcontrol1}&nbsp;
+	</td>
+{END nit_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_fec_ingreso}">
+	{BEGIN fec_ingreso_fieldblock}		
+	<td>
+		{$label t_planilla fec_ingreso}
+	</td>
+	<td>
+		<input type="checkbox" {$fec_ingreso_notbox}>
+	</td>
+	<td>
+		{$searchtype_fec_ingreso}
+	</td>
+	<td>
+		{$fec_ingreso_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$fec_ingreso_editcontrol1}&nbsp;
+	</td>
+{END fec_ingreso_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_baja}">
+	{BEGIN baja_fieldblock}		
+	<td>
+		{$label t_planilla baja}
+	</td>
+	<td>
+		<input type="checkbox" {$baja_notbox}>
+	</td>
+	<td>
+		{$searchtype_baja}
+	</td>
+	<td>
+		{$baja_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$baja_editcontrol1}&nbsp;
+	</td>
+{END baja_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_reasig}">
+	{BEGIN reasig_fieldblock}		
+	<td>
+		{$label t_planilla reasig}
+	</td>
+	<td>
+		<input type="checkbox" {$reasig_notbox}>
+	</td>
+	<td>
+		{$searchtype_reasig}
+	</td>
+	<td>
+		{$reasig_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$reasig_editcontrol1}&nbsp;
+	</td>
+{END reasig_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_haber_basico}">
+	{BEGIN haber_basico_fieldblock}		
+	<td>
+		{$label t_planilla haber_basico}
+	</td>
+	<td>
+		<input type="checkbox" {$haber_basico_notbox}>
+	</td>
+	<td>
+		{$searchtype_haber_basico}
+	</td>
+	<td>
+		{$haber_basico_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$haber_basico_editcontrol1}&nbsp;
+	</td>
+{END haber_basico_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_dias_trab}">
+	{BEGIN dias_trab_fieldblock}		
+	<td>
+		{$label t_planilla dias_trab}
+	</td>
+	<td>
+		<input type="checkbox" {$dias_trab_notbox}>
+	</td>
+	<td>
+		{$searchtype_dias_trab}
+	</td>
+	<td>
+		{$dias_trab_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$dias_trab_editcontrol1}&nbsp;
+	</td>
+{END dias_trab_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_haber_percibido}">
+	{BEGIN haber_percibido_fieldblock}		
+	<td>
+		{$label t_planilla haber_percibido}
+	</td>
+	<td>
+		<input type="checkbox" {$haber_percibido_notbox}>
+	</td>
+	<td>
+		{$searchtype_haber_percibido}
+	</td>
+	<td>
+		{$haber_percibido_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$haber_percibido_editcontrol1}&nbsp;
+	</td>
+{END haber_percibido_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_reint}">
+	{BEGIN reint_fieldblock}		
+	<td>
+		{$label t_planilla reint}
+	</td>
+	<td>
+		<input type="checkbox" {$reint_notbox}>
+	</td>
+	<td>
+		{$searchtype_reint}
+	</td>
+	<td>
+		{$reint_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$reint_editcontrol1}&nbsp;
+	</td>
+{END reint_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_bono_ant}">
+	{BEGIN bono_ant_fieldblock}		
+	<td>
+		{$label t_planilla bono_ant}
+	</td>
+	<td>
+		<input type="checkbox" {$bono_ant_notbox}>
+	</td>
+	<td>
+		{$searchtype_bono_ant}
+	</td>
+	<td>
+		{$bono_ant_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$bono_ant_editcontrol1}&nbsp;
+	</td>
+{END bono_ant_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_total_ganado}">
+	{BEGIN total_ganado_fieldblock}		
+	<td>
+		{$label t_planilla total_ganado}
+	</td>
+	<td>
+		<input type="checkbox" {$total_ganado_notbox}>
+	</td>
+	<td>
+		{$searchtype_total_ganado}
+	</td>
+	<td>
+		{$total_ganado_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$total_ganado_editcontrol1}&nbsp;
+	</td>
+{END total_ganado_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_devoluciones}">
+	{BEGIN devoluciones_fieldblock}		
+	<td>
+		{$label t_planilla devoluciones}
+	</td>
+	<td>
+		<input type="checkbox" {$devoluciones_notbox}>
+	</td>
+	<td>
+		{$searchtype_devoluciones}
+	</td>
+	<td>
+		{$devoluciones_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$devoluciones_editcontrol1}&nbsp;
+	</td>
+{END devoluciones_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_asig_familiar}">
+	{BEGIN asig_familiar_fieldblock}		
+	<td>
+		{$label t_planilla asig_familiar}
+	</td>
+	<td>
+		<input type="checkbox" {$asig_familiar_notbox}>
+	</td>
+	<td>
+		{$searchtype_asig_familiar}
+	</td>
+	<td>
+		{$asig_familiar_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$asig_familiar_editcontrol1}&nbsp;
+	</td>
+{END asig_familiar_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_afp_10}">
+	{BEGIN afp_10_fieldblock}		
+	<td>
+		{$label t_planilla afp_10}
+	</td>
+	<td>
+		<input type="checkbox" {$afp_10_notbox}>
+	</td>
+	<td>
+		{$searchtype_afp_10}
+	</td>
+	<td>
+		{$afp_10_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$afp_10_editcontrol1}&nbsp;
+	</td>
+{END afp_10_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_afp_riesgo_1_71}">
+	{BEGIN afp_riesgo_1_71_fieldblock}		
+	<td>
+		{$label t_planilla afp_riesgo_1_71}
+	</td>
+	<td>
+		<input type="checkbox" {$afp_riesgo_1_71_notbox}>
+	</td>
+	<td>
+		{$searchtype_afp_riesgo_1_71}
+	</td>
+	<td>
+		{$afp_riesgo_1_71_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$afp_riesgo_1_71_editcontrol1}&nbsp;
+	</td>
+{END afp_riesgo_1_71_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_afp_05}">
+	{BEGIN afp_05_fieldblock}		
+	<td>
+		{$label t_planilla afp_05}
+	</td>
+	<td>
+		<input type="checkbox" {$afp_05_notbox}>
+	</td>
+	<td>
+		{$searchtype_afp_05}
+	</td>
+	<td>
+		{$afp_05_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$afp_05_editcontrol1}&nbsp;
+	</td>
+{END afp_05_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_afp_ap_sol_0_5}">
+	{BEGIN afp_ap_sol_0_5_fieldblock}		
+	<td>
+		{$label t_planilla afp_ap_sol_0_5}
+	</td>
+	<td>
+		<input type="checkbox" {$afp_ap_sol_0_5_notbox}>
+	</td>
+	<td>
+		{$searchtype_afp_ap_sol_0_5}
+	</td>
+	<td>
+		{$afp_ap_sol_0_5_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$afp_ap_sol_0_5_editcontrol1}&nbsp;
+	</td>
+{END afp_ap_sol_0_5_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_ans_1}">
+	{BEGIN ans_1_fieldblock}		
+	<td>
+		{$label t_planilla ans_1}
+	</td>
+	<td>
+		<input type="checkbox" {$ans_1_notbox}>
+	</td>
+	<td>
+		{$searchtype_ans_1}
+	</td>
+	<td>
+		{$ans_1_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$ans_1_editcontrol1}&nbsp;
+	</td>
+{END ans_1_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_rc_iva}">
+	{BEGIN rc_iva_fieldblock}		
+	<td>
+		{$label t_planilla rc_iva}
+	</td>
+	<td>
+		<input type="checkbox" {$rc_iva_notbox}>
+	</td>
+	<td>
+		{$searchtype_rc_iva}
+	</td>
+	<td>
+		{$rc_iva_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$rc_iva_editcontrol1}&nbsp;
+	</td>
+{END rc_iva_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_retenciones}">
+	{BEGIN retenciones_fieldblock}		
+	<td>
+		{$label t_planilla retenciones}
+	</td>
+	<td>
+		<input type="checkbox" {$retenciones_notbox}>
+	</td>
+	<td>
+		{$searchtype_retenciones}
+	</td>
+	<td>
+		{$retenciones_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$retenciones_editcontrol1}&nbsp;
+	</td>
+{END retenciones_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_multa}">
+	{BEGIN multa_fieldblock}		
+	<td>
+		{$label t_planilla multa}
+	</td>
+	<td>
+		<input type="checkbox" {$multa_notbox}>
+	</td>
+	<td>
+		{$searchtype_multa}
+	</td>
+	<td>
+		{$multa_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$multa_editcontrol1}&nbsp;
+	</td>
+{END multa_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_total_desc}">
+	{BEGIN total_desc_fieldblock}		
+	<td>
+		{$label t_planilla total_desc}
+	</td>
+	<td>
+		<input type="checkbox" {$total_desc_notbox}>
+	</td>
+	<td>
+		{$searchtype_total_desc}
+	</td>
+	<td>
+		{$total_desc_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$total_desc_editcontrol1}&nbsp;
+	</td>
+{END total_desc_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_liquido_pagable}">
+	{BEGIN liquido_pagable_fieldblock}		
+	<td>
+		{$label t_planilla liquido_pagable}
+	</td>
+	<td>
+		<input type="checkbox" {$liquido_pagable_notbox}>
+	</td>
+	<td>
+		{$searchtype_liquido_pagable}
+	</td>
+	<td>
+		{$liquido_pagable_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$liquido_pagable_editcontrol1}&nbsp;
+	</td>
+{END liquido_pagable_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_mes}">
+	{BEGIN mes_fieldblock}		
+	<td>
+		{$label t_planilla mes}
+	</td>
+	<td>
+		<input type="checkbox" {$mes_notbox}>
+	</td>
+	<td>
+		{$searchtype_mes}
+	</td>
+	<td>
+		{$mes_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$mes_editcontrol1}&nbsp;
+	</td>
+{END mes_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_gestion}">
+	{BEGIN gestion_fieldblock}		
+	<td>
+		{$label t_planilla gestion}
+	</td>
+	<td>
+		<input type="checkbox" {$gestion_notbox}>
+	</td>
+	<td>
+		{$searchtype_gestion}
+	</td>
+	<td>
+		{$gestion_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$gestion_editcontrol1}&nbsp;
+	</td>
+{END gestion_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_cod_afp}">
+	{BEGIN cod_afp_fieldblock}		
+	<td>
+		{$label t_planilla cod_afp}
+	</td>
+	<td>
+		<input type="checkbox" {$cod_afp_notbox}>
+	</td>
+	<td>
+		{$searchtype_cod_afp}
+	</td>
+	<td>
+		{$cod_afp_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$cod_afp_editcontrol1}&nbsp;
+	</td>
+{END cod_afp_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_cta_banco}">
+	{BEGIN cta_banco_fieldblock}		
+	<td>
+		{$label t_planilla cta_banco}
+	</td>
+	<td>
+		<input type="checkbox" {$cta_banco_notbox}>
+	</td>
+	<td>
+		{$searchtype_cta_banco}
+	</td>
+	<td>
+		{$cta_banco_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$cta_banco_editcontrol1}&nbsp;
+	</td>
+{END cta_banco_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_tipo_funcionario}">
+	{BEGIN tipo_funcionario_fieldblock}		
+	<td>
+		{$label t_planilla tipo_funcionario}
+	</td>
+	<td>
+		<input type="checkbox" {$tipo_funcionario_notbox}>
+	</td>
+	<td>
+		{$searchtype_tipo_funcionario}
+	</td>
+	<td>
+		{$tipo_funcionario_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$tipo_funcionario_editcontrol1}&nbsp;
+	</td>
+{END tipo_funcionario_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Buscar</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reiniciar</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Volver a la lista</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,211 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN editheader}
+<div  class="rnr-brickcontents style2 rnr-b-editheader {$brickclass_editheader}"><span>	<h1>{$pagetitlelabel t_descuentos edit}</h1>
+</span></div>{END editheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-editfields2 {$brickclass_editfields2}"><table class="fieldGrid fieldGrid2 edit">
+
+<tr>
+<td>
+	{BEGIN id_func_fieldblock}
+<div data-fieldname="id_func" class="rnr-field style1 {$fielddispclass_id_func}">
+  <span class="rnr-label">{BEGIN id_func_label}{$label t_descuentos id_func}{END id_func_label}</span>
+  <span class="rnr-control style3">{$id_func_editcontrol}</span>
+</div>
+{END id_func_fieldblock}
+	{BEGIN afp_10_fieldblock}
+<div data-fieldname="afp_10" class="rnr-field style1 {$fielddispclass_afp_10}">
+  <span class="rnr-label">{BEGIN afp_10_label}{$label t_descuentos afp_10}{END afp_10_label}</span>
+  <span class="rnr-control style3">{$afp_10_editcontrol}</span>
+</div>
+{END afp_10_fieldblock}
+	{BEGIN afp_riesgo_1_71_fieldblock}
+<div data-fieldname="afp_riesgo_1_71" class="rnr-field style1 {$fielddispclass_afp_riesgo_1_71}">
+  <span class="rnr-label">{BEGIN afp_riesgo_1_71_label}{$label t_descuentos afp_riesgo_1_71}{END afp_riesgo_1_71_label}</span>
+  <span class="rnr-control style3">{$afp_riesgo_1_71_editcontrol}</span>
+</div>
+{END afp_riesgo_1_71_fieldblock}
+	{BEGIN afp_05_fieldblock}
+<div data-fieldname="afp_05" class="rnr-field style1 {$fielddispclass_afp_05}">
+  <span class="rnr-label">{BEGIN afp_05_label}{$label t_descuentos afp_05}{END afp_05_label}</span>
+  <span class="rnr-control style3">{$afp_05_editcontrol}</span>
+</div>
+{END afp_05_fieldblock}
+	{BEGIN rc_iva_fieldblock}
+<div data-fieldname="rc_iva" class="rnr-field style1 {$fielddispclass_rc_iva}">
+  <span class="rnr-label">{BEGIN rc_iva_label}{$label t_descuentos rc_iva}{END rc_iva_label}</span>
+  <span class="rnr-control style3">{$rc_iva_editcontrol}</span>
+</div>
+{END rc_iva_fieldblock}
+	{BEGIN retenciones_fieldblock}
+<div data-fieldname="retenciones" class="rnr-field style1 {$fielddispclass_retenciones}">
+  <span class="rnr-label">{BEGIN retenciones_label}{$label t_descuentos retenciones}{END retenciones_label}</span>
+  <span class="rnr-control style3">{$retenciones_editcontrol}</span>
+</div>
+{END retenciones_fieldblock}
+	{BEGIN multa_fieldblock}
+<div data-fieldname="multa" class="rnr-field style1 {$fielddispclass_multa}">
+  <span class="rnr-label">{BEGIN multa_label}{$label t_descuentos multa}{END multa_label}</span>
+  <span class="rnr-control style3">{$multa_editcontrol}</span>
+</div>
+{END multa_fieldblock}
+	{BEGIN total_desc_fieldblock}
+<div data-fieldname="total_desc" class="rnr-field style1 {$fielddispclass_total_desc}">
+  <span class="rnr-label">{BEGIN total_desc_label}{$label t_descuentos total_desc}{END total_desc_label}</span>
+  <span class="rnr-control style3">{$total_desc_editcontrol}</span>
+</div>
+{END total_desc_fieldblock}
+</td>
+<td>
+	{BEGIN liquido_pagable_fieldblock}
+<div data-fieldname="liquido_pagable" class="rnr-field style1 {$fielddispclass_liquido_pagable}">
+  <span class="rnr-label">{BEGIN liquido_pagable_label}{$label t_descuentos liquido_pagable}{END liquido_pagable_label}</span>
+  <span class="rnr-control style3">{$liquido_pagable_editcontrol}</span>
+</div>
+{END liquido_pagable_fieldblock}
+	{BEGIN afp_ap_sol_0_5_fieldblock}
+<div data-fieldname="afp_ap_sol_0_5" class="rnr-field style1 {$fielddispclass_afp_ap_sol_0_5}">
+  <span class="rnr-label">{BEGIN afp_ap_sol_0_5_label}{$label t_descuentos afp_ap_sol_0_5}{END afp_ap_sol_0_5_label}</span>
+  <span class="rnr-control style3">{$afp_ap_sol_0_5_editcontrol}</span>
+</div>
+{END afp_ap_sol_0_5_fieldblock}
+	{BEGIN ans_1_fieldblock}
+<div data-fieldname="ans_1" class="rnr-field style1 {$fielddispclass_ans_1}">
+  <span class="rnr-label">{BEGIN ans_1_label}{$label t_descuentos ans_1}{END ans_1_label}</span>
+  <span class="rnr-control style3">{$ans_1_editcontrol}</span>
+</div>
+{END ans_1_fieldblock}
+	{BEGIN seguro_pat_10_fieldblock}
+<div data-fieldname="seguro_pat_10" class="rnr-field style1 {$fielddispclass_seguro_pat_10}">
+  <span class="rnr-label">{BEGIN seguro_pat_10_label}{$label t_descuentos seguro_pat_10}{END seguro_pat_10_label}</span>
+  <span class="rnr-control style3">{$seguro_pat_10_editcontrol}</span>
+</div>
+{END seguro_pat_10_fieldblock}
+	{BEGIN riesgo_pat_171_fieldblock}
+<div data-fieldname="riesgo_pat_171" class="rnr-field style1 {$fielddispclass_riesgo_pat_171}">
+  <span class="rnr-label">{BEGIN riesgo_pat_171_label}{$label t_descuentos riesgo_pat_171}{END riesgo_pat_171_label}</span>
+  <span class="rnr-control style3">{$riesgo_pat_171_editcontrol}</span>
+</div>
+{END riesgo_pat_171_fieldblock}
+	{BEGIN pro_vivienda_pat_2_fieldblock}
+<div data-fieldname="pro_vivienda_pat_2" class="rnr-field style1 {$fielddispclass_pro_vivienda_pat_2}">
+  <span class="rnr-label">{BEGIN pro_vivienda_pat_2_label}{$label t_descuentos pro_vivienda_pat_2}{END pro_vivienda_pat_2_label}</span>
+  <span class="rnr-control style3">{$pro_vivienda_pat_2_editcontrol}</span>
+</div>
+{END pro_vivienda_pat_2_fieldblock}
+	{BEGIN ap_pat_sol_3_fieldblock}
+<div data-fieldname="ap_pat_sol_3" class="rnr-field style1 {$fielddispclass_ap_pat_sol_3}">
+  <span class="rnr-label">{BEGIN ap_pat_sol_3_label}{$label t_descuentos ap_pat_sol_3}{END ap_pat_sol_3_label}</span>
+  <span class="rnr-control style3">{$ap_pat_sol_3_editcontrol}</span>
+</div>
+{END ap_pat_sol_3_fieldblock}
+	{BEGIN sub_total_fieldblock}
+<div data-fieldname="sub_total" class="rnr-field style1 {$fielddispclass_sub_total}">
+  <span class="rnr-label">{BEGIN sub_total_label}{$label t_descuentos sub_total}{END sub_total_label}</span>
+  <span class="rnr-control style3">{$sub_total_editcontrol}</span>
+</div>
+{END sub_total_fieldblock}
+</td>
+</tr>
+</table></div>
+
+
+{BEGIN editbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-editbuttons {$brickclass_editbuttons}"><div class="rnr-buttons-right">
+	{BEGIN prev_button}
+	<a href="#" class="rnr-button {$prevbutton_class}" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+	{END prev_button}
+	{BEGIN next_button}
+	<a href="#" class="rnr-button  {$nextbutton_class}" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+	{END next_button}
+</div>
+<div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" {$savebutton_attrs}>Guardar</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" {$resetbutton_attrs}>Reiniciar</a>
+	{END reset_button}
+	{BEGIN back_button}
+		<a href="#" class="rnr-button" {$backbutton_attrs}>Volver a la lista</a>
+	{END back_button}
+	{BEGIN close_button}
+	<a href="#" class="rnr-button" {$closebutton_attrs}>Cerrar ventana</a>
+	{END close_button}
+	</div>
+</div>{END editbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

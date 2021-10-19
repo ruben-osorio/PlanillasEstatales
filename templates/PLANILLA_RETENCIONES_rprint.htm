@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD> 
+<META http-equiv="X-UA-Compatible" content="IE=Edge"> <TITLE>{$pagetitle}</TITLE> 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<LINK href="styles/default.css" rel="stylesheet" type="text/css"> {BEGIN rtlCSS}<LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">{END rtlCSS} {BEGIN styleCSSFiles}<LINK href="{$stylepath}" rel="stylesheet" type="text/css">{END styleCSSFiles} {BEGIN pageCSSFiles}<LINK href="{$pagestylepath}" rel="stylesheet" type="text/css">{END pageCSSFiles} 
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001"></HEAD> 
+<BODY class="{$stylename} function-rprint" {$bodyattrs}>{BEGIN body}
+
+{$header} 
+<DIV class="rnr-page">
+<DIV class="rnr-top {$blockclass_top}">
+{BEGIN container_pdf}
+<DIV class="rnr-c rnr-ch rnr-c-pdf">
+{BEGIN printbuttons}<DIV class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}<A class="divideintopages rnr-button button" href="#" {$divideintopages_attrs}>Prepare for   
+printing</A> {END divideintopages_block}{BEGIN pdflink_block}<A class="pdflink rnr-button button" href="#" {$pdflink_attrs}>Vista PDF</A> {END pdflink_block}</DIV>
+{END printbuttons}<DIV class="rnr-hfiller"></DIV></DIV>{END container_pdf}
+{BEGIN container_pageheader}
+<DIV class="rnr-c rnr-cv rnr-c-pageheader">
+<STYLE>
+	td.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary {background-color:#ffffbb;}
+	td.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary {background-color:#ffe0b0;}
+
+</STYLE>
+ 
+{BEGIN printheader}<DIV class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}"><SPAN>
+<H1>
+{$pagetitlelabel PLANILLA_RETENCIONES rprint}</H1></SPAN></DIV>
+{END printheader}{BEGIN page_number}<DIV class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}">
+<H1>Página <SPAN class="rp-pageno">
+{$pageno}</SPAN> / <SPAN class="rp-pagecount">
+{$pagecount}</SPAN></H1></DIV>{END page_number}</DIV>{END container_pageheader}</DIV>
+<DIV class="rnr-middle">
+<DIV class="rnr-left {$blockclass_left}"></DIV>
+<DIV class="rnr-center {$blockclass_center}">
+{BEGIN container_grid}
+<STYLE>
+	td.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary {background-color:#ffffbb;}
+	td.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary {background-color:#ffe0b0;}
+
+</STYLE>
+ 
+<DIV class="rnr-report-gridblock" id="grid_block{$id}">
+<DIV class="rnr-cw-grid rnr-s-grid asbuttons {$pageStyleName}">
+{BEGIN grid_block}<TABLE class="rnr-c rnr-b-report report" cellpadding="0">
+  <THEAD>
+  <TR class="rnr-toprow table-header style1" style="height: 51px;">
+    <TD rowspan="1" colspan="1"></TD>
+    <TD rowspan="1" colspan="17">
+      <P align="center"></P><FONT 
+      size="4">
+      <P align="center">PLANILLA DE RETENCIONES 
+      </P></FONT> 
+      <P align="center"></P></TD>
+    <TH class="rnr-edge" rowspan="1" colspan="1"></TH></TR>
+  <TR class="rnr-toprow table-header style1">
+    <TH rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES unidad}</TH>
+    <TH rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES id_func}</TH>
+    <TH rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES sexo}</TH>
+    <TH rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES item_contrato}</TH>
+    <TH rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES cargo}</TH>
+    <TH rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES paterno}</TH>
+    <TH rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES materno}</TH>
+    <TH rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES nombres}</TH>
+    <TH rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES ci}</TH>
+    <TH rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES exp}</TH>
+    <TH rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES haber_basico}</TH>
+    <TH rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES haber_percibido}</TH>
+    <TH rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES bono_ant}</TH>
+    <TH rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES total_ganado}</TH>
+    <TH rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES mes}</TH>
+    <TH rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES gestion}</TH>
+    <TH rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES liquido_pagable}</TH>
+    <TH rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES retenciones}</TH>
+    <TH class="rnr-edge" rowspan="1" colspan="1"></TH></TR></THEAD>
+  <TBODY>
+  {BEGIN grid_row}{BEGIN row_data}<TR class="rnr-row style1" {$rowattrs}>
+    <TD rowspan="1" colspan="1" {$recordattrs}>
+      {$unidad_value}</TD>
+    <TD rowspan="1" colspan="1" {$recordattrs}>
+      {$id_func_value}</TD>
+    <TD rowspan="1" colspan="1" {$recordattrs}>
+      {$sexo_value}</TD>
+    <TD rowspan="1" colspan="1" {$recordattrs}>
+      {$item_contrato_value}</TD>
+    <TD rowspan="1" colspan="1" {$recordattrs}>
+      {$cargo_value}</TD>
+    <TD rowspan="1" colspan="1" {$recordattrs}>
+      {$paterno_value}</TD>
+    <TD rowspan="1" colspan="1" {$recordattrs}>
+      {$materno_value}</TD>
+    <TD rowspan="1" colspan="1" {$recordattrs}>
+      {$nombres_value}</TD>
+    <TD rowspan="1" colspan="1" {$recordattrs}>
+      {$ci_value}</TD>
+    <TD rowspan="1" colspan="1" {$recordattrs}>
+      {$exp_value}</TD>
+    <TD rowspan="1" colspan="1" {$recordattrs}>
+      {$haber_basico_value}</TD>
+    <TD rowspan="1" colspan="1" {$recordattrs}>
+      {$haber_percibido_value}</TD>
+    <TD rowspan="1" colspan="1" {$recordattrs}>
+      {$bono_ant_value}</TD>
+    <TD rowspan="1" colspan="1" {$recordattrs}>
+      {$total_ganado_value}</TD>
+    <TD rowspan="1" colspan="1" {$recordattrs}>
+      {$mes_value}</TD>
+    <TD rowspan="1" colspan="1" {$recordattrs}>
+      {$gestion_value}</TD>
+    <TD rowspan="1" colspan="1" {$recordattrs}>
+      {$liquido_pagable_value}</TD>
+    <TD rowspan="1" colspan="1" {$recordattrs}>
+      {$retenciones_value}</TD>
+    <TD class="rnr-edge" rowspan="1" colspan="1" {$recordattrs}></TD></TR>
+  {END row_data}{END grid_row}<TR class="rnr-toprow summary-header style1">
+    <TD rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES unidad}</TD>
+    <TD rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES id_func}</TD>
+    <TD rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES sexo}</TD>
+    <TD rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES item_contrato}</TD>
+    <TD rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES cargo}</TD>
+    <TD rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES paterno}</TD>
+    <TD rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES materno}</TD>
+    <TD rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES nombres}</TD>
+    <TD rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES ci}</TD>
+    <TD rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES exp}</TD>
+    <TD rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES haber_basico}</TD>
+    <TD rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES haber_percibido}</TD>
+    <TD rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES bono_ant}</TD>
+    <TD rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES total_ganado}</TD>
+    <TD rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES mes}</TD>
+    <TD rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES gestion}</TD>
+    <TD rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES liquido_pagable}</TD>
+    <TD rowspan="1" colspan="1">
+      {$label PLANILLA_RETENCIONES retenciones}</TD>
+    <TD class="rnr-edge" rowspan="1" colspan="1"></TD></TR>
+  <TR class="rnr-row summary-page style1">
+    <TD class="pagesummary rnr-edge" rowspan="1" colspan="18">Resumen de la    
+                           pagina 
+      {$page_total_cnt} - Registros totales</TD></TR>
+  <TR class="rnr-row style1">
+    <TD class="pagesummary 0" rowspan="1" colspan="1">	Sum&nbsp;			&nbsp; </TD>
+    <TD class="pagesummary 0" rowspan="1" colspan="1">	&nbsp;</TD>
+    <TD class="pagesummary 0" rowspan="1" colspan="1">	&nbsp;</TD>
+    <TD class="pagesummary 0" rowspan="1" colspan="1">&nbsp;</TD>
+    <TD class="pagesummary 0" rowspan="1" colspan="1">&nbsp;</TD>
+    <TD class="pagesummary 0" rowspan="1" colspan="1">&nbsp;</TD>
+    <TD class="pagesummary 0" rowspan="1" colspan="1">	&nbsp;</TD>
+    <TD class="pagesummary 0" rowspan="1" colspan="1">	&nbsp;</TD>
+    <TD class="pagesummary 0" rowspan="1" colspan="1">	&nbsp;</TD>
+    <TD class="pagesummary 0" rowspan="1" colspan="1">	&nbsp;</TD>
+    <TD class="pagesummary 0" rowspan="1" colspan="1">
+      {$page_totalhaber_basico_sum} </TD>
+    <TD class="pagesummary 0" rowspan="1" colspan="1">
+      {$page_totalhaber_percibido_sum} </TD>
+    <TD class="pagesummary 0" rowspan="1" colspan="1">
+      {$page_totalbono_ant_sum} </TD>
+    <TD class="pagesummary 0" rowspan="1" colspan="1">
+      {$page_totaltotal_ganado_sum} </TD>
+    <TD class="pagesummary 0" rowspan="1" colspan="1">	&nbsp;</TD>
+    <TD class="pagesummary 0" rowspan="1" colspan="1">	&nbsp;</TD>
+    <TD class="pagesummary 0" rowspan="1" colspan="1">
+      {$page_totalliquido_pagable_sum} </TD>
+    <TD class="pagesummary rnr-edge" rowspan="1" colspan="1">
+      {$page_totalretenciones_sum} 
+</TD></TR></TBODY></TABLE>{END grid_block}</DIV></DIV>{END container_grid}</DIV>
+<DIV class="rnr-right {$blockclass_right}"></DIV></DIV>
+<DIV class="rnr-bottom {$blockclass_bottom}"></DIV></DIV>
+<P><BR></P>
+{$footer} 
+<P><BR></P>
+<P><BR></P>
+<TABLE width="1263" align="center" bordercolor="" style="width: 1263px; height: 156px;" 
+bgcolor="" border="0" cellspacing="1" cellpadding="1">
+  <TBODY>
+  <TR>
+    <TD style="width: 290px;">&nbsp;<IMG width="394" height="232" style="width: 276px; height: 180px;" src="images/elaborado.png" border="0"></TD>
+    <TD style="width: 328px;">&nbsp;<IMG width="393" height="233" style="width: 314px; height: 180px;" src="images/revisado.png" border="0"></TD>
+    <TD style="width: 323px;">&nbsp;<IMG width="394" height="232" style="width: 309px; height: 177px;" src="images/autorizado.png" border="0"></TD>
+    <TD style="width: 323px;">
+      <P align="left">&nbsp;<IMG width="392" height="232" style="width: 310px; height: 168px;" src="images/aprobado.png" border="0"></P></TD></TR></TBODY></TABLE>{END body}</BODY></HTML>

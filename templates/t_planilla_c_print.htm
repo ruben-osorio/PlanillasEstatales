@@ -1,0 +1,1062 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+{BEGIN pdflink_block}
+<a href="#" class="pdflink rnr-button button" {$pdflink_attrs}>Vista PDF</a>
+{END pdflink_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel t_planilla_c print}</h1>
+</div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Página <span class="rp-pageno">{$pageno}</span> / <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN id_func_fieldheadercolumn}
+<th class="runner-cc {$id_func_class}" {$id_func_style}>
+	{BEGIN id_func_fieldheader}
+	<b>{$label t_planilla_c id_func}</b>
+	{END id_func_fieldheader}
+</th>
+{END id_func_fieldheadercolumn}
+	{BEGIN fecha_nac_fieldheadercolumn}
+<th class="runner-cc {$fecha_nac_class}" {$fecha_nac_style}>
+	{BEGIN fecha_nac_fieldheader}
+	<b>{$label t_planilla_c fecha_nac}</b>
+	{END fecha_nac_fieldheader}
+</th>
+{END fecha_nac_fieldheadercolumn}
+	{BEGIN sexo_fieldheadercolumn}
+<th class="runner-cc {$sexo_class}" {$sexo_style}>
+	{BEGIN sexo_fieldheader}
+	<b>{$label t_planilla_c sexo}</b>
+	{END sexo_fieldheader}
+</th>
+{END sexo_fieldheadercolumn}
+	{BEGIN item_contrato_fieldheadercolumn}
+<th class="runner-cc {$item_contrato_class}" {$item_contrato_style}>
+	{BEGIN item_contrato_fieldheader}
+	<b>{$label t_planilla_c item_contrato}</b>
+	{END item_contrato_fieldheader}
+</th>
+{END item_contrato_fieldheadercolumn}
+	{BEGIN unidad_fieldheadercolumn}
+<th class="runner-cc {$unidad_class}" {$unidad_style}>
+	{BEGIN unidad_fieldheader}
+	<b>{$label t_planilla_c unidad}</b>
+	{END unidad_fieldheader}
+</th>
+{END unidad_fieldheadercolumn}
+	{BEGIN cargo_fieldheadercolumn}
+<th class="runner-cc {$cargo_class}" {$cargo_style}>
+	{BEGIN cargo_fieldheader}
+	<b>{$label t_planilla_c cargo}</b>
+	{END cargo_fieldheader}
+</th>
+{END cargo_fieldheadercolumn}
+	{BEGIN paterno_fieldheadercolumn}
+<th class="runner-cc {$paterno_class}" {$paterno_style}>
+	{BEGIN paterno_fieldheader}
+	<b>{$label t_planilla_c paterno}</b>
+	{END paterno_fieldheader}
+</th>
+{END paterno_fieldheadercolumn}
+	{BEGIN materno_fieldheadercolumn}
+<th class="runner-cc {$materno_class}" {$materno_style}>
+	{BEGIN materno_fieldheader}
+	<b>{$label t_planilla_c materno}</b>
+	{END materno_fieldheader}
+</th>
+{END materno_fieldheadercolumn}
+	{BEGIN nombres_fieldheadercolumn}
+<th class="runner-cc {$nombres_class}" {$nombres_style}>
+	{BEGIN nombres_fieldheader}
+	<b>{$label t_planilla_c nombres}</b>
+	{END nombres_fieldheader}
+</th>
+{END nombres_fieldheadercolumn}
+	{BEGIN ci_fieldheadercolumn}
+<th class="runner-cc {$ci_class}" {$ci_style}>
+	{BEGIN ci_fieldheader}
+	<b>{$label t_planilla_c ci}</b>
+	{END ci_fieldheader}
+</th>
+{END ci_fieldheadercolumn}
+	{BEGIN exp_fieldheadercolumn}
+<th class="runner-cc {$exp_class}" {$exp_style}>
+	{BEGIN exp_fieldheader}
+	<b>{$label t_planilla_c exp}</b>
+	{END exp_fieldheader}
+</th>
+{END exp_fieldheadercolumn}
+	{BEGIN nit_fieldheadercolumn}
+<th class="runner-cc {$nit_class}" {$nit_style}>
+	{BEGIN nit_fieldheader}
+	<b>{$label t_planilla_c nit}</b>
+	{END nit_fieldheader}
+</th>
+{END nit_fieldheadercolumn}
+	{BEGIN fec_ingreso_fieldheadercolumn}
+<th class="runner-cc {$fec_ingreso_class}" {$fec_ingreso_style}>
+	{BEGIN fec_ingreso_fieldheader}
+	<b>{$label t_planilla_c fec_ingreso}</b>
+	{END fec_ingreso_fieldheader}
+</th>
+{END fec_ingreso_fieldheadercolumn}
+	{BEGIN baja_fieldheadercolumn}
+<th class="runner-cc {$baja_class}" {$baja_style}>
+	{BEGIN baja_fieldheader}
+	<b>{$label t_planilla_c baja}</b>
+	{END baja_fieldheader}
+</th>
+{END baja_fieldheadercolumn}
+	{BEGIN reasig_fieldheadercolumn}
+<th class="runner-cc {$reasig_class}" {$reasig_style}>
+	{BEGIN reasig_fieldheader}
+	<b>{$label t_planilla_c reasig}</b>
+	{END reasig_fieldheader}
+</th>
+{END reasig_fieldheadercolumn}
+	{BEGIN haber_basico_fieldheadercolumn}
+<th class="runner-cc {$haber_basico_class}" {$haber_basico_style}>
+	{BEGIN haber_basico_fieldheader}
+	<b>{$label t_planilla_c haber_basico}</b>
+	{END haber_basico_fieldheader}
+</th>
+{END haber_basico_fieldheadercolumn}
+	{BEGIN dias_trab_fieldheadercolumn}
+<th class="runner-cc {$dias_trab_class}" {$dias_trab_style}>
+	{BEGIN dias_trab_fieldheader}
+	<b>{$label t_planilla_c dias_trab}</b>
+	{END dias_trab_fieldheader}
+</th>
+{END dias_trab_fieldheadercolumn}
+	{BEGIN haber_percibido_fieldheadercolumn}
+<th class="runner-cc {$haber_percibido_class}" {$haber_percibido_style}>
+	{BEGIN haber_percibido_fieldheader}
+	<b>{$label t_planilla_c haber_percibido}</b>
+	{END haber_percibido_fieldheader}
+</th>
+{END haber_percibido_fieldheadercolumn}
+	{BEGIN reint_fieldheadercolumn}
+<th class="runner-cc {$reint_class}" {$reint_style}>
+	{BEGIN reint_fieldheader}
+	<b>{$label t_planilla_c reint}</b>
+	{END reint_fieldheader}
+</th>
+{END reint_fieldheadercolumn}
+	{BEGIN bono_ant_fieldheadercolumn}
+<th class="runner-cc {$bono_ant_class}" {$bono_ant_style}>
+	{BEGIN bono_ant_fieldheader}
+	<b>{$label t_planilla_c bono_ant}</b>
+	{END bono_ant_fieldheader}
+</th>
+{END bono_ant_fieldheadercolumn}
+	{BEGIN total_ganado_fieldheadercolumn}
+<th class="runner-cc {$total_ganado_class}" {$total_ganado_style}>
+	{BEGIN total_ganado_fieldheader}
+	<b>{$label t_planilla_c total_ganado}</b>
+	{END total_ganado_fieldheader}
+</th>
+{END total_ganado_fieldheadercolumn}
+	{BEGIN devoluciones_fieldheadercolumn}
+<th class="runner-cc {$devoluciones_class}" {$devoluciones_style}>
+	{BEGIN devoluciones_fieldheader}
+	<b>{$label t_planilla_c devoluciones}</b>
+	{END devoluciones_fieldheader}
+</th>
+{END devoluciones_fieldheadercolumn}
+	{BEGIN asig_familiar_fieldheadercolumn}
+<th class="runner-cc {$asig_familiar_class}" {$asig_familiar_style}>
+	{BEGIN asig_familiar_fieldheader}
+	<b>{$label t_planilla_c asig_familiar}</b>
+	{END asig_familiar_fieldheader}
+</th>
+{END asig_familiar_fieldheadercolumn}
+	{BEGIN futuro_afp_10_fieldheadercolumn}
+<th class="runner-cc {$futuro_afp_10_class}" {$futuro_afp_10_style}>
+	{BEGIN futuro_afp_10_fieldheader}
+	<b>{$label t_planilla_c futuro_afp_10}</b>
+	{END futuro_afp_10_fieldheader}
+</th>
+{END futuro_afp_10_fieldheadercolumn}
+	{BEGIN futuro_afp_riesgo_1_71_fieldheadercolumn}
+<th class="runner-cc {$futuro_afp_riesgo_1_71_class}" {$futuro_afp_riesgo_1_71_style}>
+	{BEGIN futuro_afp_riesgo_1_71_fieldheader}
+	<b>{$label t_planilla_c futuro_afp_riesgo_1_71}</b>
+	{END futuro_afp_riesgo_1_71_fieldheader}
+</th>
+{END futuro_afp_riesgo_1_71_fieldheadercolumn}
+	{BEGIN futuro_afp_05_fieldheadercolumn}
+<th class="runner-cc {$futuro_afp_05_class}" {$futuro_afp_05_style}>
+	{BEGIN futuro_afp_05_fieldheader}
+	<b>{$label t_planilla_c futuro_afp_05}</b>
+	{END futuro_afp_05_fieldheader}
+</th>
+{END futuro_afp_05_fieldheadercolumn}
+	{BEGIN futuro_afp_ap_sol_0_5_fieldheadercolumn}
+<th class="runner-cc {$futuro_afp_ap_sol_0_5_class}" {$futuro_afp_ap_sol_0_5_style}>
+	{BEGIN futuro_afp_ap_sol_0_5_fieldheader}
+	<b>{$label t_planilla_c futuro_afp_ap_sol_0_5}</b>
+	{END futuro_afp_ap_sol_0_5_fieldheader}
+</th>
+{END futuro_afp_ap_sol_0_5_fieldheadercolumn}
+	{BEGIN futuro_ans_1_fieldheadercolumn}
+<th class="runner-cc {$futuro_ans_1_class}" {$futuro_ans_1_style}>
+	{BEGIN futuro_ans_1_fieldheader}
+	<b>{$label t_planilla_c futuro_ans_1}</b>
+	{END futuro_ans_1_fieldheader}
+</th>
+{END futuro_ans_1_fieldheadercolumn}
+	{BEGIN prev_afp_10_fieldheadercolumn}
+<th class="runner-cc {$prev_afp_10_class}" {$prev_afp_10_style}>
+	{BEGIN prev_afp_10_fieldheader}
+	<b>{$label t_planilla_c prev_afp_10}</b>
+	{END prev_afp_10_fieldheader}
+</th>
+{END prev_afp_10_fieldheadercolumn}
+	{BEGIN prev_afp_riesgo_1_71_fieldheadercolumn}
+<th class="runner-cc {$prev_afp_riesgo_1_71_class}" {$prev_afp_riesgo_1_71_style}>
+	{BEGIN prev_afp_riesgo_1_71_fieldheader}
+	<b>{$label t_planilla_c prev_afp_riesgo_1_71}</b>
+	{END prev_afp_riesgo_1_71_fieldheader}
+</th>
+{END prev_afp_riesgo_1_71_fieldheadercolumn}
+	{BEGIN prev_afp_05_fieldheadercolumn}
+<th class="runner-cc {$prev_afp_05_class}" {$prev_afp_05_style}>
+	{BEGIN prev_afp_05_fieldheader}
+	<b>{$label t_planilla_c prev_afp_05}</b>
+	{END prev_afp_05_fieldheader}
+</th>
+{END prev_afp_05_fieldheadercolumn}
+	{BEGIN prev_afp_ap_sol_0_5_fieldheadercolumn}
+<th class="runner-cc {$prev_afp_ap_sol_0_5_class}" {$prev_afp_ap_sol_0_5_style}>
+	{BEGIN prev_afp_ap_sol_0_5_fieldheader}
+	<b>{$label t_planilla_c prev_afp_ap_sol_0_5}</b>
+	{END prev_afp_ap_sol_0_5_fieldheader}
+</th>
+{END prev_afp_ap_sol_0_5_fieldheadercolumn}
+	{BEGIN prev_ans_1_fieldheadercolumn}
+<th class="runner-cc {$prev_ans_1_class}" {$prev_ans_1_style}>
+	{BEGIN prev_ans_1_fieldheader}
+	<b>{$label t_planilla_c prev_ans_1}</b>
+	{END prev_ans_1_fieldheader}
+</th>
+{END prev_ans_1_fieldheadercolumn}
+	{BEGIN rc_iva_fieldheadercolumn}
+<th class="runner-cc {$rc_iva_class}" {$rc_iva_style}>
+	{BEGIN rc_iva_fieldheader}
+	<b>{$label t_planilla_c rc_iva}</b>
+	{END rc_iva_fieldheader}
+</th>
+{END rc_iva_fieldheadercolumn}
+	{BEGIN retenciones_fieldheadercolumn}
+<th class="runner-cc {$retenciones_class}" {$retenciones_style}>
+	{BEGIN retenciones_fieldheader}
+	<b>{$label t_planilla_c retenciones}</b>
+	{END retenciones_fieldheader}
+</th>
+{END retenciones_fieldheadercolumn}
+	{BEGIN multa_fieldheadercolumn}
+<th class="runner-cc {$multa_class}" {$multa_style}>
+	{BEGIN multa_fieldheader}
+	<b>{$label t_planilla_c multa}</b>
+	{END multa_fieldheader}
+</th>
+{END multa_fieldheadercolumn}
+	{BEGIN total_desc_fieldheadercolumn}
+<th class="runner-cc {$total_desc_class}" {$total_desc_style}>
+	{BEGIN total_desc_fieldheader}
+	<b>{$label t_planilla_c total_desc}</b>
+	{END total_desc_fieldheader}
+</th>
+{END total_desc_fieldheadercolumn}
+	{BEGIN pre_natal_fieldheadercolumn}
+<th class="runner-cc {$pre_natal_class}" {$pre_natal_style}>
+	{BEGIN pre_natal_fieldheader}
+	<b>{$label t_planilla_c pre_natal}</b>
+	{END pre_natal_fieldheader}
+</th>
+{END pre_natal_fieldheadercolumn}
+	{BEGIN natalidad_fieldheadercolumn}
+<th class="runner-cc {$natalidad_class}" {$natalidad_style}>
+	{BEGIN natalidad_fieldheader}
+	<b>{$label t_planilla_c natalidad}</b>
+	{END natalidad_fieldheader}
+</th>
+{END natalidad_fieldheadercolumn}
+	{BEGIN lactancia_fieldheadercolumn}
+<th class="runner-cc {$lactancia_class}" {$lactancia_style}>
+	{BEGIN lactancia_fieldheader}
+	<b>{$label t_planilla_c lactancia}</b>
+	{END lactancia_fieldheader}
+</th>
+{END lactancia_fieldheadercolumn}
+	{BEGIN sepelio_fieldheadercolumn}
+<th class="runner-cc {$sepelio_class}" {$sepelio_style}>
+	{BEGIN sepelio_fieldheader}
+	<b>{$label t_planilla_c sepelio}</b>
+	{END sepelio_fieldheader}
+</th>
+{END sepelio_fieldheadercolumn}
+	{BEGIN mes_fieldheadercolumn}
+<th class="runner-cc {$mes_class}" {$mes_style}>
+	{BEGIN mes_fieldheader}
+	<b>{$label t_planilla_c mes}</b>
+	{END mes_fieldheader}
+</th>
+{END mes_fieldheadercolumn}
+	{BEGIN gestion_fieldheadercolumn}
+<th class="runner-cc {$gestion_class}" {$gestion_style}>
+	{BEGIN gestion_fieldheader}
+	<b>{$label t_planilla_c gestion}</b>
+	{END gestion_fieldheader}
+</th>
+{END gestion_fieldheadercolumn}
+	{BEGIN liquido_pagable_fieldheadercolumn}
+<th class="runner-cc {$liquido_pagable_class}" {$liquido_pagable_style}>
+	{BEGIN liquido_pagable_fieldheader}
+	<b>{$label t_planilla_c liquido_pagable}</b>
+	{END liquido_pagable_fieldheader}
+</th>
+{END liquido_pagable_fieldheadercolumn}
+	{BEGIN cod_afp_fieldheadercolumn}
+<th class="runner-cc {$cod_afp_class}" {$cod_afp_style}>
+	{BEGIN cod_afp_fieldheader}
+	<b>{$label t_planilla_c cod_afp}</b>
+	{END cod_afp_fieldheader}
+</th>
+{END cod_afp_fieldheadercolumn}
+	{BEGIN cta_banco_fieldheadercolumn}
+<th class="runner-cc {$cta_banco_class}" {$cta_banco_style}>
+	{BEGIN cta_banco_fieldheader}
+	<b>{$label t_planilla_c cta_banco}</b>
+	{END cta_banco_fieldheader}
+</th>
+{END cta_banco_fieldheadercolumn}
+	{BEGIN tipo_funcionario_fieldheadercolumn}
+<th class="runner-cc {$tipo_funcionario_class}" {$tipo_funcionario_style}>
+	{BEGIN tipo_funcionario_fieldheader}
+	<b>{$label t_planilla_c tipo_funcionario}</b>
+	{END tipo_funcionario_fieldheader}
+</th>
+{END tipo_funcionario_fieldheadercolumn}
+	{BEGIN ap_pat_sol_3_fieldheadercolumn}
+<th class="runner-cc {$ap_pat_sol_3_class}" {$ap_pat_sol_3_style}>
+	{BEGIN ap_pat_sol_3_fieldheader}
+	<b>{$label t_planilla_c ap_pat_sol_3}</b>
+	{END ap_pat_sol_3_fieldheader}
+</th>
+{END ap_pat_sol_3_fieldheadercolumn}
+	{BEGIN seguro_pat_10_fieldheadercolumn}
+<th class="runner-cc {$seguro_pat_10_class}" {$seguro_pat_10_style}>
+	{BEGIN seguro_pat_10_fieldheader}
+	<b>{$label t_planilla_c seguro_pat_10}</b>
+	{END seguro_pat_10_fieldheader}
+</th>
+{END seguro_pat_10_fieldheadercolumn}
+	{BEGIN riesgo_pat_171_fieldheadercolumn}
+<th class="runner-cc {$riesgo_pat_171_class}" {$riesgo_pat_171_style}>
+	{BEGIN riesgo_pat_171_fieldheader}
+	<b>{$label t_planilla_c riesgo_pat_171}</b>
+	{END riesgo_pat_171_fieldheader}
+</th>
+{END riesgo_pat_171_fieldheadercolumn}
+	{BEGIN pro_vivienda_pat_2_fieldheadercolumn}
+<th class="runner-cc {$pro_vivienda_pat_2_class}" {$pro_vivienda_pat_2_style}>
+	{BEGIN pro_vivienda_pat_2_fieldheader}
+	<b>{$label t_planilla_c pro_vivienda_pat_2}</b>
+	{END pro_vivienda_pat_2_fieldheader}
+</th>
+{END pro_vivienda_pat_2_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN id_func_fieldcolumn}
+<td  class="runner-cc {$id_func_class}" {$id_func_style} {$recordattrs}>
+	{$id_func_value}
+</td>
+{END id_func_fieldcolumn}
+	{BEGIN fecha_nac_fieldcolumn}
+<td  class="runner-cc {$fecha_nac_class}" {$fecha_nac_style} {$recordattrs}>
+	{$fecha_nac_value}
+</td>
+{END fecha_nac_fieldcolumn}
+	{BEGIN sexo_fieldcolumn}
+<td  class="runner-cc {$sexo_class}" {$sexo_style} {$recordattrs}>
+	{$sexo_value}
+</td>
+{END sexo_fieldcolumn}
+	{BEGIN item_contrato_fieldcolumn}
+<td  class="runner-cc {$item_contrato_class}" {$item_contrato_style} {$recordattrs}>
+	{$item_contrato_value}
+</td>
+{END item_contrato_fieldcolumn}
+	{BEGIN unidad_fieldcolumn}
+<td  class="runner-cc {$unidad_class}" {$unidad_style} {$recordattrs}>
+	{$unidad_value}
+</td>
+{END unidad_fieldcolumn}
+	{BEGIN cargo_fieldcolumn}
+<td  class="runner-cc {$cargo_class}" {$cargo_style} {$recordattrs}>
+	{$cargo_value}
+</td>
+{END cargo_fieldcolumn}
+	{BEGIN paterno_fieldcolumn}
+<td  class="runner-cc {$paterno_class}" {$paterno_style} {$recordattrs}>
+	{$paterno_value}
+</td>
+{END paterno_fieldcolumn}
+	{BEGIN materno_fieldcolumn}
+<td  class="runner-cc {$materno_class}" {$materno_style} {$recordattrs}>
+	{$materno_value}
+</td>
+{END materno_fieldcolumn}
+	{BEGIN nombres_fieldcolumn}
+<td  class="runner-cc {$nombres_class}" {$nombres_style} {$recordattrs}>
+	{$nombres_value}
+</td>
+{END nombres_fieldcolumn}
+	{BEGIN ci_fieldcolumn}
+<td  class="runner-cc {$ci_class}" {$ci_style} {$recordattrs}>
+	{$ci_value}
+</td>
+{END ci_fieldcolumn}
+	{BEGIN exp_fieldcolumn}
+<td  class="runner-cc {$exp_class}" {$exp_style} {$recordattrs}>
+	{$exp_value}
+</td>
+{END exp_fieldcolumn}
+	{BEGIN nit_fieldcolumn}
+<td  class="runner-cc {$nit_class}" {$nit_style} {$recordattrs}>
+	{$nit_value}
+</td>
+{END nit_fieldcolumn}
+	{BEGIN fec_ingreso_fieldcolumn}
+<td  class="runner-cc {$fec_ingreso_class}" {$fec_ingreso_style} {$recordattrs}>
+	{$fec_ingreso_value}
+</td>
+{END fec_ingreso_fieldcolumn}
+	{BEGIN baja_fieldcolumn}
+<td  class="runner-cc {$baja_class}" {$baja_style} {$recordattrs}>
+	{$baja_value}
+</td>
+{END baja_fieldcolumn}
+	{BEGIN reasig_fieldcolumn}
+<td  class="runner-cc {$reasig_class}" {$reasig_style} {$recordattrs}>
+	{$reasig_value}
+</td>
+{END reasig_fieldcolumn}
+	{BEGIN haber_basico_fieldcolumn}
+<td  class="runner-cc {$haber_basico_class}" {$haber_basico_style} {$recordattrs}>
+	{$haber_basico_value}
+</td>
+{END haber_basico_fieldcolumn}
+	{BEGIN dias_trab_fieldcolumn}
+<td  class="runner-cc {$dias_trab_class}" {$dias_trab_style} {$recordattrs}>
+	{$dias_trab_value}
+</td>
+{END dias_trab_fieldcolumn}
+	{BEGIN haber_percibido_fieldcolumn}
+<td  class="runner-cc {$haber_percibido_class}" {$haber_percibido_style} {$recordattrs}>
+	{$haber_percibido_value}
+</td>
+{END haber_percibido_fieldcolumn}
+	{BEGIN reint_fieldcolumn}
+<td  class="runner-cc {$reint_class}" {$reint_style} {$recordattrs}>
+	{$reint_value}
+</td>
+{END reint_fieldcolumn}
+	{BEGIN bono_ant_fieldcolumn}
+<td  class="runner-cc {$bono_ant_class}" {$bono_ant_style} {$recordattrs}>
+	{$bono_ant_value}
+</td>
+{END bono_ant_fieldcolumn}
+	{BEGIN total_ganado_fieldcolumn}
+<td  class="runner-cc {$total_ganado_class}" {$total_ganado_style} {$recordattrs}>
+	{$total_ganado_value}
+</td>
+{END total_ganado_fieldcolumn}
+	{BEGIN devoluciones_fieldcolumn}
+<td  class="runner-cc {$devoluciones_class}" {$devoluciones_style} {$recordattrs}>
+	{$devoluciones_value}
+</td>
+{END devoluciones_fieldcolumn}
+	{BEGIN asig_familiar_fieldcolumn}
+<td  class="runner-cc {$asig_familiar_class}" {$asig_familiar_style} {$recordattrs}>
+	{$asig_familiar_value}
+</td>
+{END asig_familiar_fieldcolumn}
+	{BEGIN futuro_afp_10_fieldcolumn}
+<td  class="runner-cc {$futuro_afp_10_class}" {$futuro_afp_10_style} {$recordattrs}>
+	{$futuro_afp_10_value}
+</td>
+{END futuro_afp_10_fieldcolumn}
+	{BEGIN futuro_afp_riesgo_1_71_fieldcolumn}
+<td  class="runner-cc {$futuro_afp_riesgo_1_71_class}" {$futuro_afp_riesgo_1_71_style} {$recordattrs}>
+	{$futuro_afp_riesgo_1_71_value}
+</td>
+{END futuro_afp_riesgo_1_71_fieldcolumn}
+	{BEGIN futuro_afp_05_fieldcolumn}
+<td  class="runner-cc {$futuro_afp_05_class}" {$futuro_afp_05_style} {$recordattrs}>
+	{$futuro_afp_05_value}
+</td>
+{END futuro_afp_05_fieldcolumn}
+	{BEGIN futuro_afp_ap_sol_0_5_fieldcolumn}
+<td  class="runner-cc {$futuro_afp_ap_sol_0_5_class}" {$futuro_afp_ap_sol_0_5_style} {$recordattrs}>
+	{$futuro_afp_ap_sol_0_5_value}
+</td>
+{END futuro_afp_ap_sol_0_5_fieldcolumn}
+	{BEGIN futuro_ans_1_fieldcolumn}
+<td  class="runner-cc {$futuro_ans_1_class}" {$futuro_ans_1_style} {$recordattrs}>
+	{$futuro_ans_1_value}
+</td>
+{END futuro_ans_1_fieldcolumn}
+	{BEGIN prev_afp_10_fieldcolumn}
+<td  class="runner-cc {$prev_afp_10_class}" {$prev_afp_10_style} {$recordattrs}>
+	{$prev_afp_10_value}
+</td>
+{END prev_afp_10_fieldcolumn}
+	{BEGIN prev_afp_riesgo_1_71_fieldcolumn}
+<td  class="runner-cc {$prev_afp_riesgo_1_71_class}" {$prev_afp_riesgo_1_71_style} {$recordattrs}>
+	{$prev_afp_riesgo_1_71_value}
+</td>
+{END prev_afp_riesgo_1_71_fieldcolumn}
+	{BEGIN prev_afp_05_fieldcolumn}
+<td  class="runner-cc {$prev_afp_05_class}" {$prev_afp_05_style} {$recordattrs}>
+	{$prev_afp_05_value}
+</td>
+{END prev_afp_05_fieldcolumn}
+	{BEGIN prev_afp_ap_sol_0_5_fieldcolumn}
+<td  class="runner-cc {$prev_afp_ap_sol_0_5_class}" {$prev_afp_ap_sol_0_5_style} {$recordattrs}>
+	{$prev_afp_ap_sol_0_5_value}
+</td>
+{END prev_afp_ap_sol_0_5_fieldcolumn}
+	{BEGIN prev_ans_1_fieldcolumn}
+<td  class="runner-cc {$prev_ans_1_class}" {$prev_ans_1_style} {$recordattrs}>
+	{$prev_ans_1_value}
+</td>
+{END prev_ans_1_fieldcolumn}
+	{BEGIN rc_iva_fieldcolumn}
+<td  class="runner-cc {$rc_iva_class}" {$rc_iva_style} {$recordattrs}>
+	{$rc_iva_value}
+</td>
+{END rc_iva_fieldcolumn}
+	{BEGIN retenciones_fieldcolumn}
+<td  class="runner-cc {$retenciones_class}" {$retenciones_style} {$recordattrs}>
+	{$retenciones_value}
+</td>
+{END retenciones_fieldcolumn}
+	{BEGIN multa_fieldcolumn}
+<td  class="runner-cc {$multa_class}" {$multa_style} {$recordattrs}>
+	{$multa_value}
+</td>
+{END multa_fieldcolumn}
+	{BEGIN total_desc_fieldcolumn}
+<td  class="runner-cc {$total_desc_class}" {$total_desc_style} {$recordattrs}>
+	{$total_desc_value}
+</td>
+{END total_desc_fieldcolumn}
+	{BEGIN pre_natal_fieldcolumn}
+<td  class="runner-cc {$pre_natal_class}" {$pre_natal_style} {$recordattrs}>
+	{$pre_natal_value}
+</td>
+{END pre_natal_fieldcolumn}
+	{BEGIN natalidad_fieldcolumn}
+<td  class="runner-cc {$natalidad_class}" {$natalidad_style} {$recordattrs}>
+	{$natalidad_value}
+</td>
+{END natalidad_fieldcolumn}
+	{BEGIN lactancia_fieldcolumn}
+<td  class="runner-cc {$lactancia_class}" {$lactancia_style} {$recordattrs}>
+	{$lactancia_value}
+</td>
+{END lactancia_fieldcolumn}
+	{BEGIN sepelio_fieldcolumn}
+<td  class="runner-cc {$sepelio_class}" {$sepelio_style} {$recordattrs}>
+	{$sepelio_value}
+</td>
+{END sepelio_fieldcolumn}
+	{BEGIN mes_fieldcolumn}
+<td  class="runner-cc {$mes_class}" {$mes_style} {$recordattrs}>
+	{$mes_value}
+</td>
+{END mes_fieldcolumn}
+	{BEGIN gestion_fieldcolumn}
+<td  class="runner-cc {$gestion_class}" {$gestion_style} {$recordattrs}>
+	{$gestion_value}
+</td>
+{END gestion_fieldcolumn}
+	{BEGIN liquido_pagable_fieldcolumn}
+<td  class="runner-cc {$liquido_pagable_class}" {$liquido_pagable_style} {$recordattrs}>
+	{$liquido_pagable_value}
+</td>
+{END liquido_pagable_fieldcolumn}
+	{BEGIN cod_afp_fieldcolumn}
+<td  class="runner-cc {$cod_afp_class}" {$cod_afp_style} {$recordattrs}>
+	{$cod_afp_value}
+</td>
+{END cod_afp_fieldcolumn}
+	{BEGIN cta_banco_fieldcolumn}
+<td  class="runner-cc {$cta_banco_class}" {$cta_banco_style} {$recordattrs}>
+	{$cta_banco_value}
+</td>
+{END cta_banco_fieldcolumn}
+	{BEGIN tipo_funcionario_fieldcolumn}
+<td  class="runner-cc {$tipo_funcionario_class}" {$tipo_funcionario_style} {$recordattrs}>
+	{$tipo_funcionario_value}
+</td>
+{END tipo_funcionario_fieldcolumn}
+	{BEGIN ap_pat_sol_3_fieldcolumn}
+<td  class="runner-cc {$ap_pat_sol_3_class}" {$ap_pat_sol_3_style} {$recordattrs}>
+	{$ap_pat_sol_3_value}
+</td>
+{END ap_pat_sol_3_fieldcolumn}
+	{BEGIN seguro_pat_10_fieldcolumn}
+<td  class="runner-cc {$seguro_pat_10_class}" {$seguro_pat_10_style} {$recordattrs}>
+	{$seguro_pat_10_value}
+</td>
+{END seguro_pat_10_fieldcolumn}
+	{BEGIN riesgo_pat_171_fieldcolumn}
+<td  class="runner-cc {$riesgo_pat_171_class}" {$riesgo_pat_171_style} {$recordattrs}>
+	{$riesgo_pat_171_value}
+</td>
+{END riesgo_pat_171_fieldcolumn}
+	{BEGIN pro_vivienda_pat_2_fieldcolumn}
+<td  class="runner-cc {$pro_vivienda_pat_2_class}" {$pro_vivienda_pat_2_style} {$recordattrs}>
+	{$pro_vivienda_pat_2_value}
+</td>
+{END pro_vivienda_pat_2_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+	{END grid_row}
+
+
+	{BEGIN totals_row}
+<tr class="rnr-bottomrow style1">
+	{BEGIN totals_record}
+		{BEGIN id_func_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+</td>
+{END id_func_fieldfootercolumn}
+	{BEGIN fecha_nac_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+</td>
+{END fecha_nac_fieldfootercolumn}
+	{BEGIN sexo_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+</td>
+{END sexo_fieldfootercolumn}
+	{BEGIN item_contrato_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+</td>
+{END item_contrato_fieldfootercolumn}
+	{BEGIN unidad_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+</td>
+{END unidad_fieldfootercolumn}
+	{BEGIN cargo_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+</td>
+{END cargo_fieldfootercolumn}
+	{BEGIN paterno_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+</td>
+{END paterno_fieldfootercolumn}
+	{BEGIN materno_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+</td>
+{END materno_fieldfootercolumn}
+	{BEGIN nombres_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+</td>
+{END nombres_fieldfootercolumn}
+	{BEGIN ci_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+</td>
+{END ci_fieldfootercolumn}
+	{BEGIN exp_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+</td>
+{END exp_fieldfootercolumn}
+	{BEGIN nit_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+</td>
+{END nit_fieldfootercolumn}
+	{BEGIN fec_ingreso_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+</td>
+{END fec_ingreso_fieldfootercolumn}
+	{BEGIN baja_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+</td>
+{END baja_fieldfootercolumn}
+	{BEGIN reasig_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+</td>
+{END reasig_fieldfootercolumn}
+	{BEGIN haber_basico_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+	{BEGIN haber_basico_showtotal}
+			Total:
+	{$haber_basico_total}
+	{END haber_basico_showtotal}
+</td>
+{END haber_basico_fieldfootercolumn}
+	{BEGIN dias_trab_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+</td>
+{END dias_trab_fieldfootercolumn}
+	{BEGIN haber_percibido_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+	{BEGIN haber_percibido_showtotal}
+			Total:
+	{$haber_percibido_total}
+	{END haber_percibido_showtotal}
+</td>
+{END haber_percibido_fieldfootercolumn}
+	{BEGIN reint_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+	{BEGIN reint_showtotal}
+			Total:
+	{$reint_total}
+	{END reint_showtotal}
+</td>
+{END reint_fieldfootercolumn}
+	{BEGIN bono_ant_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+	{BEGIN bono_ant_showtotal}
+			Total:
+	{$bono_ant_total}
+	{END bono_ant_showtotal}
+</td>
+{END bono_ant_fieldfootercolumn}
+	{BEGIN total_ganado_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+	{BEGIN total_ganado_showtotal}
+			Total:
+	{$total_ganado_total}
+	{END total_ganado_showtotal}
+</td>
+{END total_ganado_fieldfootercolumn}
+	{BEGIN devoluciones_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+	{BEGIN devoluciones_showtotal}
+			Total:
+	{$devoluciones_total}
+	{END devoluciones_showtotal}
+</td>
+{END devoluciones_fieldfootercolumn}
+	{BEGIN asig_familiar_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+	{BEGIN asig_familiar_showtotal}
+			Total:
+	{$asig_familiar_total}
+	{END asig_familiar_showtotal}
+</td>
+{END asig_familiar_fieldfootercolumn}
+	{BEGIN futuro_afp_10_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+	{BEGIN futuro_afp_10_showtotal}
+			Total:
+	{$futuro_afp_10_total}
+	{END futuro_afp_10_showtotal}
+</td>
+{END futuro_afp_10_fieldfootercolumn}
+	{BEGIN futuro_afp_riesgo_1_71_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+	{BEGIN futuro_afp_riesgo_1_71_showtotal}
+			Total:
+	{$futuro_afp_riesgo_1_71_total}
+	{END futuro_afp_riesgo_1_71_showtotal}
+</td>
+{END futuro_afp_riesgo_1_71_fieldfootercolumn}
+	{BEGIN futuro_afp_05_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+	{BEGIN futuro_afp_05_showtotal}
+			Total:
+	{$futuro_afp_05_total}
+	{END futuro_afp_05_showtotal}
+</td>
+{END futuro_afp_05_fieldfootercolumn}
+	{BEGIN futuro_afp_ap_sol_0_5_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+	{BEGIN futuro_afp_ap_sol_0_5_showtotal}
+			Total:
+	{$futuro_afp_ap_sol_0_5_total}
+	{END futuro_afp_ap_sol_0_5_showtotal}
+</td>
+{END futuro_afp_ap_sol_0_5_fieldfootercolumn}
+	{BEGIN futuro_ans_1_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+	{BEGIN futuro_ans_1_showtotal}
+			Total:
+	{$futuro_ans_1_total}
+	{END futuro_ans_1_showtotal}
+</td>
+{END futuro_ans_1_fieldfootercolumn}
+	{BEGIN prev_afp_10_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+	{BEGIN prev_afp_10_showtotal}
+			Total:
+	{$prev_afp_10_total}
+	{END prev_afp_10_showtotal}
+</td>
+{END prev_afp_10_fieldfootercolumn}
+	{BEGIN prev_afp_riesgo_1_71_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+	{BEGIN prev_afp_riesgo_1_71_showtotal}
+			Total:
+	{$prev_afp_riesgo_1_71_total}
+	{END prev_afp_riesgo_1_71_showtotal}
+</td>
+{END prev_afp_riesgo_1_71_fieldfootercolumn}
+	{BEGIN prev_afp_05_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+	{BEGIN prev_afp_05_showtotal}
+			Total:
+	{$prev_afp_05_total}
+	{END prev_afp_05_showtotal}
+</td>
+{END prev_afp_05_fieldfootercolumn}
+	{BEGIN prev_afp_ap_sol_0_5_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+	{BEGIN prev_afp_ap_sol_0_5_showtotal}
+			Total:
+	{$prev_afp_ap_sol_0_5_total}
+	{END prev_afp_ap_sol_0_5_showtotal}
+</td>
+{END prev_afp_ap_sol_0_5_fieldfootercolumn}
+	{BEGIN prev_ans_1_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+	{BEGIN prev_ans_1_showtotal}
+			Total:
+	{$prev_ans_1_total}
+	{END prev_ans_1_showtotal}
+</td>
+{END prev_ans_1_fieldfootercolumn}
+	{BEGIN rc_iva_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+	{BEGIN rc_iva_showtotal}
+			Total:
+	{$rc_iva_total}
+	{END rc_iva_showtotal}
+</td>
+{END rc_iva_fieldfootercolumn}
+	{BEGIN retenciones_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+	{BEGIN retenciones_showtotal}
+			Total:
+	{$retenciones_total}
+	{END retenciones_showtotal}
+</td>
+{END retenciones_fieldfootercolumn}
+	{BEGIN multa_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+	{BEGIN multa_showtotal}
+			Total:
+	{$multa_total}
+	{END multa_showtotal}
+</td>
+{END multa_fieldfootercolumn}
+	{BEGIN total_desc_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+	{BEGIN total_desc_showtotal}
+			Total:
+	{$total_desc_total}
+	{END total_desc_showtotal}
+</td>
+{END total_desc_fieldfootercolumn}
+	{BEGIN pre_natal_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+	{BEGIN pre_natal_showtotal}
+			Total:
+	{$pre_natal_total}
+	{END pre_natal_showtotal}
+</td>
+{END pre_natal_fieldfootercolumn}
+	{BEGIN natalidad_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+	{BEGIN natalidad_showtotal}
+			Total:
+	{$natalidad_total}
+	{END natalidad_showtotal}
+</td>
+{END natalidad_fieldfootercolumn}
+	{BEGIN lactancia_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+	{BEGIN lactancia_showtotal}
+			Total:
+	{$lactancia_total}
+	{END lactancia_showtotal}
+</td>
+{END lactancia_fieldfootercolumn}
+	{BEGIN sepelio_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+	{BEGIN sepelio_showtotal}
+			Total:
+	{$sepelio_total}
+	{END sepelio_showtotal}
+</td>
+{END sepelio_fieldfootercolumn}
+	{BEGIN mes_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+</td>
+{END mes_fieldfootercolumn}
+	{BEGIN gestion_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+</td>
+{END gestion_fieldfootercolumn}
+	{BEGIN liquido_pagable_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+	{BEGIN liquido_pagable_showtotal}
+			Total:
+	{$liquido_pagable_total}
+	{END liquido_pagable_showtotal}
+</td>
+{END liquido_pagable_fieldfootercolumn}
+	{BEGIN cod_afp_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+</td>
+{END cod_afp_fieldfootercolumn}
+	{BEGIN cta_banco_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+</td>
+{END cta_banco_fieldfootercolumn}
+	{BEGIN tipo_funcionario_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+</td>
+{END tipo_funcionario_fieldfootercolumn}
+	{BEGIN ap_pat_sol_3_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+</td>
+{END ap_pat_sol_3_fieldfootercolumn}
+	{BEGIN seguro_pat_10_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+</td>
+{END seguro_pat_10_fieldfootercolumn}
+	{BEGIN riesgo_pat_171_fieldfootercolumn}
+<td class="rnr-cc rnr-bc ">
+</td>
+{END riesgo_pat_171_fieldfootercolumn}
+	{BEGIN pro_vivienda_pat_2_fieldfootercolumn}
+<td class="rnr-cc rnr-bc rnr-clast">
+</td>
+{END pro_vivienda_pat_2_fieldfootercolumn}
+
+	<td class="rnr-edge">&nbsp;</td>
+	{BEGIN endrecordtotals_block}
+	<td class="rnr-cs"></td>
+	{END endrecordtotals_block}
+	{END totals_record}
+</tr>
+{END totals_row}
+
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

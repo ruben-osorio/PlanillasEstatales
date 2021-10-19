@@ -1,0 +1,332 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN addheader}
+<div  class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><span>	<h1>{$pagetitlelabel t_planilla add}</h1>
+</span></div>{END addheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-addfields2 {$brickclass_addfields2}"><table class="fieldGrid fieldGrid2 edit">
+
+<tr>
+<td>
+	{BEGIN ans_1_fieldblock}
+<div data-fieldname="ans_1" class="rnr-field style1 {$fielddispclass_ans_1}">
+  <span class="rnr-label">{BEGIN ans_1_label}{$label t_planilla ans_1}{END ans_1_label}</span>
+  <span class="rnr-control style3">{$ans_1_editcontrol}</span>
+</div>
+{END ans_1_fieldblock}
+	{BEGIN cod_afp_fieldblock}
+<div data-fieldname="cod_afp" class="rnr-field style1 {$fielddispclass_cod_afp}">
+  <span class="rnr-label">{BEGIN cod_afp_label}{$label t_planilla cod_afp}{END cod_afp_label}</span>
+  <span class="rnr-control style3">{$cod_afp_editcontrol}</span>
+</div>
+{END cod_afp_fieldblock}
+	{BEGIN cta_banco_fieldblock}
+<div data-fieldname="cta_banco" class="rnr-field style1 {$fielddispclass_cta_banco}">
+  <span class="rnr-label">{BEGIN cta_banco_label}{$label t_planilla cta_banco}{END cta_banco_label}</span>
+  <span class="rnr-control style3">{$cta_banco_editcontrol}</span>
+</div>
+{END cta_banco_fieldblock}
+	{BEGIN afp_ap_sol_0_5_fieldblock}
+<div data-fieldname="afp_ap_sol_0_5" class="rnr-field style1 {$fielddispclass_afp_ap_sol_0_5}">
+  <span class="rnr-label">{BEGIN afp_ap_sol_0_5_label}{$label t_planilla afp_ap_sol_0_5}{END afp_ap_sol_0_5_label}</span>
+  <span class="rnr-control style3">{$afp_ap_sol_0_5_editcontrol}</span>
+</div>
+{END afp_ap_sol_0_5_fieldblock}
+	{BEGIN id_func_fieldblock}
+<div data-fieldname="id_func" class="rnr-field style1 {$fielddispclass_id_func}">
+  <span class="rnr-label">{BEGIN id_func_label}{$label t_planilla id_func}{END id_func_label}</span>
+  <span class="rnr-control style3">{$id_func_editcontrol}</span>
+</div>
+{END id_func_fieldblock}
+	{BEGIN fecha_nac_fieldblock}
+<div data-fieldname="fecha_nac" class="rnr-field style1 {$fielddispclass_fecha_nac}">
+  <span class="rnr-label">{BEGIN fecha_nac_label}{$label t_planilla fecha_nac}{END fecha_nac_label}</span>
+  <span class="rnr-control style3">{$fecha_nac_editcontrol}</span>
+</div>
+{END fecha_nac_fieldblock}
+	{BEGIN sexo_fieldblock}
+<div data-fieldname="sexo" class="rnr-field style1 {$fielddispclass_sexo}">
+  <span class="rnr-label">{BEGIN sexo_label}{$label t_planilla sexo}{END sexo_label}</span>
+  <span class="rnr-control style3">{$sexo_editcontrol}</span>
+</div>
+{END sexo_fieldblock}
+	{BEGIN item_contrato_fieldblock}
+<div data-fieldname="item_contrato" class="rnr-field style1 {$fielddispclass_item_contrato}">
+  <span class="rnr-label">{BEGIN item_contrato_label}{$label t_planilla item_contrato}{END item_contrato_label}</span>
+  <span class="rnr-control style3">{$item_contrato_editcontrol}</span>
+</div>
+{END item_contrato_fieldblock}
+	{BEGIN unidad_fieldblock}
+<div data-fieldname="unidad" class="rnr-field style1 {$fielddispclass_unidad}">
+  <span class="rnr-label">{BEGIN unidad_label}{$label t_planilla unidad}{END unidad_label}</span>
+  <span class="rnr-control style3">{$unidad_editcontrol}</span>
+</div>
+{END unidad_fieldblock}
+	{BEGIN cargo_fieldblock}
+<div data-fieldname="cargo" class="rnr-field style1 {$fielddispclass_cargo}">
+  <span class="rnr-label">{BEGIN cargo_label}{$label t_planilla cargo}{END cargo_label}</span>
+  <span class="rnr-control style3">{$cargo_editcontrol}</span>
+</div>
+{END cargo_fieldblock}
+	{BEGIN paterno_fieldblock}
+<div data-fieldname="paterno" class="rnr-field style1 {$fielddispclass_paterno}">
+  <span class="rnr-label">{BEGIN paterno_label}{$label t_planilla paterno}{END paterno_label}</span>
+  <span class="rnr-control style3">{$paterno_editcontrol}</span>
+</div>
+{END paterno_fieldblock}
+	{BEGIN materno_fieldblock}
+<div data-fieldname="materno" class="rnr-field style1 {$fielddispclass_materno}">
+  <span class="rnr-label">{BEGIN materno_label}{$label t_planilla materno}{END materno_label}</span>
+  <span class="rnr-control style3">{$materno_editcontrol}</span>
+</div>
+{END materno_fieldblock}
+	{BEGIN nombres_fieldblock}
+<div data-fieldname="nombres" class="rnr-field style1 {$fielddispclass_nombres}">
+  <span class="rnr-label">{BEGIN nombres_label}{$label t_planilla nombres}{END nombres_label}</span>
+  <span class="rnr-control style3">{$nombres_editcontrol}</span>
+</div>
+{END nombres_fieldblock}
+	{BEGIN ci_fieldblock}
+<div data-fieldname="ci" class="rnr-field style1 {$fielddispclass_ci}">
+  <span class="rnr-label">{BEGIN ci_label}{$label t_planilla ci}{END ci_label}</span>
+  <span class="rnr-control style3">{$ci_editcontrol}</span>
+</div>
+{END ci_fieldblock}
+	{BEGIN exp_fieldblock}
+<div data-fieldname="exp" class="rnr-field style1 {$fielddispclass_exp}">
+  <span class="rnr-label">{BEGIN exp_label}{$label t_planilla exp}{END exp_label}</span>
+  <span class="rnr-control style3">{$exp_editcontrol}</span>
+</div>
+{END exp_fieldblock}
+	{BEGIN nit_fieldblock}
+<div data-fieldname="nit" class="rnr-field style1 {$fielddispclass_nit}">
+  <span class="rnr-label">{BEGIN nit_label}{$label t_planilla nit}{END nit_label}</span>
+  <span class="rnr-control style3">{$nit_editcontrol}</span>
+</div>
+{END nit_fieldblock}
+	{BEGIN fec_ingreso_fieldblock}
+<div data-fieldname="fec_ingreso" class="rnr-field style1 {$fielddispclass_fec_ingreso}">
+  <span class="rnr-label">{BEGIN fec_ingreso_label}{$label t_planilla fec_ingreso}{END fec_ingreso_label}</span>
+  <span class="rnr-control style3">{$fec_ingreso_editcontrol}</span>
+</div>
+{END fec_ingreso_fieldblock}
+	{BEGIN baja_fieldblock}
+<div data-fieldname="baja" class="rnr-field style1 {$fielddispclass_baja}">
+  <span class="rnr-label">{BEGIN baja_label}{$label t_planilla baja}{END baja_label}</span>
+  <span class="rnr-control style3">{$baja_editcontrol}</span>
+</div>
+{END baja_fieldblock}
+	{BEGIN reasig_fieldblock}
+<div data-fieldname="reasig" class="rnr-field style1 {$fielddispclass_reasig}">
+  <span class="rnr-label">{BEGIN reasig_label}{$label t_planilla reasig}{END reasig_label}</span>
+  <span class="rnr-control style3">{$reasig_editcontrol}</span>
+</div>
+{END reasig_fieldblock}
+</td>
+<td>
+	{BEGIN haber_basico_fieldblock}
+<div data-fieldname="haber_basico" class="rnr-field style1 {$fielddispclass_haber_basico}">
+  <span class="rnr-label">{BEGIN haber_basico_label}{$label t_planilla haber_basico}{END haber_basico_label}</span>
+  <span class="rnr-control style3">{$haber_basico_editcontrol}</span>
+</div>
+{END haber_basico_fieldblock}
+	{BEGIN dias_trab_fieldblock}
+<div data-fieldname="dias_trab" class="rnr-field style1 {$fielddispclass_dias_trab}">
+  <span class="rnr-label">{BEGIN dias_trab_label}{$label t_planilla dias_trab}{END dias_trab_label}</span>
+  <span class="rnr-control style3">{$dias_trab_editcontrol}</span>
+</div>
+{END dias_trab_fieldblock}
+	{BEGIN haber_percibido_fieldblock}
+<div data-fieldname="haber_percibido" class="rnr-field style1 {$fielddispclass_haber_percibido}">
+  <span class="rnr-label">{BEGIN haber_percibido_label}{$label t_planilla haber_percibido}{END haber_percibido_label}</span>
+  <span class="rnr-control style3">{$haber_percibido_editcontrol}</span>
+</div>
+{END haber_percibido_fieldblock}
+	{BEGIN reint_fieldblock}
+<div data-fieldname="reint" class="rnr-field style1 {$fielddispclass_reint}">
+  <span class="rnr-label">{BEGIN reint_label}{$label t_planilla reint}{END reint_label}</span>
+  <span class="rnr-control style3">{$reint_editcontrol}</span>
+</div>
+{END reint_fieldblock}
+	{BEGIN bono_ant_fieldblock}
+<div data-fieldname="bono_ant" class="rnr-field style1 {$fielddispclass_bono_ant}">
+  <span class="rnr-label">{BEGIN bono_ant_label}{$label t_planilla bono_ant}{END bono_ant_label}</span>
+  <span class="rnr-control style3">{$bono_ant_editcontrol}</span>
+</div>
+{END bono_ant_fieldblock}
+	{BEGIN total_ganado_fieldblock}
+<div data-fieldname="total_ganado" class="rnr-field style1 {$fielddispclass_total_ganado}">
+  <span class="rnr-label">{BEGIN total_ganado_label}{$label t_planilla total_ganado}{END total_ganado_label}</span>
+  <span class="rnr-control style3">{$total_ganado_editcontrol}</span>
+</div>
+{END total_ganado_fieldblock}
+	{BEGIN devoluciones_fieldblock}
+<div data-fieldname="devoluciones" class="rnr-field style1 {$fielddispclass_devoluciones}">
+  <span class="rnr-label">{BEGIN devoluciones_label}{$label t_planilla devoluciones}{END devoluciones_label}</span>
+  <span class="rnr-control style3">{$devoluciones_editcontrol}</span>
+</div>
+{END devoluciones_fieldblock}
+	{BEGIN asig_familiar_fieldblock}
+<div data-fieldname="asig_familiar" class="rnr-field style1 {$fielddispclass_asig_familiar}">
+  <span class="rnr-label">{BEGIN asig_familiar_label}{$label t_planilla asig_familiar}{END asig_familiar_label}</span>
+  <span class="rnr-control style3">{$asig_familiar_editcontrol}</span>
+</div>
+{END asig_familiar_fieldblock}
+	{BEGIN afp_10_fieldblock}
+<div data-fieldname="afp_10" class="rnr-field style1 {$fielddispclass_afp_10}">
+  <span class="rnr-label">{BEGIN afp_10_label}{$label t_planilla afp_10}{END afp_10_label}</span>
+  <span class="rnr-control style3">{$afp_10_editcontrol}</span>
+</div>
+{END afp_10_fieldblock}
+	{BEGIN afp_riesgo_1_71_fieldblock}
+<div data-fieldname="afp_riesgo_1_71" class="rnr-field style1 {$fielddispclass_afp_riesgo_1_71}">
+  <span class="rnr-label">{BEGIN afp_riesgo_1_71_label}{$label t_planilla afp_riesgo_1_71}{END afp_riesgo_1_71_label}</span>
+  <span class="rnr-control style3">{$afp_riesgo_1_71_editcontrol}</span>
+</div>
+{END afp_riesgo_1_71_fieldblock}
+	{BEGIN afp_05_fieldblock}
+<div data-fieldname="afp_05" class="rnr-field style1 {$fielddispclass_afp_05}">
+  <span class="rnr-label">{BEGIN afp_05_label}{$label t_planilla afp_05}{END afp_05_label}</span>
+  <span class="rnr-control style3">{$afp_05_editcontrol}</span>
+</div>
+{END afp_05_fieldblock}
+	{BEGIN rc_iva_fieldblock}
+<div data-fieldname="rc_iva" class="rnr-field style1 {$fielddispclass_rc_iva}">
+  <span class="rnr-label">{BEGIN rc_iva_label}{$label t_planilla rc_iva}{END rc_iva_label}</span>
+  <span class="rnr-control style3">{$rc_iva_editcontrol}</span>
+</div>
+{END rc_iva_fieldblock}
+	{BEGIN retenciones_fieldblock}
+<div data-fieldname="retenciones" class="rnr-field style1 {$fielddispclass_retenciones}">
+  <span class="rnr-label">{BEGIN retenciones_label}{$label t_planilla retenciones}{END retenciones_label}</span>
+  <span class="rnr-control style3">{$retenciones_editcontrol}</span>
+</div>
+{END retenciones_fieldblock}
+	{BEGIN multa_fieldblock}
+<div data-fieldname="multa" class="rnr-field style1 {$fielddispclass_multa}">
+  <span class="rnr-label">{BEGIN multa_label}{$label t_planilla multa}{END multa_label}</span>
+  <span class="rnr-control style3">{$multa_editcontrol}</span>
+</div>
+{END multa_fieldblock}
+	{BEGIN total_desc_fieldblock}
+<div data-fieldname="total_desc" class="rnr-field style1 {$fielddispclass_total_desc}">
+  <span class="rnr-label">{BEGIN total_desc_label}{$label t_planilla total_desc}{END total_desc_label}</span>
+  <span class="rnr-control style3">{$total_desc_editcontrol}</span>
+</div>
+{END total_desc_fieldblock}
+	{BEGIN liquido_pagable_fieldblock}
+<div data-fieldname="liquido_pagable" class="rnr-field style1 {$fielddispclass_liquido_pagable}">
+  <span class="rnr-label">{BEGIN liquido_pagable_label}{$label t_planilla liquido_pagable}{END liquido_pagable_label}</span>
+  <span class="rnr-control style3">{$liquido_pagable_editcontrol}</span>
+</div>
+{END liquido_pagable_fieldblock}
+	{BEGIN mes_fieldblock}
+<div data-fieldname="mes" class="rnr-field style1 {$fielddispclass_mes}">
+  <span class="rnr-label">{BEGIN mes_label}{$label t_planilla mes}{END mes_label}</span>
+  <span class="rnr-control style3">{$mes_editcontrol}</span>
+</div>
+{END mes_fieldblock}
+	{BEGIN gestion_fieldblock}
+<div data-fieldname="gestion" class="rnr-field style1 {$fielddispclass_gestion}">
+  <span class="rnr-label">{BEGIN gestion_label}{$label t_planilla gestion}{END gestion_label}</span>
+  <span class="rnr-control style3">{$gestion_editcontrol}</span>
+</div>
+{END gestion_fieldblock}
+</td>
+</tr>
+</table></div>
+
+
+{BEGIN addbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}"><div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" id="saveButton{$id}" {$savebutton_attrs}>Guardar</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" id="resetButton{$id}">Reiniciar</a>
+	{END reset_button}
+	{BEGIN cancel_button}
+	<a href="#" class="rnr-button" id="cancelButton{$id}">Cancelar</a>
+	{END cancel_button}
+	{BEGIN back_button}
+	<a href="#" class="rnr-button" id="backButton{$id}">Volver a la lista</a>
+	{END back_button}
+	{BEGIN backToMenu_button}
+	<a href="#" class="rnr-button" id="backToMenuButton{$id}">Regresar al menú</a>
+	{END backToMenu_button}
+</div>
+</div>{END addbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

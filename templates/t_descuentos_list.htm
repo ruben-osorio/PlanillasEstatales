@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD> 
+
+<META http-equiv="X-UA-Compatible" content="IE=Edge"> <TITLE>{$pagetitle}</TITLE> 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<LINK href="styles/default.css" rel="stylesheet" type="text/css"> {BEGIN rtlCSS}<LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">{END rtlCSS} {BEGIN styleCSSFiles}<LINK href="{$stylepath}" rel="stylesheet" type="text/css">{END styleCSSFiles} {BEGIN pageCSSFiles}<LINK href="{$pagestylepath}" rel="stylesheet" type="text/css">{END pageCSSFiles} 
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001"></HEAD> 
+<BODY class="{$stylename} function-list" {$bodyattrs}>{BEGIN body}
+
+{$header} 
+<DIV class="rnr-page">
+<DIV class="rnr-top {$blockclass_top}">
+{BEGIN container_master}
+<DIV class="rnr-c rnr-ch rnr-c-master">
+{BEGIN mastertable_block}<DIV class="style1 rnr-bl rnr-b-masterinfo {$brickclass_masterinfo}">
+{$showmasterfile} <A class="runner-link" {$backtomasterlink_attrs}><B><IMG src="images/go-up-9.png" border="0">&nbsp;Volver a 
+{$backtomasterlink_caption}</B> </A></DIV>
+{END mastertable_block}<DIV class="rnr-hfiller"></DIV></DIV>{END container_master}
+{BEGIN container_toplinks}
+<DIV class="rnr-c rnr-ch rnr-c-toplinks">
+<DIV class="rnr-hfiller"></DIV>
+{BEGIN security_block}<DIV class="style1 rnr-br rnr-b-loggedas {$brickclass_loggedas}">
+<DIV id="login_block{$id}">{BEGIN loggedas_message}<SPAN>Conectado 
+ como&nbsp;<B> 
+{$username}</B>&nbsp;</SPAN> {END loggedas_message}{BEGIN guestloginbutton}<SPAN><A class="rnr-button" href="#" {$guestloginlink_attrs}>Conectar</A> 
+</SPAN> {END guestloginbutton}{BEGIN logoutbutton}<A class="rnr-button" href="#" {$logoutlink_attrs}>Desconectarse</A> {END logoutbutton}</DIV></DIV>{END security_block}</DIV>{END container_toplinks}
+{BEGIN container_hmenu}
+<DIV class="rnr-c rnr-ch rnr-c-hmenu">
+{BEGIN searchform_block}<DIV class="style1 rnr-bl rnr-b-search {$brickclass_search}"><SPAN>{BEGIN searchform_text}<INPUT type="text" size="25" {$searchfor_attrs}>{END searchform_text} 
+{BEGIN searchform_search}<A class="rnr-button img" href="#" data-icon="search" {$searchbutton_attrs}></A> {END searchform_search}{BEGIN searchform_showall}<A class="rnr-button" href="#" {$showAllCont_attrs} {$showallbutton_attrs}>Mostrar todo</A> {END searchform_showall}</SPAN> </DIV>
+{END searchform_block}{BEGIN searchformbuttons_block}<DIV class="style1 rnr-bl rnr-b-search_buttons {$brickclass_search_buttons}">{BEGIN searchPanelTopButtons}<SPAN><A class="rnr-button img" id="showSrchWin{$id}" href="#" data-icon="panelfloat" {$showHideSearchWin_attrs}></A> <A class="rnr-button img" id="showOptPanel{$id}" href="#" data-icon="paneldown" {$showHideSearchPanel_attrs}></A> </SPAN> {END searchPanelTopButtons}</DIV>
+{END searchformbuttons_block}{BEGIN searchsaving_block}<DIV class="style1 rnr-bl rnr-b-search_saving_buttons {$brickclass_search_saving_buttons}"></DIV>
+{END searchsaving_block}<DIV class="rnr-hfiller"></DIV>
+<DIV class="style1 rnr-br rnr-b-printpanel {$brickclass_printpanel}"></DIV></DIV>{END container_hmenu}</DIV>
+<DIV class="rnr-middle">
+<DIV class="rnr-left {$blockclass_left}">
+{BEGIN container_left}
+<DIV class="rnr-c rnr-cv rnr-c-left">
+{BEGIN menu_block}{$menu main}{END menu_block}{BEGIN searchPanel}<DIV class="rnr-brickcontents style1 rnr-b-searchpanel {$brickclass_searchpanel}">
+<DIV class="searchPanelContainer">
+<DIV class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+<DIV class="srchCritTop" style="display: none;">	Criterio:&nbsp; <INPUT name="srchType{$id}" class="rnr-radio-button" type="radio" {$all_checkbox}>&nbsp;{BEGIN all_checkbox_label}<SPAN>todos</SPAN>{END all_checkbox_label}	&nbsp;&nbsp;&nbsp;<INPUT name="srchType{$id}" class="rnr-radio-button" type="radio" {$any_checkbox}>&nbsp;{BEGIN any_checkbox_label}<SPAN>alguno</SPAN> 
+{END any_checkbox_label}</DIV>
+<DIV class="addOption"><SPAN class="rnr-buttons-group"><A class="rnr-button" id="showHideControlChooseMenu{$id}" href="#" {$showHideCtrls_attrs}>Añadir 
+ campo</A> </SPAN> <A class="rnr-button" id="showHideSearchType{$id}" href="#" {$showHideCtrlsOpt_attrs}>
+{$showHideOpt_mess}</A> </DIV>
+<TABLE class="controlsBlock {$controls_block_class}">
+  {BEGIN searchCtrlBlock}<TBODY>
+  <TR class="srchPanelRow" {$filterRow_attrs}>
+    <TD class="srchPanelCell">{$delCtrlButt}</TD>
+    <TD class="srchPanelCell">
+      {$fLabel}:&nbsp;</TD>
+    <TD class="srchPanelCell srchPanelCell2">
+      <DIV class="rnr-searchtype">
+      {$searchtype}</DIV>
+      <DIV class="rnr-searchcontrol">
+      {$searchcontrol}</DIV>
+      <DIV class="rnr-searchcontrol">
+      {$searchcontrol1}</DIV></TD></TR></TBODY>{END searchCtrlBlock}</TABLE>
+<DIV align="left" class="bottomSearchButt" {$bottomSearchButt_attrs}><A class="rnr-button" id="searchButton{$id}" href="#" {$searchbutton_attrs}>Buscar</A> 
+</DIV></DIV></DIV></DIV>{END searchPanel}</DIV>{END container_left}</DIV>
+<DIV class="rnr-center {$blockclass_center}">
+{BEGIN container_recordcontrols}
+<DIV class="rnr-c rnr-ch rnr-c-recordcontrols">
+{BEGIN newrecord_controls_block}<DIV class="style1 rnr-bl rnr-b-recordcontrols_new {$brickclass_recordcontrols_new}">{BEGIN add_link}<A class="rnr-button" href="t_descuentos_add.php" {$addlink_attrs}>Añadir nuevo</A> {END add_link}{BEGIN inlineadd_link}<A class="rnr-button" href="#" {$inlineaddlink_attrs}>Añadir 
+ nuevo</A> {END inlineadd_link}</DIV>
+{END newrecord_controls_block}{BEGIN record_controls_block}<DIV class="style1 rnr-bl rnr-b-recordcontrol {$brickclass_recordcontrol}">{BEGIN selectall_link}<A class="rnr-button" href="#" {$selectalllink_span} {$selectalllink_attrs}>Seleccionar  
+todo</A> {END selectall_link}{BEGIN widhtSelected}<SPAN class="rnr-buttons-group"><A class="rnr-button {$withSelectedClass}" id="selectButtonsToggler{$id}" href="#">Con los seleccionados...</A> 
+
+<UL class="rnr-list" id="selectButtonsGroup{$id}">
+  {BEGIN editselected_link}<LI><A class="rnr-button link" href="#" {$editselectedlink_attrs} {$editselectedlink_span}>Editar</A></LI>{END editselected_link}</UL></SPAN> 
+{END widhtSelected}{BEGIN saveall_link}<A class="rnr-button" href="#" {$savealllink_attrs} {$savealllink_span}>Guardar todo</A> {END saveall_link}{BEGIN cancelall_link}<A class="rnr-button" href="#" {$cancelalllink_attrs} {$cancelalllink_span}>Cancelar</A> 
+{END cancelall_link}</DIV>
+{END record_controls_block}{BEGIN more_list}<DIV class="style1 rnr-bl rnr-b-toplinks {$brickclass_toplinks}"><SPAN class="rnr-buttons-group">{BEGIN moreButtons}<A class="rnr-button" id="extraButtonsToggler{$id}" href="#">Más...</A> 
+<UL class="rnr-list rnr-buttons-group" id="extraButtonsGroup{$id}">
+  {BEGIN asearch_link}<LI><A class="rnr-button link" href="t_descuentos_search.php" {$advsearchlink_attrs}>Búsqueda    
+  avanzada</A></LI>{END asearch_link}</UL>{END moreButtons}</SPAN></DIV>
+{END more_list}<DIV class="rnr-hfiller"></DIV></DIV>{END container_recordcontrols}
+{BEGIN container_message}
+<DIV class="rnr-c rnr-ch rnr-c-message">
+{BEGIN message_block}<DIV class="style1 rnr-bc rnr-b-message {$brickclass_message}">
+<DIV class="rnr-message">
+{$message}</DIV></DIV>{END message_block}</DIV>{END container_message}
+{BEGIN container_pagination}
+<DIV class="rnr-c rnr-ch rnr-multialign rnr-c-pagination">
+{BEGIN pagination_block}<DIV class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">
+{$pagination}</DIV>
+{END pagination_block}<DIV class="rnr-leftbricks">
+{BEGIN details_block}<DIV class="style1 rnr-bl rnr-b-details_found {$brickclass_details_found}"><SPAN {$details_attrs}>	Detalles  
+encontrados: <SPAN class="rnr-details_found_count"><STRONG></STRONG>
+{$records_found}</SPAN><STRONG> 
+</STRONG></SPAN><STRONG> </STRONG></DIV>{END details_block}</DIV><STRONG></STRONG>
+<DIV class="rnr-rightbricks"><STRONG> </STRONG>
+{BEGIN pages_block}<DIV class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}"><SPAN {$pages_attrs}><STRONG>	Página  
+</STRONG>
+{$page}<STRONG> /  </STRONG>
+{$maxpages}<STRONG> </STRONG></SPAN><STRONG> 
+</STRONG></DIV>{END pages_block}<STRONG></STRONG>
+{BEGIN recordspp_block}<DIV class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}"><SPAN id="recordspp_block{$id}" name="recordspp_block{$id}"><STRONG>	Resultados 
+ por página:&nbsp; </STRONG>
+{$recsPerPage}<STRONG> 
+</STRONG></SPAN><STRONG>	</STRONG></DIV>{END recordspp_block}</DIV></DIV>{END container_pagination}<STRONG></STRONG>
+{BEGIN container_grid}<STRONG> </STRONG>
+{BEGIN grid_block}<TABLE class="rnr-c rnr-cont rnr-c-grid rnr-b-grid rnr-gridtable rnr-columns" bordercolor bgcolor border="0" cellspacing="2" cellpadding="0">{BEGIN grid_row}<STRONG> 
+  </STRONG>
+  {BEGIN grid_record}<TBODY class="{$rowclass}"><STRONG> </STRONG>
+  <TR class="rnr-toprow" style="height: 31px;">
+    <TD class="rnr-edge" style="white-space: normal; background-image: none; background-color: rgb(211, 233, 220);" rowspan="1" colspan="6">
+      <P 
+      align="center"><STRONG><FONT 
+      size="2">DESCUENTOS</FONT></STRONG></P></TD></TR>
+  <TR class="rnr-toprow" {$rowattrs} {$rowstyle}>
+    <TD class="rnr-edge" rowspan="1" colspan="6" ieditcont="all">{BEGIN edit_column}{BEGIN edit_link}<A title="Editar" class="rnr-verticalicons" data-icon="edit" {$editlink_attrs}></A> {END edit_link}{END edit_column}{BEGIN inlineedit_column}{BEGIN inlineedit_link}<A title="Editar" class="rnr-verticalicons" data-icon="inlineedit" {$inlineeditlink_attrs}></A> 
+      {END inlineedit_link}{END inlineedit_column}{BEGIN checkbox_column}{BEGIN checkbox}<INPUT class="rnr-verticalcheckbox" type="checkbox" {$checkbox_attrs}>{END checkbox}{END checkbox_column} {BEGIN dtables_link}<A title="Mostrar Detalles" data-icon="details" {$dtables_link_attrs}></A> {END dtables_link}</TD></TR>
+  <TR class="rnr-row {$rowclass}" style="height: 38px;" {$rowattrs}>
+    <TD class="rnr-gridfieldlabel {$id_func_label_class}" style="width: 11%;" rowspan="1" colspan="1" {$recordattrs}>{BEGIN id_func_fieldheadercolumn}
+      {$label t_descuentos id_func}{END id_func_fieldheadercolumn} </TD>
+    <TD class="{$id_func_class}" rowspan="1" colspan="1" {$recordattrs}>{BEGIN id_func_fieldcolumn}
+      {$id_func_value}&nbsp;{END id_func_fieldcolumn}</TD>
+    <TD class="rnr-gridfieldlabel {$multa_label_class}" style="width: 11%;" rowspan="1" colspan="1" {$recordattrs}>{BEGIN multa_fieldheadercolumn}
+      {$label t_descuentos multa}{END multa_fieldheadercolumn} </TD>
+    <TD class="{$multa_class}" style="white-space: normal; background-image: none; background-color: rgb(255, 228, 225);" rowspan="1" colspan="1" {$recordattrs}>{BEGIN multa_fieldcolumn}
+      {$multa_value}&nbsp;{END multa_fieldcolumn}</TD>
+    <TD class="rnr-gridfieldlabel {$sub_total_label_class}" style="width: 11%;" rowspan="1" colspan="1" {$recordattrs}>{BEGIN sub_total_fieldheadercolumn}
+      {$label t_descuentos sub_total}{END sub_total_fieldheadercolumn} </TD>
+    <TD class="rnr-edge {$sub_total_class}" style="width: 22%;" rowspan="1" colspan="1" {$recordattrs}>{BEGIN sub_total_fieldcolumn}
+      {$sub_total_value}&nbsp;{END sub_total_fieldcolumn}</TD></TR>
+  <TR class="rnr-row {$rowclass}" style="height: 38px;" {$rowattrs}>
+    <TD class="rnr-gridfieldlabel {$name_label_class}" style="width: 11%;" rowspan="1" colspan="1" {$recordattrs}>{BEGIN name_fieldheadercolumn}
+      {$label t_descuentos name}{END name_fieldheadercolumn} </TD>
+    <TD class="{$name_class}" rowspan="1" colspan="1" {$recordattrs}>{BEGIN name_fieldcolumn}
+      {$name_value}&nbsp;{END name_fieldcolumn}</TD>
+    <TD class="rnr-gridfieldlabel {$total_desc_label_class}" style="width: 11%;" rowspan="1" colspan="1" {$recordattrs}>{BEGIN total_desc_fieldheadercolumn}
+      {$label t_descuentos total_desc}{END total_desc_fieldheadercolumn} </TD>
+    <TD class="{$total_desc_class}" rowspan="1" colspan="1" {$recordattrs}>{BEGIN total_desc_fieldcolumn}
+      {$total_desc_value}&nbsp;{END total_desc_fieldcolumn}</TD>
+    <TD class="rnr-gridfieldlabel" rowspan="1" colspan="1" {$recordattrs}>&nbsp;</TD>
+    <TD class="rnr-edge" rowspan="1" colspan="1" {$recordattrs}>&nbsp;</TD></TR>
+  <TR class="rnr-row {$rowclass}" style="height: 38px;" {$rowattrs}>
+    <TD class="rnr-gridfieldlabel {$l_name1_label_class}" style="width: 11%;" rowspan="1" colspan="1" {$recordattrs}>{BEGIN l_name1_fieldheadercolumn}
+      {$label t_descuentos l_name1}{END l_name1_fieldheadercolumn} </TD>
+    <TD class="{$l_name1_class}" rowspan="1" colspan="1" {$recordattrs}>{BEGIN l_name1_fieldcolumn}
+      {$l_name1_value}&nbsp;{END l_name1_fieldcolumn}</TD>
+    <TD class="rnr-gridfieldlabel {$liquido_pagable_label_class}" style="width: 11%;" rowspan="1" colspan="1" {$recordattrs}>{BEGIN liquido_pagable_fieldheadercolumn}
+      {$label t_descuentos liquido_pagable}{END liquido_pagable_fieldheadercolumn} </TD>
+    <TD class="{$liquido_pagable_class}" rowspan="1" colspan="1" {$recordattrs}>{BEGIN liquido_pagable_fieldcolumn}
+      {$liquido_pagable_value}&nbsp;{END liquido_pagable_fieldcolumn}</TD>
+    <TD class="rnr-gridfieldlabel" rowspan="1" colspan="1" {$recordattrs}>&nbsp;</TD>
+    <TD class="rnr-edge" rowspan="1" colspan="1" {$recordattrs}>&nbsp;</TD></TR>
+  <TR class="rnr-row {$rowclass}" style="height: 39px;" {$rowattrs}>
+    <TD class="rnr-gridfieldlabel {$l_name2_label_class}" style="width: 11%;" rowspan="1" colspan="1" {$recordattrs}>{BEGIN l_name2_fieldheadercolumn}
+      {$label t_descuentos l_name2}{END l_name2_fieldheadercolumn} </TD>
+    <TD class="{$l_name2_class}" rowspan="1" colspan="1" {$recordattrs}>{BEGIN l_name2_fieldcolumn}
+      {$l_name2_value}&nbsp;{END l_name2_fieldcolumn}</TD>
+    <TD class="rnr-gridfieldlabel {$afp_ap_sol_0_5_label_class}" style="width: 11%;" rowspan="1" colspan="1" {$recordattrs}>{BEGIN afp_ap_sol_0_5_fieldheadercolumn}
+      {$label t_descuentos afp_ap_sol_0_5}{END afp_ap_sol_0_5_fieldheadercolumn} </TD>
+    <TD class="{$afp_ap_sol_0_5_class}" rowspan="1" colspan="1" {$recordattrs}>{BEGIN afp_ap_sol_0_5_fieldcolumn}
+      {$afp_ap_sol_0_5_value}&nbsp;{END afp_ap_sol_0_5_fieldcolumn}</TD>
+    <TD class="rnr-gridfieldlabel" rowspan="1" colspan="1" {$recordattrs}>&nbsp;</TD>
+    <TD class="rnr-edge" rowspan="1" colspan="1" {$recordattrs}>&nbsp;</TD></TR>
+  <TR class="rnr-row {$rowclass}" style="height: 37px;" {$rowattrs}>
+    <TD class="rnr-gridfieldlabel {$afp_10_label_class}" style="width: 11%;" rowspan="1" colspan="1" {$recordattrs}>{BEGIN afp_10_fieldheadercolumn}
+      {$label t_descuentos afp_10}{END afp_10_fieldheadercolumn} </TD>
+    <TD class="{$afp_10_class}" rowspan="1" colspan="1" {$recordattrs}>{BEGIN afp_10_fieldcolumn}
+      {$afp_10_value}&nbsp;{END afp_10_fieldcolumn}</TD>
+    <TD class="rnr-gridfieldlabel {$ans_1_label_class}" style="width: 11%;" rowspan="1" colspan="1" {$recordattrs}>{BEGIN ans_1_fieldheadercolumn}
+      {$label t_descuentos ans_1}{END ans_1_fieldheadercolumn} </TD>
+    <TD class="{$ans_1_class}" rowspan="1" colspan="1" {$recordattrs}>{BEGIN ans_1_fieldcolumn}
+      {$ans_1_value}&nbsp;{END ans_1_fieldcolumn}</TD>
+    <TD class="rnr-gridfieldlabel" rowspan="1" colspan="1" {$recordattrs}>&nbsp;</TD>
+    <TD class="rnr-edge" rowspan="1" colspan="1" {$recordattrs}>&nbsp;</TD></TR>
+  <TR class="rnr-row {$rowclass}" {$rowattrs}>
+    <TD class="rnr-gridfieldlabel {$afp_riesgo_1_71_label_class}" style="width: 11%;" rowspan="1" colspan="1" {$recordattrs}>{BEGIN afp_riesgo_1_71_fieldheadercolumn}
+      {$label t_descuentos afp_riesgo_1_71}{END afp_riesgo_1_71_fieldheadercolumn} </TD>
+    <TD class="{$afp_riesgo_1_71_class}" rowspan="1" colspan="1" {$recordattrs}>{BEGIN afp_riesgo_1_71_fieldcolumn}
+      {$afp_riesgo_1_71_value}&nbsp;{END afp_riesgo_1_71_fieldcolumn}</TD>
+    <TD class="rnr-gridfieldlabel {$seguro_pat_10_label_class}" style="width: 11%;" rowspan="1" colspan="1" {$recordattrs}>{BEGIN seguro_pat_10_fieldheadercolumn}
+      {$label t_descuentos seguro_pat_10}{END seguro_pat_10_fieldheadercolumn} </TD>
+    <TD class="{$seguro_pat_10_class}" rowspan="1" colspan="1" {$recordattrs}>{BEGIN seguro_pat_10_fieldcolumn}
+      {$seguro_pat_10_value}&nbsp;{END seguro_pat_10_fieldcolumn}</TD>
+    <TD class="rnr-gridfieldlabel" rowspan="1" colspan="1" {$recordattrs}>&nbsp;</TD>
+    <TD class="rnr-edge" rowspan="1" colspan="1" {$recordattrs}>&nbsp;</TD></TR>
+  <TR class="rnr-row {$rowclass}" style="height: 37px;" {$rowattrs}>
+    <TD class="rnr-gridfieldlabel {$afp_05_label_class}" style="width: 11%;" rowspan="1" colspan="1" {$recordattrs}>{BEGIN afp_05_fieldheadercolumn}
+      {$label t_descuentos afp_05}{END afp_05_fieldheadercolumn} </TD>
+    <TD class="{$afp_05_class}" rowspan="1" colspan="1" {$recordattrs}>{BEGIN afp_05_fieldcolumn}
+      {$afp_05_value}&nbsp;{END afp_05_fieldcolumn}</TD>
+    <TD class="rnr-gridfieldlabel {$riesgo_pat_171_label_class}" style="width: 11%;" rowspan="1" colspan="1" {$recordattrs}>{BEGIN riesgo_pat_171_fieldheadercolumn}
+      {$label t_descuentos riesgo_pat_171}{END riesgo_pat_171_fieldheadercolumn} </TD>
+    <TD class="{$riesgo_pat_171_class}" rowspan="1" colspan="1" {$recordattrs}>{BEGIN riesgo_pat_171_fieldcolumn}
+      {$riesgo_pat_171_value}&nbsp;{END riesgo_pat_171_fieldcolumn}</TD>
+    <TD class="rnr-gridfieldlabel" rowspan="1" colspan="1" {$recordattrs}>&nbsp;</TD>
+    <TD class="rnr-edge" rowspan="1" colspan="1" {$recordattrs}>&nbsp;</TD></TR>
+  <TR class="rnr-row {$rowclass}" {$rowattrs}>
+    <TD class="rnr-gridfieldlabel {$rc_iva_label_class}" style="width: 11%;" rowspan="1" colspan="1" {$recordattrs}>{BEGIN rc_iva_fieldheadercolumn}
+      {$label t_descuentos rc_iva}{END rc_iva_fieldheadercolumn} </TD>
+    <TD class="{$rc_iva_class}" rowspan="1" colspan="1" {$recordattrs}>{BEGIN rc_iva_fieldcolumn}
+      {$rc_iva_value}&nbsp;{END rc_iva_fieldcolumn}</TD>
+    <TD class="rnr-gridfieldlabel {$pro_vivienda_pat_2_label_class}" style="width: 11%;" rowspan="1" colspan="1" {$recordattrs}>{BEGIN pro_vivienda_pat_2_fieldheadercolumn}
+      {$label t_descuentos pro_vivienda_pat_2}{END pro_vivienda_pat_2_fieldheadercolumn} </TD>
+    <TD class="{$pro_vivienda_pat_2_class}" rowspan="1" colspan="1" {$recordattrs}>{BEGIN pro_vivienda_pat_2_fieldcolumn}
+      {$pro_vivienda_pat_2_value}&nbsp;{END pro_vivienda_pat_2_fieldcolumn}</TD>
+    <TD class="rnr-gridfieldlabel" rowspan="1" colspan="1" {$recordattrs}>&nbsp;</TD>
+    <TD class="rnr-edge" rowspan="1" colspan="1" {$recordattrs}>&nbsp;</TD></TR>
+  <TR class="rnr-row {$rowclass}" style="height: 38px;" {$rowattrs}>
+    <TD class="rnr-gridfieldlabel {$retenciones_label_class}" style="width: 11%;" rowspan="1" colspan="1" {$recordattrs}>{BEGIN retenciones_fieldheadercolumn}
+      {$label t_descuentos retenciones}{END retenciones_fieldheadercolumn} </TD>
+    <TD class="{$retenciones_class}" rowspan="1" colspan="1" {$recordattrs}>{BEGIN retenciones_fieldcolumn}
+      {$retenciones_value}&nbsp;{END retenciones_fieldcolumn}</TD>
+    <TD class="rnr-gridfieldlabel {$ap_pat_sol_3_label_class}" style="width: 11%;" rowspan="1" colspan="1" {$recordattrs}>{BEGIN ap_pat_sol_3_fieldheadercolumn}
+      {$label t_descuentos ap_pat_sol_3}{END ap_pat_sol_3_fieldheadercolumn} </TD>
+    <TD class="{$ap_pat_sol_3_class}" rowspan="1" colspan="1" {$recordattrs}>{BEGIN ap_pat_sol_3_fieldcolumn}
+      {$ap_pat_sol_3_value}&nbsp;{END ap_pat_sol_3_fieldcolumn}</TD>
+    <TD class="rnr-gridfieldlabel" rowspan="1" colspan="1" {$recordattrs}>&nbsp;</TD>
+    <TD class="rnr-edge" rowspan="1" colspan="1" {$recordattrs}>&nbsp;</TD></TR></TBODY>{END grid_record}{END grid_row}</TABLE>{END grid_block}{END container_grid}
+{BEGIN container_pagination_bottom}
+<DIV class="rnr-c rnr-ch rnr-multialign rnr-c-pagination_bottom">
+{BEGIN pagination_block}<DIV class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">
+{$pagination}</DIV>
+{END pagination_block}<DIV class="rnr-leftbricks">
+{BEGIN details_block}<DIV class="style1 rnr-bl rnr-b-details_found {$brickclass_details_found}"><SPAN {$details_attrs}>	Detalles  
+encontrados: <B><SPAN class="rnr-details_found_count">
+{$records_found}</SPAN></B> </SPAN> </DIV>{END details_block}</DIV>
+<DIV class="rnr-rightbricks">
+{BEGIN pages_block}<DIV class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}"><SPAN {$pages_attrs}>	Página <B>
+{$page}</B> / <B>
+{$maxpages}</B> </SPAN> </DIV>
+{END pages_block}{BEGIN recordspp_block}<DIV class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}"><SPAN id="recordspp_block{$id}" name="recordspp_block{$id}">	Resultados 
+ por página:&nbsp; 
+{$recsPerPage} </SPAN>	</DIV>{END recordspp_block}</DIV></DIV>{END container_pagination_bottom}</DIV>
+<DIV class="rnr-right {$blockclass_right}"></DIV></DIV>
+<DIV class="rnr-bottom {$blockclass_bottom}"></DIV></DIV>
+{$footer}{END body} </BODY></HTML>

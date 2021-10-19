@@ -1,0 +1,338 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel identificacion_puesto search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criterio:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> Todas las condiciones</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Ninguna condición</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NO</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_id}">
+	{BEGIN id_fieldblock}		
+	<td>
+		{$label identificacion_puesto id}
+	</td>
+	<td>
+		<input type="checkbox" {$id_notbox}>
+	</td>
+	<td>
+		{$searchtype_id}
+	</td>
+	<td>
+		{$id_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$id_editcontrol1}&nbsp;
+	</td>
+{END id_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_id_per}">
+	{BEGIN id_per_fieldblock}		
+	<td>
+		{$label identificacion_puesto id_per}
+	</td>
+	<td>
+		<input type="checkbox" {$id_per_notbox}>
+	</td>
+	<td>
+		{$searchtype_id_per}
+	</td>
+	<td>
+		{$id_per_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$id_per_editcontrol1}&nbsp;
+	</td>
+{END id_per_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_denominacion}">
+	{BEGIN denominacion_fieldblock}		
+	<td>
+		{$label identificacion_puesto denominacion}
+	</td>
+	<td>
+		<input type="checkbox" {$denominacion_notbox}>
+	</td>
+	<td>
+		{$searchtype_denominacion}
+	</td>
+	<td>
+		{$denominacion_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$denominacion_editcontrol1}&nbsp;
+	</td>
+{END denominacion_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_nombre_funcional}">
+	{BEGIN nombre_funcional_fieldblock}		
+	<td>
+		{$label identificacion_puesto nombre_funcional}
+	</td>
+	<td>
+		<input type="checkbox" {$nombre_funcional_notbox}>
+	</td>
+	<td>
+		{$searchtype_nombre_funcional}
+	</td>
+	<td>
+		{$nombre_funcional_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$nombre_funcional_editcontrol1}&nbsp;
+	</td>
+{END nombre_funcional_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_unidad_organizacional}">
+	{BEGIN unidad_organizacional_fieldblock}		
+	<td>
+		{$label identificacion_puesto unidad_organizacional}
+	</td>
+	<td>
+		<input type="checkbox" {$unidad_organizacional_notbox}>
+	</td>
+	<td>
+		{$searchtype_unidad_organizacional}
+	</td>
+	<td>
+		{$unidad_organizacional_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$unidad_organizacional_editcontrol1}&nbsp;
+	</td>
+{END unidad_organizacional_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_supervisa_a}">
+	{BEGIN supervisa_a_fieldblock}		
+	<td>
+		{$label identificacion_puesto supervisa_a}
+	</td>
+	<td>
+		<input type="checkbox" {$supervisa_a_notbox}>
+	</td>
+	<td>
+		{$searchtype_supervisa_a}
+	</td>
+	<td>
+		{$supervisa_a_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$supervisa_a_editcontrol1}&nbsp;
+	</td>
+{END supervisa_a_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_codigo}">
+	{BEGIN codigo_fieldblock}		
+	<td>
+		{$label identificacion_puesto codigo}
+	</td>
+	<td>
+		<input type="checkbox" {$codigo_notbox}>
+	</td>
+	<td>
+		{$searchtype_codigo}
+	</td>
+	<td>
+		{$codigo_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$codigo_editcontrol1}&nbsp;
+	</td>
+{END codigo_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_categoria}">
+	{BEGIN categoria_fieldblock}		
+	<td>
+		{$label identificacion_puesto categoria}
+	</td>
+	<td>
+		<input type="checkbox" {$categoria_notbox}>
+	</td>
+	<td>
+		{$searchtype_categoria}
+	</td>
+	<td>
+		{$categoria_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$categoria_editcontrol1}&nbsp;
+	</td>
+{END categoria_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_nivel}">
+	{BEGIN nivel_fieldblock}		
+	<td>
+		{$label identificacion_puesto nivel}
+	</td>
+	<td>
+		<input type="checkbox" {$nivel_notbox}>
+	</td>
+	<td>
+		{$searchtype_nivel}
+	</td>
+	<td>
+		{$nivel_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$nivel_editcontrol1}&nbsp;
+	</td>
+{END nivel_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_jefe_inmediato_superior}">
+	{BEGIN jefe_inmediato_superior_fieldblock}		
+	<td>
+		{$label identificacion_puesto jefe_inmediato_superior}
+	</td>
+	<td>
+		<input type="checkbox" {$jefe_inmediato_superior_notbox}>
+	</td>
+	<td>
+		{$searchtype_jefe_inmediato_superior}
+	</td>
+	<td>
+		{$jefe_inmediato_superior_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$jefe_inmediato_superior_editcontrol1}&nbsp;
+	</td>
+{END jefe_inmediato_superior_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_jefe_supeior_jerarquico}">
+	{BEGIN jefe_supeior_jerarquico_fieldblock}		
+	<td>
+		{$label identificacion_puesto jefe_supeior_jerarquico}
+	</td>
+	<td>
+		<input type="checkbox" {$jefe_supeior_jerarquico_notbox}>
+	</td>
+	<td>
+		{$searchtype_jefe_supeior_jerarquico}
+	</td>
+	<td>
+		{$jefe_supeior_jerarquico_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$jefe_supeior_jerarquico_editcontrol1}&nbsp;
+	</td>
+{END jefe_supeior_jerarquico_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_updated_at}">
+	{BEGIN updated_at_fieldblock}		
+	<td>
+		{$label identificacion_puesto updated_at}
+	</td>
+	<td>
+		<input type="checkbox" {$updated_at_notbox}>
+	</td>
+	<td>
+		{$searchtype_updated_at}
+	</td>
+	<td>
+		{$updated_at_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$updated_at_editcontrol1}&nbsp;
+	</td>
+{END updated_at_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_created_at}">
+	{BEGIN created_at_fieldblock}		
+	<td>
+		{$label identificacion_puesto created_at}
+	</td>
+	<td>
+		<input type="checkbox" {$created_at_notbox}>
+	</td>
+	<td>
+		{$searchtype_created_at}
+	</td>
+	<td>
+		{$created_at_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$created_at_editcontrol1}&nbsp;
+	</td>
+{END created_at_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Buscar</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reiniciar</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Volver a la lista</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

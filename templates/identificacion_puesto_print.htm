@@ -1,0 +1,296 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+{BEGIN container_master}
+<div class="rnr-c rnr-ch rnr-c-master">
+
+{BEGIN mastertable_block}
+<div  class="style1 rnr-bl rnr-b-masterinfoprint {$brickclass_masterinfoprint}">{$showmasterfile}
+</div>
+{END mastertable_block}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_master}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel identificacion_puesto print}</h1>
+</div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Página <span class="rp-pageno">{$pageno}</span> / <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN id_fieldheadercolumn}
+<th class="runner-cc {$id_class}" {$id_style}>
+	{BEGIN id_fieldheader}
+	<b>{$label identificacion_puesto id}</b>
+	{END id_fieldheader}
+</th>
+{END id_fieldheadercolumn}
+	{BEGIN id_per_fieldheadercolumn}
+<th class="runner-cc {$id_per_class}" {$id_per_style}>
+	{BEGIN id_per_fieldheader}
+	<b>{$label identificacion_puesto id_per}</b>
+	{END id_per_fieldheader}
+</th>
+{END id_per_fieldheadercolumn}
+	{BEGIN denominacion_fieldheadercolumn}
+<th class="runner-cc {$denominacion_class}" {$denominacion_style}>
+	{BEGIN denominacion_fieldheader}
+	<b>{$label identificacion_puesto denominacion}</b>
+	{END denominacion_fieldheader}
+</th>
+{END denominacion_fieldheadercolumn}
+	{BEGIN nombre_funcional_fieldheadercolumn}
+<th class="runner-cc {$nombre_funcional_class}" {$nombre_funcional_style}>
+	{BEGIN nombre_funcional_fieldheader}
+	<b>{$label identificacion_puesto nombre_funcional}</b>
+	{END nombre_funcional_fieldheader}
+</th>
+{END nombre_funcional_fieldheadercolumn}
+	{BEGIN unidad_organizacional_fieldheadercolumn}
+<th class="runner-cc {$unidad_organizacional_class}" {$unidad_organizacional_style}>
+	{BEGIN unidad_organizacional_fieldheader}
+	<b>{$label identificacion_puesto unidad_organizacional}</b>
+	{END unidad_organizacional_fieldheader}
+</th>
+{END unidad_organizacional_fieldheadercolumn}
+	{BEGIN supervisa_a_fieldheadercolumn}
+<th class="runner-cc {$supervisa_a_class}" {$supervisa_a_style}>
+	{BEGIN supervisa_a_fieldheader}
+	<b>{$label identificacion_puesto supervisa_a}</b>
+	{END supervisa_a_fieldheader}
+</th>
+{END supervisa_a_fieldheadercolumn}
+	{BEGIN codigo_fieldheadercolumn}
+<th class="runner-cc {$codigo_class}" {$codigo_style}>
+	{BEGIN codigo_fieldheader}
+	<b>{$label identificacion_puesto codigo}</b>
+	{END codigo_fieldheader}
+</th>
+{END codigo_fieldheadercolumn}
+	{BEGIN categoria_fieldheadercolumn}
+<th class="runner-cc {$categoria_class}" {$categoria_style}>
+	{BEGIN categoria_fieldheader}
+	<b>{$label identificacion_puesto categoria}</b>
+	{END categoria_fieldheader}
+</th>
+{END categoria_fieldheadercolumn}
+	{BEGIN nivel_fieldheadercolumn}
+<th class="runner-cc {$nivel_class}" {$nivel_style}>
+	{BEGIN nivel_fieldheader}
+	<b>{$label identificacion_puesto nivel}</b>
+	{END nivel_fieldheader}
+</th>
+{END nivel_fieldheadercolumn}
+	{BEGIN jefe_inmediato_superior_fieldheadercolumn}
+<th class="runner-cc {$jefe_inmediato_superior_class}" {$jefe_inmediato_superior_style}>
+	{BEGIN jefe_inmediato_superior_fieldheader}
+	<b>{$label identificacion_puesto jefe_inmediato_superior}</b>
+	{END jefe_inmediato_superior_fieldheader}
+</th>
+{END jefe_inmediato_superior_fieldheadercolumn}
+	{BEGIN jefe_supeior_jerarquico_fieldheadercolumn}
+<th class="runner-cc {$jefe_supeior_jerarquico_class}" {$jefe_supeior_jerarquico_style}>
+	{BEGIN jefe_supeior_jerarquico_fieldheader}
+	<b>{$label identificacion_puesto jefe_supeior_jerarquico}</b>
+	{END jefe_supeior_jerarquico_fieldheader}
+</th>
+{END jefe_supeior_jerarquico_fieldheadercolumn}
+	{BEGIN updated_at_fieldheadercolumn}
+<th class="runner-cc {$updated_at_class}" {$updated_at_style}>
+	{BEGIN updated_at_fieldheader}
+	<b>{$label identificacion_puesto updated_at}</b>
+	{END updated_at_fieldheader}
+</th>
+{END updated_at_fieldheadercolumn}
+	{BEGIN created_at_fieldheadercolumn}
+<th class="runner-cc {$created_at_class}" {$created_at_style}>
+	{BEGIN created_at_fieldheader}
+	<b>{$label identificacion_puesto created_at}</b>
+	{END created_at_fieldheader}
+</th>
+{END created_at_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN id_fieldcolumn}
+<td  class="runner-cc {$id_class}" {$id_style} {$recordattrs}>
+	{$id_value}
+</td>
+{END id_fieldcolumn}
+	{BEGIN id_per_fieldcolumn}
+<td  class="runner-cc {$id_per_class}" {$id_per_style} {$recordattrs}>
+	{$id_per_value}
+</td>
+{END id_per_fieldcolumn}
+	{BEGIN denominacion_fieldcolumn}
+<td  class="runner-cc {$denominacion_class}" {$denominacion_style} {$recordattrs}>
+	{$denominacion_value}
+</td>
+{END denominacion_fieldcolumn}
+	{BEGIN nombre_funcional_fieldcolumn}
+<td  class="runner-cc {$nombre_funcional_class}" {$nombre_funcional_style} {$recordattrs}>
+	{$nombre_funcional_value}
+</td>
+{END nombre_funcional_fieldcolumn}
+	{BEGIN unidad_organizacional_fieldcolumn}
+<td  class="runner-cc {$unidad_organizacional_class}" {$unidad_organizacional_style} {$recordattrs}>
+	{$unidad_organizacional_value}
+</td>
+{END unidad_organizacional_fieldcolumn}
+	{BEGIN supervisa_a_fieldcolumn}
+<td  class="runner-cc {$supervisa_a_class}" {$supervisa_a_style} {$recordattrs}>
+	{$supervisa_a_value}
+</td>
+{END supervisa_a_fieldcolumn}
+	{BEGIN codigo_fieldcolumn}
+<td  class="runner-cc {$codigo_class}" {$codigo_style} {$recordattrs}>
+	{$codigo_value}
+</td>
+{END codigo_fieldcolumn}
+	{BEGIN categoria_fieldcolumn}
+<td  class="runner-cc {$categoria_class}" {$categoria_style} {$recordattrs}>
+	{$categoria_value}
+</td>
+{END categoria_fieldcolumn}
+	{BEGIN nivel_fieldcolumn}
+<td  class="runner-cc {$nivel_class}" {$nivel_style} {$recordattrs}>
+	{$nivel_value}
+</td>
+{END nivel_fieldcolumn}
+	{BEGIN jefe_inmediato_superior_fieldcolumn}
+<td  class="runner-cc {$jefe_inmediato_superior_class}" {$jefe_inmediato_superior_style} {$recordattrs}>
+	{$jefe_inmediato_superior_value}
+</td>
+{END jefe_inmediato_superior_fieldcolumn}
+	{BEGIN jefe_supeior_jerarquico_fieldcolumn}
+<td  class="runner-cc {$jefe_supeior_jerarquico_class}" {$jefe_supeior_jerarquico_style} {$recordattrs}>
+	{$jefe_supeior_jerarquico_value}
+</td>
+{END jefe_supeior_jerarquico_fieldcolumn}
+	{BEGIN updated_at_fieldcolumn}
+<td  class="runner-cc {$updated_at_class}" {$updated_at_style} {$recordattrs}>
+	{$updated_at_value}
+</td>
+{END updated_at_fieldcolumn}
+	{BEGIN created_at_fieldcolumn}
+<td  class="runner-cc {$created_at_class}" {$created_at_style} {$recordattrs}>
+	{$created_at_value}
+</td>
+{END created_at_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+	{END grid_row}
+
+
+	
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

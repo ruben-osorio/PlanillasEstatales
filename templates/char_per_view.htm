@@ -1,0 +1,192 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_view} rnr-wrapper rnr-cbw-view">
+
+{BEGIN container_view}
+<div class="rnr-c rnr-cv rnr-c-view">
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN viewheader}
+<div  class="rnr-brickcontents style2 rnr-b-viewheader {$brickclass_viewheader}"><span>	<h1>{$pagetitlelabel char_per view}</h1>
+</span></div>{END viewheader}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-viewfields2 {$brickclass_viewfields2}"><table class="fieldGrid fieldGrid2">
+
+<tr>
+<td>
+	{BEGIN id_char_per_fieldblock}
+<div data-fieldname="id_char_per" class="rnr-field style1 {$fielddispclass_id_char_per}">
+  <span class="rnr-label">{$label char_per id_char_per}:</span>
+  <span class="rnr-control style3">{$id_char_per_value}</span>
+</div>
+{END id_char_per_fieldblock}
+	{BEGIN id_per_fieldblock}
+<div data-fieldname="id_per" class="rnr-field style1 {$fielddispclass_id_per}">
+  <span class="rnr-label">{$label char_per id_per}:</span>
+  <span class="rnr-control style3">{$id_per_value}</span>
+</div>
+{END id_per_fieldblock}
+	{BEGIN dir_g_fieldblock}
+<div data-fieldname="dir_g" class="rnr-field style1 {$fielddispclass_dir_g}">
+  <span class="rnr-label">{$label char_per dir_g}:</span>
+  <span class="rnr-control style3">{$dir_g_value}</span>
+</div>
+{END dir_g_fieldblock}
+	{BEGIN unit_fieldblock}
+<div data-fieldname="unit" class="rnr-field style1 {$fielddispclass_unit}">
+  <span class="rnr-label">{$label char_per unit}:</span>
+  <span class="rnr-control style3">{$unit_value}</span>
+</div>
+{END unit_fieldblock}
+	{BEGIN area_fieldblock}
+<div data-fieldname="area" class="rnr-field style1 {$fielddispclass_area}">
+  <span class="rnr-label">{$label char_per area}:</span>
+  <span class="rnr-control style3">{$area_value}</span>
+</div>
+{END area_fieldblock}
+	{BEGIN boss_is_fieldblock}
+<div data-fieldname="boss_is" class="rnr-field style1 {$fielddispclass_boss_is}">
+  <span class="rnr-label">{$label char_per boss_is}:</span>
+  <span class="rnr-control style3">{$boss_is_value}</span>
+</div>
+{END boss_is_fieldblock}
+</td>
+<td>
+	{BEGIN boss_ij_fieldblock}
+<div data-fieldname="boss_ij" class="rnr-field style1 {$fielddispclass_boss_ij}">
+  <span class="rnr-label">{$label char_per boss_ij}:</span>
+  <span class="rnr-control style3">{$boss_ij_value}</span>
+</div>
+{END boss_ij_fieldblock}
+	{BEGIN charge_fieldblock}
+<div data-fieldname="charge" class="rnr-field style1 {$fielddispclass_charge}">
+  <span class="rnr-label">{$label char_per charge}:</span>
+  <span class="rnr-control style3">{$charge_value}</span>
+</div>
+{END charge_fieldblock}
+	{BEGIN date_des_fieldblock}
+<div data-fieldname="date_des" class="rnr-field style1 {$fielddispclass_date_des}">
+  <span class="rnr-label">{$label char_per date_des}:</span>
+  <span class="rnr-control style3">{$date_des_value}</span>
+</div>
+{END date_des_fieldblock}
+	{BEGIN date_end_fieldblock}
+<div data-fieldname="date_end" class="rnr-field style1 {$fielddispclass_date_end}">
+  <span class="rnr-label">{$label char_per date_end}:</span>
+  <span class="rnr-control style3">{$date_end_value}</span>
+</div>
+{END date_end_fieldblock}
+	{BEGIN num_memo_fieldblock}
+<div data-fieldname="num_memo" class="rnr-field style1 {$fielddispclass_num_memo}">
+  <span class="rnr-label">{$label char_per num_memo}:</span>
+  <span class="rnr-control style3">{$num_memo_value}</span>
+</div>
+{END num_memo_fieldblock}
+	{BEGIN date_des_ini_fieldblock}
+<div data-fieldname="date_des_ini" class="rnr-field style1 {$fielddispclass_date_des_ini}">
+  <span class="rnr-label">{$label char_per date_des_ini}:</span>
+  <span class="rnr-control style3">{$date_des_ini_value}</span>
+</div>
+{END date_des_ini_fieldblock}
+</td>
+</tr>
+</table></div>
+
+
+{BEGIN viewbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-viewbuttons {$brickclass_viewbuttons}"><div class="rnr-buttons-right">
+{BEGIN prev_button}
+<a href="#" class="rnr-button {$prevbutton_class}" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+{END prev_button}
+{BEGIN next_button}
+<a href="#" class="rnr-button {$nextbutton_class}" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+{END next_button}
+</div>
+<div class="rnr-buttons-left">
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Volver a la lista</a>
+{END back_button}
+{BEGIN close_button}
+<a href="#" class="rnr-button" {$closebutton_attrs}>Cerrar ventana</a>
+{END close_button}
+{BEGIN edit_page_button}
+<a href="#" class="rnr-button" {$edit_page_button_attrs}>Editar</a>
+{END edit_page_button}
+</div>
+</div>{END viewbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_view}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

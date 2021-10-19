@@ -1,0 +1,163 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN editheader}
+<div  class="rnr-brickcontents style2 rnr-b-editheader {$brickclass_editheader}"><span>	<h1>{$pagetitlelabel soc_secu edit}</h1>
+</span></div>{END editheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-editfields2 {$brickclass_editfields2}"><table class="fieldGrid fieldGrid2 edit">
+
+<tr>
+<td>
+	{BEGIN id_func_fieldblock}
+<div data-fieldname="id_func" class="rnr-field style1 {$fielddispclass_id_func}">
+  <span class="rnr-label">{BEGIN id_func_label}{$label soc_secu id_func}{END id_func_label}</span>
+  <span class="rnr-control style3">{$id_func_editcontrol}</span>
+</div>
+{END id_func_fieldblock}
+	{BEGIN id_per_fieldblock}
+<div data-fieldname="id_per" class="rnr-field style1 {$fielddispclass_id_per}">
+  <span class="rnr-label">{BEGIN id_per_label}{$label soc_secu id_per}{END id_per_label}</span>
+  <span class="rnr-control style3">{$id_per_editcontrol}</span>
+</div>
+{END id_per_fieldblock}
+	{BEGIN name_sec_fieldblock}
+<div data-fieldname="name_sec" class="rnr-field style1 {$fielddispclass_name_sec}">
+  <span class="rnr-label">{BEGIN name_sec_label}{$label soc_secu name_sec}{END name_sec_label}</span>
+  <span class="rnr-control style3">{$name_sec_editcontrol}</span>
+</div>
+{END name_sec_fieldblock}
+	{BEGIN num_reg_fieldblock}
+<div data-fieldname="num_reg" class="rnr-field style1 {$fielddispclass_num_reg}">
+  <span class="rnr-label">{BEGIN num_reg_label}{$label soc_secu num_reg}{END num_reg_label}</span>
+  <span class="rnr-control style3">{$num_reg_editcontrol}</span>
+</div>
+{END num_reg_fieldblock}
+</td>
+<td>
+	{BEGIN type_sec_fieldblock}
+<div data-fieldname="type_sec" class="rnr-field style1 {$fielddispclass_type_sec}">
+  <span class="rnr-label">{BEGIN type_sec_label}{$label soc_secu type_sec}{END type_sec_label}</span>
+  <span class="rnr-control style3">{$type_sec_editcontrol}</span>
+</div>
+{END type_sec_fieldblock}
+	{BEGIN date_afil_fieldblock}
+<div data-fieldname="date_afil" class="rnr-field style1 {$fielddispclass_date_afil}">
+  <span class="rnr-label">{BEGIN date_afil_label}{$label soc_secu date_afil}{END date_afil_label}</span>
+  <span class="rnr-control style3">{$date_afil_editcontrol}</span>
+</div>
+{END date_afil_fieldblock}
+	{BEGIN date_des_fieldblock}
+<div data-fieldname="date_des" class="rnr-field style1 {$fielddispclass_date_des}">
+  <span class="rnr-label">{BEGIN date_des_label}{$label soc_secu date_des}{END date_des_label}</span>
+  <span class="rnr-control style3">{$date_des_editcontrol}</span>
+</div>
+{END date_des_fieldblock}
+	{BEGIN cause_fieldblock}
+<div data-fieldname="cause" class="rnr-field style1 {$fielddispclass_cause}">
+  <span class="rnr-label">{BEGIN cause_label}{$label soc_secu cause}{END cause_label}</span>
+  <span class="rnr-control style3">{$cause_editcontrol}</span>
+</div>
+{END cause_fieldblock}
+</td>
+</tr>
+</table></div>
+
+
+{BEGIN editbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-editbuttons {$brickclass_editbuttons}"><div class="rnr-buttons-right">
+	{BEGIN prev_button}
+	<a href="#" class="rnr-button {$prevbutton_class}" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+	{END prev_button}
+	{BEGIN next_button}
+	<a href="#" class="rnr-button  {$nextbutton_class}" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+	{END next_button}
+</div>
+<div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" {$savebutton_attrs}>Guardar</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" {$resetbutton_attrs}>Reiniciar</a>
+	{END reset_button}
+	{BEGIN back_button}
+		<a href="#" class="rnr-button" {$backbutton_attrs}>Volver a la lista</a>
+	{END back_button}
+	{BEGIN close_button}
+	<a href="#" class="rnr-button" {$closebutton_attrs}>Cerrar ventana</a>
+	{END close_button}
+	</div>
+</div>{END editbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

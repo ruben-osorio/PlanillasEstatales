@@ -1,0 +1,212 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+{BEGIN container_master}
+<div class="rnr-c rnr-ch rnr-c-master">
+
+{BEGIN mastertable_block}
+<div  class="style1 rnr-bl rnr-b-masterinfoprint {$brickclass_masterinfoprint}">{$showmasterfile}
+</div>
+{END mastertable_block}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_master}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel cta_banc print}</h1>
+</div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Página <span class="rp-pageno">{$pageno}</span> / <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN id_cta_banc_fieldheadercolumn}
+<th class="runner-cc {$id_cta_banc_class}" {$id_cta_banc_style}>
+	{BEGIN id_cta_banc_fieldheader}
+	<b>{$label cta_banc id_cta_banc}</b>
+	{END id_cta_banc_fieldheader}
+</th>
+{END id_cta_banc_fieldheadercolumn}
+	{BEGIN id_func_fieldheadercolumn}
+<th class="runner-cc {$id_func_class}" {$id_func_style}>
+	{BEGIN id_func_fieldheader}
+	<b>{$label cta_banc id_func}</b>
+	{END id_func_fieldheader}
+</th>
+{END id_func_fieldheadercolumn}
+	{BEGIN bank_fieldheadercolumn}
+<th class="runner-cc {$bank_class}" {$bank_style}>
+	{BEGIN bank_fieldheader}
+	<b>{$label cta_banc bank}</b>
+	{END bank_fieldheader}
+</th>
+{END bank_fieldheadercolumn}
+	{BEGIN type_ac_fieldheadercolumn}
+<th class="runner-cc {$type_ac_class}" {$type_ac_style}>
+	{BEGIN type_ac_fieldheader}
+	<b>{$label cta_banc type_ac}</b>
+	{END type_ac_fieldheader}
+</th>
+{END type_ac_fieldheadercolumn}
+	{BEGIN num_ac_fieldheadercolumn}
+<th class="runner-cc {$num_ac_class}" {$num_ac_style}>
+	{BEGIN num_ac_fieldheader}
+	<b>{$label cta_banc num_ac}</b>
+	{END num_ac_fieldheader}
+</th>
+{END num_ac_fieldheadercolumn}
+	{BEGIN dist_ac_fieldheadercolumn}
+<th class="runner-cc {$dist_ac_class}" {$dist_ac_style}>
+	{BEGIN dist_ac_fieldheader}
+	<b>{$label cta_banc dist_ac}</b>
+	{END dist_ac_fieldheader}
+</th>
+{END dist_ac_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN id_cta_banc_fieldcolumn}
+<td  class="runner-cc {$id_cta_banc_class}" {$id_cta_banc_style} {$recordattrs}>
+	{$id_cta_banc_value}
+</td>
+{END id_cta_banc_fieldcolumn}
+	{BEGIN id_func_fieldcolumn}
+<td  class="runner-cc {$id_func_class}" {$id_func_style} {$recordattrs}>
+	{$id_func_value}
+</td>
+{END id_func_fieldcolumn}
+	{BEGIN bank_fieldcolumn}
+<td  class="runner-cc {$bank_class}" {$bank_style} {$recordattrs}>
+	{$bank_value}
+</td>
+{END bank_fieldcolumn}
+	{BEGIN type_ac_fieldcolumn}
+<td  class="runner-cc {$type_ac_class}" {$type_ac_style} {$recordattrs}>
+	{$type_ac_value}
+</td>
+{END type_ac_fieldcolumn}
+	{BEGIN num_ac_fieldcolumn}
+<td  class="runner-cc {$num_ac_class}" {$num_ac_style} {$recordattrs}>
+	{$num_ac_value}
+</td>
+{END num_ac_fieldcolumn}
+	{BEGIN dist_ac_fieldcolumn}
+<td  class="runner-cc {$dist_ac_class}" {$dist_ac_style} {$recordattrs}>
+	{$dist_ac_value}
+</td>
+{END dist_ac_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+	{END grid_row}
+
+
+	
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

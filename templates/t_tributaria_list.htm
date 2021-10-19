@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD> 
+
+<META http-equiv="X-UA-Compatible" content="IE=Edge"> <TITLE>{$pagetitle}</TITLE> 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<LINK href="styles/default.css" rel="stylesheet" type="text/css"> {BEGIN rtlCSS}<LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">{END rtlCSS} {BEGIN styleCSSFiles}<LINK href="{$stylepath}" rel="stylesheet" type="text/css">{END styleCSSFiles} {BEGIN pageCSSFiles}<LINK href="{$pagestylepath}" rel="stylesheet" type="text/css">{END pageCSSFiles} 
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001"></HEAD> 
+<BODY class="{$stylename} function-list" {$bodyattrs}>{BEGIN body}
+
+{$header} 
+<DIV class="rnr-page">
+<DIV class="rnr-top {$blockclass_top}">
+{BEGIN container_master}
+<DIV class="rnr-c rnr-ch rnr-c-master">
+{BEGIN mastertable_block}<DIV class="style1 rnr-bl rnr-b-masterinfo {$brickclass_masterinfo}">
+{$showmasterfile} <A class="runner-link" {$backtomasterlink_attrs}><B>Volver a 
+{$backtomasterlink_caption}</B> </A></DIV>
+{END mastertable_block}<DIV class="rnr-hfiller"></DIV></DIV>{END container_master}
+{BEGIN container_toplinks}
+<DIV class="rnr-c rnr-ch rnr-c-toplinks">
+<DIV class="rnr-hfiller"></DIV>
+{BEGIN security_block}<DIV class="style1 rnr-br rnr-b-loggedas {$brickclass_loggedas}">
+<DIV id="login_block{$id}">{BEGIN loggedas_message}<SPAN>Conectado 
+ como&nbsp;<B> 
+{$username}</B>&nbsp;</SPAN> {END loggedas_message}{BEGIN guestloginbutton}<SPAN><A class="rnr-button" href="#" {$guestloginlink_attrs}>Conectar</A> 
+</SPAN> {END guestloginbutton}{BEGIN logoutbutton}<A class="rnr-button" href="#" {$logoutlink_attrs}>Desconectarse</A> {END logoutbutton}</DIV></DIV>{END security_block}</DIV>{END container_toplinks}
+{BEGIN container_hmenu}
+<DIV class="rnr-c rnr-ch rnr-c-hmenu">
+{BEGIN searchform_block}<DIV class="style1 rnr-bl rnr-b-search {$brickclass_search}"><SPAN>{BEGIN searchform_text}<INPUT type="text" size="25" {$searchfor_attrs}>{END searchform_text} 
+{BEGIN searchform_search}<A class="rnr-button img" href="#" data-icon="search" {$searchbutton_attrs}></A>	{END searchform_search}{BEGIN searchform_showall}<A class="rnr-button" href="#" {$showAllCont_attrs} {$showallbutton_attrs}>Mostrar todo</A> {END searchform_showall}</SPAN> </DIV>
+{END searchform_block}{BEGIN searchformbuttons_block}<DIV class="style1 rnr-bl rnr-b-search_buttons {$brickclass_search_buttons}">{BEGIN searchPanelTopButtons}<SPAN><A class="rnr-button img" id="showSrchWin{$id}" href="#" data-icon="panelfloat" {$showHideSearchWin_attrs}></A> <A class="rnr-button img" id="showOptPanel{$id}" href="#" data-icon="paneldown" {$showHideSearchPanel_attrs}></A> </SPAN> {END searchPanelTopButtons}</DIV>
+{END searchformbuttons_block}{BEGIN searchsaving_block}<DIV class="style1 rnr-bl rnr-b-search_saving_buttons {$brickclass_search_saving_buttons}"></DIV>
+{END searchsaving_block}<DIV class="rnr-hfiller"></DIV>
+<DIV class="style1 rnr-br rnr-b-printpanel {$brickclass_printpanel}"></DIV></DIV>{END container_hmenu}</DIV>
+<DIV class="rnr-middle">
+<DIV class="rnr-left {$blockclass_left}">
+{BEGIN container_left}
+<DIV class="rnr-c rnr-cv rnr-c-left">
+{BEGIN menu_block}{$menu main}{END menu_block}{BEGIN searchPanel}<DIV class="rnr-brickcontents style1 rnr-b-searchpanel {$brickclass_searchpanel}">
+<DIV class="searchPanelContainer">
+<DIV class="searchOptions bottomPanelBorder" {$srchOpt_attrs}><!-- Search panel content --> 
+
+<DIV class="srchCritTop" style="display: none;">	Criterio:&nbsp; <INPUT name="srchType{$id}" class="rnr-radio-button" type="radio" {$all_checkbox}>&nbsp;{BEGIN all_checkbox_label}<SPAN>todos</SPAN>{END all_checkbox_label}	&nbsp;&nbsp;&nbsp;<INPUT name="srchType{$id}" class="rnr-radio-button" type="radio" {$any_checkbox}>&nbsp;{BEGIN any_checkbox_label}<SPAN>alguno</SPAN> 
+{END any_checkbox_label}</DIV>
+<DIV class="addOption"><SPAN class="rnr-buttons-group"><A class="rnr-button" id="showHideControlChooseMenu{$id}" href="#" {$showHideCtrls_attrs}>Añadir 
+ campo</A> </SPAN> <A class="rnr-button" id="showHideSearchType{$id}" href="#" {$showHideCtrlsOpt_attrs}>
+{$showHideOpt_mess}</A> </DIV>
+<TABLE class="controlsBlock {$controls_block_class}">
+  {BEGIN searchCtrlBlock}<TBODY>
+  <TR class="srchPanelRow" {$filterRow_attrs}>
+    <TD class="srchPanelCell">{$delCtrlButt}</TD>
+    <TD class="srchPanelCell">
+      {$fLabel}:&nbsp;</TD>
+    <TD class="srchPanelCell srchPanelCell2">
+      <DIV class="rnr-searchtype">
+      {$searchtype}</DIV>
+      <DIV class="rnr-searchcontrol">
+      {$searchcontrol}</DIV>
+      <DIV class="rnr-searchcontrol">
+      {$searchcontrol1}</DIV></TD></TR></TBODY>{END searchCtrlBlock}</TABLE>
+<DIV align="left" class="bottomSearchButt" {$bottomSearchButt_attrs}><A class="rnr-button" id="searchButton{$id}" href="#" {$searchbutton_attrs}>Buscar</A> 
+</DIV></DIV></DIV></DIV>{END searchPanel}</DIV>{END container_left}</DIV>
+<DIV class="rnr-center {$blockclass_center}">
+{BEGIN container_recordcontrols}
+<DIV class="rnr-c rnr-ch rnr-c-recordcontrols">
+{BEGIN newrecord_controls_block}<DIV class="style1 rnr-bl rnr-b-recordcontrols_new {$brickclass_recordcontrols_new}">{BEGIN add_link}<A class="rnr-button" href="t_tributaria_add.php" {$addlink_attrs}>Añadir nuevo</A> {END add_link}{BEGIN inlineadd_link}<A class="rnr-button" href="#" {$inlineaddlink_attrs}>Añadir 
+ nuevo</A> {END inlineadd_link}</DIV>
+{END newrecord_controls_block}{BEGIN record_controls_block}<DIV class="style1 rnr-bl rnr-b-recordcontrol {$brickclass_recordcontrol}">{BEGIN selectall_link}<A class="rnr-button" href="#" {$selectalllink_span} {$selectalllink_attrs}>Seleccionar  
+todo</A> {END selectall_link}{BEGIN widhtSelected}<SPAN class="rnr-buttons-group"><A class="rnr-button {$withSelectedClass}" id="selectButtonsToggler{$id}" href="#">Con los seleccionados...</A> 
+
+<UL class="rnr-list" id="selectButtonsGroup{$id}">
+  {BEGIN editselected_link}<LI><A class="rnr-button link" href="#" {$editselectedlink_attrs} {$editselectedlink_span}>Editar</A></LI>
+  {END editselected_link}{BEGIN exportselected_link}<LI><A class="rnr-button link" href="#" {$exportselectedlink_attrs} {$exportselectedlink_span}>Exportar</A></LI>{END exportselected_link}</UL></SPAN> 
+{END widhtSelected}{BEGIN saveall_link}<A class="rnr-button" href="#" {$savealllink_attrs} {$savealllink_span}>Guardar todo</A> {END saveall_link}{BEGIN cancelall_link}<A class="rnr-button" href="#" {$cancelalllink_attrs} {$cancelalllink_span}>Cancelar</A> 
+{END cancelall_link}</DIV>
+{END record_controls_block}{BEGIN more_list}<DIV class="style1 rnr-bl rnr-b-toplinks {$brickclass_toplinks}"><SPAN class="rnr-buttons-group">{BEGIN moreButtons}<A class="rnr-button" id="extraButtonsToggler{$id}" href="#">Más...</A> 
+<UL class="rnr-list rnr-buttons-group" id="extraButtonsGroup{$id}">
+  {BEGIN asearch_link}<LI><A class="rnr-button link" href="t_tributaria_search.php" {$advsearchlink_attrs}>Búsqueda    
+  avanzada</A></LI>
+  {END asearch_link}{BEGIN export_link}<LI><A class="rnr-button link" href="t_tributaria_export.php" target="_blank" {$exportlink_attrs}>Exportar     
+  resultados</A></LI>{END export_link}</UL>{END moreButtons}</SPAN></DIV>
+{END more_list}<DIV class="rnr-hfiller"></DIV></DIV>{END container_recordcontrols}
+{BEGIN container_message}
+<DIV class="rnr-c rnr-ch rnr-c-message">
+{BEGIN message_block}<DIV class="style1 rnr-bc rnr-b-message {$brickclass_message}">
+<DIV class="rnr-message">
+{$message}</DIV></DIV>{END message_block}</DIV>{END container_message}
+{BEGIN container_pagination}
+<DIV class="rnr-c rnr-ch rnr-multialign rnr-c-pagination">
+{BEGIN pagination_block}<DIV class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">
+{$pagination}</DIV>
+{END pagination_block}<DIV class="rnr-leftbricks">
+{BEGIN details_block}<DIV class="style1 rnr-bl rnr-b-details_found {$brickclass_details_found}"><SPAN {$details_attrs}>	Detalles  
+encontrados: <B><SPAN class="rnr-details_found_count">
+{$records_found}</SPAN></B> </SPAN> </DIV>{END details_block}</DIV>
+<DIV class="rnr-rightbricks">
+{BEGIN pages_block}<DIV class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}"><SPAN {$pages_attrs}>	Página <B>
+{$page}</B> / <B>
+{$maxpages}</B> </SPAN> </DIV>
+{END pages_block}{BEGIN recordspp_block}<DIV class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}"><SPAN id="recordspp_block{$id}" name="recordspp_block{$id}">	Resultados 
+ por página:&nbsp; 
+{$recsPerPage} </SPAN>	</DIV>{END recordspp_block}</DIV></DIV>{END container_pagination}
+{BEGIN container_grid}
+{BEGIN grid_block}<TABLE class="rnr-c rnr-cont rnr-c-grid rnr-b-grid rnr-gridtable rnr-columns" bordercolor bgcolor border="0" rules cellspacing="2" cellpadding="0">{BEGIN grid_row}
+  {BEGIN grid_record}<TBODY class="{$rowclass}">
+  <TR class="rnr-toprow" {$rowattrs} {$rowstyle}>
+    <TD class="rnr-edge" colspan="4" ieditcont="all">{BEGIN edit_column}{BEGIN edit_link}<A title="Editar" class="rnr-verticalicons" data-icon="edit" {$editlink_attrs}></A> {END edit_link}{END edit_column}{BEGIN inlineedit_column}{BEGIN inlineedit_link}<A title="Editar" class="rnr-verticalicons" data-icon="inlineedit" {$inlineeditlink_attrs}></A> {END inlineedit_link}{END inlineedit_column}{BEGIN checkbox_column}{BEGIN checkbox}<INPUT class="rnr-verticalcheckbox" type="checkbox" {$checkbox_attrs}>{END checkbox}{END checkbox_column} </TD></TR>
+  <TR class="rnr-row {$rowclass}" {$rowattrs}>
+    <TD class="rnr-gridfieldlabel {$id_func_trib_label_class}" style="width: 16%;" {$recordattrs}>{BEGIN id_func_trib_fieldheadercolumn}
+      {$label t_tributaria id_func_trib}{END id_func_trib_fieldheadercolumn} </TD>
+    <TD class="{$id_func_trib_class}" {$recordattrs}>{BEGIN id_func_trib_fieldcolumn}
+      {$id_func_trib_value}&nbsp;{END id_func_trib_fieldcolumn}</TD>
+    <TD class="rnr-gridfieldlabel {$impuesto_neto_rc_iva_label_class}" style="width: 16%;" {$recordattrs}>{BEGIN impuesto_neto_rc_iva_fieldheadercolumn}
+      {$label t_tributaria impuesto_neto_rc_iva}{END impuesto_neto_rc_iva_fieldheadercolumn} </TD>
+    <TD class="rnr-edge {$impuesto_neto_rc_iva_class}" style="width: 33%;" {$recordattrs}>{BEGIN impuesto_neto_rc_iva_fieldcolumn}
+      {$impuesto_neto_rc_iva_value}&nbsp;
+    {END impuesto_neto_rc_iva_fieldcolumn}</TD></TR>
+  <TR class="rnr-row {$rowclass}" {$rowattrs}>
+    <TD class="rnr-gridfieldlabel {$gestion_label_class}" style="width: 16%;" {$recordattrs}>{BEGIN gestion_fieldheadercolumn}
+      {$label t_tributaria gestion}{END gestion_fieldheadercolumn} </TD>
+    <TD class="{$gestion_class}" {$recordattrs}>{BEGIN gestion_fieldcolumn}
+      {$gestion_value}&nbsp;{END gestion_fieldcolumn}</TD>
+    <TD class="rnr-gridfieldlabel {$f_110_facturas_label_class}" style="width: 16%;" {$recordattrs}>{BEGIN f_110_facturas_fieldheadercolumn}
+      {$label t_tributaria f_110_facturas}{END f_110_facturas_fieldheadercolumn} </TD>
+    <TD class="rnr-edge {$f_110_facturas_class}" style="width: 33%; white-space: normal; background-image: none; background-color: rgb(191, 255, 191);" {$recordattrs}>{BEGIN f_110_facturas_fieldcolumn}
+      {$f_110_facturas_value}&nbsp;{END f_110_facturas_fieldcolumn}</TD></TR>
+  <TR class="rnr-row {$rowclass}" {$rowattrs}>
+    <TD class="rnr-gridfieldlabel {$periodo_label_class}" style="width: 16%;" {$recordattrs}>{BEGIN periodo_fieldheadercolumn}
+      {$label t_tributaria periodo}{END periodo_fieldheadercolumn} </TD>
+    <TD class="{$periodo_class}" {$recordattrs}>{BEGIN periodo_fieldcolumn}
+      {$periodo_value}&nbsp;{END periodo_fieldcolumn}</TD>
+    <TD class="rnr-gridfieldlabel {$saldo_favor_fisco_label_class}" style="width: 16%;" {$recordattrs}>{BEGIN saldo_favor_fisco_fieldheadercolumn}
+      {$label t_tributaria saldo_favor_fisco}{END saldo_favor_fisco_fieldheadercolumn} </TD>
+    <TD class="rnr-edge {$saldo_favor_fisco_class}" style="width: 33%; white-space: normal; background-image: none; background-color: rgb(255, 202, 202);" {$recordattrs}>{BEGIN saldo_favor_fisco_fieldcolumn}
+      {$saldo_favor_fisco_value}&nbsp;{END saldo_favor_fisco_fieldcolumn}</TD></TR>
+  <TR class="rnr-row {$rowclass}" {$rowattrs}>
+    <TD class="rnr-gridfieldlabel {$nit_label_class}" style="width: 16%;" {$recordattrs}>{BEGIN nit_fieldheadercolumn}
+      {$label t_tributaria nit}{END nit_fieldheadercolumn} </TD>
+    <TD class="{$nit_class}" {$recordattrs}>{BEGIN nit_fieldcolumn}
+      {$nit_value}&nbsp;{END nit_fieldcolumn}</TD>
+    <TD class="rnr-gridfieldlabel {$saldo_favor_dependiente_label_class}" style="width: 16%;" {$recordattrs}>{BEGIN saldo_favor_dependiente_fieldheadercolumn}
+      {$label t_tributaria saldo_favor_dependiente}{END saldo_favor_dependiente_fieldheadercolumn} </TD>
+    <TD class="rnr-edge {$saldo_favor_dependiente_class}" style="width: 33%; white-space: normal; background-image: none; background-color: rgb(255, 255, 255);" {$recordattrs}>{BEGIN saldo_favor_dependiente_fieldcolumn}
+      {$saldo_favor_dependiente_value}&nbsp;
+    {END saldo_favor_dependiente_fieldcolumn}</TD></TR>
+  <TR class="rnr-row {$rowclass}" {$rowattrs}>
+    <TD class="rnr-gridfieldlabel {$novedades_label_class}" style="width: 16%; white-space: normal;" {$recordattrs}>{BEGIN novedades_fieldheadercolumn}
+      {$label t_tributaria novedades}{END novedades_fieldheadercolumn} 
+    </TD>
+    <TD class="{$novedades_class}" {$recordattrs}>{BEGIN novedades_fieldcolumn}{$novedades_value}&nbsp;{END novedades_fieldcolumn}</TD>
+    <TD class="rnr-gridfieldlabel {$saldo_favor_dependiente_per_anterior_label_class}" style="width: 16%; white-space: normal;" {$recordattrs}>{BEGIN saldo_favor_dependiente_per_anterior_fieldheadercolumn}
+      {$label t_tributaria saldo_favor_dependiente_per_anterior}{END saldo_favor_dependiente_per_anterior_fieldheadercolumn} </TD>
+    <TD class="rnr-edge {$saldo_favor_dependiente_per_anterior_class}" style="width: 33%; white-space: normal; background-image: none; background-color: rgb(255, 255, 224);" {$recordattrs}>{BEGIN saldo_favor_dependiente_per_anterior_fieldcolumn}
+      {$saldo_favor_dependiente_per_anterior_value}&nbsp;
+    {END saldo_favor_dependiente_per_anterior_fieldcolumn}</TD></TR>
+  <TR class="rnr-row {$rowclass}" {$rowattrs}>
+    <TD class="rnr-gridfieldlabel {$liquido_pagable_label_class}" style="width: 16%;" {$recordattrs}>{BEGIN liquido_pagable_fieldheadercolumn}
+      {$label t_tributaria liquido_pagable}{END liquido_pagable_fieldheadercolumn} </TD>
+    <TD class="{$liquido_pagable_class}" {$recordattrs}>{BEGIN liquido_pagable_fieldcolumn}
+      {$liquido_pagable_value}&nbsp;{END liquido_pagable_fieldcolumn}</TD>
+    <TD class="rnr-gridfieldlabel {$mantenimiento_periodo_anterior_label_class}" style="width: 16%; white-space: normal;" {$recordattrs}>{BEGIN mantenimiento_periodo_anterior_fieldheadercolumn}
+      {$label t_tributaria mantenimiento_periodo_anterior}{END mantenimiento_periodo_anterior_fieldheadercolumn} </TD>
+    <TD class="rnr-edge {$mantenimiento_periodo_anterior_class}" style="width: 33%;" {$recordattrs}>{BEGIN mantenimiento_periodo_anterior_fieldcolumn}
+      {$mantenimiento_periodo_anterior_value}&nbsp;
+    {END mantenimiento_periodo_anterior_fieldcolumn}</TD></TR>
+  <TR class="rnr-row {$rowclass}" {$rowattrs}>
+    <TD class="rnr-gridfieldlabel {$dos_salarios_min_label_class}" style="width: 16%; white-space: normal;" {$recordattrs}>{BEGIN dos_salarios_min_fieldheadercolumn}
+      {$label t_tributaria dos_salarios_min}{END dos_salarios_min_fieldheadercolumn} </TD>
+    <TD class="{$dos_salarios_min_class}" {$recordattrs}>{BEGIN dos_salarios_min_fieldcolumn}
+      {$dos_salarios_min_value}&nbsp;{END dos_salarios_min_fieldcolumn}</TD>
+    <TD class="rnr-gridfieldlabel {$saldo_periodo_anterior_actualizado_label_class}" style="width: 16%;" {$recordattrs}>{BEGIN saldo_periodo_anterior_actualizado_fieldheadercolumn}
+      {$label t_tributaria saldo_periodo_anterior_actualizado}{END saldo_periodo_anterior_actualizado_fieldheadercolumn} </TD>
+    <TD class="rnr-edge {$saldo_periodo_anterior_actualizado_class}" style="width: 33%;" {$recordattrs}>{BEGIN saldo_periodo_anterior_actualizado_fieldcolumn}
+      {$saldo_periodo_anterior_actualizado_value}&nbsp;
+    {END saldo_periodo_anterior_actualizado_fieldcolumn}</TD></TR>
+  <TR class="rnr-row {$rowclass}" {$rowattrs}>
+    <TD class="rnr-gridfieldlabel {$base_imponible_label_class}" style="width: 16%; white-space: normal;" {$recordattrs}>{BEGIN base_imponible_fieldheadercolumn}
+      {$label t_tributaria base_imponible}{END base_imponible_fieldheadercolumn} </TD>
+    <TD class="{$base_imponible_class}" {$recordattrs}>{BEGIN base_imponible_fieldcolumn}
+      {$base_imponible_value}&nbsp;{END base_imponible_fieldcolumn}</TD>
+    <TD class="rnr-gridfieldlabel {$saldo_utilizado_label_class}" style="width: 16%;" {$recordattrs}>{BEGIN saldo_utilizado_fieldheadercolumn}
+      {$label t_tributaria saldo_utilizado}{END saldo_utilizado_fieldheadercolumn} </TD>
+    <TD class="rnr-edge {$saldo_utilizado_class}" style="width: 33%;" {$recordattrs}>{BEGIN saldo_utilizado_fieldcolumn}
+      {$saldo_utilizado_value}&nbsp;{END saldo_utilizado_fieldcolumn}</TD></TR>
+  <TR class="rnr-row {$rowclass}" {$rowattrs}>
+    <TD class="rnr-gridfieldlabel {$impuesto_rc_iva_label_class}" style="width: 16%;" {$recordattrs}>{BEGIN impuesto_rc_iva_fieldheadercolumn}
+      {$label t_tributaria impuesto_rc_iva}{END impuesto_rc_iva_fieldheadercolumn} </TD>
+    <TD class="{$impuesto_rc_iva_class}" {$recordattrs}>{BEGIN impuesto_rc_iva_fieldcolumn}
+      {$impuesto_rc_iva_value}&nbsp;{END impuesto_rc_iva_fieldcolumn}</TD>
+    <TD class="rnr-gridfieldlabel {$impuesto_rc_iva_retenido_label_class}" style="width: 16%;" {$recordattrs}>{BEGIN impuesto_rc_iva_retenido_fieldheadercolumn}
+      {$label t_tributaria impuesto_rc_iva_retenido}{END impuesto_rc_iva_retenido_fieldheadercolumn} </TD>
+    <TD class="rnr-edge {$impuesto_rc_iva_retenido_class}" style="width: 33%;" {$recordattrs}>{BEGIN impuesto_rc_iva_retenido_fieldcolumn}
+      {$impuesto_rc_iva_retenido_value}&nbsp;
+    {END impuesto_rc_iva_retenido_fieldcolumn}</TD></TR>
+  <TR class="rnr-row {$rowclass}" {$rowattrs}>
+    <TD class="rnr-gridfieldlabel {$dos_salarios_13_label_class}" style="width: 16%; white-space: normal;" {$recordattrs}>{BEGIN dos_salarios_13_fieldheadercolumn}
+      {$label t_tributaria dos_salarios_13}{END dos_salarios_13_fieldheadercolumn} </TD>
+    <TD class="{$dos_salarios_13_class}" {$recordattrs}>{BEGIN dos_salarios_13_fieldcolumn}
+      {$dos_salarios_13_value}&nbsp;{END dos_salarios_13_fieldcolumn}</TD>
+    <TD class="rnr-gridfieldlabel {$saldo_favor_dep_mes_siguiente_label_class}" style="width: 16%; white-space: normal;" {$recordattrs}>{BEGIN saldo_favor_dep_mes_siguiente_fieldheadercolumn}
+      {$label t_tributaria saldo_favor_dep_mes_siguiente}{END saldo_favor_dep_mes_siguiente_fieldheadercolumn} </TD>
+    <TD class="rnr-edge {$saldo_favor_dep_mes_siguiente_class}" style="width: 33%; white-space: normal; background-image: none; background-color: rgb(191, 255, 191);" {$recordattrs}>{BEGIN saldo_favor_dep_mes_siguiente_fieldcolumn}
+      {$saldo_favor_dep_mes_siguiente_value}&nbsp;
+    {END saldo_favor_dep_mes_siguiente_fieldcolumn}</TD></TR></TBODY>{END grid_record}{END grid_row}</TABLE>{END grid_block}{END container_grid}
+{BEGIN container_pagination_bottom}
+<DIV class="rnr-c rnr-ch rnr-multialign rnr-c-pagination_bottom">
+{BEGIN pagination_block}<DIV class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">
+{$pagination}</DIV>
+{END pagination_block}<DIV class="rnr-leftbricks">
+{BEGIN details_block}<DIV class="style1 rnr-bl rnr-b-details_found {$brickclass_details_found}"><SPAN {$details_attrs}>	Detalles  
+encontrados: <B><SPAN class="rnr-details_found_count">
+{$records_found}</SPAN></B> </SPAN> </DIV>{END details_block}</DIV>
+<DIV class="rnr-rightbricks">
+{BEGIN pages_block}<DIV class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}"><SPAN {$pages_attrs}>	Página <B>
+{$page}</B> / <B>
+{$maxpages}</B> </SPAN> </DIV>
+{END pages_block}{BEGIN recordspp_block}<DIV class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}"><SPAN id="recordspp_block{$id}" name="recordspp_block{$id}">	Resultados 
+ por página:&nbsp; 
+{$recsPerPage} </SPAN>	</DIV>{END recordspp_block}</DIV></DIV>{END container_pagination_bottom}</DIV>
+<DIV class="rnr-right {$blockclass_right}"></DIV></DIV>
+<DIV class="rnr-bottom {$blockclass_bottom}"><!--%%bottom%%--> </DIV></DIV>
+{$footer}{END body} </BODY></HTML>

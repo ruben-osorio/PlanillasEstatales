@@ -1,0 +1,175 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_view} rnr-wrapper rnr-cbw-view">
+
+{BEGIN container_view}
+<div class="rnr-c rnr-cv rnr-c-view">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_pdf} rnr-wrapper rnr-cbw-pdf">
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-cv rnr-c-pdf">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-viewpdf {$brickclass_viewpdf}">{BEGIN pdflink_block}
+<a href="#" class="pdflink rnr-button" {$pdflink_attrs}>Vista PDF</a>
+{END pdflink_block}
+
+</div>
+
+
+</div>
+{END container_pdf}
+
+</div>
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN viewheader}
+<div  class="rnr-brickcontents style2 rnr-b-viewheader {$brickclass_viewheader}"><span>	<h1>{$pagetitlelabel cta_banc view}</h1>
+</span></div>{END viewheader}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-viewfields2 {$brickclass_viewfields2}"><table class="fieldGrid fieldGrid2">
+
+<tr>
+<td>
+	{BEGIN id_cta_banc_fieldblock}
+<div data-fieldname="id_cta_banc" class="rnr-field style1 {$fielddispclass_id_cta_banc}">
+  <span class="rnr-label">{$label cta_banc id_cta_banc}:</span>
+  <span class="rnr-control style3">{$id_cta_banc_value}</span>
+</div>
+{END id_cta_banc_fieldblock}
+	{BEGIN id_func_fieldblock}
+<div data-fieldname="id_func" class="rnr-field style1 {$fielddispclass_id_func}">
+  <span class="rnr-label">{$label cta_banc id_func}:</span>
+  <span class="rnr-control style3">{$id_func_value}</span>
+</div>
+{END id_func_fieldblock}
+	{BEGIN bank_fieldblock}
+<div data-fieldname="bank" class="rnr-field style1 {$fielddispclass_bank}">
+  <span class="rnr-label">{$label cta_banc bank}:</span>
+  <span class="rnr-control style3">{$bank_value}</span>
+</div>
+{END bank_fieldblock}
+</td>
+<td>
+	{BEGIN type_ac_fieldblock}
+<div data-fieldname="type_ac" class="rnr-field style1 {$fielddispclass_type_ac}">
+  <span class="rnr-label">{$label cta_banc type_ac}:</span>
+  <span class="rnr-control style3">{$type_ac_value}</span>
+</div>
+{END type_ac_fieldblock}
+	{BEGIN num_ac_fieldblock}
+<div data-fieldname="num_ac" class="rnr-field style1 {$fielddispclass_num_ac}">
+  <span class="rnr-label">{$label cta_banc num_ac}:</span>
+  <span class="rnr-control style3">{$num_ac_value}</span>
+</div>
+{END num_ac_fieldblock}
+	{BEGIN dist_ac_fieldblock}
+<div data-fieldname="dist_ac" class="rnr-field style1 {$fielddispclass_dist_ac}">
+  <span class="rnr-label">{$label cta_banc dist_ac}:</span>
+  <span class="rnr-control style3">{$dist_ac_value}</span>
+</div>
+{END dist_ac_fieldblock}
+</td>
+</tr>
+</table></div>
+
+
+{BEGIN viewbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-viewbuttons {$brickclass_viewbuttons}"><div class="rnr-buttons-right">
+{BEGIN prev_button}
+<a href="#" class="rnr-button {$prevbutton_class}" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+{END prev_button}
+{BEGIN next_button}
+<a href="#" class="rnr-button {$nextbutton_class}" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+{END next_button}
+</div>
+<div class="rnr-buttons-left">
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Volver a la lista</a>
+{END back_button}
+{BEGIN close_button}
+<a href="#" class="rnr-button" {$closebutton_attrs}>Cerrar ventana</a>
+{END close_button}
+{BEGIN edit_page_button}
+<a href="#" class="rnr-button" {$edit_page_button_attrs}>Editar</a>
+{END edit_page_button}
+</div>
+</div>{END viewbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_view}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

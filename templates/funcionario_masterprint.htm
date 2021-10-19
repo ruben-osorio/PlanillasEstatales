@@ -1,0 +1,60 @@
+<div {$pageattrs}>
+
+{BEGIN container_masterlistheader}
+<div class="rnr-c rnr-ch rnr-c-masterlistheader">
+
+
+<div  class="style1 rnr-bl rnr-b-masterprintheader {$brickclass_masterprintheader}">	<h1>{$pagetitlelabel funcionario masterprint}</h1>
+</div>
+
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_masterlistheader}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+<table class="rnr-c rnr-cont rnr-c-mastergrid rnr-b-masterprintfields rnr-gridtable" cellpadding="0" >
+	<thead>
+		<tr class="rnr-toprow style1 {$gridHeader_class}" >
+			<th class="{$id_func_class}">{$label funcionario id_func}</th>
+			<th class="{$name_class}">{$label funcionario name}</th>
+			<th class="{$l_name1_class}">{$label funcionario l_name1}</th>
+			<th class="{$l_name2_class}">{$label funcionario l_name2}</th>
+			<th class="{$afp_class}">{$label funcionario afp}</th>
+			<th class="{$nua_class}">{$label funcionario nua}</th>
+			<th class="{$sex_class}">{$label funcionario sex}</th>
+			<th class="{$ci_class}">{$label funcionario ci}</th>
+			<th class="{$expe_class}">{$label funcionario expe}</th>
+			<th class="{$date_born_class}">{$label funcionario date_born}</th>
+			<th class="rnr-edge">&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="rnr-row style1">
+			<td class="{$id_func_class}">{$id_func_mastervalue}</td>
+			<td class="{$name_class}">{$name_mastervalue}</td>
+			<td class="{$l_name1_class}">{$l_name1_mastervalue}</td>
+			<td class="{$l_name2_class}">{$l_name2_mastervalue}</td>
+			<td class="{$afp_class}">{$afp_mastervalue}</td>
+			<td class="{$nua_class}">{$nua_mastervalue}</td>
+			<td class="{$sex_class}">{$sex_mastervalue}</td>
+			<td class="{$ci_class}">{$ci_mastervalue}</td>
+			<td class="{$expe_class}">{$expe_mastervalue}</td>
+			<td class="{$date_born_class}">{$date_born_mastervalue}</td>
+			<td class="rnr-edge">&nbsp;</td>
+		</tr>
+	</tbody>
+</table> 
+
+
+
+
+
+{END container_mastergrid}
+
+</div>
